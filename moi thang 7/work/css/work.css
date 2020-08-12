@@ -1,0 +1,451 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+.js-fadein {
+    opacity: 0;
+}
+
+.scroll-in {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#work {
+    position: relative;
+    /*overflow: hidden;*/
+    background: #fff;
+}
+#header .width-d {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/*header*/
+/*=======================================================*/
+
+
+
+/*main banner*/
+/*====================================================*/
+#work .mobi {
+   display: none;
+}
+
+#work .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+#work .img-width {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   vertical-align: bottom;
+}
+
+#work .banner-page {
+    position: relative;
+}
+#work  .content-main {
+    color: black;
+    background-image: url(../images/work/work_bg_pc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0px 100px;
+}
+
+
+#work  .content-main .box-content .box-title-page {
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+#work  .content-main .box-content .box-title-page .content-title {
+    font-size: 18px;
+    line-height: 36px;
+}
+#work  .content-main .box-content .box-title-page .text-main {
+    margin-bottom: 45px;
+}
+
+#work  .text-t1 {
+    font-size: 56px;  
+    line-height: 48px;
+
+}
+#work  .text-t2 {
+    font-size: 18px;
+    line-height: 36px;
+    color: #dc6d6d;
+}
+
+
+/*list*/
+/*====================================================*/
+
+#work  .list { 
+    margin-bottom: 120px;
+}
+#work  .content-main .box-list {
+    max-width: 750px;
+    margin: auto;
+}
+#work  .list .box-list {
+    justify-content: space-between;
+}
+#work  .list .box-list .list-item {
+    width: calc(100%/4 - 25px);
+    background: #cf1314;
+    text-align: center;
+    min-height: 85px;
+}
+#work  .list .box-list .list-item  .number {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#work  .list .box-list .list-item  .text-link {
+    font-size: 18px;
+}
+#work  .list .box-list .list-item:hover {
+    opacity: 0.6;
+}
+#work  .list .box-list .list-item a {
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px 10px;
+    display: block;
+    text-decoration: none;   
+    position: relative;
+}
+#work  .list .box-list .list-item a::after{
+    position: absolute;
+    content: "";
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    bottom: 8px;
+    left: calc(50% - 3px);
+}
+/*p1*/
+/*=======================================================*/
+#work  .banner-item {
+    position: relative;
+}
+#work .box-content .box-people:nth-child(odd) .banner-item::before {
+    position: absolute;
+    content: '';
+    width: calc(50% - 480px);
+    height: 65px;
+    left: 0px;
+    bottom: 70px;
+    background: #cf1314;
+}
+#work  .box-povit {
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+}
+
+#work  .box-povit .povit {
+    max-width: 960px;
+    margin: auto;
+    color: white;
+    font-size: 36px;
+    
+}
+#work .box-content .box-people:nth-child(odd) .box-povit .povit .text{
+    display: inline-block;
+    background: #cf1314;
+    padding: 3px 30px 5px 0px;
+}
+#work .box-text {
+    padding-bottom: 100px;
+}
+#work .box-text .width-box {
+    background-image: url(../images/work/work_bg_page_pc.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 45px 145px 50px 130px;
+    max-width: 960px;
+    margin: auto;
+}
+#work .box-text .width-box .box-item {
+    margin-bottom: 45px;
+}
+#work .box-text .width-box .dt-text {
+    font-size: 16px;
+    background: #cf1314;
+    padding: 5px 10px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+    display: inline-block;
+}
+#work .box-text .width-box .dd-text {
+    font-size: 14px;
+    line-height: 24px;
+
+}
+#work .box-text .width-box .box-img {
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#work .box-text .width-box .box-img .img-item {
+    width: calc(50% - 25px);
+}
+#work .box-text .width-box  .link-page {
+    justify-content: flex-end;
+}
+#work .box-text .width-box  .link-page .link {
+    display: block;
+    font-size: 14px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+#work .box-text .width-box  .link-page .link:hover {
+    opacity: 0.6;
+}
+#work .box-text .width-box .link-page .link.one {
+    background: #ffe317;
+    color: black;
+    margin-right: 20px;
+}
+#work .box-text .width-box .link-page .link.two{
+    background: #aa8209;
+    color: white
+}
+#work  .box-content .box-people:nth-child(even)  .banner-item::before {
+    position: absolute;
+    content: '';
+    width: calc(50% - 480px);
+    height: 65px;
+    right:0px;
+    bottom: 70px;
+    background: #cf1314;
+}
+#work .box-content .box-people:nth-child(even) .box-povit .povit {
+    justify-content: flex-end;
+}
+#work .box-content .box-people:nth-child(even) .box-povit .povit .text{
+    display: inline-block;
+    background: #cf1314;
+    padding: 3px 0px 5px 30px; 
+}
+
+/*footer*/
+/*===================================================*/
+@media (max-width: 1480px) {
+
+    #work .list .box-list .list-item a {
+        font-size: 15px;
+    }
+   
+    
+   
+}
+
+
+@media (max-width: 1280px) {
+
+    /*header*/
+    /*=================================================*/
+
+
+}
+
+@media (max-width: 992px) {
+
+    /*header*/
+    /*==========================================*/
+
+
+    /*=============================================*/
+
+
+}
+
+@media (max-width: 767px) {
+    #work .box-four li {
+        position: relative;
+        max-width: 100%;
+        width: calc(50% - 7.5px);
+        margin-bottom: 50px;
+    }
+    #work .box-four .item-text-01,   #work .box-four .item-text-02,  #work .box-four .item-text-03,  #work .box-four .item-text-04,  #work .box-four .item-text-05,  #work .box-four .item-text-06,  #work .box-four .item-text-07,  #work .box-four .item-text-08 {
+        top: 0%;
+        left: 0%;
+        font-size: 12px;
+        line-height: 14px;
+    }
+ 
+    #work .mobi {
+        display: block;
+    }
+    #work .destop {
+        display: none;
+    }
+        #work .content-main {
+        padding: 25px 0px 25px;
+    }
+    #work .text-t1 {
+        font-size: 28px;
+        line-height: 24px;
+    }
+    #work .text-t2 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    #work .content-main .box-content .box-title-page {
+        text-align: center;
+        padding: 0px 0px 30px;
+    }
+    #work .content-main .box-content .box-title-page .content-title {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #work .content-main .box-content .box-title-page .text-main {
+        margin-bottom: 20px;
+    }
+    #work .list {
+        margin-bottom: 0px;
+    }
+    #work .box-content .box-people:nth-child(odd) .box-povit .povit .text ,#work .box-content .box-people:nth-child(even) .box-povit .povit .text {
+        display: none;
+    }
+    #work .box-text .width-box {
+        padding: 0px
+    }
+    #work .box-text {
+        padding: 0px 10px 10px;
+    }
+    #work .box-text .width-box .dt-text {
+        font-size: 13px;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+    }
+    #work .box-text .width-box .dd-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #work .box-text .width-box .box-item {
+        margin-bottom: 30px;
+        padding: 15px 25px 0px 15px;
+    }
+    #work .box-text .width-box .link-page {
+        justify-content: center;
+        padding: 15px 25px 0px 15px;
+    }
+    #work .box-text .width-box .box-img {
+        margin-bottom: 0px;
+    }
+    #work .box-text .width-box .box-img .img-item {
+        width: 50% ;
+    }
+
+    #work   .title-box {
+        background: #cf1314;
+        padding: 15px 10px ;
+        align-items: center;
+        font-size: 15px;
+        color: white;
+        position: relative;
+        display: flex;
+        margin-bottom: 3px;
+        font-weight: 400;
+    }
+    #work   .title-box.open {
+        margin-bottom: 0px;
+    }
+    #work  .title-box::after {
+        position: absolute;
+        content: "";
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(45deg);
+        bottom: calc(50% - 4px);
+        right: 30px;
+        transition: 0.5s;
+    }
+    #work  .title-box.open::after{
+        transform: rotate(225deg);
+    }
+
+    #work  .title-box .number {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    #work  .box-item-main {
+        display: none;
+    }
+    #work  .box-item-main.one {
+        display: block;
+       
+    }
+    #work  .box-people:nth-child(3) .title-box {
+        margin-bottom: 0px;
+    }
+    #work  .box-people:nth-child(3) .title-box::after {
+        transform: rotate(225deg);
+    }
+    #work  .box-people:nth-child(3) .title-box.open::after {
+        transform: rotate(45deg);
+    }
+
+    #work  .box-people:nth-child(3) .title-box.open {
+        margin-bottom: 3px;
+    }
+    #work .box-text .width-box .link-page .link {
+       font-size: 11px;
+       width: 65%;
+       text-align: center;
+       margin-bottom: 15px;
+    }
+    #work .box-text .width-box .link-page .link.one {
+       margin-right: 0px;
+       padding: 5px 0px;
+    }
+
+}
+
+@media (max-width: 350px) {
+    #work .box-text .width-box .link-page .link {
+        width: 75%;
+    }
+}
