@@ -1,0 +1,476 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+#person   a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+#person   a:hover {
+    opacity: 0.6;
+}
+#person  .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#person   .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+#person  .js-fadein {
+    opacity: 0;
+}
+#person   .scroll-in {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#person  {
+    position: relative;
+}
+#person  .destop {
+    display: none;
+}
+#person  .img-width {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+#person   .content-main {
+    color: black;
+    padding: 0px 0px;
+    position: relative;
+}
+ #person   .container-main .banner-page {
+    position: relative;
+    text-align: center;
+} 
+
+#person   .container-main .banner-page .image-wrap  {  
+    margin-bottom: 5px;
+}
+#person   .container-main .banner-page .image-wrap-sub  img {
+    height: 35px;
+}
+#person  .povistion-h1 {
+    width: 100%;
+    position: absolute;
+    top: 29%;
+    z-index: 99;
+   
+}
+
+#person   .container-main .banner-page .sub-text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -10px;
+    color: black;
+}
+#person  .povistion-h1 .text-main {
+    max-width: 1080px;
+    margin: auto;
+}
+#person  .container-main .banner-page .text-main {
+    text-align: end;
+    padding-right: 20px;
+}
+
+/* content-main..............................................
+............................................................. */
+#person   .container-main {
+    position: relative;
+}
+
+/* link page .............................................
+............................................................. */
+
+#person .box-list-link {
+    justify-content: space-between;
+    max-width: 500px;
+    padding: 70px 25px 50px ;
+    margin: auto;
+}
+
+#person .box-list-link .link-item {
+    width: calc(100%/3 - 5px);
+    display: block;
+} 
+
+
+
+/* box-people .............................................
+............................................................. */
+
+#person .box-people .info-people {
+    box-shadow: 3px 3px 8px rgb(0 0 0 / 20%);
+    margin-bottom: 30px;
+}
+
+#person .box-people .box-bg {
+    position: relative;
+    z-index: 99;
+    margin-bottom: 5px;
+    padding: 30px 23px;
+} 
+#person .box-people .box-bg::before {
+    content: '';
+    background-image: url(../images/person/person_bg_01_sp.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 98%;
+    top:0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+#person .box-people.two .box-bg::before  {
+    background-image: url(../images/person/person_bg_02_sp.jpg);
+}
+#person .box-people.three .box-bg::before  {
+    background-image: url(../images/person/person_bg_03_sp.jpg);
+}
+#person .box-people.two .box-bg::before {
+    left: unset;
+    right: 0px;
+}
+
+#person  .title-item {
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 9px;
+}
+#person .box-ttl img {
+    height: 12px;
+}
+#person .dt-item {
+    font-size: 14.5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+#person .dd-item {
+    font-size: 12px;
+    line-height: 20px;
+}
+#person  .title-item::before {
+    position: absolute;
+    content: '';
+    height: 13px;
+    width: 4px;
+    top: 3px;
+    left: 0px;
+    background: #F77891;
+    background-image: url(../images/person/person_line_pc.jpg);
+}
+#person .box-people .item-content {
+    margin-bottom: 20px;
+}
+#person .box-people {
+    margin-bottom: 105px;
+}
+/* box-message .............................................
+............................................................. */
+
+#person .box-message {
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background: #FEF6E5;
+    padding: 34px 25px 20px;
+    box-shadow: 3px 3px 8px rgb(0 0 0 / 20%);
+}
+
+#person .box-message .dd-message {
+    font-size: 12px;
+    line-height: 20px;
+}
+#person .box-people .title-people {
+    padding-top: 20px;
+}
+
+
+
+@media (min-width: 767px) {
+    #person  .inner {
+        max-width: 580px;
+        margin:auto
+    }
+    #person  .destop {
+        display: block;
+    }
+    #person  .mobi {
+        display: none;
+    }
+    #person  .flex {
+        flex-direction:row
+    }
+    #person   .container-main .banner-page .image-wrap-sub  img {
+        height: 60px
+    }
+    #person .container-main .banner-page .text-main {
+        text-align: end;
+        padding-right: 55px;
+    }
+    #person  .povistion-h1 {
+        top: 36%;  
+    }
+
+    #person .box-list-link {
+        max-width: 700px;
+        padding: 70px 25px;
+    }
+    #person .box-people .info-people .text-p3 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    #person .box-people .box-bg::before {
+        background-image: url(../images/person/person_bg_01_pc.jpg);
+    }
+    
+    #person .box-people.two .box-bg::before  {
+        background-image: url(../images/person/person_bg_02_pc.jpg);
+    }
+    #person .box-people.three .box-bg::before  {
+        background-image: url(../images/person/person_bg_03_pc.jpg);
+    }
+    /* box-people .............................................
+    ............................................................. */
+    #person .box-people .title-people {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #person .box-people.two .title-people {
+        justify-content: flex-start;
+    }
+
+    #person .box-people .box-bg {
+        position: relative;
+        z-index: 99;
+        margin-bottom: 40px;
+        padding: 20px 50px;
+    }
+
+
+    #person .width-title {
+        position: relative;
+        padding-left: 0px;
+        z-index: -1;
+        width: calc(50% + 345px);
+    }
+    #person .width-title.two {
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+    #person .box-people .box-bg::before {
+        width: calc(50% + 345px);
+        height: 100%;
+    }
+    #person .box-people.two .box-bg::before {
+        left: unset;
+        right: 0px;
+    }
+    #person .box-message {
+        border-bottom-right-radius: 100px;
+        border-top-left-radius: 100px;
+        background: #FEF6E5;
+        padding: 30px 50px;
+        max-width: 690px;
+        margin: auto;
+    }
+    #person .box-ttl img {
+        height: 14px;
+    }
+}
+
+
+
+@media (min-width: 920px) {
+
+    /* box-link.............................................
+    ............................................................. */ 
+    #person  .inner {
+        max-width: 800px;
+        margin:auto
+    }
+    #person .box-list-link {
+        justify-content: space-between;
+        max-width: 850px;
+        padding: 50px 0px;
+        margin: auto;
+    }
+    #person .box-people .title-people {
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #person .container-main .banner-page .image-wrap-sub img {
+        height: auto;
+    }
+    #person .container-main .banner-page .text-main {
+        padding-right: 85px;
+    }
+
+    #person .title-item {
+        font-size: 14px;
+    }
+    #person .box-ttl img {
+        height: 16px;
+    }
+
+    #person .dd-item,#person .box-message .dd-message  {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #person .width-title {
+       width: calc(50% + 460px);
+
+    }
+
+    #person .box-people .box-bg {
+        position: relative;
+        z-index: 99;
+        margin-bottom: 40px;
+        padding: 20px 50px;
+     
+    }
+    #person .box-message {
+        max-width: 920px;
+        margin: auto;
+    }
+    #person .box-people .box-bg::before {
+        width: calc(50% + 460px);
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 1480px) {
+ 
+    #person  .inner {
+        max-width: 880px;
+        margin:auto
+    }
+    #person .container-main .banner-page .text-main {
+        padding-right: 45px;
+    }
+    #person .box-list-link {
+        max-width: 980px;
+        padding: 125px 0px 120px;
+    }
+    #person .container-main .banner-page .sub-text {
+        font-size: 26px;
+    }
+    #person .box-list-link .link-item {
+        width: calc(100%/3 - 25px);
+    }
+    
+    #person .box-list-link .link-item .name-link {
+        padding: 5px 0px 5px 15px;
+        font-size: 18px;
+    }
+    #person .info-link {
+        padding: 10px;
+        border-bottom-right-radius: 50px;
+    }
+
+    /* box-people .............................................
+    ............................................................. */
+    #person .box-people {
+        margin-bottom: 170px;
+    }
+    #person .box-people .title-people {
+        margin-bottom: 85px;
+
+    }
+    #person .box-people .box-bg {
+       padding: 40px 0px;
+       margin-bottom: 60px;
+    }
+
+    #person .title-item {
+        font-size: 20px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+    #person .dt-item {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    #person .dd-item {
+        font-size: 18px;
+       line-height: 34px;
+    }
+
+    #person .title-item::before {
+        height: 19px;
+        width: 6px;
+        top: 5px;
+    }
+
+    #person .box-message {
+        max-width: 1100px;
+    }
+
+    #person .width-title {
+        width: calc(50% + 550px);
+     }
+  
+
+     #person .box-message {
+        border-bottom-right-radius: 150px;
+        border-top-left-radius: 150px;
+        padding: 55px 50px;
+    }
+    #person .box-message .dd-message {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    #person .box-people .box-bg::before {
+        width: calc(50% + 550px);
+        height: 100%;
+    }
+    #person .box-ttl img {
+        height: auto
+    }
+
+}
+
+
+
+
+
+
+
+

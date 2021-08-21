@@ -1,0 +1,557 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
+#people {
+    min-width: 1024px;
+}
+
+#people .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#people .js-fadein {
+    opacity: 0;
+}
+
+#people .scroll-in {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#people  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#people  .mobi {
+    display: none;
+}
+
+#people .img-width {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+#people .page-title{
+    position: relative;
+    z-index: 1;
+}
+
+#people .page-title .heading-page{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    width: 525px;
+    height: 260px;
+    border: 4px solid #ffffff;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#people .page-title .heading-page .sub-heading01{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#people .page-title .heading-page .sub-heading02{
+    display: block;
+    font-size: 48px;
+}
+#people .page-title .image-banner-title .pp-image{
+    width: 100%;
+}
+
+/*boxPeople-main*/
+/*==========================================*/
+
+
+#people .boxPeople-main{
+    padding: 135px 0px 90px;
+}
+#people .boxPeople-main .link-box{
+    padding: 0px 50px;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: auto;
+    padding-bottom: 130px;
+}
+#people .boxPeople-main .link-box .col-boxPeople{
+    width: calc(100%/3 - 35px);
+    text-decoration: none;
+}
+#people .boxPeople-main .link-box .col-boxPeople:hover {
+    opacity: 0.6;
+}
+#people .boxPeople-main .link-box .col-boxPeople .box-info {
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    background: #0958ac;
+    padding: 20px 0px 5px;
+}
+
+#people .boxPeople-main .link-box .povistion {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#people .boxPeople-main .link-box .name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#people .boxPeople-main .link-box .name-es {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+
+/*boxPeople-main*/
+/*==========================================*/
+#people .inner {
+    max-width: 980px;
+    margin: auto;
+}
+
+#people .box-title-people {
+    position: relative;
+}
+
+#people .box-title-people  .box-povistion {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+#people   .box-people .box-title-people  .box-povistion  .inner {
+    display: flex;
+    justify-content: flex-end;  
+   
+}
+#people .box-people:nth-child(3) .box-title-people  .box-povistion  .inner {
+    justify-content: flex-start  
+}
+#people .box-title-people .box-info {
+    background: #0958ac;
+    color: white;
+    padding: 8% 10% 5% 5%;
+    max-width: 400px;
+    font-weight: 600;
+}
+#people .box-title-people .box-info .text-01 {
+    font-size: 18px;
+}
+#people .box-title-people .box-info .text-02 {
+    font-size: 24px;
+}
+#people .box-title-people .box-info .es {
+    font-size: 14px;
+    margin-left: 10px;
+}
+#people .box-title-people .box-info .text-03 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#people .box-title-people .box-info .text-content {
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 400;
+}
+#people .main-box {
+    padding: 100px 60px 50px;
+}
+#people .main-box .item-people {
+    display: flex;
+    justify-content:center;
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+}
+#people .main-box .item-people .box-width {
+    width:50%;
+    justify-content: flex-end;
+    display: flex;
+}
+#people .main-box .item-people .box-width:nth-child(2) {
+    justify-content: flex-start
+}
+
+#people .main-box .item-people .box-text-item {
+    margin-bottom: 30px;
+}
+#people .main-box .item-people .box-text {
+    max-width: 500px;
+}
+#people .main-box .item-people .box-text .item-title {
+    font-size: 18px;
+    color: #006699;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+#people .main-box .item-people .box-text .item-title::after {
+    content: '';
+    position: absolute;
+    background: #006699;
+    height: 20px;
+    width: 4px;
+    top: 4px;
+    left: 0px;
+}
+
+#people .main-box .item-people .box-text .dt-item {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#people .main-box .item-people .box-text .dd-item {
+    font-size: 14px;
+    line-height: 24px;
+   
+}
+
+#people .main-box .item-people .box-img {
+    max-width: 710px;
+    padding-left: 90px;
+    position: relative;
+    z-index: -99
+}
+#people .main-box .item-people .box-img::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 45%;
+    right: -50px;
+    bottom: -60px;
+    background: #0958ac;
+    z-index: -1; 
+}
+#people .main-box .item-people:nth-child(2) {
+    margin-bottom: 100px;
+}
+#people .main-box .item-people:nth-child(2) .box-width:nth-child(1) {
+  order: 2;
+  justify-content: flex-start
+}
+
+#people .main-box .item-people:nth-child(2) .box-width:nth-child(2) {
+    order: 1;
+    justify-content: flex-end
+}
+
+#people .main-box .item-people:nth-child(2) .box-img {
+    max-width: 710px;
+    padding-left: 0px;
+    padding-right: 90px;
+}
+
+#people .main-box .item-people:nth-child(2) .box-img::after {
+    left: -50px;
+}
+
+#people .main-people .box-people .main-box .box-message {
+    max-width: 980px;
+    margin: auto;
+    position: relative;
+    background-image: url(../images/people/people_p1_pic_03_pc.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 90px 100px 60px 80px;
+    color: white;
+}
+#people .main-people  .box-people:nth-child(2) .main-box .box-message {
+    background-image: url(../images/people/people_p2_pic_03_pc.jpg);
+}
+#people .main-people .box-people:nth-child(3) .main-box .box-message {
+    background-image: url(../images/people/people_p3_pic_03_pc.jpg);
+}
+#people .main-box .box-message .icon-message {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+}
+
+#people .main-box .box-message .title-message {
+    font-size: 30px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+#people .main-box .box-message .text-message {
+    font-size: 14px;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1440px) {
+
+    /*page title*/
+    /*===========================================*/
+    #people .boxPeople-main {
+        padding: 80px 0px 60px;
+    }
+    #people .page-title .heading-page{
+        padding: 0px 15px;
+    }
+    #people .page-title .heading-page {
+        width: 360px;
+        height: 180px;
+        border: 3px solid #ffffff;
+    }
+    #people .page-title .heading-page .sub-heading02 {
+        font-size: 34px;
+    }
+
+    #people .page-title .heading-page .sub-heading01{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #people .main-box .item-people .box-text .item-title {
+        font-size: 16px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    #people .main-box .item-people .box-text .dt-item {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    #people .main-box .item-people .box-text .dd-item {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #people .main-box .item-people .box-img {
+        padding-left: 15px;
+        position: relative;
+    }
+    #people .main-box .item-people:nth-child(2) .box-img {
+        padding-right: 15px;
+    }
+    #people .box-title-people .box-info {
+  
+        padding: 15px;
+        max-width: 310px;
+ 
+    }
+    #people .box-title-people .box-info .text-content {
+        font-size: 12px;
+        line-height: 20px;
+       
+    }
+    #people .box-title-people .box-info .text-01 {
+        font-size: 16px;
+    }
+    #people .box-title-people .box-info .text-02 {
+        font-size: 20px;
+    }
+    #people .main-box .box-message {
+        max-width: 780px;
+        padding: 60px 75px 40px 50px;
+    }
+    #people .main-box .box-message .title-message {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    #people .main-box .box-message .text-message {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    #people .main-box .item-people .box-img::after {
+        right: -35px;
+        bottom: -40px;
+    }
+    #people .main-box .item-people {
+        padding-bottom: 40px;
+    }
+    #people .main-box .item-people:nth-child(2) .box-img::after {
+        left: -35px;
+    }
+    #people .box-people .box-title-people .box-povistion .inner {
+       max-width: 650px;
+    }
+
+}
+
+
+
+
+@media (max-width: 920px) {
+
+
+}
+
+@media (max-width: 767px) {
+    #people {
+        min-width: 320px;
+        overflow: hidden;
+    }
+    
+    #people  .mobi {
+        display: block;
+    }
+    #people  .destop {
+        display: none;
+    }
+    /*page title*/
+    /*==============================================*/
+
+    #people .page-title{
+        margin-bottom: 10px;
+    }
+    #people .page-title .heading-page .sub-heading01 img{
+       height: 12px;
+    }
+
+    #people .page-title .heading-page .sub-heading02 img{
+        height: 15px;
+        padding-left: 0px;
+    }
+    #people .page-title .heading-page .sub-heading01 {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    #people .page-title .heading-page .sub-heading02 {
+        font-size: 24px;
+    }
+    /*boxPeople main*/
+    /*===================================*/
+    #people .main-box .item-people {
+        padding-bottom: 0px;
+    }
+    #people .main-box .item-people:nth-child(2) {
+        margin-bottom: 70px;
+    }
+    #people .title-toogle {
+        background: #1c6aba;
+        padding: 15px 20px;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 12px;
+        align-items: center;
+    }
+    #people .title-toogle img {
+        height: 10px;
+    }
+    #people .box-toogle {
+        padding: 5px 15px;  
+    }
+    #people .name-es {
+        font-size: 10px;
+        margin-left: -30px;
+    }
+    #people .box-title-people .box-povistion {
+        position: relative;
+        top: 0;
+        width: 100%;
+        transform: translateY(0%);
+    }
+    #people .boxPeople-main {
+        padding: 0px 0px 20px;
+    }
+    #people .page-title .heading-page {
+        border: none
+    }
+    #people .box-title-people .box-info {
+        padding: 15px;
+        max-width: 100%;
+    }
+    #people .main-box {
+        padding: 30px 0px;
+    }
+    #people .main-box .item-people .box-width {
+        width: 100%;
+    }
+    #people .main-box .item-people .box-img::after {
+        right: -15px;
+        bottom: -20px;
+    }
+    #people .main-box .item-people:nth-child(2) .box-width:nth-child(1) {
+        order: 1;
+       
+    }
+    #people .main-box .item-people:nth-child(2) .box-width:nth-child(2) {
+        order: 2;
+        justify-content: flex-end;
+    }
+    #people .main-people .box-people .main-box .box-message {
+        padding: 20px;
+    }
+
+    #people .main-box .box-message .title-message {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    #people .main-box .box-message .icon-message img {
+        height: 35px;
+    }
+    #people .main-box .box-message .icon-message {
+        top: -25px;
+     
+    }
+    #people .main-box .item-people .box-img {
+        padding-left: 0px;
+       
+    }
+    #people .main-box .item-people .box-text {
+        max-width: 100%;
+    }
+    #people .main-box .item-people .box-text .dt-item {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

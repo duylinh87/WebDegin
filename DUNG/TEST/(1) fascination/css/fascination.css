@@ -1,0 +1,441 @@
+
+@font-face {
+    font-family: "Deja Vu Sans Mono";
+    src: url("./fonts/DejaVu-Sans-Mono_13348.ttf");
+}
+
+@font-face {
+    font-family: "Century Gothic";;
+    src: url("./fonts/GOTHIC.TTF");
+}
+
+@font-face {
+    font-family: "Koz Go Pro";
+    src: url("./fonts/KozGoPro-Regular.otf");
+}
+
+#fascination {
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#fascination * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#fascination img {
+    line-height: 1;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+#fascination p {
+    text-align: left;
+}
+
+/*Header*/
+
+#header .content-header {
+    padding: 19px 37px 17px 34px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#header .content-header .logo{
+    width: 50%;
+}
+
+#header .content-header .logo .title-logo{
+    max-width: 400px;
+    height: 70px;
+    background-color: #999999;
+    line-height: 70px;
+    text-align: center;
+}
+
+#header .content-header .logo .link-home{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Meiryo;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+	line-height: 76px;
+}
+
+#header .content-header  .nav-menu{
+    width: 50%;
+}
+
+#header .content-header .menu-bar-toggle{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+#header .content-header .menu-bar-toggle:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+    transform: translateY(-50%);
+}
+
+#header .content-header .menu-bar-toggle .icon-bar-toggle:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+}
+
+#header .content-header .menu-bar-toggle .icon-bar-toggle:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+}
+
+/*Breadcrumb*/
+
+#fascination .breadcrumb{
+    max-width: 1470px;
+    padding:5px 15px 10px;
+    margin: auto;
+}
+
+#fascination  .breadcrumb .breadcrumb-info, #fascination .breadcrumb .sub-breadcrumb{
+    color: #999999;
+    font-family: "MS - P Gothic";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 12px;
+}
+
+#fascination  .breadcrumb .breadcrumb-info:before{
+    content: "";
+    position: absolute;
+    border: solid #999;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    right: 2px;
+    bottom: 5px;
+}
+
+#fascination  .banner-home .content{
+    position: relative;
+}
+
+#fascination .banner-home .content .img-mobile{
+    display: none;
+}
+
+#fascination .banner-home .title-banner{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#fascination .banner-home .title-banner .heading-banner{
+    font-family: "Deja Vu Sans Mono";
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    color: #fff;
+    text-align: center;
+}
+
+#fascination .banner-home .title-banner .heading-banner .sub-heading{
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2.4px;
+	font-family: "Koz Go Pro";
+}
+
+#fascination .banner-home .content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+/*Container*/
+
+#fascination #main-content{
+    background-color: #f7f9f8;
+    padding-bottom: 50px;
+}
+
+#fascination #main-content .container{
+    max-width: 1220px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#fascination .heading-blog{
+    padding-top: 95px;
+    margin-bottom: 93px;
+}
+
+#fascination .heading-blog .title{
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+	padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+#fascination .heading-blog .title .t-1{
+    color: #e20002;
+    font-size: 58px;
+    font-weight: 700;
+}
+
+#fascination .heading-blog .title .t-2{
+    font-size: 34px;
+    font-weight: 700;
+    color: #e20002;
+}
+
+#fascination .heading-blog .text-content{
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 856px;
+    margin: auto;
+}
+
+/*
+.content-blog{
+    overflow: hidden;
+}
+*/
+
+#fascination .content-blog .item-blog{
+    box-shadow: 2px 1px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#fascination .content-blog .item-blog:nth-child(2n) {
+    background-color: #e20002;
+}
+
+#fascination .content-blog .item-blog:nth-child(2n) .item-heading-blog{
+    padding-left: 80px;
+}
+
+#fascination .content-blog .item-blog:nth-child(2n) .item-heading-blog .number,
+#fascination .content-blog .item-blog:nth-child(2n) .item-heading-blog .text-title,
+#fascination .content-blog .item-blog:nth-child(2n) .item-heading-blog .text{
+    color: #fff;
+}
+
+#fascination .content-blog .item-blog .item-heading-blog{
+    width: 57.6%;
+    padding-left: 49px;
+	padding-bottom: 20px;
+	padding-right: 30px;
+}
+
+#fascination .content-blog .item-blog .item-heading-blog .number{
+    color: #e20002;
+    font-family: "Century Gothic";
+    font-size: 72px;
+    font-weight: 400;
+    padding-top: 5px;
+    display: block;
+}
+
+#fascination .content-blog .item-blog .item-heading-blog .text-title{
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#fascination .content-blog .item-blog .item-heading-blog .text{
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+	max-width: 520px;
+}
+
+#fascination .content-blog .item-blog .item-img-blog{
+    width: 42.4%;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+#fascination .content-blog .item-img-blog .img-mobile{
+	display: none;
+}
+
+#footer .img-banner-footer{
+	width: 100%;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    /* ---------- スマホ以下 ---------- */
+	
+	body{
+		min-width: 640px;
+	}
+
+    #header .content-header{
+        padding: 10px 20px;
+    }
+
+    #header .content-header .logo .title-logo{
+        max-width: 260px;
+    }
+
+    #fascination .breadcrumb{
+        display: none;
+    }
+
+    #fascination .banner-home .content .img-mobile{
+        display: block;
+    }
+
+    #fascination .banner-home .content .img-desktop{
+        display: none;
+    }
+
+    #fascination .banner-home .title-banner{
+        top: 57%;
+    }
+
+    #fascination #header .content-header .menu-bar-toggle{
+		width: 54px;
+	}
+
+    #fascination .banner-home .title-banner .heading-banner{
+        line-height: 48px;
+    }
+
+    #fascination .banner-home .title-banner .heading-banner .sub-heading{
+        width: 100%;
+        display: block;
+    }
+
+    #fascination .heading-blog{
+        padding-top: 20px;
+        margin-bottom: 64px;
+    }
+
+    #fascination .heading-blog .title{
+        margin-bottom: 18px;
+    }
+
+    #fascination .heading-blog .text-content{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    #fascination .content-blog .item-blog{
+        margin-bottom: 30px;
+    }
+
+    #fascination .content-blog .item-blog:first-child{
+        margin-bottom: 38px;
+    }
+
+    #fascination .content-blog .item-blog .item-heading-blog{
+        width: 100%;
+        order: 1;
+        padding: 0px 26px 40px 20px;
+    }
+
+    #fascination .content-blog .item-blog:nth-child(2n) .item-heading-blog{
+        padding: 0px 26px 39px 20px;
+    }
+
+    #fascination .content-blog .item-blog .item-heading-blog  .number{
+        padding-top: 15px;
+    }
+
+    #fascination .content-blog .item-blog .item-heading-blog .text-title{
+        margin-bottom: 39px;
+        font-size: 40px;
+        font-weight: 400;
+		line-height: 38px;
+    }
+
+    #fascination .content-blog .item-blog .item-heading-blog .text{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        max-width: 100%;
+    }
+
+    #fascination .content-blog .item-blog .item-img-blog{
+        width: 100%;
+        order: 2;
+    }
+
+    #fascination .content-blog .item-img-blog .img-mobile{
+		display: block;
+	}
+
+    #fascination .content-blog .item-img-blog .img-desktop{
+		display: none;
+	}
+
+    #fascination #main-content{
+        padding-bottom: 112px;
+    }
+
+    footer{
+        display: none;
+    }
+
+}
+
+@media print, screen and (min-width: 768px) {
+    /* ---------- タブレット・PC以上 ---------- */
+    #fascination {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,572 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+.js-fadein {
+    opacity: 0;
+}
+
+.scroll-in {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#office {
+    position: relative;
+    /*overflow: hidden;*/
+    background: #fff;
+}
+#header .width-d {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/*header*/
+/*=======================================================*/
+
+/*main banner*/
+/*====================================================*/
+#office .mobi {
+   display: none;
+}
+#office  .content-main {
+    position: relative;
+    padding: 90px 0px 0px;
+}
+
+#office .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+#office .img-width {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   vertical-align: bottom;
+}
+#office .banner-page {
+    position: relative;
+}
+#office  .content-main .icon-bg {
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    width: 17.5%;
+}
+#office  .content-main .box-content {
+    max-width: 1100px;
+    margin: auto;
+}
+#office  .banner-page .image_wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#office  .text-main {
+    position: absolute;
+    top: 24%;
+    left: 0;
+    font-weight: 600;
+    width: 100%;
+}
+#office  .text-main h1 {
+    max-width: 1100px;
+    margin: auto;
+}
+#office  .text-main .text-t1 {
+    margin-bottom: 10px; 
+}
+#office  .text-main .text-t2 {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 15px;
+}
+
+#office .content-main .box-content .title-page {
+    max-width: 630px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 55px;
+}
+
+/*list*/
+/*====================================================*/
+
+#office  .list {
+    margin-bottom: 65px;
+}
+#office  .list .box-list {
+    justify-content: space-between;
+}
+#office  .list .box-list .list-item {
+    width: calc(100%/5 - 15px);
+    background: #9bf1e2;
+    transition: 0.2s;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#office  .list .box-list .list-item.none {
+    background: white;
+}
+#office  .list .box-list .list-item:hover {
+   opacity: 0.6;
+}
+#office  .list .box-list .list-item a {
+    color: black;
+    font-size: 26px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 500;   
+}
+
+#office  .title-sub {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#office  .box-main .title-sub {
+   color: #004a95;
+   margin-bottom: 5px;
+}
+#office  .box-two .title-sub {
+    color: #009eaa;
+    margin-bottom: 45px;
+}
+#office .box-item {
+    position: relative;
+}
+
+
+/*p1*/
+/*=======================================================*/
+#office  .box-main .title-one {
+    color: #004a95;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}  
+#office  .box-main .img {
+    width: 100%;
+    position: relative;
+    padding-bottom: 45.5%;
+}
+
+#office  .box-main .img iframe {
+    border: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+#office  .box-main .text-box {
+   position: absolute;
+   left:45px;
+   bottom: 20px;
+   width: 36.9%;
+   background: rgba(255, 255, 255, 0.8);
+   padding: 3% 3% 10% 3%;
+   font-size: 16px;
+   line-height: 30px;
+}
+#office  .box-main .dt-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}  
+#office  .box-main .dd-box {
+    font-size: 16px;
+    line-height: 26px;
+} 
+#office  .box-main .box-item {
+    position: relative;
+    z-index: 99;
+    margin-bottom: 170px;
+}
+#office  .box-main .box-item .btn-box {
+    position: absolute;
+    bottom: 30px;
+    right:30px;
+    display: block;
+    width: 200px;
+    padding: 10px 0px 5px 40px ;
+    background-color: white;
+}
+#office  .box-main .box-item .btn-box:hover {
+    opacity: 0.6;
+}      
+#office  .box-main .box-item  .icon-02 {
+    position: absolute;
+    bottom: -80px;
+    right: -245px;
+    z-index: -1; 
+}
+
+#office .img-text {
+    position: relative;
+}
+
+#office .img-text::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/office/office_icon_arrow_pc.png);
+    width: 6px;
+    height: 13px;
+    right: 25px;
+    top: 5px;
+}
+
+#office  .box-main .box-item .name {
+  width: 70px;
+}
+#office  .box-main .box-item .number {
+    width: calc(100% - 70px);
+ }
+
+/* #office .content-main .box-content {
+    max-width: 1100px;
+    margin: auto;
+} */
+
+/*people*/
+/*====================================================*/
+
+
+/*footer*/
+/*===================================================*/
+@media (max-width: 1480px) {
+    #office .list .box-list .list-item a {
+        font-size: 15px;
+    }
+    #office .content-main {
+        padding: 100px 20px 0px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+
+    /*header*/
+    /*=================================================*/
+    #office .content-main .box-content,#office  .text-main h1 {
+        max-width: 650px;
+        margin: auto;
+    }
+    #office .list .box-list .list-item a {
+        font-size: 13px;
+    }
+    #office .box-main .box-item .icon-02 {
+        bottom: -40px;
+        right: -112px;
+        width: 45%;
+    }
+    #office .content-main .box-content .title-page {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 35px;
+        padding-left: 115px;
+    }
+    #office .content-main {
+        padding: 30px 20px 0px;
+    }
+
+    #office .box-main .text-box {
+        font-size: 12px;
+        line-height: 24px;
+        padding: 2% 3% 8% 3%;
+        width: 42%;
+        left: 25px;
+    }
+    #office .box-main .dt-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    #office .text-main .text-t1 img {
+        height: 35px;
+    }
+    #office .img-text img {
+        height: 13px;
+    }
+    #office .box-main .box-item .btn-box {
+        bottom: 15px;
+        right: 15px;
+        width: 165px;
+        padding: 5px 0px 2px 20px;
+    }
+    #office .box-main .box-item {
+        margin-bottom: 120px;
+    }
+    #office .list .box-list .list-item {
+        width: calc(100%/5 - 10px);
+        margin-bottom: 15px
+    }
+    #office .text-main .text-t2 {
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
+    }
+    #office .text-main .text-t1 {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    /*header*/
+    /*==========================================*/
+
+
+    /*=============================================*/
+    #office .content-main {
+        padding: 20px 20px 50px;
+    }
+    #office  .text-main h1,#office .content-main .box-content {
+        max-width: 545px;
+      
+    }
+    
+    #office .list .box-list .list-item a {
+        font-size: 10px;
+        padding: 5px 0px;
+    }
+    #office .people .dd-info {
+        font-size: 8px;
+        line-height: 12px;
+    }
+    #office .people .name-01 {
+        font-size: 12px;
+    }
+    #office .people .name-02 {
+        font-size: 10px;
+    }
+    #office .people .box-content {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    #office .box-main .text-box {
+        width: 45%;
+        font-size: 10px;
+    }
+    #office .box-main .box-item .btn-box {
+        bottom: 10px;
+        right: 10px;
+        width: 165px;
+        padding: 5px 0px 2px 20px;
+    }
+
+    #office .box-main .box-item .icon-02 {
+        bottom: -50px;
+        right: -125px;
+        width: 50%;
+    }
+    #office .box-main .box-item {
+        margin-bottom: 110px;
+    }
+    #office .list .box-list {
+        justify-content: space-between;
+        padding: 0px ;
+    }
+    #office .content-main .box-content .title-page {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        padding-left: 115px;
+    }
+    /*footer*/
+    /*=====================================================*/
+    #office .box-four li {
+        position: relative;
+        max-width: 100%;
+        width: calc(50% - 5px);
+
+    }
+    #office .box-four .item-text-01,   #office .box-four .item-text-02,  #office .box-four .item-text-03,  #office .box-four .item-text-04,  #office .box-four .item-text-05,  #office .box-four .item-text-06,  #office .box-four .item-text-07,  #office .box-four .item-text-08 {
+        top: 0%;
+        left: 0%;
+    }
+    #office .box-four .box-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #office .list {
+        margin-bottom: 50px;
+    }
+    #office .list .box-list .list-item {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #office .mobi {
+        display: block;
+    }
+    #office .destop {
+        display: none;
+    }
+    #office .text-main .text-t1 img {
+        height: 35px;
+    }
+      
+    #office .text-main .image_wrap {
+        margin-bottom:10px;
+    }
+    #office .banner-page .image_wrap img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    #office .text-main .text-t2 {
+        font-size: 16px;
+        padding-left: 11px;
+        margin-top: -26px;
+    }
+    #office .text-main .text-t1 {
+        margin-bottom: 15px;
+    }
+
+    #office .list {
+        margin-top: 30px;
+        padding-right: 15px;
+        padding-left:15px;
+        margin-bottom: 0px;
+    }
+    
+    #office .list .box-list .list-item {
+        width: calc(100%/3 - 5px);
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    /*people*/
+    /*=====================================================*/
+    #office .content-main .icon-bg {
+      display: none;
+    }
+    #office .text-main {
+        top: 10%;
+        left: 1%;
+    
+    } 
+    #office .content-main .box-content .title-page {
+        padding-left: 0px;
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 25px;
+        text-align: justify;
+    }   
+    #office .list .box-list {
+        padding: 0px ;
+    }
+
+    /*main-banner*/
+    /*============================================*/
+    
+    #office  .content-main {
+      padding: 30px 15px ;
+    }
+    #office .list .box-list .list-item a {
+        padding: 6px 0px;
+    }
+
+    #office .box-main .text-box {
+        position: relative;
+        left: 0px;
+        bottom: 00px;
+        width: 100%;
+        background: white;
+        padding: 25px 0px 15px 25px ;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    #office .box-main .dt-title {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    #office .box-main .dd-info {
+        
+        margin-bottom: 15px;
+    }
+    #office .box-main .box-item .name {
+        width: 30px;
+    }
+    #office .box-main .box-item {
+        margin-bottom: 80px;
+    }
+    #office .box-main .box-item .icon-02 {
+        bottom: -40px;
+        right: -20px;
+        width: 65%;
+    }
+    #office .img-text img {
+        height: 13px;
+    }
+    #office .box-main .box-item .btn-box {
+        bottom: 20px;
+        right: 10px;
+        width: 100px;
+        padding: 0px;
+    }
+
+    #office .img-text::after {
+        background-image: url(../images/office/office_icon_arrow_sp.png);
+        width: 6px;
+        height: 13px;
+        right: 0px;
+        top: 1px;
+        transform: scale(0.7);
+    }
+    
+}
+
+
+@media (min-width: 1921px) {
+    #office .text-main h1 ,#office .content-main .box-content{
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+
+@media (min-width: 2100px) {
+    #office .text-main h1 ,#office .content-main .box-content{
+        max-width: 1350px;
+        margin: auto;
+    }
+}

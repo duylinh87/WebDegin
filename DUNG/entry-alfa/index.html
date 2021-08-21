@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=0.5">
+    <title>スタッフ登録</title>
+    <meta name="description"  content="" />
+    <meta name="keywords"  content="" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+<main id="main_wrap"><!--Main-->
+
+    <div id="entry" class="template-entry"><!-- entry page -->
+        <div class="type-page"><!-- type page -->
+
+            <div class="main-banner">
+                <div class="inner">
+                    <p class="image_wrap">
+                        <img class="main-img switch-img retina-img" data-img="./images/entry/entry_form_mainimg_sp.png" src="./images/entry/entry_form_mainimg_pc.png" alt="">
+                    </p>
+                    <h1 class="heading">
+                        <span class="t1">スタッフ登録</span>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="entry-block">
+                <h2 class="heading animatedFadeInUp animated"><span class="t1">ENTRY FORM</span></h2>
+
+                <div class="step-entry">
+                    <div class="inner">
+                        <ul class="boxSetup animatedFadeInUp animated">
+                            <li class="itemBoxSetup active">
+                                <dl>
+                                    <dt class="step-number">STEP 1</dt>
+                                    <dd class="text-inner">必要項目の入力</dd>
+                                </dl>
+                            </li>
+                            <li class="itemBoxSetup">
+                                <dl>
+                                    <dt class="step-number">STEP 2</dt>
+                                    <dd class="text-inner">必要項目の確認</dd>
+                                </dl>
+                            </li>
+                            <li class="itemBoxSetup">
+                                <dl>
+                                    <dt class="step-number">STEP 3</dt>
+                                    <dd class="text-inner">登録完了</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="entry-block01" class="entry-form-content">
+                    <form id="basicInfo-form" action="" method="">
+                        <div class="basic-info">
+                            <h3 class="title animatedFadeInUp animated"><span class="t1">基本情報</span></h3>
+                            <ul class="contentBox animatedFadeInUp animated">
+                                <li class="field_contains animatedFadeInUp animated item-1">
+                                    <div class="title_container">
+                                        <p class="field_title">お名前<span class="textRequired">必須</span></p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="field_input2 item1">
+                                            <label class="label-form">姓</label>
+                                            <input type="text" class="inputText" required>
+                                        </div>
+                                        <div class="field_input2 item2">
+                                            <label class="label-form">名</label>
+                                            <input type="text" class="inputText" required>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated item-2">
+                                    <div class="title_container">
+                                        <p class="field_title">お名前（カナ）<span class="textRequired">必須</span></p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="field_input2 item1">
+                                            <label class="label-form">セイ</label>
+                                            <input type="text" class="inputText" required>
+                                        </div>
+
+                                        <div class="field_input2 item2">
+                                            <label class="label-form">メイ</label>
+                                            <input type="text" class="inputText" required>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated item-3">
+                                    <div class="title_container">
+                                        <p class="field_title">生年月日<span class="textRequired">必須</span></p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="field-item-3 item1">
+                                            <div class="form-select">
+                                                <select class="form-control-select" id="form-year">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                            <label class="label-form">年</label>
+                                        </div>
+                                        <div class="field-item-3 item2">
+                                            <div class="form-select">
+                                                <select class="form-control-select" id="form-month">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                            <label class="label-form">月</label>
+                                        </div>
+                                        <div class="field-item-3 item3">
+                                            <div class="form-select">
+                                                <select class="form-control-select" id="form-day">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                            <label class="label-form">日</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated item-4 form-check">
+                                    <div class="title_container">
+                                        <p class="field_title">性別<span class="textRequired">必須</span></p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="field-radio item">
+                                            <label class="label-form">男
+                                                <input type="radio" value="option1" name="gender" class="checkBox" checked>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="field-radio item">
+                                            <label class="label-form">女
+                                                <input type="radio" value="option2" name="gender" class="checkBox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated item-5">
+                                    <div class="title_container">
+                                        <p class="field_title">住所</p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="group-item group-item01">
+                                            <label class="label-form">郵便番号</label>
+                                            <input type="text" class="inputText" placeholder="例：1234567">
+                                            <span class="information-link">郵便番号から住所を検索</span>
+                                        </div>
+                                        <div class="group-item group-item02">
+                                            <label class="label-form">都道府県</label>
+                                            <div class="group-itemRight">
+                                                <div class="form-select">
+                                                    <select class="form-control-select">
+                                                        <option>選択してください</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="group-item group-item03">
+                                            <label class="label-form">市町村</label>
+                                            <div class="group-itemRight">
+                                                <div class="form-select">
+                                                    <select class="form-control-select">
+                                                        <option>選択してください</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="group-item  group-item04 group-item-input">
+                                            <label class="label-form">以下の住所</label>
+                                            <div class="group-itemRight">
+                                                <input type="text" class="inputText" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated item-6 item-phone">
+                                    <div class="title_container">
+                                        <p class="field_title">電話番号<span class="textRequired">必須</span></p>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="text" class="inputText" placeholder="例：09012345678" required>
+                                        <label class="label-form">（携帯電話可）</label>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated item-7 item-mail">
+                                    <div class="title_container">
+                                        <p class="field_title">メールアドレス</p>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="text" class="inputText" placeholder="例：xxx@xx.ne.jp" required>
+                                        <label class="label-form">（携帯電話可）</label>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="desired-conditions">
+                                <div class="inner">
+                                    <h3 class="title animatedFadeInUp animated"><span class="t1">希望条件</span></h3>
+                                    <ul class="list-desired-conditions">
+                                        <li class="field_contains animatedFadeInUp animated item01 item-mail">
+                                            <div class="title_container">
+                                                <p class="field_title">希望勤務地<span class="textRequired">必須</span></p>
+                                            </div>
+                                            <div class="input_container">
+                                                <div class="list-checkbox">
+                                                    <label class="label-form">福岡市内
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">北九州
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">その他福岡県
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">佐賀県
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">大分県
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-checkbox">
+                                                    <label class="label-form">長崎県
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">熊本県
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">宮崎県
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">その他
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="field_contains animatedFadeInUp animated item02 item-mail">
+                                            <div class="title_container">
+                                                <p class="field_title">希望職種<br class="pc_br"/>（複数選択可）<span class="textRequired">必須</span></p>
+                                            </div>
+                                            <div class="input_container">
+                                                <div class="list-checkbox">
+                                                    <label class="label-form">オフィス・事務系
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">営業・販売・サービス系
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">IT系
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-checkbox">
+                                                    <label class="label-form">製造・作業系
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">物流系
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="label-form">その他
+                                                        <input type="checkbox" class="inputText" required>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="field_contains animatedFadeInUp animated item03">
+                                            <div class="title_container">
+                                                <p class="field_title">その他希望条件等</p>
+                                            </div>
+                                            <div class="input_container">
+                                                <textarea class="box-textarea qualifications" maxlength="1500" placeholder="ご希望・ご質問等ございましたらご入力ください。"></textarea>
+                                                <p class="max-length">（最大1,500文字まで）</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="formSubmit">
+                                <div class="inner">
+                                    <div class="boxRecaptcha animatedFadeInUp animated">
+                                        <div class="item-boxRecaptcha">
+                                            <label class="label-form">個人情報の取り扱いに同意する
+                                                <input type="checkbox" class="checkbox-capcha" required>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <span class="infor-text">個人情報の取り扱いについて</span>
+                                    </div>
+                                    <div class="groupSubmit animatedFadeInUp animated">
+                                        <div class="item-submit-left">
+                                            <input type="submit" name="returnProfile" value="もどる" class="returnProfile">
+                                        </div>
+                                        <div class="item-submit-right">
+                                            <input type="submit" name="submitProfile" value="内容を確認する" class="submitProfile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div id="entry-block02" class="entry-form-content">
+                    <form id="skillsInfo-form" action="" method="">
+                        <div class="qualifications-skills">
+                            <h3 class="title animatedFadeInUp animated"><span class="t1">保有資格・スキル<img class="icon-drop" src="./images/entry/entry_form_ico_drop.png" alt=""></span></h3>
+                            <ul class="contentBox animatedFadeInUp animated">
+                                <li class="field_contains animatedFadeInUp animated item-level">
+                                    <div class="title_container">
+                                        <p class="field_title">最終学歴</p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="group-item">
+                                            <label class="label-form">学校区分</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item">
+                                            <label class="label-form">卒業年度</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item">
+                                            <label class="label-form">状態</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item item-full">
+                                            <label class="label-form">学校名</label>
+                                            <div class="group-itemInput">
+                                                <input type="text" class="inputText"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="group-item item-full">
+                                            <label class="label-form">学部/学科名</label>
+                                            <div class="group-itemInput">
+                                                <input type="text" class="inputText"
+                                                       required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated item-pc-skills">
+                                    <div class="title_container">
+                                        <p class="field_title">PCスキル</p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="group-item word">
+                                            <label class="label-form">Word</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item excel">
+                                            <label class="label-form">Excel</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item access">
+                                            <label class="label-form">Access</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item PowerPoint">
+                                            <label class="label-form">PowerPoint</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated language-skills">
+                                    <div class="title_container">
+                                        <p class="field_title">語学スキル</p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="group-item">
+                                            <label class="label-form">英語</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item">
+                                            <label class="label-form">中国語</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item">
+                                            <label class="label-form">韓国語</label>
+                                            <div class="form-select">
+                                                <select class="form-control-select">
+                                                    <option>選択してください</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="group-item item-full">
+                                            <label class="label-form">その他言語</label>
+                                            <div class="group-itemInput">
+                                                <input type="text" class="inputText" placeholder="例）フランス語　日常会話程度" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated">
+                                    <div class="title_container">
+                                        <p class="field_title">その他技術や資格など</p>
+                                    </div>
+                                    <div class="input_container">
+                                        <textarea class="box-textarea qualifications" maxlength="1500" placeholder="例）普通自動車運転免許、TOEIC 700点"></textarea>
+                                        <p class="max-length">（最大1,500文字まで）</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="work-experience">
+                            <h3 class="title animatedFadeInUp animated"><p class="t1">職務経験<span><img class="icon-up" src="./images/entry/entry_form_ico_up.png" alt=""><img class="icon-drop" src="./images/entry/entry_form_ico_drop.png" alt=""></span></p></h3>
+                            <ul class="contentBox animatedFadeInUp animated">
+                                <li class="field_contains animatedFadeInUp animated item-management-experience">
+                                    <div class="title_container">
+                                        <p class="field_title">職務経験の有無</p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="field-radio item">
+                                            <label class="label-form">あり
+                                                <input type="radio" value="option1" name="checkTrue-or-false" class="checkBox" checked>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="field-radio item">
+                                            <label class="label-form">なし
+                                                <input type="radio" value="option2" name="checkTrue-or-false" class="checkBox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="field_contains animatedFadeInUp animated item-work-experience">
+                                    <div class="title_container">
+                                        <p class="field_title">職務経歴<br class="pc_br" /><span class="sub_field_title">（最大5件まで）</span></p>
+                                    </div>
+                                    <div class="input_container">
+                                        <div class="group-item item-company-name">
+                                            <label class="label-form">会社名</label>
+                                            <div class="group-itemCompany">
+                                                <input type="text" class="inputText">
+                                            </div>
+                                        </div>
+                                        <div class="group-item item-service-start">
+                                            <label class="label-form">勤務開始年月</label>
+                                            <div class="itemleft-itemSelect">
+                                                <div class="form-select">
+                                                    <select class="form-control-select" id="yearStart">
+                                                        <option>選択してください</option>
+                                                    </select>
+                                                </div>
+                                                <span class="span-form">年</span>
+                                            </div>
+
+                                            <div class="itemright-itemSelect">
+                                                <div class="form-select">
+                                                    <select class="form-control-select" id="monthStart">
+                                                        <option>選択してください</option>
+                                                    </select>
+                                                </div>
+                                                <span class="span-form">月</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="group-item item-endOfWork">
+                                            <label class="label-form">勤務終了年月</label>
+                                            <div class="itemleft-itemSelect">
+                                                <div class="form-select">
+                                                    <select class="form-control-select">
+                                                        <option>選択してください</option>
+                                                    </select>
+                                                </div>
+                                                <span class="span-form">年</span>
+                                            </div>
+                                            <div class="itemright-itemSelect">
+                                                <div class="form-select">
+                                                    <select class="form-control-select">
+                                                        <option>選択してください</option>
+                                                    </select>
+                                                </div>
+                                                <span class="span-form">月</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="group-item item-employmentForm">
+                                            <label class="label-form">雇用形態</label>
+                                            <div class="group-item-employmentForm">
+                                                <div class="form-select">
+                                                    <select class="form-control-select">
+                                                        <option>選択してください</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="group-item item-jobContent">
+                                            <label class="label-form">職務内容</label>
+                                            <div class="group-itemCompany contentBox-desktop">
+                                                <textarea name="jobContent" class="box-textarea jobContent"
+                                                          maxlength="5000"></textarea>
+                                                <p class="max-length">（最大5,000文字まで）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addContent">
+                                        <span class="toggle-addContent">+ 職務経歴を追加</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="formSubmit">
+                                <div class="inner">
+                                    <div class="boxRecaptcha animatedFadeInUp animated">
+                                        <div class="item-boxRecaptcha">
+                                            <label class="label-form">個人情報の取り扱いに同意する
+                                                <input type="checkbox" class="checkbox-capcha" required>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <span class="infor-text">個人情報の取り扱いについて</span>
+                                    </div>
+                                    <div class="groupSubmit animatedFadeInUp animated">
+                                        <div class="item-submit-left">
+                                            <input type="submit" name="returnProfile" value="もどる" class="returnProfile">
+                                        </div>
+                                        <div class="item-submit-right">
+                                            <input type="submit" name="submitProfile" value="内容を確認する" class="submitProfile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div><!-- end type page -->
+    </div><!-- end entry page -->
+
+    <link rel="stylesheet" media="all" href="./css/entry.css"/>
+    <script type="text/javascript" src="./js/entry.js"></script>
+
+</main><!--End main-->
+
+
+</body>
+</html>

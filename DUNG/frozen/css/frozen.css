@@ -1,0 +1,1366 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#frozen img{
+    max-width: 100%;
+}
+
+#frozen .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#frozen .animatedFadeInUp {
+    opacity: 0;
+}
+
+#frozen .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#frozen{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+/*main-banner*/
+/*===============================================*/
+
+#frozen .main-banner{
+    position: relative;
+}
+
+#frozen .main-banner .image_wrap .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#frozen .main-banner .heading-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: rgba(0,163,217,.9);
+    text-align: center;
+    padding: 70px 12px 70px 14px;
+}
+
+#frozen .main-banner .heading-banner .t1{
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#frozen .main-banner .heading-banner .t2{
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+}
+
+#frozen .heading{
+    font-size: 30px;
+    line-height: 30px;
+    color: #00a3d9;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/*info-business*/
+/*===========================================*/
+#frozen .info-business{
+    padding-top: 112px;
+}
+
+#frozen .info-business .heading{
+    margin-bottom: 51px;
+}
+
+#frozen .info-business .inner{
+    max-width: 820px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#frozen .info-business .text{
+    font-size: 18px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 400;
+}
+
+/*job-introduction*/
+/*=====================================*/
+#frozen .job-introduction{
+    padding-top: 100px;
+    margin-bottom: 212px;
+}
+
+#frozen .job-introduction .heading{
+    margin-bottom: 64px;
+}
+
+#frozen .job-introduction .list-job-introduction{
+    max-width: 1570px;
+    margin: auto;
+    padding: 0px 50px 100px;
+    overflow: hidden;
+}
+
+#frozen .job-introduction .item-job-introduction{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    align-items: end;
+}
+
+/*#frozen .job-introduction .item-job-introduction:last-child{*/
+/*    margin-bottom: 0px;*/
+/*}*/
+
+#frozen .job-introduction .item-job-introduction .text-content{
+    width: 41.5%;
+    position: relative;
+    background: #f2fafd;
+    margin-top: 100px;
+    margin-right: -6.8%;
+    padding: 42px 50px 50px 50px;
+    z-index: 1;
+}
+
+#frozen .job-introduction .item-job-introduction:nth-child(2n) .text-content{
+    order: 2;
+    margin-left: -6.8%;
+    margin-right: 0px;
+}
+
+#frozen .job-introduction .item-job-introduction .image-content{
+    width: 65.3%;
+}
+
+#frozen .job-introduction .item-job-introduction:nth-child(2n) .image-content{
+    order: 1;
+}
+
+#frozen .job-introduction .item-job-introduction .text-content .ttl{
+    font-size: 24px;
+    line-height: 36px;
+    color: #00a3d9;
+    font-weight: 700;
+    margin-bottom: 27px;
+    letter-spacing: 1px;
+}
+
+#frozen .job-introduction .item-job-introduction .text-content .text{
+    font-size: 18px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+}
+
+#frozen .job-introduction .item-job-introduction .text-content .link-box{
+    margin-top: 40px;
+}
+
+#frozen .job-introduction .item-job-introduction .image-content .switch-img{
+    width: 100% !important;
+    display: block;
+}
+
+#frozen .job-introduction .item-job-introduction .text-content .txt-link{
+    display: block;
+    background: #00a3d9;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 29px 10px 26px 0px;
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#frozen .job-introduction .item-job-introduction .text-content .txt-link:hover{
+    opacity: .6;
+}
+
+#frozen .job-introduction .item-job-introduction .text-content .txt-link .icon-arrow{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+#frozen .attraction-frozen{
+    position: relative;
+    background-image: url("../images/frozen/frozen_pic_03_pc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 95px;
+    padding-bottom: 96px;
+    overflow: hidden;
+}
+
+#frozen .attraction-frozen .box-info{
+    background: rgba(255,255,255,.9);
+    margin-left: 6.25%;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px 50px 45px 50px;
+}
+
+#frozen .attraction-frozen .box-info .ttl-text{
+    font-size: 20px;
+    line-height: 20px;
+    color: #00a3d9;
+    font-weight: 500;
+    position: relative;
+    padding-left: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+#frozen .attraction-frozen .box-info .ttl-text:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 18px;
+    background: #00a3d9;
+    top: 1px;
+    left: 2px;
+}
+
+#frozen .attraction-frozen .box-info .t1{
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    margin-bottom: 16px;
+}
+
+#frozen .attraction-frozen .box-info .t2{
+    font-size: 24px;
+    line-height: 36px;
+    color: #00a3d9;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+#frozen .attraction-frozen .box-info .text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+}
+
+#frozen .attraction-frozen .inner-pic .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+/*tabs-content*/
+/*====================================*/
+#frozen .tabs-content .inner{
+    max-width: 970px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#frozen .tabs-content .heading{
+    margin-bottom: 60px;
+}
+
+#frozen .tabs-content .tabs-list-frozen {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: -30px;
+}
+
+#frozen .tabs-content .item-frozen {
+    width: calc(33.33% - 30px);
+    margin-right: 30px;
+    background: #f3f4f7;
+}
+
+#frozen .tabs-content .item-frozen .info-person .ttl-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#frozen .tabs-content .item-frozen .info-person .name {
+    font-size: 24px;
+    line-height: 30px;
+    color: #00a3d9;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#frozen .tabs-content .item-frozen .info-person {
+    padding: 13px 10px 40px 10px;
+}
+
+#frozen .tabs-content .item-frozen .icon-scroll {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#frozen .tabs-content .item-frozen .scroll {
+    display: block;
+    position: relative;
+    height: 100%;
+    text-decoration: none;
+    transition: .4s;
+}
+
+/*frozen-content*/
+/*===========================================*/
+#frozen .frozen-content{
+    padding-top: 200px;
+}
+
+#frozen #frozen-block03.frozen-content{
+    padding-top: 194px;
+    margin-bottom: 200px;
+}
+
+#frozen .frozen-content .banner-top{
+    position: relative;
+    margin-bottom: 100px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#frozen #frozen-block01.frozen-content .banner-top{
+    background-image: url("../images/frozen/frozen_pic_04_pc.png");
+    padding-top: 130px;
+    padding-bottom: 131px;
+}
+
+#frozen #frozen-block02.frozen-content .banner-top{
+    background-image: url("../images/frozen/frozen_pic_06_pc.png");
+    padding-top: 114px;
+    padding-bottom: 116px;
+}
+
+#frozen #frozen-block03.frozen-content .banner-top{
+    background-image: url("../images/frozen/frozen_pic_08_pc.png");
+    padding-top: 130px;
+    padding-bottom: 131px;
+}
+
+#frozen .frozen-content .banner-top .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#frozen .frozen-content .banner-top .info-box .title{
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 21px;
+}
+
+#frozen .frozen-content .banner-top .info-box .staff_name{
+    font-size: 48px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 38px;
+    letter-spacing: 2px;
+}
+
+#frozen .frozen-content .banner-top .info-box .entry_year{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 42px;
+    color: #00a3d9;
+    font-weight: 400;
+    background: #fff;
+    padding: 0px 19px 0px 13px;
+    letter-spacing: 1px;
+}
+
+#frozen .frozen-content .banner-top .info-box{
+    background: rgba(0,163,217,.9);
+    padding: 60px 10px 60px 40px;
+    width: 100%;
+    max-width: 526px;
+    z-index: 1;
+}
+
+#frozen .frozen-content .banner-top .info-box.left{
+    margin-left: 6.2%;
+}
+
+#frozen .frozen-content .banner-top .info-box.right{
+    margin-right: 6.2%;
+    float: right;
+}
+
+#frozen .frozen-content .item-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 95px;
+}
+
+#frozen .frozen-content .item-content:last-child{
+    margin-bottom: 0px;
+}
+
+#frozen .frozen-content .item-content:nth-child(2n-1){
+    padding-left: 105px;
+}
+
+#frozen .frozen-content .item-content:nth-child(2n){
+    padding-right: 105px;
+}
+
+#frozen .frozen-content .item-content .text-content{
+    width: 42.2%;
+    padding-right: 90px;
+}
+
+#frozen .frozen-content .item-content:nth-child(2n) .text-content{
+    padding-right: 0px;
+    padding-left: 100px;
+    order: 2;
+}
+
+#frozen .frozen-content .item-content:nth-child(2n) .image-content{
+    order: 1;
+}
+
+#frozen .frozen-content .item-content .image-content{
+    width: 57.8%;
+}
+
+#frozen .frozen-content .item-content .image-content .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#frozen .frozen-content .item-content .description{
+    margin-bottom: 92px;
+}
+
+#frozen .frozen-content .item-content .description:last-child{
+    margin-bottom: 0px;
+}
+
+#frozen .frozen-content .item-content .description .title{
+    font-size: 20px;
+    line-height: 20px;
+    color: #00a3d9;
+    font-weight: 700;
+    position: relative;
+    padding-left: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+#frozen .frozen-content .item-content .description .title:before{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 6px;
+    top: 1px;
+    left: 2px;
+    background: #00a3d9;
+}
+
+#frozen .frozen-content .item-content .description .sub-title{
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 19px;
+}
+
+#frozen .frozen-content .item-content .description .text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+/*message-bottom*/
+/*=======================================*/
+
+#frozen #frozen-block01 .message-bottom{
+    background-image: url("../images/frozen/frozen_bg_01_pc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 112px;
+    padding-bottom: 104px;
+    margin-top: 100px;
+}
+
+#frozen .message-bottom .heading{
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+#frozen .message-bottom .inner{
+    width: 100%;
+    max-width: 1570px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#frozen .message-bottom .link-mess{
+    margin-bottom: 15px;
+}
+
+#frozen .message-bottom .link-mess .ttl-t1{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    padding-left: 12px;
+}
+
+#frozen .message-bottom .link-mess .ttl-t1:before{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #fff;
+    left: -1px;
+    top: 7px;
+}
+
+#frozen .message-bottom .link-mess .link{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+}
+
+#frozen .message-bottom .flow_list{
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#frozen .message-bottom .item-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#frozen .message-bottom .item-text .ttl {
+    width: 21%;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    padding: 39px 0px 0px 0px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+#frozen .message-bottom .item-text .text {
+    width: 79%;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 37px 20px 0px 30px;
+    letter-spacing: -0.5px;
+    border-right: 1px solid #fff;
+    color: #fff;
+}
+
+#frozen .message-bottom .item-text:last-child .text {
+    padding-bottom: 42px;
+}
+
+
+
+@media (max-width: 1600px) {
+
+    #frozen .info-business .text {
+        font-size: 16px;
+        line-height: 33px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .text {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #frozen .frozen-content .item-content:nth-child(2n-1),
+    #frozen .frozen-content .item-content:nth-child(2n) .text-content{
+        padding-left: 50px;
+    }
+
+    #frozen .frozen-content .item-content .text-content,
+    #frozen .frozen-content .item-content:nth-child(2n){
+        padding-right: 50px;
+    }
+
+
+}
+
+@media (max-width: 1440px) {
+
+    #frozen .pc_br{
+        display: none;
+    }
+
+    #frozen .heading {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    #frozen .info-business .text {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .ttl {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content{
+        padding: 42px 35px 50px 35px;
+        margin-top: 80px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .txt-link{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .txt-link .icon-arrow{
+        width: 14px;
+    }
+
+    #frozen .attraction-frozen .box-info .ttl-text {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    #frozen .attraction-frozen .box-info .t1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #frozen .attraction-frozen .box-info .t2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #frozen .attraction-frozen .box-info{
+        padding: 40px;
+        margin-right: 50px;
+    }
+
+    #frozen .attraction-frozen{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #frozen .staff-message .banner-top .info-box{
+        margin-right: 50px;
+    }
+
+    #frozen .staff-message .content .description .sub-title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #frozen .staff-message .content .description .title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box.left {
+        margin-left: 50px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box.right {
+        margin-right: 50px;
+    }
+
+
+    #frozen .frozen-content .item-content .description .text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    #frozen .frozen-content .item-content .description .sub-title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    #frozen .frozen-content .item-content .description .title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+
+}
+
+
+@media (max-width: 1280px) {
+
+    #frozen .main-banner .heading-banner{
+        padding: 58px 12px 58px 14px;
+    }
+
+    #frozen .main-banner .heading-banner .t1{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #frozen .main-banner .heading-banner .t2{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content {
+        padding: 25px 20px 25px 20px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .ttl{
+        margin-bottom: 12px;
+    }
+
+    #frozen .job-introduction .list-job-introduction{
+        padding: 0px 20px 50px;
+    }
+
+    #frozen .attraction-frozen .box-info{
+        margin-right: 20px;
+        padding: 25px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .txt-link{
+        padding: 15px 10px 14px 0px;
+    }
+
+    #frozen .attraction-frozen .box-info{
+        max-width: 480px;
+    }
+
+    #frozen .attraction-frozen .box-info .text {
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    #frozen .attraction-frozen .box-info .t2 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #frozen .attraction-frozen .box-info .t1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    #frozen .attraction-frozen .box-info .ttl-text:before{
+        height: 16px;
+    }
+
+    #frozen .heading {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    #frozen .message-bottom .link-mess {
+        margin-bottom: 30px;
+    }
+
+    #frozen .heading {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    #frozen .message-bottom .item-text .text{
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    #frozen .info-business .text {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box{
+        max-width: 450px;
+        padding: 30px 25px 40px 40px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box .title{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box .staff_name{
+        font-size: 38px;
+        line-height: 30px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box .entry_year{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    #frozen .frozen-content .item-content:nth-child(2n-1),
+    #frozen .frozen-content .item-content:nth-child(2n) .text-content {
+        padding-left: 20px;
+    }
+
+    #frozen .frozen-content .item-content .text-content,
+    #frozen .frozen-content .item-content:nth-child(2n) {
+        padding-right: 20px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box.left {
+        margin-left: 20px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box.right {
+        margin-right: 20px;
+    }
+
+
+
+
+
+
+}
+
+
+@media (min-width: 768px) {
+
+    body{
+        min-width: 1200px;
+    }
+
+    #frozen{
+        margin-left: 240px;
+    }
+
+    #frozen .sp_br{
+        display: none;
+    }
+
+    #frozen .attraction-frozen .inner-pic,
+    #frozen .info-business .text.txt-sp,
+    #frozen .frozen-content .banner-top .switch-img{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    #frozen .info-business .text.txt-pc{
+        display: none;
+    }
+
+    #frozen .main-banner .heading-banner .t1{
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0px;
+    }
+
+    #frozen .main-banner .heading-banner .t2{
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    #frozen .main-banner .heading-banner {
+        top: 58.5%;
+        padding: 51px 12px 51px 12px;
+    }
+
+    #frozen .info-business {
+        padding-top: 60px;
+    }
+
+    #frozen .heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    #frozen .info-business .heading {
+        margin-bottom: 30px;
+    }
+
+    #frozen .info-business .inner{
+        padding: 0px 20px;
+    }
+
+    #frozen .info-business .text {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #frozen .job-introduction {
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    #frozen .job-introduction .heading {
+        margin-bottom: 32px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .image-content{
+        width: 100% !important;
+        order: 1 !important;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content{
+        width: calc(100% - 40px);
+        order: 2 !important;
+        margin: -50px auto 0px !important;
+        padding: 22px 25px 25px 25px;
+    }
+
+    #frozen .job-introduction .list-job-introduction{
+        padding: 0px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .ttl {
+        margin-bottom: 25px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .text {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .link-box {
+        margin-top: 20px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .txt-link {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 10px 10px 0px;
+    }
+
+    #frozen .job-introduction .item-job-introduction .text-content .txt-link .icon-arrow {
+        width: 8px;
+    }
+
+    #frozen .job-introduction .item-job-introduction{
+        margin-bottom: 50px;
+    }
+
+    #frozen .attraction-frozen{
+        background-image: unset;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    #frozen .attraction-frozen .box-info {
+        max-width: 100%;
+        width: calc(100% - 40px);
+        margin: 25px auto 0px;
+        padding: 0px;
+        float: none;
+    }
+
+    #frozen .attraction-frozen .box-info .ttl-text {
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 15px;
+    }
+
+    #frozen .attraction-frozen .box-info .ttl-text:before {
+        height: 15px;
+        width: 5px;
+        top: 0px;
+    }
+
+    #frozen .attraction-frozen .box-info .t1 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 12px;
+        letter-spacing: 0px;
+    }
+
+    #frozen .attraction-frozen .box-info .t2 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #frozen .attraction-frozen .box-info .text {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #frozen .staff-message .heading {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    #frozen .staff-message {
+        padding-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    #frozen .staff-message .banner-top{
+        background-image: unset;
+        padding-bottom: 0px;
+        margin-bottom: 50px;
+    }
+
+    #frozen .staff-message .banner-top .info-box{
+        max-width: 100%;
+        margin: 0px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #frozen .staff-message .banner-top .info-box .title{
+        font-size: 13px;
+        line-height: 12px;
+        margin-bottom: 10px;
+    }
+
+    #frozen .staff-message .banner-top .info-box .staff_name{
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    #frozen .staff-message .banner-top .info-box .entry_year{
+        font-size: 13px;
+        line-height: 22px;
+        padding: 0px 5px;
+    }
+
+    #frozen .staff-message .content .item-content .text-content{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+
+    #frozen .staff-message .content{
+        padding: 0px 20px;
+        margin-bottom: 50px;
+    }
+
+    #frozen .staff-message .content .description .title {
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 15px;
+        letter-spacing: 0px;
+    }
+
+    #frozen .staff-message .content .description .title:before {
+        width: 5px;
+        height: 15px;
+        top: 0px;
+    }
+
+    #frozen .staff-message .content .description .sub-title {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    #frozen .staff-message .content .description .text {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #frozen .staff-message .content .item-content .image-content{
+        width: 100%;
+    }
+
+    #frozen .message-bottom{
+        background-image: url("../images/supermarket/supermarket_bg_01_sp.jpg");
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+
+    #frozen .message-bottom .link-mess{
+        display: none;
+    }
+
+    #frozen .message-bottom .inner{
+        padding: 0px 20px;
+    }
+
+    #frozen .message-bottom .flow_list{
+        padding: 0px;
+    }
+
+    #frozen .message-bottom .item-text .ttl{
+        width: 18%;
+        border-left: 0px;
+        font-size: 13px;
+        line-height: 15px;
+        padding-top: 25px !important;
+    }
+
+    #frozen .message-bottom .item-text .text{
+        width: 82%;
+        border-right: 0px;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 20px 10px 0px 10px !important;
+    }
+
+    #frozen .message-bottom .item-text:last-child .text{
+        padding-bottom: 20px !important;
+    }
+
+
+    #frozen .tabs-content .inner{
+        padding: 0px 20px;
+    }
+
+    #frozen .tabs-content .item-frozen {
+        width: calc(33.33% - 15px);
+        margin-right: 15px;
+    }
+
+    #frozen .tabs-content .tabs-list-frozen{
+        margin-right: -15px;
+    }
+
+    #frozen .tabs-content .item-frozen .info-person .ttl-text{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #frozen .tabs-content .item-frozen .info-person .name{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0px;
+    }
+
+    #frozen .tabs-content .item-frozen .info-person{
+        padding: 8px 6px 35px 6px;
+    }
+
+    #frozen .tabs-content .item-frozen .icon-scroll{
+        width: 20px;
+        bottom: 4px;
+    }
+
+    #frozen .tabs-content .heading {
+        margin-bottom: 35px;
+    }
+
+    #frozen .frozen-content{
+        padding-top: 100px !important;
+    }
+
+    #frozen #frozen-block03.frozen-content{
+        margin-bottom: 50px;
+    }
+
+    #frozen .frozen-content .item-content .text-content,
+    #frozen .frozen-content .item-content:nth-child(2n){
+        padding: 0px;
+    }
+
+    #frozen #frozen-block01.frozen-content .banner-top{
+        background-image: unset;
+        padding-bottom: 0px;
+        margin-bottom: 50px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box{
+        max-width: 100%;
+        margin: 0px !important;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box .title{
+        font-size: 13px;
+        line-height: 12px;
+        margin-bottom: 10px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box .staff_name{
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    #frozen .frozen-content .banner-top .info-box .entry_year{
+        font-size: 13px;
+        line-height: 22px;
+        padding: 0px 5px;
+    }
+
+    #frozen .frozen-content .item-content .text-content{
+        width: 100%;
+        padding: 0px !important;
+        order: 1 !important;
+        margin-bottom: 45px;
+    }
+
+    #frozen .frozen-content .item-content .image-content{
+        width: 100%;
+        order: 2 !important;
+    }
+
+    #frozen .frozen-content .item-content .description .title{
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+        padding-left: 14px;
+    }
+
+    #frozen .frozen-content .item-content .description .title:before{
+        height: 14px;
+        width: 5px;
+    }
+
+    #frozen .frozen-content .item-content .description .sub-title{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    #frozen .frozen-content .item-content .description .text{
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #frozen .frozen-content .item-content .description{
+        margin-bottom: 45px;
+    }
+
+    #frozen .frozen-content .item-content:nth-child(2n-1), #frozen .frozen-content .item-content:nth-child(2n) .text-content{
+        padding: 0px;
+    }
+
+    #frozen .frozen-content .content{
+        padding: 0px 20px;
+    }
+
+    #frozen #frozen-block01 .message-bottom{
+        margin-top: 50px;
+    }
+
+    #frozen #frozen-block01 .message-bottom{
+        background-image: url("../images/frozen/frozen_bg_01_sp.png");
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    #frozen .message-bottom .heading{
+        margin-bottom: 30px;
+    }
+
+
+    #frozen .frozen-content .banner-top{
+        background-image: unset !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 50px !important;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,790 @@
+/*
+
+【CSS記述ルール】
+
+① font-sizeはpxで指定してください
+　（rem、%等の指定はしないようお願いいたします）
+
+② xxxxxx はディレクトリ名に変更してください
+
+③ 必ずディレクトリ名が付いたidセレクタを先頭に記述した後に、要素を記述してください
+　（例：#oneday .inner、#oneday .page-title 等）
+
+④ CSS内の画像指定パスは、CSSファイルから見た相対パスで指定してください
+　（例：../images/ディレクトリ名/画像名.拡張子）
+
+*/
+
+/*
+@font-face {
+    font-family: "Meiryo";
+    src: url("./fonts/meiryo.ttf");
+}
+*/
+
+@font-face {
+    font-family: "Deja Vu Sans Mono";
+    src: url("./fonts/DejaVu-Sans-Mono_13348.ttf");
+}
+
+@font-face {
+    font-family: "Century Gothic";;
+    src: url("./fonts/GOTHIC.TTF");
+}
+
+@font-face {
+	font-family: "Koz Go Pro";
+    src: url("./fonts/KozGoPro-Regular.otf");
+}
+
+#careerSupport {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+#careerSupport * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#careerSupport img {
+  line-height: 1;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+#careerSupport p {
+  text-align: left;
+}
+
+#footer img{
+	width: 100%;
+}
+
+#main-content{
+	background-color: #f7f9f8;
+}
+
+
+/*Header*/
+
+#header .content-header {
+    padding: 19px 37px 17px 34px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#header .content-header .logo{
+    width: 50%;
+}
+
+#header .content-header .logo h1{
+    max-width: 400px;
+    height: 70px;
+    background-color: #999999;
+    line-height: 70px;
+    text-align: center;
+}
+
+#header .content-header .logo a{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Meiryo;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+#header .content-header  .nav-menu{
+    width: 50%;
+}
+
+#header .content-header .menu-bar-toggle{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+#header .content-header .menu-bar-toggle:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+    transform: translateY(-50%);
+}
+
+#header .content-header .menu-bar-toggle span:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+}
+
+#header .content-header .menu-bar-toggle span:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+}
+
+/*Breadcrumb*/
+
+.breadcrumb{
+    max-width: 1470px;
+    padding:5px 15px 10px;
+    margin: auto;
+}
+
+.breadcrumb .breadcrumb-info, .breadcrumb span{
+    color: #999999;
+    font-family: "MS - P Gothic";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 12px;
+}
+
+.breadcrumb .breadcrumb-info:before{
+    content: "";
+    position: absolute;
+    border: solid #999;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    right: 2px;
+    bottom: 6px;
+}
+
+/*Banner*/
+
+.banner-home .content{
+    position: relative;
+}
+
+.banner-home .content .img-mobile{
+    display: none;
+}
+
+.banner-home .content img{
+	width: 100%;
+}
+
+.banner-home .content .img-mobile{
+    display: none;
+}
+
+.banner-home .title-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.banner-home .title-banner h2{
+    font-family: "Deja Vu Sans Mono";
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    color: #fff;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+.banner-home .title-banner h2 span{
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2.4px;
+	font-family: "Koz Go Pro";
+}
+
+.banner-home .content:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.2;
+}
+
+/*----    entry-content    ----*/
+
+.entry-content{
+	max-width: 1220px;
+    margin: 106px auto 100px;
+    padding: 0px 20px;	
+}
+
+.entry-content .content-section{
+	overflow: hidden;
+}
+
+.entry-content .title-content{
+	max-width: 900px;
+    margin: auto;
+	margin-bottom: 90px;
+}
+
+.title-content .text_inner p{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.content-section .title_inner .title{
+	color: #e20002;
+    font-family: Meiryo;
+    font-size: 20px;
+    padding-left: 16px;
+    position: relative;
+    line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.content-section .title_inner .title:before{
+	content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 6px;
+    height: 18px;
+    background: #e20002;
+}
+
+/*---    educate-short    ---*/
+
+.work-block .content_inner{
+	margin-bottom: 60px;
+}
+
+.content_inner .title{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 24px;
+    line-height: 32px;
+	margin-bottom: 2px;
+}
+
+.content_inner .item_box_work{
+	display: flex;
+    flex-wrap: wrap;
+	margin-bottom: 4px;
+}
+
+.content_inner .item_box_work .left-content{
+	width: 250px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}	
+
+.content_inner .item_box_work .left-content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/career-support/background-1.png);
+    top: 0px;
+    left: 0px;
+}
+
+.content_inner.educate-year-plan .item_box_work:nth-child(2) .left-content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/career-support/background-2.png);
+    top: 0px;
+    left: 0px;
+}
+
+.content_inner.educate-year-plan .item_box_work:nth-child(2) .left-content:after{
+	content: "";
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    background-image: url(../images/career-support/icon-down.png);
+    left: 50%;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    bottom: -18px;
+    z-index: 10;
+}
+
+.content_inner.educate-year-plan .item_box_work:nth-child(3) .left-content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/career-support/background-3.png);
+    top: 0px;
+    left: 0px;
+}
+
+.content_inner.educate-year-plan .item_box_work:nth-child(3) .left-content:after{
+	content: "";
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    background-image: url(../images/career-support/icon-down.png);
+    left: 50%;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    bottom: -18px;
+    z-index: 10;
+}
+
+
+.content_inner.educate-year-plan .item_box_work:nth-child(4) .left-content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/career-support/background-4.png);
+    top: 0px;
+    left: 0px;
+}
+
+.content_inner .item_box_work .left-content .text-title{
+	color: #000000;
+	font-family: Meiryo;
+	font-size: 16px;
+	font-weight: 700;
+	position: relative;
+    z-index: 9;
+}
+
+.content_inner .item_box_work .right-content{
+	width: calc(100% - 250px);
+   	padding: 19px 52px;
+}
+
+.content_inner .item_box_work .right-content p{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+	max-width: 790px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.content_inner .item_box_work .right-content .t-1{
+	width: 155px;
+	position: relative;
+}
+
+.content_inner .item_box_work .right-content .t-1:after{
+	content: ":";
+    position: absolute;
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 600;
+    right: -3px;
+}
+
+.content_inner .item_box_work .right-content .t-2	{
+	width: calc(100% - 155px);
+	padding-left: 24px;
+}
+
+
+
+
+
+
+/*----   career-advice   ----*/
+
+.entry-content .career-advice{
+	margin-top: 15px;
+}
+
+.career-advice .content_inner .title{
+	color: #e20002;
+    font-family: Meiryo;
+    font-size: 20px;
+	padding-left: 16px;
+	line-height: 28px;
+	position: relative;
+	margin-bottom: 13px;
+}
+
+.career-advice .content_inner .title:before{
+	content: "";
+    position: absolute;
+    width: 6px;
+    height: 18px;
+    background-color: #e20002;
+    top: 4px;
+    left: 0px;
+}
+
+/*---   information-contact   ---*/
+
+.information-contact{
+	background: #fff;
+	padding: 62px 0px 80px;
+}
+
+.information-contact .content{
+	max-width: 1220px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.information-contact .infor-phone{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.information-contact .infor-phone img{
+	margin-bottom: 10px;
+	width: 48px;
+}
+
+.information-contact .infor-phone span{
+	display: block;
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 30px;
+    font-weight: 600;
+	line-height: 34px;
+}
+
+.information-contact .infor-company{
+	text-align: center;
+}
+
+.information-contact .infor-company .name-company{
+	display: block;
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.information-contact .infor-company .phone{
+	display: block;
+    color: #e40001;
+    font-family: Meiryo;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 40px;
+	text-decoration: none;
+	margin-bottom: 5px;	
+	width: fit-content;
+	margin: auto;
+	width: -moz-fit-content;
+}
+
+.information-contact .infor-company .time{
+	color: #e40001;
+    font-family: Meiryo;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+	margin-bottom: 38px;
+}
+
+.information-contact .infor-company .text-contact{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    display: block;
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 767px) {/* ---------- スマホ以下 ---------- */
+	
+	body{
+		min-width: 640px;
+	}
+	
+	#main_wrap{
+		overflow: hidden;
+	}
+	
+	#footer img, .breadcrumb{
+		display: none;
+	}
+	
+/*	Header*/
+	
+	#header .content-header{
+        padding: 10px 20px;
+    }
+
+    #header .content-header .logo h1{
+        max-width: 260px;
+    }
+	
+/*	Banner*/
+	
+	.banner-home .content{
+		padding-bottom: 230px;
+	}
+	
+	.banner-home .content:before{
+		z-index: 9
+	}
+	
+	.banner-home .content .img-desktop{
+		position: absolute;
+		width: 100%;
+		height: 100% !important;
+		object-fit: cover;
+		object-position: right;
+	}
+		
+	.banner-home .title-banner{
+        top: 60%;
+		z-index: 10;
+    }
+
+    .banner-home .title-banner h2{
+        line-height: 48px;
+    }
+
+    .banner-home .title-banner h2 span{
+        width: 100%;
+        display: block;
+	}
+	
+/*	entry-content*/
+	
+	.entry-content{
+		margin-top: 40px;
+		margin-bottom: 56px;
+	}
+	
+	.entry-content .title-content{
+		margin-bottom: 34px;
+	}
+	
+	.title-content .text_inner p{
+		font-size: 24px;
+    	line-height: 34px;
+	}
+	
+	.title-content .text_inner p br{
+		display: none;
+	}
+	
+	.content-section .title_inner .title{
+		font-size: 28px;
+		margin-bottom: 14px;
+	}
+	
+	.content-section .title_inner .title:before{
+		top: -1px;
+		width: 8px;
+		height: 26px;
+	}
+	
+	.content_inner .title{
+		font-size: 36px;
+    	line-height: 46px;
+		margin-bottom: 9px;
+	}
+	
+	.content_inner .item_box_work{
+		margin-bottom: 20px;
+	}
+	
+	.content_inner .item_box_work .left-content{
+		width: 154px;
+	}
+	
+	.content_inner .item_box_work .left-content .text-title{
+		font-size: 28px;
+	}
+	
+	.content_inner .item_box_work .right-content{
+		width: calc(100% - 154px);
+		padding: 0px 15px 0px 19px;
+		min-height: 56px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	
+	.content_inner .item_box_work .right-content p{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	
+	.work-block .content_inner{
+		margin-bottom: 52px;
+	}
+	
+	.work-block .content_inner.educate-short .item_box_work:nth-child(3) .left-content{
+		min-height: 61px;
+	}
+	
+	.work-block .content_inner.educate-short .item_box_work:nth-child(4) .left-content{
+		max-height: 80px;
+	}
+	
+	.content_inner.educate-year .item_box_work:nth-child(2) .left-content, 
+	.content_inner.educate-year .item_box_work:nth-child(3) .left-content{
+		min-height: 68px;
+	}
+	
+	.content_inner.educate-year .item_box_work:nth-child(4) .left-content{
+		max-height: 230px;
+	}
+	
+	.content_inner.educate-year-plan{
+		margin-bottom: 0px;
+	}
+	
+	.content_inner.educate-year-plan .item_box_work:nth-child(2){
+		margin-bottom: 3px;
+	}
+	
+	.content_inner.educate-year-plan .item_box_work{
+		margin-bottom: 10px;
+	}
+	
+	.content_inner.educate-year-plan .item_box_work .left-content:after{
+		display: none;
+	}
+	
+	.content_inner.educate-year-plan .item_box_work .left-content{
+		width: 100%;
+		margin-bottom: 24px;
+	}
+	
+	.content_inner.educate-year-plan .item_box_work .left-content .text-title{
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 60px;
+	}
+	
+	.content_inner.educate-year-plan .item_box_work .right-content{
+		width: 100%;
+		padding: 0px;
+	}
+	
+	.content_inner.educate-year-plan .item_box_work .right-content p{
+		margin-bottom: 22px;
+	}
+	
+	.content_inner .item_box_work .right-content .t-1{
+		font-size: 28px;
+		font-weight: 700;
+		width: 100%;
+    	margin-bottom: 5px;
+	}
+	
+	.content_inner .item_box_work .right-content .t-1:after{
+		display: none;
+	}
+	
+	.content_inner .item_box_work .right-content .t-2{
+		padding: 0px;
+		width: 100%;
+	}
+	
+	.content_inner.educate-year-plan .item_box_work .left-content:before{
+		width: 992px !important;
+		left: 50% !important;
+    	transform: translateX(-50%);
+	}
+	
+	.entry-content .content-section{
+		overflow: visible;
+	}
+	
+/*	career-advice*/
+	
+	.career-advice .content_inner .title{
+		font-size: 28px;
+    	line-height: 34px;
+	}
+	
+	.career-advice .content_inner .title:before{
+		width: 8px;
+    	height: 26px;
+		top: 3px;
+	}
+	
+	.career-advice .item_box_work:nth-child(2) .left-content{
+		min-height: 68px;
+	}
+	
+	.career-advice .item_box_work:nth-child(3) .left-content{
+		max-height: 170px;
+	}
+	
+/*	information-contact*/
+	
+	.information-contact{
+		padding: 60px 0px 118px;
+	}
+	
+	.information-contact .infor-phone img{
+		width: 80px;
+		margin-bottom: 28px;
+	}
+	
+	.information-contact .infor-phone{
+		margin-bottom: 28px;
+	}
+	
+	.information-contact .infor-phone span{
+		font-size: 40px;
+    	line-height: 46px;
+	}
+	
+	.information-contact .infor-company .name-company{
+		font-size: 30px;
+    	line-height: 36px;
+	}
+	
+	.information-contact .infor-company .time{
+		font-size: 24px;
+		margin-bottom: 26px;
+		margin-top: 5px;
+	}
+	
+	.information-contact .infor-company .text-contact{
+		font-size: 24px;
+	}
+}
+
+
+
+@media print, screen and (min-width: 768px) {/* ---------- タブレット・PC以上 ---------- */
+  #careerSupport {
+    font-size: 15px;
+  }
+}

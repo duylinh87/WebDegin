@@ -1,0 +1,797 @@
+#page-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-mobile{
+    display: none;
+}
+
+img.js-fadein{
+    opacity: 0;
+}
+@media (min-width: 768px) {
+    .block-people-details .main-content{
+        display: block !important;
+    }
+}
+
+p{
+    margin-bottom: 32px;
+}
+
+img.scroll-in{
+    opacity: 1;
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*Header*/
+/*=============================================*/
+
+.main-header{
+    width: 198px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.main-header .s-image{
+    width: 100%;
+}
+
+#main_wrap{
+    width: calc(100% - 198px);
+    border-left: 2px solid #e6e6e6;
+    margin-left: 198px;
+}
+
+/*block banner page*/
+/*============================================*/
+
+#story-page .block-banner-page{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#story-page .block-banner-page .image-banner{
+    display: flex;
+}
+
+#story-page .block-banner-page .image-banner .s-image{
+    width: 100%;
+}
+
+#story-page .block-banner-page .main-heading{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    letter-spacing: 5.25px;
+}
+
+#story-page .block-banner-page .main-heading .heading-t1{
+    display: block;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: "Kozuka Gothic Pr6N R";
+    font-style: italic;
+    line-height: 100px;
+    margin-bottom: 12px;
+}
+
+#story-page .block-banner-page .main-heading .heading-t2{
+    font-family: "Kozuka Gothic Pr6N R";
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: italic;
+    padding-left: 11px;
+    letter-spacing: -1.5px;
+}
+
+/*tabs title*/
+/*===========================================*/
+
+#story-page #tabs-title .content{
+    max-width: 1310px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#story-page #tabs-title .list-tabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#story-page #tabs-title .tab-reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(20% - 10px);
+    margin: 0px 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Meiryo Bold";
+    height: 80px;
+    border-top: 5px solid #cf0505;
+    cursor: pointer;
+    position: relative;
+}
+
+#story-page #tabs-title .tab-reviews:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #cf0505;
+    top: -1px;
+    left: 0px;
+}
+
+
+#story-page #tabs-title .tab-reviews:hover:after{
+    opacity: .6;
+    transition: .4s;
+}
+
+#story-page #tabs-title .tab-reviews .sub-text{
+    position: relative;
+    z-index: 9;
+}
+
+#story-page #tabs-title .tab-reviews.active{
+    background: #eeeaea;
+    color: #231815;
+}
+
+#story-page #tabs-title .tab-reviews.active:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eeeaea;
+    top: -1px;
+    left: 0px;
+}
+
+/*tabs-contents*/
+/*==============================================*/
+
+#story-page #tabs-contents{
+    background: #eeeaea;
+    padding: 50px 50px 202px;
+}
+
+#story-page #tabs-contents .description-content{
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+#story-page #tabs-contents .tab-content{
+    display: none;
+}
+
+#story-page #tabs-contents .title-mobile{
+    display: none;
+}
+
+#story-page #tabs-contents .tab-content.active{
+    display: block;
+}
+
+#story-page #tabs-contents .tab-content .title-content{
+    position: relative;
+    margin-bottom: 86px;
+}
+
+#story-page #tabs-contents .tab-content .image-banner{
+    display: flex;
+}
+
+#story-page #tabs-contents .tab-content .image-banner .s-image{
+    width: 100% !important;
+}
+
+#story-page #tabs-contents .tab-content .text-banner{
+    position: absolute;
+    background: #cf0505;
+    width: 400px;
+    left: 50px;
+    bottom: 50px;
+    padding: 44px 30px 40px;
+}
+
+#story-page #tabs-contents .tab-content .title-content .number{
+    font-size: 74px;
+    font-family: Toppan BunkyuMidashiGoStdN;
+    font-style: italic;
+    line-height: 76px;
+    color: #fbfbfb;
+    margin-bottom: 41px;
+    letter-spacing: 2px;
+}
+
+#story-page #tabs-contents .tab-content .title-content .year{
+    font-size: 22px;
+    font-family: "Meiryo Bold";
+    color: #fff;
+    font-style: italic;
+    padding-left: 9px;
+    margin-bottom: 14px;
+}
+
+#story-page #tabs-contents .tab-content .title-content .name{
+    font-size: 60px;
+    font-family: "Meiryo Bold";
+    padding-left: 9px;
+    color: #fff;
+    font-style: italic;
+    line-height: 80px;
+}
+
+#story-page #tabs-contents .tab-content .title-content .text{
+    font-size: 22px;
+    font-family: "Meiryo Bold";
+    padding-left: 8px;
+    line-height: 36px;
+    color: #fff;
+    font-style: italic;
+}
+
+/*description*/
+/*=============================================*/
+
+#story-page #tabs-contents .tab-content .description{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#story-page #tabs-contents .tab-content .description .col-description{
+    margin-bottom: 78px;
+}
+
+#story-page #tabs-contents .tab-content .description .heading{
+    font-family: Toppan BunkyuMidashiGoStdN;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    position: relative;
+    margin-left: -6px;
+    color: #231815;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+#story-page #tabs-contents .tab-content .description .heading .t-1{
+    font-size: 58px;
+    display: inline-block;
+    line-height: 74px;
+}
+
+#story-page #tabs-contents .tab-content .description .heading .t-2{
+    font-size: 28px;
+    padding-left: 30px;
+    display: inline-block;
+    padding-top: 18px;
+}
+
+#story-page #tabs-contents .tab-content .description .text-title{
+    font-size: 36px;
+    color: #fff;
+    font-family: "Meiryo Bold";
+    width: max-content;
+    background: #cf0505;
+    display: flex;
+    padding: 13px 0px 5px 20px;
+    margin-bottom: 54px;
+}
+
+#story-page #tabs-contents .tab-content .description .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#story-page #tabs-contents .tab-content .description .left-content{
+    width: 50%;
+    padding-right: 25px;
+    border-right: 2px solid #cccccc;
+}
+
+#story-page #tabs-contents .tab-content .description .left-content .s-text:last-child,
+#story-page #tabs-contents .tab-content .description .right-content .s-text:last-child{
+    margin-bottom: 0px;
+}
+
+#story-page #tabs-contents .tab-content .description .right-content{
+    width: 50%;
+    padding-left: 25px;
+}
+
+#story-page #tabs-contents .tab-content .description .s-text{
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Meiryo Regular";
+    color: #333;
+}
+
+#story-page #tabs-contents .tab-content .description .col-description.story-chapter02 .left-content .s-text:first-child{
+    letter-spacing: -0.75px;
+}
+
+#story-page #tabs-contents .tab-content .description .content .img-content{
+    margin-top: 94px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#story-page #tabs-contents .tab-content .description .content .img-content .s-image{
+    width: 100% !important;
+}
+
+#story-page #tabs-contents .tab-content .description .col-description.story-chapter04,
+#story-page #tabs-contents .tab-content .description .col-description.story-chapter05{
+    margin-bottom: 82px;
+}
+
+/*other members*/
+/*===========================================*/
+
+#story-page #tabs-contents .other-members{
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+#story-page #tabs-contents .other-members .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 25px;
+    margin-bottom: 23px;
+}
+
+#story-page #tabs-contents .other-members .heading{
+    font-size: 58px;
+    color: #cf0505;
+    font-style: italic;
+    font-family: Toppan BunkyuMidashiGoStdN;
+    text-align: center;
+    margin-top: 36px;
+    letter-spacing: 1.5px;
+    padding-right: 14px;
+    line-height: 76px;
+    margin-bottom: 35px;
+}
+
+#story-page #tabs-contents .other-members .col-other-members{
+    width: 25%;
+    padding: 0px 25px 100px;
+    position: relative;
+}
+
+
+#story-page #tabs-contents .other-members .col-other-members.active{
+    display: none;
+}
+
+#story-page #tabs-contents .other-members .col-other-members .title-box{
+    position: absolute;
+    bottom: 23px;
+    left: 25px;
+}
+
+#story-page #tabs-contents .other-members .col-other-members .img-box{
+    padding-left: 28px;
+}
+
+#story-page #tabs-contents .other-members .col-other-members .img-box .s-image{
+    width: 100%;
+}
+
+#story-page #tabs-contents .other-members .col-other-members .year{
+    font-size: 18px;
+    color: #cf0505;
+    text-shadow: 0px 0px 3px #fff;
+    font-family: "Yu Gothic Medium";
+    font-style: italic;
+    padding-left: 7px;
+}
+
+#story-page #tabs-contents .other-members .col-other-members .name{
+    font-size: 40px;
+    color: #cf0505;
+    text-shadow: 0px 0px 3px #fff;
+    line-height: 55px;
+    font-family: "Yu Gothic Bold";
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+#story-page #tabs-contents .other-members .col-other-members .text{
+    font-size: 18px;
+    line-height: 24px;
+    color: #231815;
+    font-family: "Yu Gothic Medium";
+    font-style: italic;
+}
+
+#story-page #tabs-contents .other-members .col-other-members.item-member03 .text{
+    letter-spacing: -2px;
+    font-size: 17px;
+}
+
+#srcoll-top{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 999;
+}
+
+#srcoll-top.is-open{
+    display: block;
+}
+
+#srcoll-top .btn-scroll{
+    width: 50px;
+    height: 50px;
+    background: #cf0505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+/*Footer*/
+/*============================================*/
+
+.main-footer{
+    width: 100%;
+}
+
+.main-footer .s-image{
+    width: 100%;
+}
+
+@media (max-width: 1600px) {
+
+    .main-header{
+        width: 150px;
+    }
+
+    #main_wrap{
+        width: calc(100% - 150px);
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 1440px) {
+    #story-page #tabs-contents .tab-content .description .text-title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-header{
+        width: 115px;
+    }
+
+    #main_wrap{
+        width: calc(100% - 115px);
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .number{
+        margin-bottom: 20px;
+        font-size: 60px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .name{
+        font-size: 54px;
+    }
+
+    #story-page #tabs-contents .tab-content .text-banner{
+        width: 370px;
+        padding: 30px 25px 35px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .text{
+        font-size: 20px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .year{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    #story-page #tabs-contents .tab-content .container{
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .main-header{
+        width: 100%;
+    }
+
+    #main_wrap{
+        width: 100%;
+        border: 0px;
+        margin-left: 0px;
+        margin-top: 136px;
+    }
+
+    #story-page #tabs-contents .description-content{
+        margin-bottom: 90px;
+    }
+
+    #story-page #tabs-title{
+        display: none;
+    }
+
+    #story-page #tabs-contents{
+        padding: 0px 20px;
+        background: transparent;
+    }
+
+    #story-page #tabs-contents .tab-content{
+        display: block !important;
+        margin-bottom: 10px;
+    }
+
+    #story-page #tabs-contents .tab-content .container{
+        display: none;
+        padding: 20px 20px 103px;
+        background: #eeeaea;
+    }
+
+    #story-page #tabs-contents .tab-content.active .container{
+        display: block;
+    }
+
+    #story-page #tabs-contents .other-members{
+        display: none;
+    }
+
+    #story-page #tabs-contents .tab-content .container.is-open{
+        display: block;
+    }
+
+    #story-page #tabs-contents .title-mobile{
+        display: flex;
+        height: 114px;
+        align-items: center;
+        background: #cf0505;
+        padding-top: 5px;
+        position: relative;
+    }
+
+    #story-page #tabs-contents .title-mobile:after{
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 18px solid #fff;
+        top: calc(50% - 9px);
+        right: 40px;
+    }
+
+    #story-page #tabs-contents .title-mobile.active:after{
+        transform: rotate(-180deg);
+    }
+
+    #story-page #tabs-contents .title-mobile .toggle-content{
+        font-size: 36px;
+        color: #fff;
+        padding-left: 38px;
+        font-family: "Meiryo Bold";
+    }
+
+    #story-page #tabs-contents .tab-content .text-banner{
+        left: 20px;
+        bottom: 20px;
+        width: 351px;
+        padding: 39px 20px 35px 25px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .number{
+        font-size: 64px;
+        line-height: 66px;
+        margin-bottom: 36px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .heading{
+        margin-bottom: 9px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .year{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .name{
+        font-size: 58px;
+        line-height: 64px;
+        margin-bottom: 4px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .text{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .text-title{
+        background: transparent;
+        display: block;
+        font-size: 36px;
+        padding: 0px;
+        margin-bottom: 26px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .text-title .sub-t1{
+        display: block;
+        background: #cf0505;
+        padding: 0px 16px 0px 20px;
+        margin-bottom: 10px;
+        line-height: 71px;
+        width: max-content;
+    }
+
+    #story-page #tabs-contents .tab-content .description .text-title .sub-t2{
+        display: block;
+        background: #cf0505;
+        line-height: 71px;
+        padding-left: 20px;
+        width: max-content;
+    }
+
+    #story-page #tabs-contents .tab-content .description .left-content{
+        width: 100%;
+        border: 0px;
+        padding: 0px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .right-content{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .s-text{
+        font-size: 26px;
+        line-height: 42px;
+        margin-bottom: 45px;
+    }
+
+    #story-page #tabs-contents .tab-content .col-description.story-chapter03 .heading{
+        margin-bottom: 8px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .content .img-content{
+        margin-top: 96px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .col-description.story-chapter04,
+    #story-page #tabs-contents .tab-content .description .col-description.story-chapter05{
+        margin-bottom: 85px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .col-description.story-chapter05 .right-content .s-text,
+    #story-page #tabs-contents .tab-content .description .col-description.story-chapter06 .right-content .s-text{
+        letter-spacing: -0.25px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .col-description:last-child{
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    body{
+        min-width: 640px;
+    }
+
+    #main_wrap{
+        margin-top: 116px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .text-title{
+        font-size: 28px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .heading .t-1{
+        font-size: 50px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .year,
+    #story-page #tabs-contents .tab-content .title-content .text{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .name{
+        font-size: 48px;
+    }
+
+    #story-page #tabs-contents .tab-content .title-content .number{
+        font-size: 50px;
+        line-height: 56px;
+        margin-bottom: 15px;
+    }
+
+    #story-page #tabs-contents .tab-content .text-banner{
+        width: 300px;
+        padding: 25px 20px 25px 20px;
+    }
+
+    #story-page #tabs-contents .tab-content .description .heading .t-2{
+        padding-top: 14px;
+    }
+}

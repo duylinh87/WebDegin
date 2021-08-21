@@ -1,0 +1,1162 @@
+/*
+
+【CSS記述ルール】
+
+① font-sizeはpxで指定してください
+　（rem、%等の指定はしないようお願いいたします）
+
+② xxxxxx はディレクトリ名に変更してください
+
+③ 必ずディレクトリ名が付いたidセレクタを先頭に記述した後に、要素を記述してください
+　（例：#oneday .inner、#oneday .page-title 等）
+
+④ CSS内の画像指定パスは、CSSファイルから見た相対パスで指定してください
+　（例：../images/ディレクトリ名/画像名.拡張子）
+
+*/
+
+@font-face {
+    font-family: "Deja Vu Sans Mono";
+    src: url("./fonts/DejaVu-Sans-Mono_13348.ttf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("./fonts/GOTHIC.TTF");
+}
+
+@font-face {
+    font-family: "Koz Go Pro";
+    src: url("./fonts/KozGoPro-Regular.otf");
+}
+
+
+body{
+/*	background: linear-gradient(to right, #1488cc 0%, #2b32b2 100%);*/
+	background-image: url(../images/people-details/bacground-all.png);
+	background-size: 100%;
+}
+
+#peopleDetails {
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+#peopleDetails * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#peopleDetails img {
+	line-height: 1;
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+#peopleDetails p {
+	text-align: left;
+}
+
+#peopleDetails{
+	padding: 0px 6px;
+}
+
+/*-----   Header    ------*/
+
+#header{
+	padding: 20px 25px 20px 30px;
+}
+
+.content-header{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#header .logo{
+	width: 50%;
+	display: flex;
+    align-items: center;
+	flex-wrap: wrap;
+}
+
+#header .logo .img-logo{
+	width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    float: left;
+}
+
+#header .logo .img-logo a{
+	color: #919795;
+    font-family: "Koz Go Pro";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+	text-decoration: none;
+}
+
+#header .logo .title-website{
+	width: auto;
+    float: left;
+}
+
+#header .logo .title-website h4{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 24px;
+    font-weight: 700;
+	padding-left: 20px;
+}
+
+#header .nav-menu{
+	width :50%;
+}
+
+#header .content-header  .nav-menu{
+    width: 50%;
+}
+
+#header .content-header .menu-bar-toggle{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+#header .content-header .menu-bar-toggle:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
+#header .content-header .menu-bar-toggle span:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+
+#header .content-header .menu-bar-toggle span:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+
+/*banner top people*/
+
+.banner-top-people img{
+	width: 100%;
+}
+
+.banner-top-people{
+	background-color: #f5f5f5;
+	padding-bottom: 150px;
+	position: relative;
+}
+
+.banner-top-people .container-img{
+	max-height: 710px;
+	overflow: hidden;
+}
+
+.banner-top-people .container-img .banner-mobile{
+	display: none;
+}
+
+.banner-top-people .title-banner{
+	position: absolute;
+    bottom: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+	width: 100%;
+    text-align: center;
+}
+
+.banner-top-people .title-banner .t-1{
+	background: linear-gradient(to right, #1488cc 0%, #2b32b2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-style: italic;
+	font-family: "Koz Go Pro";
+}
+
+.banner-top-people .title-banner .t-2{
+	color: #333333;
+    font-family: "Myriad Pro";
+    font-size: 60px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 80px;
+    text-transform: uppercase;
+	padding-left: 36px;
+	position: relative;
+    bottom: -8px;
+}
+
+/*----  box-people  -----*/
+
+.box-people{
+    padding-bottom: 225px;
+    background-color: #f5f5f5;
+}
+
+.box-people .content-people{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-people .itemBox-people{
+    width: 33.33%;
+    position: relative;
+}
+
+.box-people .itemBox-people .img-people img{
+    width: 100%;
+}
+
+.box-people .itemBox-people .information-people{
+    position: absolute;
+    bottom: -68px;
+    background: #fff;
+    width: 71.4%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 4px 4px #4354a8;
+}
+
+.box-people .itemBox-people .information-people .work-people{
+    margin-bottom: 18px;
+    padding: 20px 50px 0px;
+}
+
+.box-people .itemBox-people .information-people .work-people h5{
+    color: #ffffff;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #1488cc 0%, #2b32b2 100%);
+    padding: 0px 20px;
+}
+
+.box-people .itemBox-people .information-people .work-people span{
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.box-people .itemBox-people .information-people .name-people{
+    padding: 0px 70px 27px;
+    position: relative;
+}
+
+.box-people .itemBox-people .information-people .name-people:after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/people-details/3-layers.png);
+    width: 46px;
+    height: 74px;
+    bottom: 20px;
+    right: 28px;
+    background-repeat: no-repeat;
+}
+
+.box-people .itemBox-people .information-people .name-people h4{
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.box-people .itemBox-people .information-people .name-people h4 span{
+    color: #1488cc;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.box-people .itemBox-people .information-people .name-people p{
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*----   people-details    -----*/
+
+.people-details img{
+    width: 100%;
+}
+
+.people-details .banner{
+    position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.people-details .banner .img-mobile{
+	display: none;
+}
+
+.people-details .banner .content{
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 9%;
+}
+
+.people-details .banner .content:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .6;
+}
+
+.people-details .banner .name-people h4{
+    color: #333333;
+    font-family: Meiryo;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.people-details .banner .name-people h4 span{
+    color: #1488cc;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.name-people p{
+    color: #333333;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.people-details .banner .information-people p{
+    color: #333333;
+    font-family: Meiryo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.people-details .banner .information-people .work-people h5{
+    color: #ffffff;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #1488cc 0%, #2b32b2 100%);
+    padding: 3.5px 34px;
+}
+
+.people-details .banner .information-people .work-people span{
+    color: #333333;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.people-details .banner  .information-people{
+    padding: 48px 32px 36px;
+}
+
+.people-details .banner .work-people{
+    margin-bottom: 62px;
+}
+
+.people-details .banner .name-people{
+    margin-bottom: 22px;
+}
+
+.people-details .container .boxConent-people{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.people-details .container .boxConent-people:nth-child(2n) .item-content{
+	margin-bottom: 95px;
+}
+
+.people-details .container .boxConent-people .boxTextContent{
+	width: 50%;
+}
+
+.people-details .container .boxConent-people .boxImgContent{
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.people-details .container .boxConent-people:nth-child(2n) .boxImgContent{
+	order: 1;
+}
+
+.people-details .container .boxConent-people:nth-child(2n) .boxTextContent{
+	order: 2;
+}
+
+.people-details .boxTextContent .TextContent{
+    max-width: 825px;
+	padding: 45px 50px 0px 17.3%;
+}
+
+.people-details .container .boxConent-people .boxTextContent h5{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 16px;
+	position: relative;
+	margin-bottom: 22px;
+}
+
+.people-details .container .boxConent-people .boxTextContent h5:before{
+	content: "";
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 6px;
+    height: 18px;
+    background: #fff;
+}
+
+.people-details .container .boxConent-people .boxTextContent h4{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 30px;
+    font-weight: 400;
+	margin-bottom: 30px;
+	line-height: 34px;
+}
+
+.people-details .container .boxConent-people:nth-child(2n) .boxTextContent h4{
+	max-width: 480px;
+	margin-bottom: 20px;
+}
+
+.people-details .container .boxConent-people .boxTextContent p{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.people-details .container .boxConent-people .item-content{
+	margin-bottom: 125px;
+}
+
+.people-details .container .boxConent-people .item-content:last-child{
+	margin-bottom: 0px !important;
+}
+
+/*------   dreamPeople   -------*/
+
+.dreamPeople{
+	padding-bottom: 306px;
+	background-color: #f5f5f5;
+}
+
+.dreamPeople .container{
+	position: relative;
+}
+
+.dreamPeople .contentDream{
+	position: absolute;
+    width: 100%;
+    max-width: 600px;
+	left: 174px;
+    top: 96px;
+    padding: 30px 40px 48px 30px;
+}
+
+.dreamPeople .contentDream:before{
+	content: "";
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: .8;
+}
+
+.dreamPeople .contentDream .content{
+	position: relative;
+	z-index: 9;
+}
+
+.dreamPeople{
+	position: relative;
+}
+
+.dreamPeople .contentDream h5{
+	color: #1488cc;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 16px;
+	position: relative;
+	margin-bottom: 28px;
+}
+
+.dreamPeople .contentDream h5:before{
+	content: "";
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 6px;
+    height: 18px;
+    background-color: #1488cc;
+}
+
+.dreamPeople .contentDream h4{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 30px;
+    font-weight: 400;
+	margin-bottom: 20px;
+    line-height: 36px;
+}
+
+.dreamPeople .contentDream p{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.textContent-future{
+	padding: 60px 125px 70px 60px;
+	position: relative;
+	z-index: 9;
+	background: #fff;
+}
+
+.dreamPeople .contentFuture{
+	position: absolute;
+	bottom: -180px;
+    background: #fff;
+    width: 100%;
+    max-width: 1076px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dreamPeople .contentFuture:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #1488cc 0%, #2b32b2 100%);
+    bottom: -6px;
+    right: -6px;
+    z-index: -9;
+}
+
+.dreamPeople .contentFuture h5{
+	color: #1488cc;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    position: relative;
+	padding-left: 16px;
+	margin-bottom: 22px;
+}
+
+.dreamPeople .contentFuture h5:before{
+	content: "";
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 6px;
+    height: 18px;
+    background-color: #1488cc;
+}
+
+.dreamPeople .contentFuture p{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/*----   footer   ---*/
+
+#footer{
+	overflow: hidden;
+	padding-top: 60px;
+}
+
+#footer .container-footer{
+	max-width: 1560px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.footer-page-link{
+	margin-bottom: 55px;
+}
+
+.footer-page-link .subMenu-footer{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #f0f4f5;
+}
+
+.footer-page-link .subMenu-footer .item-menu-footer{
+	width: 25%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+}
+
+.footer-page-link .subMenu-footer .item-menu-footer:after{
+	content: "";
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 40px;
+    background-color: #1488cc;
+}
+
+.footer-page-link .subMenu-footer .item-menu-footer:last-child:after{
+	display: none;
+}
+
+.footer-page-link .subMenu-footer .item-menu-footer a{
+	color: #3c3c3c;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#footer .copyright{
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 55px;
+}
+
+#footer .copyright .logo-footer{
+	width: 310px;
+	background-color: #ffffff;
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer .copyright .logo-footer h1{
+	color: #919795;
+    font-family: "Koz Go Pro";
+    font-size: 20px;
+}
+
+#footer .copyright .logo-footer span{
+	color: #919795;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.textCopyright{
+	width: calc(100% - 347px);
+	padding-left: 37px;
+}
+
+.textCopyright ul.privacy-policy{
+	margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.textCopyright ul.privacy-policy li.item-policy a{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.textCopyright ul.privacy-policy li.item-policy{
+	display: inline-block;
+	padding-right: 25px;
+	position: relative;
+}
+
+.textCopyright ul.privacy-policy li.item-policy:last-child{
+	padding-right: 0px;
+}
+
+.textCopyright ul.privacy-policy li.item-policy:after{
+	content: "/";
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    top: -3px;
+    right: 7px;
+}
+
+.textCopyright ul.privacy-policy li.item-policy:last-child:after{
+	display: none;
+}
+
+.textCopyright p.subTextCopyright{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+	margin-bottom: 5px;
+    text-transform: uppercase;	
+}
+
+.dreamPeople .container .img-banner-mobile{
+	display: none;
+}
+
+@media screen and (max-width: 1440px) {/* ---------- スマホ以下 ---------- */
+	
+	.box-people .itemBox-people .information-people{
+		width: 90%;
+	}
+	
+	.box-people .itemBox-people .information-people .name-people{
+		padding: 0px 50px 27px;
+	}
+	
+	.box-people .itemBox-people .information-people .name-people:after{
+		right: 15px;
+	}
+	
+	.box-people .itemBox-people .information-people .work-people{
+		padding: 20px 20px 0px;
+	}
+	
+	.people-details .banner .content{
+		left: 5%;
+	}
+	
+	.people-details .boxTextContent .TextContent{
+		padding-bottom: 30px;
+	}
+	
+	.people-details .container .boxConent-people .item-content{
+		margin-bottom: 50px;
+	}
+	
+	.dreamPeople .contentDream{
+		left: 60px;
+    	top: 30px
+	}
+	
+	.dreamPeople .contentFuture{
+		bottom: -220px;
+	}
+}
+
+@media screen and (max-width: 1280px) {/* ---------- スマホ以下 ---------- */
+	.people-details .banner .information-people{
+		padding: 20px;
+	}	
+	
+	.dreamPeople .contentDream{
+		padding: 20px;
+	}
+	
+	.textContent-future{
+		padding: 40px;
+	}
+	
+	.dreamPeople .contentFuture{
+		max-width: calc(100% - 40px);
+		bottom: -260px;
+	}
+}
+
+@media (max-width: 1024px){
+	body{
+		background-size: 1024px;
+	}
+}
+
+@media screen and (max-width: 992px) {/* ---------- スマホ以下 ---------- */
+	#peopleDetails{
+		padding: 0px;
+	}
+	
+	.people-details .boxTextContent .TextContent{
+		padding: 75px 25px 70px 20px;
+		max-width: 100%;
+	}
+	
+	.people-details .boxTextContent:nth-child(2n) .TextContent{
+		padding: 75px 25px 77px 20px;
+	}
+	
+	.people-details .container .boxConent-people .boxTextContent{
+		width: 100%;
+	}
+	
+	.people-details .container .boxConent-people .boxImgContent{
+		width: 100%;
+	}
+	
+	.dreamPeople .contentFuture{
+		bottom: -235px;
+	}
+	
+	.banner-top-people{
+		padding-bottom: 0px;
+	}
+	
+	.banner-top-people .title-banner{
+		position: static;
+		transform: unset;
+		padding: 38px 0px 25px;
+	}
+	
+	.banner-top-people .title-banner .t-1{
+		display: block;
+		line-height: 80px;
+	}
+	
+	.banner-top-people .title-banner .t-2{
+		font-size: 50px;
+		line-height: 50px;
+		display: block;
+		margin-top: 10px;
+		padding: 0px;
+		bottom: 0px;
+	}
+}
+
+
+@media screen and (max-width: 767px) {/* ---------- スマホ以下 ---------- */
+	
+	body{
+		min-width: 750px;
+	}
+	
+	#header{
+		padding: 25px 20px;
+	}
+	
+	#header .content-header .nav-menu{
+		width: 50px;
+	}
+	
+	#header .logo{
+		width: calc(100% - 50px);
+	}
+	
+	#header .logo .title-website h4{
+		font-size: 30px;
+	}
+	
+	.box-people{
+		background: #fff;
+		padding-bottom: 221px;
+	}
+	
+	.box-people .itemBox-people{
+		width: 100%;
+		margin-bottom: 140px;
+	}
+	
+	.box-people .itemBox-people:last-child{
+		margin-bottom: 0px;
+	}
+
+	.box-people .itemBox-people .information-people{
+		width: calc(100% - 40px);
+		bottom: -98px;
+	}
+	
+	.box-people .itemBox-people .information-people .work-people h5{
+		font-size: 30px;
+		padding: 0px;
+		width: 250px;
+		text-align: center;
+		line-height: 50px;
+	}
+	
+	.box-people .itemBox-people .information-people .work-people{
+		margin-bottom: 20px;
+	}
+	
+	.box-people .itemBox-people .information-people .work-people span{
+		font-size: 26px;
+		padding-left: 21px;
+	}
+	
+	.box-people .itemBox-people .information-people .name-people{
+		padding: 0px 100px 4px 140px;
+	}
+	
+	.box-people .itemBox-people .information-people .name-people h4{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	
+	.box-people .itemBox-people .information-people .name-people h4 span{
+		font-size: 24px;	
+	}
+	
+	.box-people .itemBox-people .information-people .name-people p{
+		font-size: 24px;
+	}
+	
+	.box-people .itemBox-people .information-people .name-people:after{
+		right: 70px;
+		width: 70px;
+		height: 112px;
+		background-size: 100%;
+	}
+	
+	.people-details .banner .img-mobile{
+		display: block;
+	}
+	
+	.people-details .banner .img-desktop{
+		display: none;
+	}
+	
+	.people-details .banner .work-people{
+		margin-bottom: 32px;
+	}
+	
+	.people-details .banner .information-people .work-people h5{
+		width: 260px;
+		text-align: center;
+		padding: 0px;
+		line-height: 50px;
+		font-size: 30px;
+	}
+	
+	.people-details .banner .information-people{
+		padding: 20px 20px 50px;
+	}
+	
+	.people-details .banner .content:after{
+		opacity: .7;
+	}
+	
+	.people-details .banner .information-people .work-people span{
+		font-size: 24px;
+	}
+	
+	.people-details .banner .name-people{
+		margin-bottom: 45px;
+	}
+	
+	.people-details .banner .name-people, .people-details .banner .information-people p.text-1{
+		padding: 0px 20px;
+		line-height: 36px;
+	}
+	
+	.people-details .banner .content{
+		top: unset;
+		bottom: 30px;
+		left: 20px;
+		transform: translate(0px, 0px);
+		width: 79.5%;
+	}
+	
+	.people-details .banner .name-people h4{
+		font-size: 30px;
+		margin-bottom: 8px;
+	}
+	
+	.people-details .banner .name-people h4 span{
+		font-size: 26px;
+	}
+	
+	.people-details .banner .information-people p{
+		font-size: 24px;
+	}
+	
+	.people-details .container .boxConent-people .item-content{
+		margin-bottom: 80px;
+	}
+	
+	.people-details .container .boxConent-people .boxTextContent h5{
+		font-size: 30px;
+		margin-bottom: 13px;
+	}
+	
+	.people-details .container .boxConent-people .boxTextContent h5:before{
+		height: 24px;
+		top: 10px;
+	}
+	
+	.people-details .container .boxConent-people .boxTextContent h4{
+		font-size: 32px;
+		margin-bottom: 30px;
+	}
+	
+	.people-details .container .boxConent-people .boxTextContent p{
+		font-size: 26px;
+   		line-height: 40px;
+	}
+	
+	.dreamPeople{
+		padding-bottom: 750px;
+	}
+	
+	.dreamPeople .contentFuture{
+		bottom: unset;
+    	top: 95%;
+	}
+	
+	.dreamPeople .contentFuture h5:before{
+		height: 24px;
+		top: -4px;
+	}
+	
+	.dreamPeople .container .img-banner-mobile{
+		display: block;
+	}
+	
+	.dreamPeople .container .img-banner-desktop{
+		display: none;
+	}
+	
+	.dreamPeople .contentDream h5{
+		font-size: 26px;
+	}
+	
+	.dreamPeople .contentDream h5:before{
+		top: -4px;
+		height: 24px;
+	}
+	
+	.dreamPeople .contentDream h4{
+		font-size: 32px;
+	}
+	
+	.dreamPeople .contentDream p{
+		font-size: 26px;
+    	line-height: 40px;
+		padding-left: 10px;
+	}
+	
+	.dreamPeople .contentFuture h5{
+		font-size: 30px;
+		margin-bottom: 45px;
+	}
+	
+	.dreamPeople .contentFuture p{
+		font-size: 26px;
+    	line-height: 40px;
+	}
+	
+	.textContent-future{
+		padding: 57px 30px 82px;
+	}
+	
+	.dreamPeople .contentDream{
+		padding: 55px 20px 80px;
+		max-width: 80%;
+		top: unset;
+		bottom: 108px;
+		left: 20px;
+		background: transparent;
+	}
+	
+	.dreamPeople .contentDream:after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		top: 0px;
+		left: 0px;
+		opacity: .1;
+	}
+	
+	.dreamPeople .contentDream .content{
+		position: relative;
+    	z-index: 9;
+	}
+	
+	.banner-top-people .container-img .banner-mobile{
+		display: block;
+	}
+	
+	.banner-top-people .container-img .banner-desktop{
+		display: none;
+	}
+	
+	.people-details .container .boxConent-people:nth-child(2n) .item-content{
+		margin-bottom: 60px;
+	}
+	
+	#footer{
+		display: none;
+	}
+	
+	#peopledetails-2, #peopledetails-3{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	
+	
+}
+
+@media print, screen and (min-width: 768px) {/* ---------- タブレット・PC以上 ---------- */
+  #peopleDetails {
+    font-size: 15px;
+  }
+}

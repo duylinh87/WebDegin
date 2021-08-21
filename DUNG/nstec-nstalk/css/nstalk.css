@@ -1,0 +1,801 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#nstalk .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#nstalk .animatedFadeInUp {
+    opacity: 0;
+}
+
+#nstalk .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#nstalk{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#nstalk .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    #nstalk .col-md-4{
+        width: 33.33%;
+        padding: 0px 14px;
+    }
+
+    #nstalk .col-md-6{
+        width: 50%;
+        padding: 0px 14px;
+    }
+
+    #nstalk .col-md-12{
+        width: 100%;
+        padding: 0px 14px;
+    }
+}
+
+/*main banner*/
+/*=============================================*/
+#nstalk .main-banner{
+    position: relative;
+}
+
+#nstalk .main-banner .image_wrap .nstalk-img{
+    width: 100% !important;
+    height: 100%;
+}
+
+#nstalk .main-banner .heading{
+    text-align: center;
+    position: absolute;
+    background: rgba(255,255,255,0.9);
+    top: 50%;
+    left: 50%;
+    padding: 48px 88px 46px 89px;
+    transform: translate(-50%, -50%);
+}
+
+#nstalk .main-banner .heading .t1{
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: center;
+}
+
+/*block-description*/
+/*================================================*/
+
+#nstalk .block-description{
+    background-image: url("../images/nstalk_bg_01_block_pc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 108px;
+}
+
+#nstalk .block-description .container-block{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#nstalk .block-description .text-description{
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 101px;
+}
+
+#nstalk .block-description .text-description .br-mobile{
+    display: none;
+}
+
+#nstalk .block-description .list-tabs-nsTalk{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk{
+    width: 24.39%;
+    margin-right: 0.81%;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 31px 15px 30px 15px;
+}
+
+#nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk.active{
+    background: #275caa;
+}
+
+#nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk .item-action{
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    color: #275caa;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+#nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk .item-action .br-mobile{
+    display: none;
+}
+
+#nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk.active .item-action{
+    color: #fff;
+}
+
+#nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk:last-child{
+    margin-right: 0px;
+}
+
+
+/*block-nsTalk*/
+/*=================================================*/
+
+#nstalk .content-block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1108px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#nstalk .nsTalk01 .info{
+    background: #2a5ca5;
+}
+
+#nstalk .nsTalk02 .info{
+    background: #efedee;
+}
+
+#nstalk .nsTalk03 .info{
+    background: rgba(255,255,255,0.9);
+}
+
+#nstalk .nsTalk03 .info{
+    background: rgba(246,138,31,0.9);
+}
+
+#nstalk .nsTalk04 .info{
+    background: rgba(255,255,255,0.9);
+}
+
+#nstalk .nsTalk05 .info{
+    background: rgba(39,92,170,0.9);
+}
+
+#nstalk .item-box-nsTalk .info{
+    box-shadow: 1px 1px 10px 0px rgba(153, 153, 153, 0.75);
+    height: 100%;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk:nth-child(2n-1){
+    background-image: url("../images/nstalk_bg_02_block_pc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 98px;
+    padding-bottom: 72px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk:nth-child(2n){
+    background-image: url("../images/nstalk_bg_03_block_pc.png");
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 72px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item02{
+    background-position-y: -150px;
+    background-position-x: -150px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item04,
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item06{
+    background-position-y: -288px;
+    background-position-x: -150px;
+}
+
+#nstalk .block-nsTalk .content-heading{
+    background: #275caa;
+    padding-top: 90px;
+    padding-bottom: 85px;
+}
+
+#nstalk .block-nsTalk .content-heading .heading-nsTalk{
+    text-align: center;
+    max-width: 680px;
+    margin: auto;
+    position: relative;
+}
+
+#nstalk .block-nsTalk .content-heading .heading-nsTalk:before{
+    content: "";
+    background-image: url("../images/nstalk_ico_setup01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: 55px;
+}
+
+#nstalk .block-nsTalk .content-heading .heading-nsTalk:after{
+    content: "";
+    background-image: url("../images/nstalk_ico_setup02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -44px;
+    left: 55px;
+}
+
+#nstalk .block-nsTalk .content-heading .heading-nsTalk .t1{
+    display: block;
+    margin-bottom: 15px;
+}
+
+#nstalk .block-nsTalk .content-heading .heading-nsTalk .t2{
+    display: block;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title .title-item{
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 41px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title .title-item:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+}
+
+#nstalk .item-box-nsTalk .info{
+    padding: 20px 10px 20px 20px;
+}
+
+#nstalk .item-box-nsTalk{
+    margin-bottom: 30px;
+}
+
+#nstalk .item-box-nsTalk:nth-child(2n-1) .info .text{
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+#nstalk .item-box-nsTalk .info .title-info .br-mobile{
+    display: none;
+}
+
+#nstalk .item-box-nsTalk .info .title-info{
+    margin-bottom: 17px;
+}
+
+#nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info{
+    font-size: 28px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+#nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t2{
+    width: calc(100% - 50px);
+    padding-left: 10px;
+    padding-top: 4px;
+    font-family: "Yu Gothic";
+}
+
+#nstalk .item-box-nsTalk:nth-child(2n) .info .title-info{
+    font-size: 28px;
+    line-height: 36px;
+    color: #275caa;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nstalk .item-box-nsTalk:nth-child(2n) .info .title-info .t1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+    background: #275caa;
+    align-items: center;
+    justify-content: center;
+}
+
+#nstalk .item-box-nsTalk:nth-child(2n) .info .title-info .t2{
+    width: calc(100% - 50px);
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+#nstalk .item-box-nsTalk:nth-child(2n) .info .text{
+    font-size: 16px;
+    line-height: 32px;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item01 .item-box-nsTalk.nsTalk05 .title-info{
+    margin-bottom: 24px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item03 .item-box-nsTalk.nsTalk01 .title-info {
+    margin-bottom: 22px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item04 .info .title-info .t2 {
+    text-indent: -14px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item04 .info .title-info {
+    margin-bottom: 22px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item04 .info .text{
+    letter-spacing: 0px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item05{
+    padding-top: 102px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item06 .item-box-nsTalk.nsTalk01 .info .title-info{
+    margin-bottom: 24px;
+}
+
+#nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item06 .item-box-nsTalk.nsTalk04 .title-info{
+    margin-bottom: 24px;
+}
+
+
+@media (max-width: 1440px) {
+    #nstalk .main-banner .heading .t1 .nstalk-img{
+        height: 45px;
+    }
+
+    #nstalk .main-banner .heading .t2 .nstalk-img{
+        height: 20px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk:nth-child(2n){
+        background-size: cover;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item02,
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item04,
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item06{
+        background-position-y: unset;
+        background-position-x: unset;
+        background-position: center;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .text,
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .text{
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .title-info,
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title .title-item .img-title{
+        height: 26px;
+        width: auto !important;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk .t1 .img-title{
+        height: 50px;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk .t2 .sub-title{
+        height: 22px;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk:before{
+        width: 80px;
+        height: 80px;
+        right: 80px;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk:after{
+        width: 80px;
+        height: 80px;
+        left: 80px;
+    }
+
+    #nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk .item-action{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk{
+        padding: 25px 15px 24px 15px;
+    }
+
+    #nstalk .block-description .text-description{
+        font-size: 20px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    #nstalk .content-block{
+        padding: 0px 36px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #nstalk .main-banner .heading .t1 .nstalk-img{
+        height: 34px;
+    }
+
+    #nstalk .main-banner .heading .t2 .nstalk-img{
+        height: 16px;
+    }
+
+    #nstalk .main-banner .heading .t1{
+        margin-bottom: 15px;
+    }
+
+    #nstalk .main-banner .heading{
+        padding: 40px 66px 33px 64px;
+    }
+
+    #nstalk .item-box-nsTalk .info{
+        padding: 15px;
+    }
+
+    /*block-description*/
+    /*=================================================*/
+    #nstalk .block-description .text-description{
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    #nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk .item-action{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    #nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk{
+        padding: 18px 12px 17px 12px;
+    }
+
+    /*block-nsTalk*/
+    /*=================================================*/
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk .t1 .img-title{
+        height: 42px;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk .t2 .sub-title{
+        height: 18px;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk{
+        max-width: 600px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title .title-item .img-title{
+        height: 22px;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t1,
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .title-info .t1{
+        width: 40px;
+        height: 40px;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t1 .icon-number,
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .title-info .t1 .icon-number {
+        width: 100%;
+        max-width: 22px;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .title-info .t2,
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t2{
+        width: calc(100% - 40px);
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .title-info,
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t2{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .text, #nstalk .item-box-nsTalk:nth-child(2n) .info .text{
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #nstalk .col-xs-12{
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+        /*main-banner*/
+    /*==========================================*/
+    #nstalk .main-banner .heading{
+        padding: 30px 66px 23px 64px;
+    }
+
+    #nstalk .main-banner .heading .t1 .nstalk-img{
+        height: 28px;
+    }
+
+    #nstalk .main-banner .heading .t1{
+        margin-bottom: 10px;
+    }
+
+    #nstalk .main-banner .heading .t2 .nstalk-img{
+        height: 13px;
+    }
+
+    /*block-description*/
+    /*==============================================*/
+    #nstalk .block-description{
+        background-image: url("../images/nstalk_bg_01_block_sp.png");
+        padding-top: 45px;
+    }
+
+    #nstalk .block-description .container-block{
+        padding: 0px 15px;
+    }
+
+    #nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk{
+        width: 23.875%;
+        margin-right: 1.5%;
+        padding: 10px 0px;
+    }
+
+    #nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk .item-action{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #nstalk .block-description .list-tabs-nsTalk .item-tab-nsTalk .item-action .br-mobile{
+        display: block;
+    }
+
+    #nstalk .block-description .text-description{
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 45px;
+    }
+
+    #nstalk .block-description .text-description .br-mobile{
+        display: block;
+    }
+
+    /*block-nsTalk*/
+    /*===================================================*/
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk .t1 .img-title{
+        height: 34px;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk .t2 .sub-title{
+        height: 14px;
+    }
+
+    #nstalk .block-nsTalk .content-heading{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk{
+        max-width: 320px;
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk:before{
+        width: 50px;
+        height: 50px;
+        left: 89%;
+        top: -24px;
+        transform: translateX(-50%);
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk:after{
+        width: 50px;
+        height: 50px;
+        left: 11%;
+        bottom: -24px;
+        transform: translateX(-50%);
+    }
+
+    #nstalk .block-nsTalk .content-heading .heading-nsTalk .t1{
+        margin-bottom: 6px;
+    }
+
+    #nstalk .content-block{
+        padding: 0px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title{
+        padding: 0px 15px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title .title-item .img-title{
+        height: 44px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title .title-item{
+        padding-bottom: 0px;
+        margin-bottom: 18px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk .container-title .title-item:after{
+        width: 20px;
+        bottom: 24px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk:nth-child(2n-1){
+        background-image: url("../images/nstalk_bg_02_block_sp.png");
+        background-position: right top;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .title-info,
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t2{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t1,
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .title-info .t1{
+        width: 35px;
+        height: 35px;
+    }
+
+    #nstalk .item-box-nsTalk:nth-child(2n-1) .info .title-info .t1 .icon-number,
+    #nstalk .item-box-nsTalk:nth-child(2n) .info .title-info .t1 .icon-number{
+        max-width: 20px;
+    }
+
+    #nstalk .item-box-nsTalk{
+        margin-bottom: 18px;
+    }
+
+    #nstalk .item-box-nsTalk .info .title-info{
+        margin-bottom: 10px !important;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk:nth-child(2n){
+        background-image: url("../images/nstalk_bg_03_block_sp.png");
+        padding-top: 50px;
+        background-position: center;
+        padding-bottom: 40px;
+    }
+
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item04 .info .title-info .t2{
+        text-indent: -10px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk:nth-child(2n) .container-title .title-item:after{
+        background: #275caa;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item05 .container-title .title-item{
+        padding-bottom: 24px;
+        margin-bottom: 0px;
+    }
+
+    #nstalk .block-nsTalk .list-block-nsTalk .item-block-nsTalk.item05 .container-title .title-item .img-title{
+        height: 20px;
+    }
+
+    #nstalk .item-block-nsTalk:nth-child(2n-1) .item-box-nsTalk:nth-child(2n) .info .title-info .t2{
+        color: #333;
+    }
+
+    #nstalk .item-box-nsTalk .info .title-info .br-desktop{
+        display: none;
+    }
+
+    #nstalk .item-box-nsTalk .info .title-info .br-mobile{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

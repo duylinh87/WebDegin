@@ -1,0 +1,723 @@
+#oneDay {
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#oneDay .animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both
+}
+
+#oneDay .animatedFadeInUp {
+    opacity: 0;
+}
+
+#oneDay .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@media (max-width: 767px) {
+    #oneDay .animated {
+        animation-duration: 1.5s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both
+    }
+}
+
+/*Header*/
+/*===========================================*/
+
+#header {
+    max-width: 1920px;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 999;
+    padding: 0px 50px;
+    display: flex;
+}
+
+#header .od_image {
+    width: 100% !important;
+}
+
+/*title page*/
+/*============================================*/
+
+#oneDay .page-title {
+    position: relative;
+}
+
+#oneDay .page-title .image_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#oneDay .page-title .image_wrap .od_image {
+    width: 100% !important;
+}
+
+#oneDay .page-title .page-title-text {
+    position: absolute;
+    top: 56.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20.8%;
+}
+
+#oneDay .page-title .page-title-text .od_image {
+    width: 100% !important;
+}
+
+/*entry-heading*/
+/*======================================*/
+
+#oneDay .entry-heading {
+    padding-top: 73px;
+    padding-bottom: 63px;
+}
+
+#oneDay .entry-heading .text_heading {
+    font-size: 20px;
+    line-height: 45px;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Yu Gothic";
+}
+
+#oneDay .entry-heading .text_heading .br-mobile{
+    display: none;
+}
+
+/*listBox-time-person*/
+/*===============================================*/
+
+#oneDay .listBox-time-person .banner-infor{
+    display: block;
+    width: 100%;
+    max-width: 1780px;
+    margin: 0px auto 98px;
+    padding: 0px 50px;
+}
+
+#oneDay .listBox-time-person .banner-infor .image_wrap{
+    display: flex;
+    position: relative;
+    margin-bottom: -110px;
+}
+
+#oneDay .listBox-time-person .banner-infor .image_wrap .od_image{
+    width: 100% !important;
+}
+
+#oneDay .listBox-time-person .banner-infor .content-text-infor{
+    background: #004ca7;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 44px 83px 40px;
+}
+
+#oneDay #boxTimePerson02.listBox-time-person .banner-infor .content-text-infor,
+#oneDay #boxTimePerson03.listBox-time-person .banner-infor .content-text-infor{
+    background: #4377af;
+}
+
+#oneDay .listBox-time-person .banner-infor .left-content{
+    position: relative;
+    width: 30%;
+}
+
+#oneDay .listBox-time-person .banner-infor .left-content:after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 170px;
+    background: #fff;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#oneDay .listBox-time-person .banner-infor .infor-person .title{
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+#oneDay .listBox-time-person .banner-infor .infor-person .name-1{
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#oneDay .listBox-time-person .banner-infor .infor-person .name-2{
+    font-size: 19px;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+#oneDay .listBox-time-person .banner-infor .infor-person .year{
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+#oneDay .listBox-time-person .banner-infor .right-content{
+    width: 70%;
+    padding: 15px 20px 0px 74px;
+}
+
+#oneDay #boxTimePerson02.listBox-time-person .banner-infor .right-content{
+    padding: 17px 20px 0px 74px;
+}
+
+#oneDay #boxTimePerson02.listBox-time-person .banner-infor .content-text-infor{
+    padding-bottom: 39px;
+}
+
+#oneDay #boxTimePerson03.listBox-time-person .banner-infor .right-content{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 10px 74px;
+}
+
+#oneDay .listBox-time-person .banner-infor .right-content .od_text{
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Yu Gothic";
+}
+
+
+/*list-box-time*/
+/*==========================================*/
+
+#oneDay .listBox-time-person{
+    overflow: hidden;
+    margin-bottom: 109px;
+}
+
+#oneDay #boxTimePerson02.listBox-time-person{
+    margin-bottom: 113px;
+}
+
+#oneDay #boxTimePerson03.listBox-time-person{
+    margin-bottom: 32px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time{
+    max-width: 1228px;
+    margin: auto;
+    padding: 0px 24px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox01{
+    padding-right: 55px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox01:before{
+    content: "";
+    position: absolute;
+    background: url(../images/oneday_bg_timeline.png);
+    height: 78px;
+    width: 95%;
+    top: 44%;
+    transform: translateY(-50%);
+    right: 33px;
+    z-index: 1;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox01:after{
+    content: "";
+    position: absolute;
+    background: url(../images/oneday_bg_timeline.png);
+    height: 78px;
+    width: 10px;
+    top: 44%;
+    transform: translateY(-50%);
+    right: 17px;
+    z-index: 1;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox01 .boxTime-person:last-child:after{
+    content: "";
+    position: absolute;
+    background: url(../images/oneday_bg_timeline.png);
+    height: 78px;
+    width: 10px;
+    top: 44%;
+    transform: translateY(-50%);
+    right: -55px;
+    z-index: 1;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox02:before{
+    content: "";
+    position: absolute;
+    background: url(../images/oneday_bg_timeline.png);
+    height: 78px;
+    width: 95%;
+    top: 44%;
+    transform: translateY(-50%);
+    left: 30px;
+    z-index: 1;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox02:after{
+    content: "";
+    position: absolute;
+    background: url(../images/oneday_bg_timeline.png);
+    height: 78px;
+    width: 10px;
+    top: 44%;
+    transform: translateY(-50%);
+    left: 14px;
+    z-index: 1;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox02 .boxTime-person:first-child:after{
+    content: "";
+    position: absolute;
+    background: url(../images/oneday_bg_timeline.png);
+    height: 78px;
+    width: 10px;
+    top: 44%;
+    transform: translateY(-50%);
+    left: -47px;
+    z-index: 1;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox02{
+    padding-left: 47px;
+    margin-right: 7px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person{
+    width: 31.08%;
+    margin-right: 3.37%;
+    box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 9;
+    background: #fff;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person:last-child{
+    margin-right: 0px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time{
+    border-bottom: 5px solid #f2f6fb;
+    padding: 13px 4px 8px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time .time_title{
+    font-size: 30px;
+    line-height: 44px;
+    color: #004fa2;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time .time_text{
+    font-size: 20px;
+    color: #004fa2;
+    font-family: "Yu Gothic";
+    position: relative;
+    bottom: -2px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text{
+    padding: 28px 35px 20px 33px;
+    position: relative;
+    min-height: 322px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .od_text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 28px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .od_text:last-child{
+    margin-bottom: 0px;
+}
+
+#oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .image_wrap{
+    position: absolute;
+    bottom: -161px;
+    left: 0px;
+}
+
+#oneDay #boxTimePerson01.listBox-time-person .content-list-box-time .col-list-boxTime.itemBox02 .boxTime-person.item04 .time .time_title,
+#oneDay #boxTimePerson02.listBox-time-person .content-list-box-time .col-list-boxTime.itemBox02 .boxTime-person.item05 .time .time_title{
+    font-size: 28px;
+    letter-spacing: -1.5px;
+}
+
+#oneDay #boxTimePerson03.listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .image_wrap{
+    bottom: -114px;
+}
+
+#oneDay #boxTimePerson03.listBox-time-person .content-list-box-time .col-list-boxTime.itemBox01{
+    margin-bottom: 154px;
+}
+
+#oneDay #boxTimePerson01.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item02 .time .time_title,
+#oneDay #boxTimePerson01.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item03 .time .time_title,
+#oneDay #boxTimePerson02.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item03 .time .time_title,
+#oneDay #boxTimePerson02.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item04 .time .time_title,
+#oneDay #boxTimePerson03.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item02 .time .time_title,
+#oneDay #boxTimePerson03.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item04 .time .time_title{
+    padding-right: 6px;
+}
+
+
+/*Footer*/
+/*==========================================*/
+
+.main-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-footer .od_image {
+    width: 100% !important;
+}
+
+
+@media print, screen and (min-width: 768px) {
+    body.template-oneDay {
+        min-width: 1180px;
+    }
+}
+
+@media (max-width: 1280px) {
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time .time_title{
+        font-size: 26px !important;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time .time_text{
+        bottom: 0px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    body.template-oneDay {
+        min-width: 640px;
+    }
+
+    #oneDay{
+        padding-bottom: 50px;
+    }
+
+    /*Header*/
+    /*=========================================*/
+    #header {
+        position: relative;
+        padding: 0px;
+    }
+
+    #oneDay .page-title .page-title-text {
+        top: 42.3%;
+        width: 44%;
+    }
+
+    /*entry-heading*/
+    /*==========================================*/
+    #oneDay .entry-heading {
+        padding-top: 38px;
+        padding-bottom: 2px;
+    }
+
+    #oneDay .entry-heading .text_heading {
+        padding: 0px 24px 42px;
+        font-size: 26px;
+        line-height: 50px;
+        max-width: 680px;
+        margin: auto;
+    }
+
+    #oneDay .entry-heading .text_heading .br-mobile{
+        display: block;
+    }
+
+    /*banner-infor*/
+    /*============================================*/
+
+    #oneDay .listBox-time-person .banner-infor .content-text-infor{
+        padding: 25px 64px 26px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .left-content{
+        width: 100%;
+        border-bottom: 2px solid #fff;
+        padding-left: 59px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .image_wrap{
+        margin-bottom: -51px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .right-content{
+        width: 100%;
+        padding: 0px !important;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .infor-person .title{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .infor-person .name-1{
+        font-size: 36px;
+        line-height: 45px;
+        display: inline-block;
+        margin-bottom: 11px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .infor-person .name-2{
+        font-size: 24px;
+        display: inline-block;
+        padding-left: 14px;
+        bottom: -1px;
+        position: relative;
+        letter-spacing: 0.75px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .infor-person .year{
+        font-size: 24px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .left-content:after{
+        display: none;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .right-content .od_text{
+        font-size: 24px;
+        line-height: 36px;
+        padding-right: 10px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .content-text-infor{
+        max-width: 84%;
+    }
+
+    /*list-box-time*/
+    /*==================================*/
+
+    #oneDay .listBox-time-person .banner-infor{
+        margin-bottom: 110px;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime{
+        padding-left: 0px !important;
+        padding-right: 8px !important;
+        margin-right: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .image_wrap{
+        position: relative;
+        bottom: unset !important;
+        left: unset;
+        width: 40%;
+        order: 1;
+        text-align: right;
+        padding-top: 15px;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .image_wrap .img-timePerson{
+        width: 100%;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time .time_title{
+        font-size: 36px !important;
+        line-height: 44px;
+        position: relative;
+        left: -4px;
+        letter-spacing: 0px !important;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time{
+        margin: 0px 28px 0px 36px;
+        border-bottom: 8px solid #f2f6fb;
+        padding: 25px 0px 9px 0px;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time .time_text{
+        font-size: 26px;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 14px;
+        padding-right: 28px;
+        min-height: auto;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .text_content{
+        width: 60%;
+        order: 2;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .od_text{
+        font-size: 24px;
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox01:before{
+        height: 100%;
+        width: 80px;
+        top: 0px;
+        transform: translateX(-50%);
+        right: 38.5%;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime.itemBox02:before{
+        height: 90%;
+        width: 80px;
+        top: 0px;
+        transform: translateX(-50%);
+        right: 38.5%;
+        left: unset;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime:after{
+        display: none;
+    }
+
+    #oneDay .listBox-time-person{
+        margin-bottom: 50px !important;
+    }
+
+    #oneDay #boxTimePerson01.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item06 .text_content{
+        width: 100%;
+        padding: 0px 60px;
+        margin-bottom: 28px;
+    }
+
+    #oneDay #boxTimePerson01.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item02 .infor_text .od_text br{
+        display: none;
+    }
+
+    #oneDay #boxTimePerson01.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item02 .infor_text .od_text .br-mobile{
+        display: block;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    #oneDay .listBox-time-person .banner-infor .left-content{
+        padding-left: 60px;
+        margin-bottom: 20px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .infor-person .name-2{
+        padding-left: 12px;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .infor_text .od_text{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .right-content .od_text{
+        font-size: 22px;
+        line-height: 34px;
+        padding-right: 0px;
+    }
+
+    #oneDay .listBox-time-person .content-list-box-time .col-list-boxTime .time .time_title{
+        font-size: 34px !important;
+    }
+
+    #oneDay .listBox-time-person .banner-infor .content-text-infor{
+        max-width: 90%;
+        padding: 25px 55px 26px;
+    }
+
+    #oneDay #boxTimePerson01.listBox-time-person .content-list-box-time .col-list-boxTime .boxTime-person.item06 .text_content{
+        padding: 0px 20px;
+    }
+}
+
+
+
+

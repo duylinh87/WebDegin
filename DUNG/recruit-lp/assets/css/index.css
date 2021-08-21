@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url("./default.css");
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial.ttf");
+}
+
+@font-face {
+  font-family: "Meiryo Regular";
+  src: url("../fonts/Meiryo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Meiryo Bold";
+  src: url("../fonts/Meiryo-Bold.ttf");
+}
+
+@font-face {
+  font-family: "MS PGothic";
+  src: url("../fonts/MS-PGothic.ttf");
+}
+
+@font-face {
+  font-family: "Tw Cen MT";
+  src: url("../fonts/TwCenMTStd.otf");
+}
+
+@font-face {
+  font-family: "Tw Cen MT Bold";
+  src: url("../fonts/TwCenMTBold.ttf");
+}
+
+*{
+  margin: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media print, screen and (min-width: 768px) {
+  body {
+    min-width: 1024px;
+  }
+}

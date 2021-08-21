@@ -1,0 +1,1265 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#careerup .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#careerup .animatedFadeInUp {
+    opacity: 0;
+}
+
+#careerup .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#careerup{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#careerup .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*main banner*/
+/*=============================================*/
+#careerup .main-banner{
+    position: relative;
+    margin-bottom: 120px;
+}
+
+#careerup .main-banner .image_wrap .career-img{
+    width: 100% !important;
+    height: 100%;
+}
+
+#careerup .main-banner .heading{
+    text-align: center;
+    position: absolute;
+    background: rgba(255,255,255,0.9);
+    top: 50%;
+    left: 50%;
+    padding: 57px 50px 45px 50px;
+    transform: translate(-50%, -50%);
+}
+
+#careerup .main-banner .heading .t1{
+    display: flex;
+    margin-bottom: 38px;
+    justify-content: center;
+}
+
+#careerup .main-banner .heading .t2{
+
+}
+
+/*block system*/
+/*==========================================*/
+#careerup .block-system{
+    margin-bottom: 130px;
+}
+
+#careerup .block-system .container-block{
+    width: 100%;
+    max-width: 1082px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#careerup .block-system .container-block .image_wrap .career-img{
+    width: 100% !important;
+    height: 100%;
+}
+
+#careerup .block-system .heading-block{
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+#careerup .block-system .heading-block .t1{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#careerup .block-system .content-top .career_text{
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    color: #275caa;
+    font-weight: bold;
+    letter-spacing: -0.25px;
+    margin-bottom: 90px;
+}
+
+#careerup .block-system .list-point-system{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 12px;
+    margin-top: 122px;
+}
+
+#careerup .block-system .list-point-system .item-point-system{
+    width: 47.86%;
+    margin-right: 4.28%;
+}
+
+#careerup .block-system .list-point-system .item-point-system:nth-child(2n){
+    margin-right: 0px;
+}
+
+#careerup .block-system .list-point-system .item-point-system.item02{
+    margin-top: 200px;
+}
+
+#careerup .block-system .list-point-system .item-point-system .content{
+    box-shadow: 1px 1px 10px 0px rgba(145, 146, 143, 0.3);
+    position: relative;
+    padding: 40px 30px 35px 28px;
+}
+
+#careerup .block-system .list-point-system .item-point-system .image_wrap .career-img {
+    width: 100% !important;
+    height: 100%;
+}
+
+#careerup .block-system .list-point-system .item-point-system .image_wrap .career_text{
+    font-size: 16px;
+    line-height: 32px;
+    color: #333;
+    font-weight: 400;
+    margin-top: 33px;
+    letter-spacing: -0.5px;
+    min-height: 190px;
+}
+
+#careerup .block-system .list-point-system .item-point-system .item-note{
+    position: absolute;
+    top: -22px;
+    left: 12px;
+    z-index: 9;
+}
+
+/*block plan*/
+/*===========================================*/
+
+#careerup .block-plan{
+    background-image: url("../images/career_banner_block_plan_pc.jpg");
+    padding-top: 56px;
+    padding-bottom: 102px;
+    margin-bottom: 100px;
+}
+
+#careerup .block-plan .container-block{
+    width: 100%;
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#careerup .block-plan .heading-block{
+    text-align: center;
+    margin-bottom: 136px;
+}
+
+#careerup .block-plan .heading-block .t1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#careerup .block-plan .list-step-plan{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-right: 50px;
+    margin-bottom: 8px;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan{
+    width: 33.33%;
+    position: relative;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan.item01 .content{
+    background: #5dcee9;
+    min-height: 120px;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan .career_text{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan.item01 .career_text .img-title{
+    width: 100%;
+    max-width: 55%;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan.item02 .content{
+    background: #12b2d7;
+    min-height: 190px;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan.item02 .career_text .img-title{
+    width: 100%;
+    max-width: 80%;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan.item03 .content{
+    background: #0399bc;
+    min-height: 260px;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan.item03 .career_text .img-title{
+    width: 100%;
+    max-width: 80%;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan .note-message{
+    position: absolute;
+    top: -95px;
+    right: 14px;
+    width: 100%;
+    max-width: 63%;
+    z-index: 9;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan .note-message .career-img{
+    width: 100%;
+}
+
+#careerup .block-plan .list-step-plan .item-step-plan .note-step{
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    z-index: 9;
+}
+
+#careerup .block-plan .list-box-content{
+    padding: 83px 60px 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#careerup .block-plan .list-box-content .item-box-content{
+    width: 20.425%;
+    margin-right: 6.1%;
+    padding: 19px 10px 14px 10px;
+    position: relative;
+}
+
+#careerup .block-plan .list-box-content .item-box-content:last-child{
+    margin-right: 0px;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item01{
+    background: #6b93cd;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item01:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/career_icon_drop_01.png");
+    width: 42px;
+    height: 60px;
+    top: -66px;
+    left: calc(50% - 21px);
+    z-index: 1;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item02{
+    background: #4573b8;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item02:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/career_icon_drop_02.png");
+    width: 42px;
+    height: 60px;
+    top: -66px;
+    left: calc(50% - 21px);
+    z-index: 1;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item03{
+    background: #0e4494;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item03:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/career_icon_drop_03.png");
+    width: 42px;
+    height: 60px;
+    top: -66px;
+    left: calc(50% - 21px);
+    z-index: 1;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item04{
+    background: #093473;
+    padding: 19px 5px 14px 10px;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item04:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/career_icon_drop_04.png");
+    width: 42px;
+    height: 60px;
+    top: -66px;
+    left: calc(50% - 21px);
+    z-index: 1;
+}
+
+#careerup .block-plan .list-box-content .item-box-content.item04 .text{
+    letter-spacing: -0.5px;
+}
+
+#careerup .block-plan .list-box-content .item-box-content .title{
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    min-height: 108px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    justify-content: center;
+}
+
+#careerup .block-plan .list-box-content .item-box-content .text{
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 900;
+}
+
+#careerup .block-plan .list-text{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#careerup .block-plan .list-text .item-content-text{
+    font-size: 18px;
+    line-height: 24px;
+    color: #5dcee9;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+#careerup .block-plan .list-text .item-content-text .text-list{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+#careerup .block-plan .list-text .item-content-text .text-list:before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #5dcee9;
+    border-radius: 50%;
+    top: 9px;
+    left: -10px;
+}
+
+#careerup .block-plan .list-text .item-content-text .text-list:last-child{
+    margin-bottom: 0px !important;
+}
+
+#careerup .block-plan .list-text .item-content-text.item01{
+    background-image: url("../images/career_bg_box_text_plan01.png");
+    width: 36%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 54px 30px 53px 55px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item01:before{
+    content: "1年目";
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: bold;
+    bottom: -37px;
+    left: -1px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item01:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 102px);
+    background: #cccccc;
+    bottom: -19px;
+    left: 53px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item02{
+    background-image: url("../images/career_bg_box_text_plan02.png");
+    width: 36%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 42px 25px 41px 75px;
+    position: relative;
+    margin-left: -38px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item02:before{
+    content: "2年目";
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: bold;
+    bottom: -37px;
+    left: -1px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item02:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 102px);
+    background: #cccccc;
+    bottom: -19px;
+    left: 53px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item03{
+    background-image: url("../images/career_bg_box_text_plan03.png");
+    width: 35.8%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 54px 25px 53px 69px;
+    position: relative;
+    margin-left: -38px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item03:before{
+    content: "3年目";
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: bold;
+    bottom: -37px;
+    left: -1px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item03:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 100px);
+    background: #cccccc;
+    bottom: -19px;
+    left: 53px;
+}
+
+#careerup .block-plan .list-text .item-content-text.item03 .border{
+    position: absolute;
+    width: 42px;
+    height: 2px;
+    background-image: url("../images/career_ico_border.png");
+    bottom: -19px;
+    right: -1px;
+}
+
+/*block interview*/
+/*=========================================*/
+#careerup .block-interview{
+    padding-bottom: 94px;
+    position: relative;
+}
+
+#careerup .block-interview:before{
+    content: "";
+    background-image: url("../images/career_bg_interview_01_pc.png");
+    width: 87%;
+    height: 100%;
+    position: absolute;
+    top: 18.2%;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+}
+
+#careerup .block-interview:after{
+    content: "";
+    background-image: url("../images/career_bg_interview_02_pc.png");
+    width: 87%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+}
+
+#careerup .block-interview .container-block{
+    width: 100%;
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+    position: relative;
+    z-index: 9;
+}
+
+#careerup .block-interview .heading-block{
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+#careerup .block-interview .heading-block .t1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#careerup .block-interview .list-box-interview{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+}
+
+#careerup .block-interview .list-box-interview .item-box-interview{
+    width: 31.2%;
+    margin-right: 3.2%;
+}
+
+#careerup .block-interview .list-box-interview .item-box-interview:last-child{
+    margin-right: 0px;
+}
+
+#careerup .block-interview .list-box-interview .item-box-interview .image_wrap{
+    margin-bottom: 21px;
+}
+
+#careerup .block-interview .list-box-interview .item-box-interview .image_wrap .career-img{
+    width: 100% !important;
+    height: 100%;
+    box-shadow: 1px 1px 10px 0px rgba(145, 146, 143, 0.3);
+}
+
+#careerup .block-interview .list-box-interview .item-box-interview .sub_text{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#careerup .block-interview .list-box-interview .item-box-interview .title{
+    text-align: center;
+}
+
+#careerup .block-interview .list-box-interview .item-box-interview .title .sub-t1{
+    font-size: 24px;
+}
+
+#careerup .block-interview .content-info .item-info-interview .title{
+    display: flex;
+    position: relative;
+    padding-bottom: 22px;
+    margin-bottom: 60px;
+}
+
+#careerup .block-interview .content-info .item-info-interview .title:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #f68a1f;
+    bottom: 0px;
+    left: 0px;
+}
+
+#careerup .block-interview .content-info .item-info-interview .info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#careerup .block-interview .content-info .item-info-interview .info.info-02{
+    margin-bottom: 55px;
+}
+
+#careerup .block-interview .content-info .item-info-interview .info .content-img{
+    width: 120px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#careerup .block-interview .content-info .item-info-interview .info .content-text{
+    width: calc(100% - 120px);
+    padding-left: 40px;
+}
+
+#careerup .block-interview .content-info .item-info-interview .info .image_wrap img{
+    padding-left: 21px;
+    margin-bottom: 8px;
+}
+
+#careerup .block-interview .content-info .item-info-interview .info .sub-title{
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+    color: #275caa;
+    font-weight: bold;
+}
+
+#careerup .block-interview .content-info .item-info-interview .info .content-text .text{
+    font-size: 18px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+}
+
+#careerup .block-interview .content-info .item-info-interview {
+    margin-bottom: 85px;
+    overflow: hidden;
+}
+
+#careerup .block-interview .content-info .item-info-interview:last-child{
+    margin-bottom: 0px;
+}
+
+#careerup .block-interview .content-info .item-info-interview.item02 .info.info-01,
+#careerup .block-interview .content-info .item-info-interview.item03 .info.info-01{
+    margin-bottom: 58px;
+}
+
+@media (max-width: 1440px) {
+    /*main-banner*/
+    /*=======================================*/
+
+    #careerup .main-banner .heading .t1 .career-img,
+    #careerup .block-system .heading-block .t1 .career-img,
+    #careerup .block-plan .heading-block .t1 .career-img,
+    #careerup .block-interview .heading-block .t1 .career-img{
+        height: 45px;
+    }
+
+    #careerup .main-banner .heading .t2 .sub-title,
+    #careerup .block-system .heading-block .t2 .sub-title,
+    #careerup .block-plan .heading-block .t2 .sub-title,
+    #careerup .block-interview .heading-block .t2 .sub-title{
+        height: 20px;
+    }
+
+    #careerup .block-plan .list-text .item-content-text{
+        font-size: 16px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .title .career-img{
+        height: 30px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .content-text .text{
+        font-size: 16px;
+        line-height: 34px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .sub_text .img-title{
+        height: 38px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .title .txt-person{
+        height: 32px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .title .sub-t1{
+        font-size: 22px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .sub-title{
+        font-size: 22px;
+    }
+
+    #careerup .block-plan .list-box-content .item-box-content .title{
+        font-size: 28px;
+        line-height: 34px;
+        min-height: 102px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #careerup .main-banner .heading .t1 .career-img,
+    #careerup .block-system .heading-block .t1 .career-img,
+    #careerup .block-plan .heading-block .t1 .career-img,
+    #careerup .block-interview .heading-block .t1 .career-img{
+        height: 34px;
+    }
+
+    #careerup .main-banner .heading .t2 .sub-title,
+    #careerup .block-system .heading-block .t2 .sub-title,
+    #careerup .block-plan .heading-block .t2 .sub-title,
+    #careerup .block-interview .heading-block .t2 .sub-title{
+        height: 18px;
+        padding-left: 0px;
+    }
+
+    #careerup .main-banner .heading .t1{
+        margin-bottom: 15px;
+    }
+
+    #careerup .main-banner{
+        margin-bottom: 80px;
+    }
+
+    #careerup .main-banner .heading{
+        padding: 47px 40px 35px 40px;
+    }
+
+    #careerup .block-system{
+        margin-bottom: 100px;
+    }
+
+    #careerup .block-system .content-top .career_text{
+        font-size: 14px;
+        line-height: 32px;
+        margin-bottom: 60px;
+    }
+
+    #careerup .block-system .heading-block{
+        margin-bottom: 50px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system .item-note .icon-note{
+        height: 35px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system .image_wrap .career_text{
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #careerup .block-system .list-point-system{
+        margin-top: 100px;
+    }
+
+    #careerup .block-plan{
+        margin-bottom: 80px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan.item01 .content{
+        min-height: 100px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan.item02 .content{
+        min-height: 170px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan.item03 .content{
+        min-height: 240px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan .note-message{
+        top: -62px;
+        right: 8px;
+        width: 60%;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan .note-step .career-img{
+        height: 18px;
+    }
+
+    #careerup .block-plan .list-text .item-content-text{
+        width: 36% !important;
+        margin-right: 0px;
+        margin-left: -4.1% !important;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 30px !important;
+    }
+
+    #careerup .block-plan .list-text .item-content-text .text-list{
+        margin-bottom: 10px;
+    }
+
+    #careerup .block-plan .list-text .item-content-text.item02,
+    #careerup .block-plan .list-text .item-content-text.item03{
+        padding: 30px 25px 30px 50px !important;
+    }
+
+    #careerup .block-plan .list-text .item-content-text.item01{
+        margin-left: 0px !important;
+    }
+
+    #careerup .block-plan .list-box-content{
+        padding: 83px 0px 0px;
+    }
+
+    #careerup .block-plan .list-box-content .item-box-content{
+        width: 22.75%;
+        margin-right: 3%;
+    }
+
+    #careerup .block-plan .list-box-content .item-box-content .title{
+        font-size: 24px;
+        line-height: 30px;
+        min-height: 90px;
+    }
+
+    #careerup .block-plan .list-box-content .item-box-content .text{
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .sub_text .img-title{
+        height: 32px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .title .txt-person{
+        height: 26px
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .title .sub-t1{
+        font-size: 18px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .content-text .text{
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .title .career-img{
+        height: 26px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .sub-title{
+        font-size: 20px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview{
+        margin-bottom: 40px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info{
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #careerup .main-banner .heading .t1 .career-img,
+    #careerup .block-system .heading-block .t1 .career-img,
+    #careerup .block-plan .heading-block .t1 .career-img,
+    #careerup .block-interview .heading-block .t1 .career-img{
+        height: 29px;
+    }
+
+    #careerup .main-banner .heading .t2 .sub-title,
+    #careerup .block-system .heading-block .t2 .sub-title,
+    #careerup .block-plan .heading-block .t2 .sub-title,
+    #careerup .block-interview .heading-block .t2 .sub-title{
+        height: 13px;
+    }
+
+    /*main-banner*/
+    /*========================================*/
+    #careerup .main-banner{
+        margin-bottom: 45px;
+    }
+
+    #careerup .main-banner .heading{
+        padding: 30px 30px 22px 30px;
+        top: 30%;
+    }
+
+    #careerup .main-banner .heading .t1{
+        margin-bottom: 12px;
+    }
+
+    /*block-system*/
+    /*=========================================*/
+    #careerup .block-system{
+        margin-bottom: 50px;
+    }
+
+    #careerup .block-system .heading-block .t1,
+    #careerup .block-plan .heading-block .t1,
+    #careerup .block-interview .heading-block .t1{
+        margin-bottom: 12px;
+    }
+
+    #careerup .block-system .container-block{
+        padding: 0px 15px;
+    }
+
+    #careerup .block-system .list-point-system{
+        margin-top: 50px;
+        padding: 0px 10px;
+    }
+
+    #careerup .block-system .content-top .career_text{
+        text-align: left;
+        font-size: 13px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    #careerup .block-system .heading-block{
+        margin-bottom: 30px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system.item02{
+        margin-top: 45px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system .item-note .icon-note{
+        height: 25px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system .item-note{
+        top: -14px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system .content{
+        max-width: 85%;
+        padding: 22px 15px 25px 15px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system .image_wrap .career_text{
+        font-size: 13px;
+        line-height: 26px;
+        min-height: auto;
+        margin-top: 12px;
+    }
+
+    #careerup .block-system .list-point-system .item-point-system.item02 .content{
+        float: right;
+    }
+
+    /*block-plan*/
+    /*=======================================*/
+    #careerup .block-plan{
+        background-image: url("../images/career_banner_block_plan_sp.jpg");
+        padding-bottom: 0px;
+        margin-bottom: 45px;
+    }
+
+    #careerup .block-plan .container-block{
+        padding: 0px 15px;
+    }
+
+    #careerup .block-plan .list-step-plan{
+        padding-right: 0px;
+        margin-bottom: 15px;
+        width: 660px;
+    }
+
+    /*#careerup .block-plan .list-box-content .item-box-content{*/
+    /*    width: 48%;*/
+    /*    margin-right: 4%;*/
+    /*    margin-bottom: 100px;*/
+    /*}*/
+
+    /*#careerup .block-plan .list-box-content .item-box-content:nth-child(2n){*/
+    /*    margin-right: 0px;*/
+    /*}*/
+
+    #careerup .block-plan .list-box-content{
+        width: 690px;
+        padding: 80px 15px;
+    }
+
+    #careerup .block-plan .list-box-content .item-box-content{
+        width: 21.25%;
+        margin-right: 5%;
+    }
+
+    #careerup .block-plan .list-box-content .item-box-content .title{
+        font-size: 20px;
+        line-height: 26px;
+        min-height: 78px;
+    }
+
+    #careerup .block-plan .list-box-content .item-box-content .text{
+        font-size: 11px;
+        line-height: 23px;
+    }
+
+    #careerup .block-plan .list-text{
+        width: 640px;
+    }
+
+    #careerup .block-plan .list-text .item-content-text.item02,
+    #careerup .block-plan .list-text .item-content-text.item03{
+        padding: 25px 10px 25px 45px !important;
+    }
+
+    #careerup .block-plan .list-text .item-content-text:last-child{
+        margin-right: 0px !important;
+    }
+
+    #careerup .block-plan .list-text .item-content-text .text-list:before{
+        width: 3px;
+        height: 3px;
+        left: -8px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan.item01 .content{
+        min-height: 90px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan.item02 .content{
+        min-height: 135px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan.item03 .content{
+        min-height: 202px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan .note-step .career-img{
+        height: 15px;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan .note-step{
+        top: -10px;
+        left: 5px;
+    }
+
+    #careerup .block-plan .heading-block{
+        margin-bottom: 90px;
+    }
+
+    #careerup .block-plan .list-text .item-content-text:before{
+        font-size: 14px !important;
+    }
+
+    #careerup .block-plan .list-text .item-content-text.item01:after{
+        width: calc(100% - 80px);
+        bottom: -21px;
+        left: 44px;
+    }
+
+    #careerup .block-plan .list-text .item-content-text.item02:after{
+        width: calc(100% - 80px);
+        bottom: -21px;
+        left: 44px;
+    }
+
+    #careerup .block-plan .list-text .item-content-text.item03:after{
+        width: calc(100% - 78px);
+        bottom: -21px;
+        left: 44px;
+    }
+
+    #careerup .block-plan .list-text .item-content-text.item03 .border{
+        bottom: -21px;
+        width: 30px;
+        background-size: 100%;
+    }
+
+    #careerup .block-plan .list-box-content .item-box-content:after{
+        width: 38px !important;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    #careerup .block-plan .list-step-plan .item-step-plan .note-message{
+        top: -68px;
+        right: 3px;
+        width: 60%;
+    }
+
+    /*block-interview*/
+    /*===========================================*/
+    #careerup .block-interview{
+        padding-bottom: 30px;
+    }
+
+    #careerup .block-interview:before{
+        background-image: url("../images/career_bg_interview_01_sp.png");
+        width: 100%;
+        top: 14.5%;
+    }
+
+    #careerup .block-interview:after{
+        background-image: url("../images/career_bg_interview_02_sp.png");
+        width: 100%;
+    }
+
+    #careerup .block-interview .container-block{
+        padding: 0px 15px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 35px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #careerup .block-interview .heading-block{
+        margin-bottom: 30px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .image_wrap{
+        width: 35%;
+        margin-bottom: 0px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .content-text{
+        width: 65%;
+        padding-left: 18px;
+        padding-top: 15px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .sub_text{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .sub_text .img-title{
+        height: 30px;
+        width: auto !important;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .title{
+        text-align: left;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .title .txt-person{
+        height: 20px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview .title .sub-t1{
+        font-size: 14px;
+    }
+
+    #careerup .block-interview .list-box-interview .item-box-interview:last-child{
+        margin-bottom: 0px;
+    }
+
+    #careerup .block-interview .list-box-interview{
+        margin-bottom: 70px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .title .career-img{
+        height: 19px;
+        width: auto !important;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .title:after{
+        width: 24px;
+        height: 3px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .title{
+        padding-bottom: 12px;
+        margin-bottom: 35px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .content-img{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .content-text{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .image_wrap img{
+        padding-left: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .content-img .image_wrap{
+        align-items: center;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .sub-title{
+        width: auto;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info .content-text .text{
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview .info{
+        margin-bottom: 30px !important;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview{
+        margin-bottom: 30px;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview.item04 .title .career-img{
+        height: 44px;
+        width: auto !important;
+    }
+
+    #careerup .block-interview .content-info .item-info-interview.item04 .title:after{
+        bottom: 28px;
+    }
+
+}

@@ -1,0 +1,518 @@
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#partner img {
+    max-width: 100%;
+}
+
+#partner .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#partner .animatedFadeInUp {
+    opacity: 0;
+}
+
+#partner .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#partner {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#partner .pc_br{
+    display: none;
+}
+
+
+/*main-banner*/
+/*===============================================*/
+
+#partner .main-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#partner .main-banner .pic-inner{
+    position: relative;
+    padding-bottom: 56.5%;
+}
+
+#partner .main-banner .pic-inner .main-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80%;
+}
+
+#partner .main-banner .heading{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#partner .main-banner .heading .heading-inner{
+    text-shadow: 1px 1px 2px #5f5f5f, -1px 1px 2px #5f5f5f;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding: 0px 20px;
+    max-width: 490px;
+    margin: auto;
+}
+
+#partner .main-banner .heading .t1{
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+#partner .main-banner .heading .t2{
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/*tabs-content*/
+/*========================================*/
+#partner .tabs-content{
+    padding-top: 40px;
+}
+
+#partner .tabs-content .inner{
+    max-width: 490px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#partner .tabs-content .title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+#partner .tabs-content .list-tab-partner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#partner .tabs-content .item-tab-partner{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#partner .tabs-content .item-tab-partner:nth-child(2n){
+    padding-left: 10px;
+}
+
+#partner .tabs-content .item-tab-partner .item-action{
+    font-size: 12px;
+    color: #000;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+#partner .tabs-content .item-tab-partner .icon-arrow{
+    width: 6px;
+    margin-left: 10px;
+}
+
+/*partner-content*/
+/*====================================*/
+#partner .partner-content{
+    padding-top: 60px;
+}
+
+#partner #partner-block04.partner-content{
+    margin-bottom: 150px;
+}
+
+#partner .partner-content .inner{
+    max-width: 490px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#partner .partner-content .heading-block{
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: solid 10px #2eaeff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #000;
+}
+
+#partner .partner-content .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#partner .partner-content .image-content{
+    order: 1;
+    margin-bottom: 25px;
+}
+
+#partner .partner-content .image-content .pic-inner .partner-img{
+    width: 100%;
+}
+
+#partner .partner-content .text-content{
+    order: 2;
+}
+
+#partner .partner-content .text-content .text{
+    font-size: 12px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#partner .partner-content .button-btn{
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+    background: #FBF198;
+    width: 195px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    border-radius: 20px;
+    border: 2px solid #FBEE6F;
+    margin: auto;
+    position: relative;
+    transition: .4s;
+}
+
+#partner .partner-content .button-btn:hover{
+    background: #fff;
+    text-decoration: none;
+}
+
+#partner .partner-content .button-btn .ico-link{
+    width: 6px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    #partner .pc_br{
+        display: block;
+    }
+
+
+    /*main-banner*/
+    /*===============================*/
+    #partner .main-banner .pic-inner{
+        padding: 0px;
+    }
+
+    #partner .main-banner .pic-inner .main-img{
+        position: static;
+        display: block;
+    }
+
+    #partner .main-banner .heading .heading-inner{
+        max-width: 1100px;
+    }
+
+    #partner .main-banner .heading .t1 {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+
+    #partner .main-banner .heading .t2 {
+        display: block;
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    #partner .main-banner .heading {
+        top: 56.5%;
+        transform: translateY(-50%);
+    }
+
+
+    /*tabs-content*/
+    /*======================================*/
+
+    #partner .tabs-content {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    #partner .tabs-content .inner {
+        max-width: 1240px;
+    }
+
+    #partner .tabs-content .title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    #partner .tabs-content .list-tab-partner {
+        padding: 0px 20px;
+    }
+
+    #partner .tabs-content .item-tab-partner .item-action {
+        font-size: 13px;
+        color: #000;
+        line-height: 26px;
+        text-decoration: underline;
+        letter-spacing: 0.2px;
+    }
+
+    #partner .tabs-content .item-tab-partner {
+        width: 25%;
+    }
+
+    #partner .tabs-content .item-tab-partner .icon-arrow,
+    #partner .tabs-content .item-tab-partner:nth-child(2) .icon-arrow{
+        width: 6px;
+        margin-left: 16px;
+    }
+
+    #partner .tabs-content .item-tab-partner:nth-child(2n){
+        padding: 0px;
+    }
+
+
+    /*partner-content*/
+    /*=========================================*/
+    #partner .partner-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #partner .partner-content .inner {
+        max-width: 1240px;
+    }
+
+    #partner .partner-content .image-content {
+        order: 2;
+        margin-bottom: 0px;
+        width: 44%;
+        padding-top: 7px;
+    }
+
+    #partner .partner-content .text-content{
+        order: 1;
+        width: 55%;
+        padding-right: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #partner #partner-block01.partner-content .text-content{
+        padding-bottom: 12px;
+    }
+
+    #partner #partner-block02.partner-content .text-content{
+        padding-bottom: 42px;
+    }
+
+    #partner #partner-block02.partner-content,
+    #partner #partner-block03.partner-content{
+        padding-bottom: 80px;
+    }
+
+    #partner .partner-content .heading-block {
+        margin-bottom: 30px;
+        padding-left: 19px;
+        border-left: solid 10px #2eaeff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #000;
+        letter-spacing: 0.5px;
+    }
+
+    #partner .partner-content .text-content .text {
+        font-size: 12px;
+        line-height: 24px;
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 30px;
+        text-align: justify;
+        letter-spacing: -0.5px;
+    }
+
+    #partner .partner-content .link-btn{
+        width: 100%;
+    }
+
+    #partner .partner-content .button-btn {
+        font-size: 12px;
+        line-height: 24px;
+        color: #000;
+        width: 290px;
+        height: 42px;
+        border-radius: 35px;
+        padding-right: 10px;
+    }
+
+    #partner .partner-content .button-btn .ico-link {
+        width: 6px;
+        top: 50%;
+        right: 23px;
+    }
+
+    #partner #partner-block02.partner-content .text-content .text{
+        letter-spacing: -0.85px;
+    }
+
+
+}
+
+
+@media (min-width: 1280px) {
+
+    #partner .main-banner .heading .t1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 38px;
+    }
+
+    #partner .main-banner .heading .t2 {
+        display: block;
+        font-size: 26px;
+        line-height: 47px;
+    }
+
+    #partner .tabs-content .item-tab-partner .item-action {
+        font-size: 17px;
+        color: #000;
+        line-height: 32px;
+        text-decoration: underline;
+        letter-spacing: 0.2px;
+    }
+
+    #partner .tabs-content .list-tab-partner {
+        padding: 0px 42px;
+    }
+
+    #partner .tabs-content .item-tab-partner .icon-arrow {
+        width: 8px;
+        margin-left: 25px;
+        position: relative;
+        bottom: -2px;
+    }
+
+    #partner .tabs-content .item-tab-partner:nth-child(2) .icon-arrow {
+        margin-left: 25px;
+    }
+
+    #partner .tabs-content {
+        padding-top: 80px;
+        padding-bottom: 182px;
+    }
+
+    #partner .tabs-content .title {
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 46px;
+    }
+
+    #partner .partner-content .heading-block {
+        margin-bottom: 60px;
+        padding-left: 19px;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    #partner .partner-content .text-content {
+        order: 1;
+        width: 55.5%;
+        padding-right: 77px;
+    }
+
+    #partner .partner-content .button-btn {
+        color: #000;
+        width: 375px;
+        height: 60px;
+        border-radius: 35px;
+        padding-right: 10px;
+    }
+
+    #partner .partner-content {
+        padding-top: 100px;
+        padding-bottom: 122px;
+    }
+
+    #partner #partner-block02.partner-content, #partner #partner-block03.partner-content {
+        padding-bottom: 144px;
+    }
+
+
+    #partner .partner-content .text-content .text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    #partner .partner-content .button-btn .ico-link {
+        width: 8px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,827 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#recruit .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#recruit .animatedFadeInUp {
+    opacity: 0;
+}
+
+#recruit .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#recruit{
+    position: relative;
+    /*overflow: hidden;*/
+    background: #fff;
+}
+
+#recruit .image_wrap{
+    display: flex;
+}
+
+/*header*/
+/*=======================================================*/
+
+#header{
+    position: relative;
+    padding: 18px 0px;
+}
+
+#header .container-header{
+    max-width: 1420px;
+    margin: auto;
+    padding: 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header #logo{
+    width: 50%;
+}
+
+#header #logo .logo_text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+#header #logo .link_home{
+    font-size: 20px;
+    font-weight: bold;
+    color: #323232;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+#header #logo .name-details{
+    font-size: 12px;
+    font-weight: 400;
+    color: #323232;
+    padding-left: 12px;
+    letter-spacing: 0.35px;
+}
+
+#header #main-menu{
+    width: 50%;
+}
+
+#header #main-menu .navPage-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#header #main-menu .navPage-list .navPage-item{
+    padding-left: 24px;
+}
+
+#header #main-menu .navPage-list .navPage-item:first-child{
+    padding-left: 0px;
+}
+
+#header #main-menu .navPage-list .navPage-item .navPage-action{
+    font-size: 13px;
+    font-weight: bold;
+    color: #323232;
+    letter-spacing: 1px;
+    display: block;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+#header .toggle_menu{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    height: 75px;
+    width: 75px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+/*main-banner*/
+/*======================================================*/
+
+#recruit .main-banner{
+    background-image: url("../images/recruit_mainimg_banner_pc.jpg");
+    padding: 108px 0px 64px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+
+}
+
+#recruit .main-banner .heading{
+    text-align: center;
+    font-family: "Meiryo";
+}
+
+#recruit .main-banner .heading .t1{
+    font-size: 52px;
+    line-height: 56px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    letter-spacing: 6px;
+    margin-bottom: 8px;
+}
+
+#recruit .main-banner .heading .t2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+#recruit .main-banner .heading .name-company{
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/*block-description*/
+/*=================================================*/
+
+#recruit .block-description{
+    padding-top: 66px;
+    margin-bottom: 135px;
+}
+
+#recruit .block-description .container-block{
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 0px 25px;
+}
+
+#recruit .block-description .heading{
+    font-size: 30px;
+    line-height: 48px;
+    color: #333333;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#recruit .block-description .text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+    padding-left: 55px;
+}
+
+/*block-staff-introduction*/
+/*==================================================*/
+#recruit .block-staff-introduction{
+    margin-bottom: 50px;
+}
+
+#recruit .block-staff-introduction .container-block{
+    width: 100%;
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#recruit .block-staff-introduction .entry-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#recruit .block-staff-introduction .heading-top{
+    font-size: 24px;
+    line-height: 44px;
+    color: #333333;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    border-bottom: 3px solid #ffcccc;
+    padding: 0px 10px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item{
+    margin-bottom: 106px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item.item-02{
+    margin-bottom: 85px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item:last-child{
+    margin-bottom: 0px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .image-staff{
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .image-staff .note-number{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9;
+    width: 100%;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .image-staff .icon-number{
+    width: 100%;
+    max-width: 24.585%;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .image-staff .rc-image{
+    width: 100% !important;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff{
+    width: 50%;
+    padding-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-left{
+    border: 2px solid #dfdfdf;
+    width: 33.5%;
+    text-align: center;
+    padding: 34px 0px 14px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-left .title{
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-left .text{
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    font-weight: 400;
+    min-height: 28px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-right{
+    width: 66.5%;
+    padding-left: 22px;
+    padding-top: 24px;
+}
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-right .name{
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: bold;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-right .year{
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-description{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-description .description{
+    width: 50%;
+    margin-bottom: 44px;
+    padding-right: 25px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-description .description:nth-child(2n){
+    padding-left: 30px;
+    padding-right: 0px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-description .title{
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid #ffcccc;
+    padding-right: 4px;
+    margin-bottom: 14px;
+}
+
+#recruit .block-staff-introduction .staff-introduction-item .content-description .text{
+    font-size: 14px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 400;
+}
+
+
+/*footer*/
+/*===================================================*/
+#back-top{
+    position: fixed;
+    display: none;
+    z-index: 99;
+    background: transparent;
+    bottom: 100px;
+    right: 50px;
+    cursor: pointer;
+}
+
+#back-top.is-open{
+    display: block;
+}
+
+#back-top .scroll-top{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #9b9b9b;
+    border-radius: 50%;
+    background: #fff;
+}
+
+#footer{
+    background: #f8f8f8;
+}
+
+#footer .container-footer{
+    width: 100%;
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#footer .footer-link-page{
+    padding-top: 42px;
+    padding-bottom: 36px;
+}
+
+#footer .footer-link-page .container-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .footer-link-page .logo-footer{
+    width: 35%;
+}
+
+#footer .footer-link-page .logo-footer .link_home{
+    font-size: 20px;
+    font-weight: bold;
+    color: #323232;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+#footer .footer-link-page .navPage-list{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 6px;
+}
+
+#footer .footer-link-page .navPage-list .navPage-item{
+    padding-left: 70px;
+}
+
+#footer .footer-link-page .navPage-list .navPage-item:first-child{
+    padding-left: 0px;
+}
+
+#footer .footer-link-page .navPage-list .navPage-item .navPage-action{
+    font-size: 14px;
+    line-height: 21px;
+    color: #b48f37;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+#footer .footer-link-page .navPage-list .navPage-item .sub-navPage-action{
+    font-size: 12px;
+    line-height: 21px;
+    color: #999999;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+#footer .footer-link-page .navPage-list .navPage-item.col-03 .navPage-action{
+    margin-bottom: 24px;
+}
+
+#footer .footer-copyright{
+    padding: 20px 0px;
+}
+
+#footer .footer-copyright .text-copyright{
+    font-size: 12px;
+    color: #999999;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-right: 40px;
+}
+
+
+
+@media (max-width: 1280px) {
+
+    /*header*/
+    /*=================================================*/
+
+    #header .container-header{
+        padding: 0px 25px;
+    }
+
+    #header #logo .link_home{
+        font-size: 18px;
+    }
+
+    #header #main-menu .navPage-list .navPage-item .navPage-action{
+        font-size: 12px;
+    }
+
+    #header #logo .name-details{
+        font-size: 10px;
+    }
+
+    #header #main-menu .navPage-list .navPage-item{
+        padding-left: 20px;
+    }
+
+   
+}
+
+@media (max-width: 992px) {
+
+    /*header*/
+    /*==========================================*/
+
+    #header{
+        padding: 18px 0px 13px;
+    }
+
+    #header #logo{
+        width: 100%;
+    }
+
+    #header #main-menu{
+        position: absolute;
+        display: none;
+        top: 100%;
+        right: 0px;
+        z-index: 99;
+        background: #fff;
+        width: 80%;
+        padding: 10px 0px 20px;
+        max-width: 350px;
+    }
+
+    #header #main-menu .navPage-list .navPage-item{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    #header #main-menu .navPage-list .navPage-item .navPage-action{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #header #logo .name-details{
+        display: block;
+        padding-left: 0px;
+    }
+
+    #header .toggle_menu{
+        display: flex;
+    }
+
+    #header .toggle_menu .button-open{
+        width: 50px;
+    }
+
+    #header #logo .link_home{
+        width: 100%;
+    }
+
+    /*block-description*/
+    /*===================================================*/
+    #recruit .block-description{
+        margin-bottom: 80px;
+    }
+
+    #recruit .block-description .container-block{
+        padding: 0px 50px;
+    }
+
+    #recruit .block-description .text{
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    #recruit .block-description .heading{
+        font-size: 24px;
+    }
+
+    /*block-staff-introduction*/
+    /*======================================================*/
+    #recruit .block-staff-introduction .heading-top{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff{
+        padding-left: 30px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-left{
+        width: 40%;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-right{
+        width: 60%;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-description .text{
+        line-height: 28px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item{
+        margin-bottom: 50px !important;
+    }
+
+    /*footer*/
+    /*=====================================================*/
+
+    #footer .footer-link-page .logo-footer .link_home{
+        font-size: 18px;
+    }
+
+    #footer .footer-link-page .navPage-list .navPage-item{
+        padding-left: 50px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #header{
+        padding: 12px 0px 13px;
+    }
+
+    #header .container-header{
+        padding: 0px 15px;
+    }
+
+    #header .toggle_menu{
+        right: 0px;
+        height: 62px;
+    }
+
+    #header .toggle_menu .button-open{
+        width: 40px;
+    }
+
+    #header #logo .link_home{
+        font-size: 16px;
+    }
+
+    #header #logo .name-details{
+        font-size: 8px;
+    }
+
+    #header #main-menu .navPage-list .navPage-item{
+        padding: 12px 0px;
+    }
+
+    #header #main-menu .navPage-list .navPage-item .navPage-action{
+        font-size: 16px;
+    }
+
+    /*main-banner*/
+    /*===========================================*/
+
+    #recruit .main-banner{
+        background-image: url("../images/recruit_mainimg_banner_sp.jpg");
+        padding: 60px 0px;
+        background-position: center top;
+    }
+
+    #recruit .main-banner .heading .t1{
+        font-size: 30px;
+        line-height: 44px;
+        margin-bottom: 5px;
+    }
+
+    #recruit .main-banner .heading .t2{
+        font-size: 16px;
+    }
+
+    #recruit .main-banner .heading .name-company{
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+
+    /*block-description*/
+    /*==============================================*/
+    #recruit .block-staff-introduction{
+        margin-bottom: 80px;
+    }
+
+    #recruit .block-description{
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+
+    #recruit .block-description .container-block{
+        padding: 0px 15px;
+    }
+
+    #recruit .block-description .heading{
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+
+    #recruit .block-staff-introduction .container-block{
+        padding: 0px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .image-staff{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff{
+        width: 100%;
+        padding: 35px 15px 0px 40px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-description{
+        padding: 0px 15px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-right .name{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-right .year{
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0px ;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-description .description{
+        width: 100%;
+        padding: 0px !important;
+        margin-bottom: 18px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-description .title{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #recruit .block-staff-introduction .entry-heading{
+        margin-bottom: 30px;
+    }
+
+    #recruit .block-staff-introduction .heading-top{
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-description .text{
+        line-height: 24px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item{
+        margin-bottom: 15px !important;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-left .title{
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 2px;
+        width: 100%;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-left .text{
+        min-height: auto;
+        width: 100%;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff{
+        margin-bottom: 30px;
+    }
+
+    #recruit .block-staff-introduction .staff-introduction-item .content-info-staff .info-staff .box-left{
+        padding: 24px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    /*footer*/
+    /*===============================================*/
+    #footer .container-footer{
+        padding: 0px 15px;
+    }
+
+    #footer .footer-link-page{
+        display: none;
+    }
+
+    #footer .footer-copyright .text-copyright{
+        padding-right: 0px;
+    }
+
+    #footer .footer-copyright{
+        padding: 12px 0px;
+    }
+
+    #back-top{
+        right: 15px;
+        bottom: 50px;
+    }
+
+    .scroll-top{
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+}

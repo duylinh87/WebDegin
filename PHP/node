@@ -1,0 +1,50 @@
+1---
+    + sử dụng session_start(); để lưu trữ thông tin tạm thời trên sever khi chuyển trang 
+    + Sử dụng phương thức Post để lấy dự liệu vì phương thức post bảo mật hơn get 
+            Phương thức GET và POST được sử dụng để gửi dữ liệu đến máy chủ và điểm khác biệt chính giữa chúng là
+            phương thức GET nối thêm dữ liệu vào URI được xác định trong thuộc tính hành động của biểu mẫu. 
+            Ngược lại, phương thức POST gắn dữ liệu vào phần thân được yêu cầu.
+            Việc sử dụng phương thức GET là không phù hợp khi thông tin nhạy cảm cần được điền vào biểu mẫu. 
+            Phương thức POST hữu ích khi người dùng yêu cầu điền mật khẩu hoặc thông tin bí mật khác. 
+2---- 
+    + khi ấn nút sumbit trong form muốn dữ liệu truyền sang trang tiếp thì ta phải khai báo ở trang sau như sau với session_
+
+                if(isset($_POST['next'])) {  (kiểm tra xem có nút sumbit không thì mới tiến hành gửi  dự liệu sang trang  trước )
+                    foreach ($_POST as $key => $value) {
+                        $_SESSION['post'][$key] = $value;
+                    }    
+                    extract($_SESSION['post']); // Function to extract array
+                }
+                 
+            với trang cuối cùng không cần xét điều kiện "next" vì không có nút sumbit
+                    <?php
+                            session_start();    
+                            foreach ($_POST as $key => $value) {
+                                $_SESSION['post'][$key] = $value;
+                            }
+                            extract($_SESSION['post']);  /// xuất ra mảng dự liệu thành biến ví dụ không có thì ta phải viết
+                               $_SESSION['gender']  còn có thì chỉ cần $gender
+                    ?>
+                    // có tác dụng lấy dự liệu từ trang trước 
+3------
+    + <?php if(isset($name)) echo $name; ?></p> lệnh isset ở đây là kiểm tra có tồn tại biến name không mới echo ra;
+
+4------
+     + với những ô check có nhiều lựa chọn thì phần khai báo name trong thẻ input phải thêm kí hiệu []
+     + lúc gọi biến ra thì ta chỉ cần duyệt mảng để hiển thị ra các mục đã chọn
+                    <?php  
+                        if (isset($reason_change_job)) {
+                            foreach ($reason_change_job as $reason_change_job_item) {
+                                echo '<span class="item-result">';
+                                echo $reason_change_job_item;
+                                echo '</span>';
+                            }
+                        }
+                    ?>
+                    + ở vòng lặp này thì thành phần ta chỉ cần têm _item đằng sau
+5--------
+     var_dump có tác dụng hiển thị như console.log nhưng chú ý phải có dấu ; sau mỗi dòng lệnh
+
+
+6-------- 
+     + Phần xử lý gmail được tích hợp thư viện và khai báo trong file handler.php   

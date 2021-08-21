@@ -1,0 +1,1928 @@
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#pamphlet img {
+    max-width: 100%;
+}
+
+#pamphlet .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#pamphlet .animatedFadeInUp {
+    opacity: 0;
+}
+
+#pamphlet .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#pamphlet {
+    position: relative;
+    background: #0f428c;
+    overflow: hidden;
+}
+
+#pamphlet .pc_br{
+    display: none;
+}
+
+
+
+
+
+/*Header*/
+/*=======================================*/
+#pamphlet .main-header{
+    padding-top: 10px;
+}
+
+#pamphlet .main-header .inner {
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+#pamphlet .main-header .contact-header{
+    display: none;
+}
+
+
+/*pamphlet-block01*/
+/*===============================================*/
+#pamphlet .pamphlet-block01{
+    position: relative;
+    margin-top: -90px;
+}
+
+#pamphlet .pamphlet-block01 .inner{
+    max-width: 450px;
+    margin: auto;
+}
+
+#pamphlet .pamphlet-block01 .item-block01{
+    text-align: center;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+#pamphlet .pamphlet-block01 .item-block01 .pic-inner .switch-img{
+    display: block;
+    margin: auto;
+}
+
+#pamphlet .pamphlet-block01 .text-content{
+    padding: 0px 35px;
+    margin-bottom: 50px;
+}
+
+#pamphlet .pamphlet-block01 .text-content .text{
+    font-size: 13px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#pamphlet .pamphlet-block01 .contact{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#pamphlet .pamphlet-block01 .contact .link-contact{
+    display: block;
+    background: #e9b425;
+    border: 3px solid #fff;
+    font-size: 20px;
+    line-height: 28px;
+    width: 260px;
+    padding: 18px 38px 18px 0px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .4s;
+    margin: auto;
+}
+
+#pamphlet .pamphlet-block01 .contact .link-contact .switch-img{
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+#pamphlet .pamphlet-block01 .image-content .pic-inner{
+    text-align: center;
+}
+
+#pamphlet .pamphlet-block01 .image-content .pic-inner .switch-img{
+    display: block;
+    margin: auto;
+}
+
+
+/*steps-pamphlet*/
+/*==========================================*/
+#pamphlet .steps-pamphlet{
+    padding-top: 70px;
+}
+
+#pamphlet .steps-pamphlet .inner{
+    max-width: 490px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#pamphlet .steps-pamphlet .item-steps-pamphlet{
+    background: rgba(255,255,255,.10);
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+#pamphlet .steps-pamphlet .item-steps-pamphlet .content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 12px 20px;
+}
+
+#pamphlet .heading-block{
+    position: relative;
+    padding-top: 50px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+#pamphlet .heading-block:before{
+    content: "";
+    position: absolute;
+    background-image: url("../images/pamphlet/pamphlet_ico_01_sp.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 117.5px;
+    height: 9.5px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#pamphlet .heading-block .switch-img{
+    display: block;
+    margin: auto;
+}
+
+#pamphlet .steps-pamphlet .heading-block{
+    margin-bottom: 95px;
+}
+
+#pamphlet .steps-pamphlet .info-text{
+    width: 100%;
+}
+
+#pamphlet .steps-pamphlet .info-text .ttl{
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#pamphlet .steps-pamphlet .info-text .txt{
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+#pamphlet .steps-pamphlet .box-ttl{
+    position: relative;
+    max-width: 230px;
+    width: 100%;
+    margin: -44px auto 45px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+#pamphlet .steps-pamphlet .box-ttl:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 0px 0px 15px 15px;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#pamphlet .steps-pamphlet .item-steps-pamphlet.item03 .box-ttl{
+    background: #e9b525;
+}
+
+#pamphlet .steps-pamphlet .item-steps-pamphlet.item03 .box-ttl:after{
+    background: #e9b525;
+}
+
+#pamphlet .steps-pamphlet .box-ttl .t2{
+    font-size: 20px;
+    line-height: 20px;
+    color: #39b488;
+    font-weight: 700;
+    text-indent: -4px;
+}
+
+#pamphlet .steps-pamphlet .item-steps-pamphlet.item03 .box-ttl .t2{
+    color: #fff;
+}
+
+#pamphlet .steps-pamphlet .item-steps-pamphlet.item01 .box-ttl .pic-inner{
+    width: 42px;
+    margin-right: 12px;
+}
+
+#pamphlet .steps-pamphlet .item-steps-pamphlet.item02 .box-ttl .pic-inner{
+    width: 59px;
+    margin-right: 12px;
+}
+
+#pamphlet .steps-pamphlet .item-steps-pamphlet.item03 .box-ttl .pic-inner{
+    width: 64px;
+    margin-right: 12px;
+}
+
+#pamphlet .steps-pamphlet .box-ttl .pic-inner .switch-img{
+    display: block;
+}
+
+#pamphlet .steps-pamphlet .info-text .title{
+    font-size: 22px;
+    line-height: 28px;
+    color: #e9b525;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#pamphlet .steps-pamphlet .info-text .item-text{
+    font-size: 14px;
+    line-height: 22px;
+    color: #0f428c;
+    font-weight: 700;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#pamphlet .steps-pamphlet .info-text .list-text{
+    max-width: 240px;
+    margin: auto;
+}
+
+/*selectable-delivery-plan*/
+/*=====================================*/
+
+#pamphlet .selectable-delivery-plan .inner{
+    max-width: 490px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#pamphlet .selectable-delivery-plan .heading-block{
+    margin-bottom: 60px;
+}
+
+#pamphlet .selectable-delivery-plan .list-delivery-plan{
+    background: #fff;
+    border-radius: 6px;
+    padding: 25px 20px 0px;
+    margin-bottom: 50px;
+}
+
+#pamphlet .selectable-delivery-plan .txt-box{
+    font-size: 14px;
+    line-height: 24px;
+    color: #221815;
+    font-weight: 700;
+    background: #e9b525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+#pamphlet .selectable-delivery-plan .txt-box:after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 13px;
+    background: #e9b525;
+    border-radius: 0px 0px 15px 15px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#pamphlet .selectable-delivery-plan .item-delivery-plan .title{
+    font-size: 23px;
+    line-height: 26px;
+    color: #3d62ad;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#pamphlet .selectable-delivery-plan .item-delivery-plan .sub-ttl{
+    font-size: 12px;
+    line-height: 23px;
+    color: #0f428c;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#pamphlet .selectable-delivery-plan .item-delivery-plan .item-left{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#pamphlet .selectable-delivery-plan .item-delivery-plan .txt-btn{
+    display: inline-block;
+    background: #26b489;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 700;
+    padding: 9px 16px;
+    border-radius: 50px;
+    margin-left: 17px;
+}
+
+#pamphlet .selectable-delivery-plan .item-delivery-plan .item-price{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#pamphlet .selectable-delivery-plan .item-delivery-plan .note{
+    font-size: 11px;
+    line-height: 11px;
+    color: #eb5d50;
+    font-weight: 700;
+    text-indent: -5px;
+    display: inline-block;
+}
+
+#pamphlet .selectable-delivery-plan .item-delivery-plan{
+    overflow: hidden;
+    border-bottom: 2px solid #0f428c;
+    margin-bottom: 40px;
+}
+
+#pamphlet .selectable-delivery-plan .item-delivery-plan:last-child{
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+
+#pamphlet .selectable-delivery-plan .list-plan-bottom .item-plan-bottom{
+    border-radius: 6px;
+    background: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#pamphlet .selectable-delivery-plan .list-plan-bottom .item-plan-bottom:last-child{
+    margin-bottom: 0px;
+}
+
+#pamphlet .selectable-delivery-plan .list-plan-bottom .item-plan-bottom .title{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 22px;
+    background: #26b489;
+    text-align: center;
+    border-radius: 6px 6px 0px 0px;
+    padding: 26px 0px;
+}
+
+#pamphlet .selectable-delivery-plan .list-plan-bottom .item-plan-bottom:nth-child(2) .title{
+    background: #e9b425;
+    margin-bottom: 30px;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .t1{
+    font-size: 22px;
+    line-height: 22px;
+    color: #0f428c;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .price{
+    font-size: 22px;
+    line-height: 22px;
+    color: #0f428c;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .t2{
+    font-size: 11px;
+    line-height: 11px;
+    color: #0f428c;
+    font-weight: 700;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .item-info{
+    border-bottom: 2px solid #0f428c;
+    padding: 20px 0px;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .item-info:last-child{
+    border-bottom: 0px;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .sub-price{
+    font-size: 11px;
+    line-height: 11px;
+    color: #0f428c;
+    font-weight: 700;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .item-info:nth-child(3) .price{
+    font-size: 21.5px;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .item-content{
+    padding: 0px 20px;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .sub-t1{
+    font-size: 22px;
+    line-height: 35px;
+    color: #0f428c;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pamphlet .selectable-delivery-plan .item-plan-bottom .text{
+    font-size: 12px;
+    line-height: 18px;
+    color: #0f428c;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#pamphlet .selectable-delivery-plan .list-plan-bottom .item-plan-bottom:nth-child(2){
+    padding-bottom: 35px;
+}
+
+
+/*cover-design*/
+/*====================================*/
+#pamphlet .cover-design{
+    padding-top: 70px;
+}
+
+#pamphlet .cover-design .heading-block{
+    margin-bottom: 35px;
+}
+
+#pamphlet .cover-design .sub-heading{
+    font-size: 12px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 0px 30px;
+    max-width: 490px;
+    margin: 0px auto 60px;
+}
+
+
+
+
+/*production-schedule*/
+/*====================================*/
+
+#pamphlet .production-schedule{
+    padding-top: 80px;
+}
+
+#pamphlet .production-schedule .inner{
+    max-width: 490px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#pamphlet .production-schedule .heading-block{
+    margin-bottom: 30px;
+}
+
+#pamphlet .production-schedule .sub-heading{
+    font-size: 12px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#pamphlet .production-schedule .item-production-schedule .box-01{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    padding: 17.5px 5px;
+    border-radius: 6px;
+}
+
+#pamphlet .production-schedule .item-production-schedule .box-02{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 17.5px 5px;
+    border-radius: 6px;
+}
+
+#pamphlet .production-schedule .item-production-schedule .box-03{
+    background: #e9b425;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 20px 5px;
+    min-height: 110px;
+}
+
+#pamphlet .production-schedule .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#pamphlet .production-schedule .list-production-schedule{
+    width: calc(100% - 46px);
+    padding-right: 15px;
+}
+
+#pamphlet .production-schedule .box-note{
+    width: 46px;
+    padding-bottom: 18px;
+}
+
+#pamphlet .production-schedule .box-note .text{
+    background: #eb5d51;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    writing-mode: vertical-lr;
+    width: 100%;
+    align-items: center;
+    letter-spacing: 4.5px;
+    position: relative;
+    padding: 75px 0px;
+}
+
+#pamphlet .production-schedule .box-note .text:before{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-left:22.5px solid transparent;
+    border-right:22.5px solid transparent;
+    border-bottom:18px solid #eb5d51;
+    top: -18px;
+    left: 0px;
+}
+
+#pamphlet .production-schedule .box-note .text:after{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-left:22.5px solid transparent;
+    border-right:22.5px solid transparent;
+    border-top:18px solid #eb5d51;
+    bottom: -18px;
+    left: 0px;
+}
+
+#pamphlet .production-schedule .item-production-schedule .box-ttl{
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 14px 0px;
+    width: 100%;
+}
+
+#pamphlet .production-schedule .item-production-schedule{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#pamphlet .production-schedule .item-production-schedule:last-child{
+    margin-bottom: 0px;
+}
+
+#pamphlet .production-schedule .item-production-schedule .box-left{
+    width: calc(100% - 45px);
+    padding-right: 12px;
+}
+
+#pamphlet .production-schedule .item-production-schedule .box-right{
+    width: 45px;
+}
+
+#pamphlet .production-schedule .item-production-schedule:nth-child(2) .box-01,
+#pamphlet .production-schedule .item-production-schedule:nth-child(3) .box-01{
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+/*download-materials*/
+/*======================================*/
+
+#pamphlet .download-materials{
+    padding-top: 70px;
+    margin-bottom: 20px;
+}
+
+#pamphlet .download-materials .heading-block{
+    margin-bottom: 45px;
+}
+
+#pamphlet .download-materials .inner{
+    max-width: 490px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#pamphlet .download-materials .item-box-download{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#pamphlet .download-materials .item-box-download:nth-child(1){
+    order: 2;
+}
+
+#pamphlet .download-materials .item-box-download:nth-child(2){
+    order: 1;
+}
+
+#pamphlet .download-materials .item-link{
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    background: #26b489;
+    border: 2px solid #fff;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 335px;
+    display: block;
+    text-align: center;
+    padding: 19px 0px;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+#pamphlet .download-materials .item-link:hover{
+    opacity: .6;
+}
+
+#pamphlet .download-materials .item-link .switch-img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+#pamphlet .download-materials .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*form-pamphlet*/
+/*=======================================*/
+
+#pamphlet .form-pamphlet{
+    background: #e9b425;
+    padding-bottom: 50px;
+}
+
+#pamphlet .form-pamphlet .inner{
+    max-width: 490px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#pamphlet .form-pamphlet .heading-block{
+    margin-bottom: 16px;
+}
+
+#pamphlet .form-pamphlet .heading-block:before{
+    display: none;
+}
+
+#pamphlet .form-pamphlet .heading-block .switch-img{
+    margin-bottom: 40px;
+}
+
+#pamphlet .form-pamphlet .heading-block .t1{
+    display: block;
+    margin-bottom: 40px;
+}
+
+#pamphlet .form-pamphlet .heading-block .t2{
+    display: block;
+    line-height: 38px;
+}
+
+#pamphlet .form-pamphlet .heading-block .t2.success{
+    display: none;
+}
+
+#pamphlet .form-pamphlet .sub-heading{
+    font-size: 12px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .field_label{
+    font-size: 12px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .f-input{
+    width: 100%;
+    height: 70px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px -2px 0px 0px #c79100;
+    outline: none;
+    color: #e9b425;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .field_contains{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .field_contains.field-02{
+    width: 50%;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .field_contains:nth-child(2){
+    padding-right: 16px;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .field_contains:nth-child(3){
+    padding-left: 16px;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .body-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .f-input::-webkit-input-placeholder { /* Edge */
+    color: #e9b425;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .f-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #e9b425;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .f-input::placeholder {
+    color: #e9b425;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .personal-information{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .personal-information .link{
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .form-submit{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+    background: transparent;
+    border: 2px solid #fff;
+    width: 208px;
+    height: 56px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .form-submit:hover{
+    opacity: .6;
+}
+
+#pamphlet .form-pamphlet #form-download-materials .actions{
+    text-align: center;
+}
+
+
+/*main-footer*/
+/*====================================*/
+
+#pamphlet .main-footer{
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+#pamphlet .main-footer .copyright .inner{
+    max-width: 490px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#pamphlet .main-footer .copyright{
+    text-align: center;
+}
+
+#pamphlet .main-footer .txt-copyright{
+    font-size: 10px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#pamphlet .main-footer .link-home{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+#pamphlet #perspective {
+    margin: 0 auto;
+    width: 94px;
+    height: 130px;
+    position: relative;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+
+#pamphlet #carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg) translateZ(-288px);
+    animation: rotar 36s infinite linear;
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+
+#pamphlet #carousel figure {
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: auto;
+    margin: 12px;
+    cursor: pointer;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    -moz-transition: opacity 1s, -moz-transform 1s;
+    -o-transition: opacity 1s, -o-transform 1s;
+    transition: opacity 1s, transform 1s;
+}
+
+@keyframes rotar {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+@media (min-width: 768px) {
+
+
+    #pamphlet .sp_br{
+        display: none;
+    }
+
+    #pamphlet .pc_br{
+        display: block;
+    }
+
+    #pamphlet .heading-block{
+        font-size: 30px;
+    }
+
+
+    /*Header*/
+    /*=======================================*/
+    #pamphlet .main-header{
+        padding-top: 30px;
+    }
+
+    #pamphlet .main-header .inner{
+        max-width: 1040px;
+        margin: auto;
+        padding: 0px 20px;
+        overflow: hidden;
+    }
+
+    #pamphlet .main-header .logo{
+        width: 50%;
+        float: left;
+    }
+
+    #pamphlet .main-header .logo .link-home{
+        display: block;
+        max-width: 150px;
+    }
+
+    #pamphlet .main-header .logo .img-logo{
+        display: block;
+    }
+
+    #pamphlet .main-header .contact-header{
+        width: 50%;
+        float: left;
+        display: block;
+    }
+
+    #pamphlet .main-header .contact-header .link-contact{
+        display: block;
+        background: #e9b425;
+        border: 3px solid #fff;
+        font-size: 16px;
+        line-height: 20px;
+        width: 240px;
+        padding: 16px 25px 16px 0px;
+        text-align: center;
+        position: relative;
+        border-radius: 50px;
+        float: right;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        transition: .4s;
+    }
+
+    #pamphlet .main-header .contact-header .link-contact:hover{
+        opacity: .6;
+    }
+
+    #pamphlet .main-header .link-contact .switch-img{
+        position: absolute;
+        top: 50%;
+        right: 24px;
+        transform: translateY(-50%);
+    }
+
+
+    /*pamphlet-block01*/
+    /*===============================================*/
+    #pamphlet .pamphlet-block01{
+        position: relative;
+        margin-top: -40px;
+    }
+
+    #pamphlet .pamphlet-block01 .inner{
+        max-width: 1040px;
+        margin: auto;
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #pamphlet .pamphlet-block01 .item-block01{
+        text-align: center;
+        padding-left: 40px;
+        width: 100%;
+        margin-bottom: 59px;
+    }
+
+    #pamphlet .pamphlet-block01 .item-block01 .pic-inner{
+        display: inline-block;
+    }
+
+    #pamphlet .pamphlet-block01 .item-block01 .pic-inner .switch-img{
+        display: block;
+        margin: auto;
+        max-width: 75%;
+    }
+
+    #pamphlet .pamphlet-block01 .contact{
+        display: none;
+    }
+
+    #pamphlet .pamphlet-block01 .text-content{
+        padding: 0px 15px 0px 0px;
+        width: 50%;
+    }
+
+    #pamphlet .pamphlet-block01 .image-content{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        padding-left: 14px;
+    }
+
+    #pamphlet .pamphlet-block01 .text-content .text {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    #pamphlet .pamphlet-block01 .text-content .text:last-child{
+        padding-right: 25px;
+    }
+
+    #pamphlet .pamphlet-block01 .image-content .pic-inner {
+        position: relative;
+        margin-top: -6px;
+    }
+
+
+    #pamphlet .heading-block:before {
+        background-image: url("../images/pamphlet/pamphlet_ico_01_pc.png");
+        width: 147px;
+        height: 12px;
+    }
+
+
+    /*steps-pamphlet*/
+    /*=========================================*/
+    #pamphlet .steps-pamphlet {
+        padding-top: 45px;
+    }
+
+    #pamphlet .steps-pamphlet .inner {
+        max-width: 1040px;
+    }
+
+    #pamphlet .steps-pamphlet .heading-block {
+        margin-bottom: 105px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet .content{
+        padding: 0px;
+    }
+
+    #pamphlet .steps-pamphlet .list-steps-pamphlet{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet{
+        width: 30%;
+        margin-right: 5%;
+        padding: 0px 18px 30px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet:last-child{
+        margin-right: 0px;
+    }
+
+    #pamphlet .steps-pamphlet .box-ttl{
+        margin: -48px auto 43px;
+        border-radius: 10px;
+        min-height: 88px;
+    }
+
+    #pamphlet .steps-pamphlet .info-text .ttl {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    #pamphlet .steps-pamphlet .info-text .txt {
+        font-size: 12px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    #pamphlet .steps-pamphlet .info-text .title {
+        font-size: 22px;
+        text-indent: -5px;
+        margin-bottom: 44px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet.item03 .box-ttl {
+        margin-bottom: 74px;
+    }
+
+
+    /*selectable-delivery-plan*/
+    /*=================================================*/
+    #pamphlet .selectable-delivery-plan{
+        padding-top: 22px;
+    }
+
+    #pamphlet .selectable-delivery-plan .inner {
+        max-width: 1040px;
+    }
+
+    #pamphlet .selectable-delivery-plan .heading-block{
+        padding-top: 57px;
+        margin-bottom: 55px;
+    }
+
+    #pamphlet .selectable-delivery-plan .list-delivery-plan {
+        border-radius: 15px;
+        padding: 30px 25px 0px;
+        margin-bottom: 80px;
+    }
+
+    #pamphlet .selectable-delivery-plan .txt-box {
+        font-size: 15px;
+        height: 40px;
+        border-radius: 12px;
+        max-width: 350px;
+        margin: 0px auto 34px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .title {
+        font-size: 38px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .sub-ttl {
+        font-size: 13px;
+        line-height: 13px;
+        margin-bottom: 28px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-price{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin-bottom: 0px;
+    }
+
+    #pamphlet .selectable-delivery-plan .list-delivery-plan .price{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-left{
+        width: auto;
+        align-items: flex-end;
+        margin-bottom: 0px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-right{
+        display: flex;
+        width: auto;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        padding-left: 18px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-price:nth-child(1){
+        justify-content: flex-end;
+        padding-right: 14px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-price:nth-child(2){
+        padding-left: 15px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan {
+        border-bottom: 4px solid #0f428c;
+        padding-bottom: 40px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan:last-child{
+        padding-bottom: 54px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-right .note{
+        margin-left: 4px;
+    }
+
+    #pamphlet .selectable-delivery-plan .list-plan-bottom .item-plan-bottom{
+        width: 47%;
+        margin-right: 6%;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+    }
+
+    #pamphlet .selectable-delivery-plan .list-plan-bottom .item-plan-bottom:last-child{
+        margin-right: 0px;
+    }
+
+    #pamphlet .selectable-delivery-plan .list-plan-bottom{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #pamphlet .selectable-delivery-plan .list-plan-bottom .item-plan-bottom .title {
+        font-size: 20px;
+        padding: 9px 0px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .item-content {
+        padding: 0px 25px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .t1 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 18px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .price {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 14px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .t2 {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .item-info {
+        border-bottom: 4px solid #0f428c;
+        padding: 33px 0px 18px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .item-info:nth-child(3) .price {
+        font-size: 24px;
+        line-height: 22px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .sub-t1 {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .text {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 44px;
+    }
+
+
+    /*cover-design*/
+    /*=========================================*/
+    #pamphlet .cover-design {
+        padding-top: 122px;
+    }
+
+    #pamphlet .cover-design .inner{
+        max-width: 665px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    #pamphlet .cover-design .heading-block{
+        padding-top: 58px;
+    }
+
+    #pamphlet .cover-design .sub-heading {
+        font-size: 15px;
+        line-height: 28px;
+        padding: 0px;
+        max-width: 100%;
+        margin: 0px auto 45px;
+    }
+
+
+    /*production-schedule*/
+    /*==============================================*/
+    #pamphlet .production-schedule {
+        padding-top: 85px;
+
+    }
+
+    #pamphlet .production-schedule .heading-block{
+        padding-top: 59px;
+        margin-bottom: 36px;
+    }
+
+    #pamphlet .production-schedule .sub-heading {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 36px;
+    }
+
+    #pamphlet .production-schedule .inner {
+        max-width: 1040px;
+    }
+
+    #pamphlet .production-schedule .list-production-schedule {
+        width: 100%;
+        padding-right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        margin-bottom: 17px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule{
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 0px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule:last-child{
+        margin-right: 0px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule .box-ttl{
+        margin-bottom: 20px;
+        padding: 15px 0px;
+        border: 3px solid #fff;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule:nth-child(2) .box-ttl{
+        padding: 22px 0px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule .box-left {
+        width: calc(100% - 52px);
+        padding-right: 12px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule .box-right {
+        width: 50px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule:nth-child(1) .box-02{
+        padding: 25.5px 5px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule:nth-child(2) .box-left,
+    #pamphlet .production-schedule .item-production-schedule:nth-child(3) .box-left{
+        width: calc(100% - 74px);
+        padding-right: 15px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule:nth-child(2) .box-right,
+    #pamphlet .production-schedule .item-production-schedule:nth-child(3) .box-right{
+        width: 72px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule:nth-child(3) .box-ttl{
+        min-height: 113px;
+    }
+
+    #pamphlet .production-schedule .item-production-schedule:nth-child(3) .box-03{
+        padding: 41px 5px;
+    }
+
+    #pamphlet .production-schedule .box-note .text {
+        writing-mode: unset;
+        padding: 0px 0px 0px 10px;
+        justify-content: center;
+        float: right;
+        font-size: 22px;
+        max-width: 62%;
+        letter-spacing: 1px;
+        height: 60px;
+    }
+
+    #pamphlet .production-schedule .box-note {
+        width: 100%;
+        padding-bottom: 0px;
+        padding-right: 22px;
+    }
+
+    #pamphlet .production-schedule .box-note .text:after{
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-bottom:30px solid transparent;
+        border-top:30px solid transparent;
+        border-left:20px solid #eb5d51;
+        bottom: 0px;
+        left: unset;
+        right: -43px;
+    }
+
+    #pamphlet .production-schedule .box-note .text:before{
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-bottom:30px solid transparent;
+        border-top:30px solid transparent;
+        border-right:22px solid #eb5d51;
+        top: 0px;
+        left: -44px;
+        right: unset;
+    }
+
+
+    /*download-materials*/
+    /*=====================================*/
+    #pamphlet .download-materials {
+        padding-top: 120px;
+        margin-bottom: 102px;
+    }
+
+    #pamphlet .download-materials .heading-block {
+        margin-bottom: 43px;
+        padding-top: 58px;
+    }
+
+    #pamphlet .download-materials .inner {
+        max-width: 945px;
+    }
+
+    #pamphlet .download-materials .item-link{
+        border: 3px solid #fff;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #pamphlet .download-materials .item-box-download{
+        width: 40%;
+    }
+
+    #pamphlet .download-materials .item-box-download:nth-child(1){
+        order: 1;
+    }
+
+    #pamphlet .download-materials .item-box-download:nth-child(2){
+        order: 2;
+    }
+
+    #pamphlet .download-materials .item-box-download {
+        width: 44.5%;
+        margin-right: 11%;
+    }
+
+    #pamphlet .download-materials .item-box-download:last-child{
+        margin-right: 0px;
+    }
+
+    #pamphlet .download-materials .item-link .switch-img {
+        right: 24px;
+    }
+
+
+    /*form-pamphlet*/
+    /*======================================*/
+    #pamphlet .form-pamphlet #form-download-materials{
+        padding: 0px 20px;
+        max-width: 440px;
+        margin: auto;
+    }
+
+    #pamphlet .form-pamphlet {
+        padding-bottom: 100px;
+        padding-top: 48px;
+    }
+
+    #pamphlet .form-pamphlet .heading-block .t1 {
+        margin-bottom: 58px;
+    }
+
+    #pamphlet .form-pamphlet .heading-block .switch-img {
+        margin-bottom: 38px;
+    }
+
+    #pamphlet .form-pamphlet .sub-heading {
+        font-size: 15px;
+        padding-left: 16px;
+        margin-bottom: 40px;
+    }
+
+    #pamphlet .form-pamphlet .heading-block {
+        margin-bottom: 16px;
+    }
+
+    #pamphlet .form-pamphlet #form-download-materials .field_label {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 14px;
+    }
+
+    #pamphlet .form-pamphlet #form-download-materials .f-input {
+        height: 54px;
+        box-shadow: 0px -3px 0px 0px #c79100;
+    }
+
+    #pamphlet .form-pamphlet #form-download-materials .field_contains {
+        margin-bottom: 14px;
+    }
+
+    #pamphlet .form-pamphlet #form-download-materials .personal-information .link {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    #pamphlet .form-pamphlet #form-download-materials .body-form {
+        margin-bottom: 38px;
+    }
+
+    #pamphlet .form-pamphlet #form-download-materials .personal-information {
+        margin-bottom: 46px;
+    }
+
+    #pamphlet .form-pamphlet #form-download-materials .form-submit {
+        font-size: 20px;
+        border: 3px solid #fff;
+        width: 260px;
+        height: 70px;
+    }
+
+
+    /*main-footer*/
+    /*===================================*/
+    #pamphlet .main-footer {
+        padding-top: 63px;
+        padding-bottom: 55px;
+    }
+
+    #pamphlet .main-footer .txt-copyright {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    #pamphlet .main-footer .link-home {
+        margin-bottom: 34px;
+    }
+
+
+
+    /*=========================================*/
+
+    #pamphlet .steps-pamphlet .box-ttl .t2 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet.item01 .box-ttl .pic-inner {
+        width: 32px;
+        margin-right: 10px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet.item02 .box-ttl .pic-inner {
+        width: 48px;
+        margin-right: 10px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet.item03 .box-ttl .pic-inner {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    #pamphlet .steps-pamphlet .box-ttl .text .t1 .switch-img{
+        height: 18px;
+    }
+
+    #pamphlet .steps-pamphlet .info-text .item-text {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-left .switch-img{
+        height: 28px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .txt-btn {
+        font-size: 9px;
+        line-height: 10px;
+        margin-left: 10px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-right .switch-img{
+        height: 30px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-price.item02 .item-left .switch-img{
+        height: 34px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .item-content .pic-inner{
+        display: inline-block;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .item-content .pic-inner .switch-img{
+        max-width: 80%;
+    }
+
+    #pamphlet .form-pamphlet .inner {
+        max-width: 550px;
+    }
+
+    #pamphlet #perspective {
+        margin: 0 auto;
+        width: 160px;
+        height: 210px;
+        position: relative;
+        -webkit-perspective: 1100px;
+        perspective: 1100px;
+    }
+
+    #pamphlet #carousel {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-transform: rotateY(0deg) translateZ(-288px);
+        transform-style: preserve-3d;
+    }
+
+    #pamphlet #carousel figure {
+        display: block;
+        position: absolute;
+        width: 110px;
+        height: auto;
+        margin: 25px;
+        cursor: pointer;
+        -webkit-transition: opacity 1s, -webkit-transform 1s;
+        -moz-transition: opacity 1s, -moz-transform 1s;
+        -o-transition: opacity 1s, -o-transform 1s;
+        transition: opacity 1s, transform 1s;
+    }
+
+
+}
+
+
+@media (min-width: 960px) {
+
+    #pamphlet .main-header .contact-header .link-contact {
+        font-size: 20px;
+        line-height: 28px;
+        width: 260px;
+        padding: 18px 38px 18px 0px;
+    }
+
+    #pamphlet .pamphlet-block01 .item-block01 .pic-inner .switch-img{
+        max-width: 100%;
+    }
+
+    #pamphlet .main-header .logo .link-home {
+        display: block;
+        max-width: 250px;
+    }
+
+    #pamphlet .pamphlet-block01 {
+        margin-top: -145px;
+    }
+
+    #pamphlet .pamphlet-block01 .text-content .text {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 28px;
+    }
+
+
+    #pamphlet .steps-pamphlet .box-ttl .t2 {
+        font-size: 20px;
+        line-height: 20px;
+        color: #39b488;
+        font-weight: 700;
+        text-indent: -4px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet.item01 .box-ttl .pic-inner {
+        width: 42px;
+        margin-right: 12px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet.item02 .box-ttl .pic-inner {
+        width: 59px;
+        margin-right: 12px;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet.item03 .box-ttl .pic-inner {
+        width: 64px;
+        margin-right: 12px;
+    }
+
+
+    #pamphlet .steps-pamphlet .box-ttl .text .t1 .switch-img{
+        height: auto;
+    }
+
+    #pamphlet .steps-pamphlet .item-steps-pamphlet {
+        width: 30%;
+        margin-right: 5%;
+        padding: 0px 31px 44px;
+    }
+
+    #pamphlet .steps-pamphlet .info-text .ttl {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 16px;
+    }
+
+    #pamphlet .steps-pamphlet .info-text .title {
+        font-size: 26px;
+        text-indent: -5px;
+        margin-bottom: 52px;
+    }
+
+    #pamphlet .steps-pamphlet .info-text .item-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #pamphlet .selectable-delivery-plan .list-delivery-plan {
+        border-radius: 15px;
+        padding: 41px 50px 0px;
+        margin-bottom: 80px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-left .switch-img{
+        height: auto;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-right .switch-img{
+        height: auto;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .txt-btn {
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 17px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .title {
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 19px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .sub-ttl {
+        font-size: 15px;
+        line-height: 16px;
+        margin-bottom: 28px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-delivery-plan .item-price.item02 .item-left .switch-img{
+        height: auto;
+    }
+
+    #pamphlet .selectable-delivery-plan .txt-box {
+        font-size: 17px;
+        height: 46px;
+        border-radius: 12px;
+        max-width: 350px;
+        margin: 0px auto 34px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .item-content {
+        padding: 0px 50px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .t1 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 18px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .price {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 14px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .t2 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .item-info:nth-child(3) .price {
+        font-size: 28px;
+        line-height: 26px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .sub-t1 {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 25px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .text {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 44px;
+    }
+
+    #pamphlet .selectable-delivery-plan .item-plan-bottom .item-content .pic-inner .switch-img{
+        max-width: 100%;
+    }
+
+    #pamphlet .download-materials .item-link {
+        border: 3px solid #fff;
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+
+
+}
+
+
+
+
+

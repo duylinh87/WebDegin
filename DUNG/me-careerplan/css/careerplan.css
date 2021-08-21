@@ -1,0 +1,538 @@
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#careerplan .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#careerplan .animatedFadeInUp {
+    opacity: 0;
+}
+
+#careerplan .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#careerplan{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#careerplan .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*main banner*/
+/*=============================================*/
+#careerplan .main-banner{
+    position: relative;
+}
+
+#careerplan .main-banner .image_wrap .cp-image{
+    width: 100% !important;
+    height: 100%;
+}
+
+#careerplan .main-banner .heading{
+    text-align: center;
+    position: absolute;
+    top: 57.5%;
+    left: 50.2%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#careerplan .main-banner .heading .t1{
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+#careerplan .main-banner .heading .t2{
+    font-size: 26px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: -2.8px;
+}
+
+/*description-block*/
+/*========================================*/
+#careerplan .description-block{
+    background: linear-gradient(180deg, rgba(53,194,255,1) 0%, rgba(58,255,248,1) 100%);
+    padding-top: 88px;
+    padding-bottom: 53px;
+}
+
+#careerplan .description-block .container-block{
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 0px 50px;
+    position: relative;
+    z-index: 9;
+}
+
+#careerplan .description-block .info{
+    text-align: center;
+}
+
+#careerplan .description-block .info .heading-block{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 45px;
+}
+
+#careerplan .description-block .info .heading-block:after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background: #005893;
+    bottom: 22px;
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+#careerplan .description-block .info .text{
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+}
+
+#careerplan .description-block .content-image{
+    padding: 0px 94px 0px 101px;
+    position: relative;
+    margin-top: -63px;
+}
+
+#careerplan .description-block .content-image .cp-image{
+    display: block;
+    width: 100%;
+}
+
+/*education-program*/
+/*===============================================*/
+#careerplan .education-program{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: url("../images/careerplan_bg_block_pc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -70px;
+}
+
+#careerplan .education-program .container-block{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#careerplan .education-program .heading-block{
+    margin-bottom: 97px;
+}
+
+#careerplan .education-program .heading-block .img-title{
+    display: block;
+    margin: auto;
+}
+
+#careerplan .education-program .item-info-education .title.title-blue{
+    background: #7395ac;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 8px;
+    margin-bottom: 25px;
+}
+
+#careerplan .education-program .item-info-education .title.title-green{
+    background: #73aca2;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#careerplan .education-program .item-info-education .title .t1{
+    background: #347467;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    padding: 0px 6px 0px 8px;
+    margin-right: 14px;
+}
+
+#careerplan .education-program .item-info-education .info-text .text{
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+#careerplan .education-program  .bx-wrapper{
+    padding: 0px;
+    background: transparent;
+    box-shadow: unset;
+    border: 0px;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    #careerplan .education-program .list-info-education{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
+
+    #careerplan .education-program .list-info-education .item-info-education{
+        width: 50% !important;
+        padding: 0px 30px;
+        margin-bottom: 56px;
+    }
+
+    #careerplan .education-program .list-info-education .item-info-education.bx-clone{
+        display: none !important;
+    }
+
+    #careerplan .education-program .list-info-education .item-info-education:last-child{
+        margin-bottom: 0px;
+    }
+
+    #careerplan .education-program .bx-viewport{
+        height: auto !important;
+    }
+
+    #careerplan .education-program .bx-wrapper .bx-controls{
+        display: none !important;
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+    #careerplan .description-block .content-image{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    #careerplan .main-banner .heading .t1 .cp-image{
+        height: 30px;
+    }
+
+    #careerplan .main-banner .heading .t2{
+        font-size: 22px;
+    }
+
+    #careerplan .description-block .info .heading-block .img-title{
+        height: 28px;
+    }
+
+    #careerplan .description-block .info .text {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    #careerplan .description-block .content-image{
+        padding: 0px 15px;
+    }
+
+    #careerplan .education-program .heading-block .img-title{
+        height: 95px;
+    }
+
+    #careerplan .education-program .item-info-education .title.title-blue,
+    #careerplan .education-program .item-info-education .title.title-green{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+        height: 45px;
+    }
+
+    #careerplan .education-program .item-info-education .info-text .text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+    #careerplan .main-banner .heading .t1 .cp-image {
+        height: 26px;
+    }
+
+    #careerplan .main-banner .heading .t1{
+        margin-bottom: 15px;
+    }
+
+    #careerplan .main-banner .heading .t2 {
+        font-size: 20px;
+    }
+
+    #careerplan .description-block .content-image{
+        padding: 0px 0px 40px;
+        overflow-x: scroll;
+    }
+
+    #careerplan .description-block .content-image::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,0.2);
+        background-color: #F5F5F5;
+        margin: 0px 15px;
+    }
+
+    #careerplan .description-block .content-image::-webkit-scrollbar
+    {
+        background-color: transparent;
+        height: 8px;
+    }
+
+    #careerplan .description-block .content-image::-webkit-scrollbar-thumb
+    {
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+        background-color: #d3d3d3;
+    }
+
+    #careerplan .description-block .content-image .image_wrap{
+        width: 980px;
+        padding: 0px 15px;
+    }
+
+    #careerplan .education-program .container-block{
+        padding: 0px 35px;
+    }
+
+    #careerplan .education-program .list-info-education .item-info-education{
+        padding: 0px 15px;
+    }
+
+    #careerplan .education-program .item-info-education .info-text .text {
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    #careerplan .education-program .item-info-education .title.title-blue,
+    #careerplan .education-program .item-info-education .title.title-green {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        height: 40px;
+    }
+
+    #careerplan .education-program{
+        background-position-y: 0px;
+    }
+
+    #careerplan .description-block .info .text {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #careerplan .main-banner .heading{
+        top: 65%;
+    }
+
+    #careerplan .main-banner .heading .t1 .cp-image {
+        height: 20px;
+    }
+
+    #careerplan .main-banner .heading .t2 {
+        font-size: 16px;
+    }
+
+    #careerplan .main-banner .heading .t1 {
+        margin-bottom: 5px;
+    }
+
+    #careerplan .description-block{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    #careerplan .description-block .info .heading-block .img-title {
+        height: 20px;
+    }
+
+    #careerplan .description-block .container-block{
+        padding: 0px 15px;
+    }
+
+    #careerplan .description-block .info .text {
+        font-size: 14px;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    #careerplan .description-block .info .text br{
+        display: none;
+    }
+
+    #careerplan .description-block .info .heading-block{
+        padding-bottom: 20px;
+    }
+
+    #careerplan .description-block .info .heading-block:after {
+        width: 60px;
+        height: 1px;
+        bottom: 10px;
+    }
+
+    #careerplan .education-program{
+        padding-top: 30px;
+        background-image: url("../images/careerplan_bg_block_sp.png");
+        margin-bottom: 40px;
+    }
+
+    #careerplan .education-program .heading-block .img-title {
+        height: 70px;
+    }
+
+    #careerplan .education-program .heading-block {
+        margin-bottom: 40px;
+    }
+
+    #careerplan .education-program .container-block {
+        padding: 0px 40px;
+    }
+
+    #careerplan .education-program .list-info-education .item-info-education{
+        background: rgba(255,255,255,.8);
+        padding: 0px;
+        margin-right: 15px;
+        min-height: 210px;
+    }
+
+    #careerplan .education-program .bx-controls .bx-prev{
+        background: #005893;
+        left: -40px;
+        width: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        border-radius: 0px 10px 10px 0px;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    #careerplan .education-program .bx-controls .bx-next{
+        background: #005893;
+        right: -40px;
+        width: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        border-radius: 10px 0px 0px 10px;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    #careerplan .education-program .bx-controls .icon-slider{
+        width: 8px;
+    }
+
+    #careerplan .education-program .item-info-education .title.title-blue{
+        padding-left: 15px;
+        height: 35px;
+        margin-bottom: 12px;
+    }
+
+    #careerplan .education-program .item-info-education .title.title-green{
+        height: 35px;
+        margin-bottom: 12px;
+    }
+
+    #careerplan .education-program .item-info-education .title .t1{
+        padding: 0px 12px 0px 15px;
+    }
+
+    #careerplan .education-program .item-info-education .info-text .text {
+        font-size: 13px;
+        line-height: 22px;
+        padding: 0px 15px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

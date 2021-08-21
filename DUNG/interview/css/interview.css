@@ -1,0 +1,850 @@
+/*css fadeIn Up*/
+/*=================================================*/
+
+#interview{
+    background: #FFFFFF;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#interview .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#interview .animatedFadeInUp {
+    opacity: 0;
+}
+
+#interview .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@media (max-width: 767px) {
+    #interview .animated {
+        animation-duration: 1.5s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both
+    }
+}
+
+/*Header*/
+/*===========================================*/
+
+#header{
+    max-width: 1920px;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 999;
+    padding: 0px 50px;
+    display: flex;
+}
+
+#header .iv_image{
+    width: 100% !important;
+}
+
+/*title page*/
+/*============================================*/
+
+#interview .page-title{
+    position: relative;
+}
+
+#interview .page-title .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#interview .page-title .image_wrap .iv_image{
+    width: 100% !important;
+}
+
+#interview .page-title .page-title-text{
+    position: absolute;
+    top: 56.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20.8%;
+}
+
+#interview .page-title .page-title-text .iv_image{
+    width: 100% !important;
+}
+
+/*entry-heading*/
+/*======================================*/
+
+#interview .entry-heading{
+    padding-top: 72px;
+    padding-bottom: 63px;
+}
+
+#interview .entry-heading .text_heading{
+    font-size: 20px;
+    line-height: 45px;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+}
+
+/*interview slider*/
+/*===========================================*/
+
+#interview .interview-slider{
+    overflow: hidden;
+    padding-bottom: 70px;
+}
+
+#interview .interview-slider .list-item-slider .item-slider{
+    background-color: #000;
+    min-height: 1px;
+    min-width: 1px;
+}
+
+#interview .interview-slider .bx-viewport .item-slider .iv_image{
+    max-width: 100%;
+    width: 100%;
+}
+
+#interview .interview-slider .content-slider .item-slider .iv_image{
+    opacity: .5;
+    width: 100% !important;
+}
+
+#interview .list-item-slider{
+    max-width: 61.5% !important;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+}
+
+#interview .list-item-slider .slick-list{
+    overflow: visible !important;
+    pointer-events: none;
+}
+
+#interview .interview-slider .item-slider.slick-active .iv_image{
+    transition: .8s;
+    opacity: 1;
+}
+
+#interview .interview-slider .list-item-slider .item-slider{
+    position: relative;
+    overflow: hidden;
+}
+
+#interview .interview-slider .content-slider .slick-prev{
+    position: absolute;
+    width: 30px;
+    height: 48px;
+    top: 46.5%;
+    transform: translateY(-50%);
+    left: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#interview .interview-slider .content-slider .slick-next{
+    position: absolute;
+    width: 30px;
+    height: 48px;
+    top: 46.5%;
+    transform: translateY(-50%);
+    right: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#interview .interview-slider .item-slider .text_slider{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: 1.5s;
+
+}
+
+#interview .interview-slider .item-slider.slick-active .text_slider{
+    opacity: 1;
+}
+
+#interview .interview-slider .item-slider .text_slider:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(25, 21, 135);
+    opacity: .5;
+    bottom: 0px;
+    left: 0px;
+}
+
+#interview .interview-slider .item-slider .iv_text{
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 16px 44px 16px 44px;
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+}
+
+#interview .interview-slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 9px;
+}
+
+#interview .interview-slider .slick-dots li button{
+    font-size: 0px;
+    border: 0px;
+}
+
+#interview .interview-slider .slick-dots li{
+    width: 10px;
+    height: 10px;
+    border-radius: 0px;
+    background: #b3b3b3;
+    margin: 0px 6px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#interview .interview-slider .slick-dots li.slick-active{
+    background: #191587;
+}
+
+/*inforPerson*/
+/*===========================================*/
+
+#interview .person-block{
+    overflow: hidden;
+    margin-bottom: 99px;
+}
+
+#interview .person-block .content-person{
+    width: 100%;
+    max-width: 1524px;
+    float: right;
+    padding-left: 24px;
+}
+
+#interview .person-block .content-person .image-person{
+    overflow: hidden;
+    position: relative;
+}
+
+#interview .person-block .content-person .image_wrap{
+    width: 69.5%;
+    float: right;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+#interview .person-block .content-person .image_wrap .iv_image{
+    width: 100% !important;
+}
+
+#interview .person-block .content-person .image_wrap .name{
+    position: absolute;
+    font-size: 30px;
+    color: #004fa2;
+    top: 32.4%;
+    left: 21.5%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 4px;
+}
+
+#interview .person-block .content-person .infor{
+    position: absolute;
+    width: 489px;
+    background: #004fa2;
+    left: 0px;
+    bottom: 29px;
+    padding: 53px 30px 40px 77px;
+    min-height: 350px;
+}
+
+#interview .person-block .content-person .infor .title{
+    font-size: 20px;
+    line-height: 45px;
+    color: #dcdcdc;
+    font-weight: bold;
+    padding-left: 8px;
+    margin-bottom: 4px;
+}
+
+#interview .person-block .content-person .infor .name-1{
+    font-size: 30px;
+    line-height: 45px;
+    color: #dcdcdc;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 32px;
+}
+
+#interview .person-block .content-person .infor .year{
+    font-size: 20px;
+    line-height: 45px;
+    padding-left: 2px;
+}
+
+#interview .person-block .content-person .infor .iv_text{
+    font-size: 20px;
+    line-height: 30px;
+    color: #dcdcdc;
+    font-weight: bold;
+}
+
+#interview #personDetails02.person-block .content-person{
+    float: left;
+    padding: 0px 24px 0px 0px;
+}
+
+#interview #personDetails02.person-block .content-person .image_wrap{
+    float: left;
+}
+
+#interview #personDetails02.person-block .content-person .image_wrap .name{
+    left: unset;
+    right: -11.2%;
+    letter-spacing: 3.6px;
+    top: 32.5%;
+}
+
+#interview #personDetails02.person-block .content-person .infor{
+    left: unset;
+    right: 1px;
+    padding: 53px 14px 40px 75px;
+    min-height: 350px;
+}
+
+#interview #personDetails02.person-block .content-person .infor .title{
+    padding-left: 10px;
+    margin-bottom: 6px;
+}
+
+#interview #personDetails02.person-block .content-person .infor .name-1{
+    padding-left: 0px;
+}
+
+/*interchange-block*/
+/*=============================================*/
+
+#interview .interchange-block{
+    background: #f5f5f5;
+    padding-top: 99px;
+    padding-bottom: 95px;
+}
+
+#interview .content-interchange-block{
+    max-width: 1128px;
+    margin: auto;
+    padding: 0px 24px;
+}
+
+#interview .list-item-interchange .text_title{
+    font-size: 30px;
+    line-height: 32px;
+    color: #333333;
+    font-weight: bold;
+    padding-left: 41px;
+    position: relative;
+    margin-bottom: 38px;
+}
+
+#interview .list-item-interchange .text_title:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 18px;
+    background: #1d1882;
+    left: 0px;
+    bottom: 3px;
+}
+
+#interview .list-item-interchange{
+    margin-bottom: 106px;
+}
+
+#interview .list-item-interchange:last-child{
+    margin-bottom: 0px;
+}
+
+#interview .list-item-interchange .item-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#interview .list-item-interchange .item-box:last-child{
+    margin-bottom: 0px !important;
+}
+
+#interview .list-item-interchange .content-text{
+    width: 72.7%;
+    padding-right: 30px;
+}
+
+#interview .list-item-interchange .image_wrap{
+    width: 27.3%;
+    position: relative;
+    padding-left: 22px;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interview .list-item-interchange .item-box:nth-child(2) .image_wrap:after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 150px;
+    background: #191587;
+    left: 0px;
+    top: 0px;
+}
+
+#interview .list-item-interchange .item-box:nth-child(3) .content-text{
+    order: 2;
+    padding-left: 30px;
+    padding-right: 0px;
+}
+
+#interview .list-item-interchange .item-box:nth-child(3) .image_wrap{
+    order: 1;
+    border-left: 0px;
+    padding-left: 43px;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-top: 0px;
+}
+
+#interview .list-item-interchange .item-box:nth-child(3) .image_wrap:after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 150px;
+    background: #0269cc;
+    right: 0px;
+    top: 0px;
+}
+
+#interview .list-item-interchange .item-box:nth-child(3) .iv_text{
+    letter-spacing: -1px;
+}
+
+#interview .list-item-interchange .item-box:nth-child(3) .image_wrap .name{
+    left: unset;
+    right: -7.3%;
+    top: 32%;
+    color: #0269cc;
+}
+
+#interview .list-item-interchange .item-box .iv_text{
+    font-size: 20px;
+    line-height: 45px;
+    color: #333333;
+    font-weight: 400;
+    letter-spacing: -0.55px;
+}
+
+#interview .list-item-interchange .image_wrap .name{
+    position: absolute;
+    font-size: 17px;
+    line-height: 36px;
+    color: #191587;
+    z-index: 99;
+    top: 35%;
+    left: 22.3%;
+    font-weight: 400;
+    transform: translate(-50%, -50%);
+    font-family: Meiryo;
+}
+
+#interview .list-item-interchange.item03 .item-box,
+#interview .list-item-interchange.item04 .item-box{
+    margin-bottom: 30px;
+}
+
+#interview .list-item-interchange.item03 .item-box:nth-child(3) .iv_text{
+    letter-spacing: -1.2px;
+}
+
+
+/*Footer*/
+/*==========================================*/
+
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-footer .iv_image{
+    width: 100% !important;
+}
+
+
+
+@media (max-width: 1440px) {
+    #interview .person-block .content-person .image_wrap .name,
+    #interview #personDetails02.person-block .content-person .image_wrap .name{
+        top: 15%;
+    }
+}
+
+@media (max-width: 1280px) {
+    #interview .person-block .content-person .infor .name-1{
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    #interview #personDetails02.person-block .content-person .image_wrap .name{
+        right: -18%;
+    }
+
+    #interview .person-block .content-person .infor,
+    #interview #personDetails02.person-block .content-person .infor{
+        width: 430px;
+        padding: 30px 15px 30px 40px;
+        min-height: auto;
+    }
+
+    #interview #personDetails02.person-block .content-person .infor .name-1{
+        padding-left: 10px;
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+   body.template-interview{
+       min-width: 1180px;
+   }
+}
+
+@media (max-width: 767px) {
+
+    body.template-interview{
+        min-width: 640px;
+    }
+
+    /*Header*/
+    /*=========================================*/
+
+    #header{
+        position: relative;
+        padding: 0px;
+    }
+
+    #interview .page-title .page-title-text{
+        top: 42.3%;
+        width: 44%;
+    }
+
+    /*entry-heading*/
+    /*==========================================*/
+
+    #interview .entry-heading{
+        padding-top: 36px;
+        padding-bottom: 5px;
+    }
+
+    #interview .entry-heading .text_heading{
+        padding: 0px 24px 42px;
+        font-size: 26px;
+        line-height: 50px;
+        max-width: 680px;
+        margin: auto;
+        letter-spacing: 1px;
+    }
+
+    /*interview-slider*/
+    /*============================================*/
+
+    #interview .interview-slider{
+        padding-bottom: 29px;
+    }
+
+    #interview .list-item-slider{
+        max-width: 100% !important;
+    }
+
+    #interview .interview-slider .content-slider .slick-prev{
+        width: 28px;
+        height: 46px;
+        left: 24px;
+    }
+
+    #interview .interview-slider .content-slider .slick-next{
+        width: 28px;
+        height: 46px;
+        right: 24px;
+    }
+
+    #interview .interview-slider .item-slider .iv_text{
+        font-size: 20px;
+        line-height: 36px;
+        padding: 13px 60px 13px 61px;
+        letter-spacing: 0px;
+        min-height: 84px;
+        display: flex;
+        align-items: center;
+    }
+
+    #interview .interview-slider .item-slider .iv_text br{
+        display: none;
+    }
+
+    #interview .interview-slider .content-slider .item-slider .iv_image{
+        opacity: 1;
+    }
+
+    #interview .interview-slider .slick-dots{
+        margin: 30px 0px 20px;
+    }
+
+    /*personDetails01*/
+    /*==========================================*/
+
+    #interview .person-block{
+        margin-bottom: 50px;
+    }
+
+    #interview .person-block .content-person{
+        padding: 0px !important;
+    }
+
+    #interview .person-block .content-person .image_wrap{
+        width: 100%;
+        margin-bottom: -50px;
+    }
+
+    #interview .person-block .content-person .image-person{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #interview .person-block .content-person .infor .title{
+        font-size: 24px;
+        padding-left: 0px !important;
+    }
+
+    #interview .person-block .content-person .infor,
+    #interview #personDetails02.person-block .content-person .infor{
+        position: relative;
+        top: unset;
+        left: unset;
+        bottom: unset;
+        right: unset;
+        transform: unset;
+        width: 100%;
+        max-width: 93.5%;
+        margin: auto;
+        padding: 26px 30px 38px 35px;
+    }
+
+    #interview .person-block .content-person .infor .name-1{
+        font-size: 36px;
+        padding-left: 0px !important;
+        margin-bottom: 10px;
+    }
+
+    #interview .person-block .content-person .infor .year{
+        font-size: 24px;
+        padding-left: 0px !important;
+    }
+
+    #interview .person-block .content-person .infor .iv_text{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    #interview .person-block .content-person .infor .iv_text br{
+        display: none;
+    }
+
+    #interview #personDetails01.person-block .content-person .image_wrap .name{
+        top: 46%;
+        left: 25px;
+        transform: translateY(-50%);
+    }
+
+    #interview #personDetails02.person-block .content-person .image_wrap .name{
+        top: 46%;
+        right: 18px;
+        transform: translateY(-50%);
+    }
+
+    #interview #personDetails02.person-block .content-person .infor{
+        padding: 26px 30px 32px 35px;
+    }
+
+
+    /*interchange-block*/
+    /*============================================*/
+
+    #interview .interchange-block{
+        padding-top: 82px;
+    }
+
+    #interview .list-item-interchange .text_title{
+        font-size: 36px;
+        margin-bottom: 58px;
+        padding-left: 35px;
+    }
+
+    #interview .list-item-interchange .text_title:before{
+        width: 8px;
+        height: 30px;
+        bottom: 0px;
+    }
+
+    #interview .list-item-interchange .item-box .iv_text{
+        font-size: 24px;
+        line-height: 45px;
+    }
+
+    #interview .list-item-interchange .content-text{
+        width: 66.3%;
+        padding-right: 30px;
+    }
+
+    #interview .list-item-interchange .image_wrap{
+        width: 33.7%;
+        justify-content: flex-end;
+        padding-top: 14px;
+        align-items: end;
+    }
+
+    #interview .list-item-interchange .image_wrap .name{
+        top: 67px;
+        left: 66px;
+        transition: unset;
+    }
+
+    #interview .list-item-interchange .item-box:nth-child(3) .image_wrap{
+        padding-left: 0px;
+    }
+
+    #interview .list-item-interchange .item-box:nth-child(3) .image_wrap{
+        width: 36.5%;
+        margin-top: 5px;
+        align-items: end;
+    }
+
+    #interview .list-item-interchange .item-box:nth-child(3) .content-text{
+        width: 63.5%;
+        padding-left: 26px;
+        padding-right: 10px;
+    }
+
+    #interview .list-item-interchange .item-box{
+        margin-bottom: 36px !important;
+    }
+
+    #interview .list-item-interchange .item-box:nth-child(3) .image_wrap .name{
+        top: 34px;
+        transform: unset;
+        right: 28px;
+    }
+
+    #interview .list-item-interchange{
+        margin-bottom: 90px;
+    }
+
+    #interview .content-interchange-block .list-item-interchange.item01 .item-box .iv_text br{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 640px) {
+    #interview .person-block .content-person .image_wrap .name{
+        font-size: 22px;
+    }
+
+    #interview .list-item-interchange .text_title{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    #interview .list-item-interchange .item-box .iv_text{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    #interview .list-item-interchange .image_wrap .name{
+        top: 45px;
+        left: 40px;
+    }
+
+    #interview .list-item-interchange .item-box:nth-child(3) .image_wrap .name{
+        top: 30px;
+        right: 13px;
+    }
+
+    #interview .list-item-interchange{
+        margin-bottom: 60px;
+    }
+
+    #interview .entry-heading .text_heading{
+        font-size: 25px;
+    }
+
+    #interview .interview-slider .item-slider .iv_text{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    #interview .person-block .content-person .image_wrap .name .img-title{
+        width: 80%;
+    }
+
+
+    #interview #personDetails02.person-block .content-person .image_wrap .name .img-title{
+        width: 80%;
+        float: right;
+    }
+}
+
+

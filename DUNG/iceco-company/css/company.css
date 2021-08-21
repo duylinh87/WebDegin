@@ -1,0 +1,956 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#company img{
+    max-width: 100%;
+}
+
+#company .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#company .animatedFadeInUp {
+    opacity: 0;
+}
+
+#company .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#company{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    body {
+        min-width: 1200px;
+    }
+
+    #company{
+        margin-left: 240px;
+    }
+
+    #company .sp_br{
+        display: none;
+    }
+}
+
+/*main-banner*/
+/*===============================================*/
+
+#company .main-banner{
+    position: relative;
+}
+
+#company .main-banner .image_wrap .step-img{
+    display: block;
+    width: 100% !important;
+}
+
+#company .main-banner .heading-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: #f0f0f0;
+    text-align: center;
+    padding: 68px 35px 68px 38px;
+}
+
+#company .main-banner .heading-banner .t1{
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+#company .main-banner .heading-banner .t2{
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    display: block;
+    font-weight: 400;
+}
+
+/*company-overview*/
+/*===========================================*/
+
+#company .heading{
+    font-size: 30px;
+    color: #172a59;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#company .company-overview.top{
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+#company .company-overview.top .heading{
+    margin-bottom: 63px;
+}
+
+#company .company-overview .inner{
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#company .item-company{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#company .item-company:last-child{
+    border-bottom: 0px;
+}
+
+#company .item-company .ttl{
+    font-size: 18px;
+    line-height: 30px;
+    color: #172a59;
+    font-weight: 700;
+    width: 190px;
+    padding: 12px 0px 15.5px 0px;
+    letter-spacing: 1px;
+}
+
+#company .item-company .text{
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 400;
+    width: calc(100% - 190px);
+    padding: 12px 0px 15.5px 9px;
+    position: relative;
+}
+
+/*headquarter-tabs*/
+/*======================================*/
+#company .headquarter-tabs{
+    background: #f3f4f7;
+    padding-top: 110px;
+    padding-bottom: 75px;
+}
+
+#company .headquarter-tabs .heading{
+    margin-bottom: 62px;
+}
+
+#company .headquarter-tabs .inner{
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#company .headquarter-tabs .headquarter-content{
+    display: none;
+}
+
+#company .headquarter-tabs .headquarter-content.active{
+    display: block;
+}
+
+#company .headquarter-tabs .tabs-show .tab-action{
+    font-size: 18px;
+    line-height: 20px;
+    color: #172a59;
+    font-weight: 700;
+    display: block;
+    transition: .4s;
+    text-align: center;
+    padding: 38px 0px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#company .headquarter-tabs .tabs-show .item-tab.active .tab-action{
+    color: #fff;
+}
+
+#company .headquarter-tabs .tabs-show{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+#company .headquarter-tabs .tabs-show .item-tab{
+    width: 50%;
+    border: 2px solid #172a59;
+    transition: .4s;
+}
+
+#company .headquarter-tabs .tabs-show .item-tab.active{
+    background: #172a59;
+}
+
+#company .headquarter-tabs .tabs-show .item-tab:hover{
+    opacity: .6;
+}
+
+/*#company .headquarter-tabs .tabs-show .item-tab:last-child{*/
+/*    border-left: 0px;*/
+/*}*/
+
+#company .headquarter-tabs .item-company .text .txt-link{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    border: 2px solid #172a59;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #172a59;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    padding-left: 10px;
+    transition: .4s;
+}
+
+#company .headquarter-tabs .item-company .text .txt-link:hover{
+    opacity: .6;
+}
+
+#company .headquarter-tabs .item-company .text .txt-link .icon-arrow{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+/*message-representative*/
+/*==========================================*/
+#company .message-representative{
+    background-image: url("../images/company/company_bg_01_pc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#company .message-representative .inner{
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#company .message-representative-content{
+    background: rgba(255,255,255,.9);
+    padding: 61px 50px 38px;
+}
+
+#company .message-representative .heading{
+    margin-bottom: 61px;
+}
+
+#company .message-representative .company-ceo-img .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#company .message-representative .company-ceo-img{
+    margin-bottom: 42px;
+}
+
+#company .message-representative .message-text{
+    font-size: 60px;
+    text-align: center;
+    line-height: 72px;
+    color: #e4a647;
+    font-weight: 600;
+    font-family: Meiryo;
+    letter-spacing: -1px;
+    margin-bottom: 37px;
+}
+
+#company .message-representative .message-text .sub-t1{
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 16px;
+    letter-spacing: 0px;
+}
+
+#company .message-representative .text{
+    font-size: 18px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 39px;
+}
+
+#company .message-representative .text.bold{
+    font-weight: 700;
+    color: #172a59;
+    list-style-type: decimal;
+    margin-bottom: 31px;
+    padding-left: 6px;
+    letter-spacing: 1.25px;
+}
+
+#company .message-representative .text.bold:last-child{
+    margin-bottom: 0px;
+}
+
+#company .message-representative .important-thing-list{
+    border: 2px solid #172a59;
+    padding: 40px 45px 38px 67px;
+    margin-bottom: 42px;
+}
+
+#company .message-representative .text.border-bottom{
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 39px;
+}
+
+#company .message-representative .text.txt-03{
+    margin-bottom: 0px;
+}
+
+/*enterprise-introduction*/
+/*=============================================*/
+
+#company #enterprise-introduction{
+    padding-top: 110px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#company #enterprise-introduction:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 52.2%;
+    background: #f2fafd;
+    bottom: 0px;
+    left: 0px;
+}
+
+#company .content-mid .inner{
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+    position: relative;
+    z-index: 2;
+}
+
+#company #enterprise-introduction .overview{
+    background-image: url("../images/company/company_pic02_pc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 140px 150px 130px 150px;
+    margin-bottom: 42px;
+}
+
+#company .content-mid .overview .ttl{
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#company .content-mid .overview .txt{
+    font-size: 24px;
+    line-height: 42px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+#company #enterprise-introduction .heading{
+    margin-bottom: 63px;
+}
+
+#company .content-mid .text{
+    font-size: 18px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 400;
+}
+
+#company .content-mid .wanted_jobs{
+    margin-top: 40px;
+}
+
+#company #enterprise-introduction .heading-h3{
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    color: #00a3d9;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#company .content-mid .wanted_jobs_list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#company .content-mid .item-wanted-jobs{
+    width: 25%;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    font-weight: 400;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #00a3d9;
+    border-bottom: 1px solid #00a3d9;
+    border-left: 1px solid #00a3d9;
+    text-align: center;
+}
+
+#company .content-mid .item-wanted-jobs:last-child,
+#company .content-mid .item-wanted-jobs:nth-child(4n){
+    border-right: 1px solid #00a3d9;
+}
+
+#company .content-mid .item-wanted-jobs:nth-child(n+5){
+    border-top: 0px;
+}
+
+#company .content-mid .link-contact{
+    text-align: center;
+}
+
+#company .content-mid .link-contact .txt-link{
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    background: #00a3d9;
+    position: relative;
+    padding: 25px 0px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#company .content-mid .link-contact .icon-link{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+#company .content-mid .link-contact .txt-link:hover{
+    opacity: .6;
+}
+
+/*supermarket-department*/
+/*======================================*/
+#company #supermarket-department{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#company #supermarket-department:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 65.8%;
+    background: #fff9f2;
+    bottom: 0px;
+    left: 0px;
+}
+
+#company #supermarket-department .overview{
+    background-image: url("../images/company/company_pic03_pc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 140px 162px 130px 150px;
+    margin-bottom: 42px;
+}
+
+#company #supermarket-department .heading-h3{
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ff8300;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#company #supermarket-department.content-mid .item-wanted-jobs{
+    height: 56px;
+    border-top: 1px solid #ff8300;
+    border-bottom: 1px solid #ff8300;
+    border-left: 1px solid #ff8300;
+}
+
+#company #supermarket-department.content-mid .item-wanted-jobs:last-child,
+#company #supermarket-department.content-mid .item-wanted-jobs:nth-child(4n){
+    border-right: 1px solid #ff8300;
+}
+
+#company #supermarket-department.content-mid .item-wanted-jobs:nth-child(n+5){
+    border-top: 0px;
+}
+
+#company #supermarket-department.content-mid .link-contact .txt-link{
+    background: #ff8300;
+}
+
+#company .company-overview.bottom{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+#company .company-overview.bottom .heading{
+    margin-bottom: 60px;
+}
+
+#company .company-overview.bottom .item-company .text{
+    line-height: 36px;
+    padding: 11px 0px 10px 9px;
+}
+
+#company .company-overview.bottom .item-company .ttl{
+    padding: 14px 0px 5px 0px;
+}
+
+#company .company-overview.bottom .item-company:last-child{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+@media (max-width: 1280px){
+
+    #company .message-representative .message-text{
+        font-size: 50px;
+    }
+
+    #company .message-representative .message-text .sub-t1{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #company #supermarket-department .overview,
+    #company #enterprise-introduction .overview{
+        padding: 140px 115px 130px 115px;
+    }
+
+    #company .main-banner .heading-banner .t1 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #company .main-banner .heading-banner .t2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #company .main-banner .heading-banner{
+        padding: 55px 30px 55px 30px;
+    }
+
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    #company .pc_br{
+        display: none;
+    }
+
+    #company .main-banner .heading-banner .t1 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #company .main-banner .heading-banner .t2 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    #company .main-banner .heading-banner {
+        padding: 51px 26px 51px 27px;
+        top: 58.5%;
+    }
+
+    #company .heading {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    /*company-overview*/
+    /*==========================================*/
+    #company .company-overview.top .heading {
+        margin-bottom: 40px;
+    }
+
+    #company .company-overview.top {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #company .company-overview .inner{
+        padding: 0px 20px;
+    }
+
+    #company .item-company .ttl {
+        font-size: 13px;
+        line-height: 24px;
+        width: 90px;
+        padding: 6px 0px !important;
+        letter-spacing: 0px;
+    }
+
+    #company .item-company .text {
+        font-size: 13px;
+        line-height: 24px !important;
+        width: calc(100% - 90px);
+        padding: 6px 0px !important;
+        letter-spacing: -0.5px;
+    }
+
+    #company .item-company:last-child{
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    /*headquarter-tabs*/
+    /*===========================================*/
+    #company .headquarter-tabs{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #company .headquarter-tabs .inner{
+        padding: 0px;
+    }
+
+    #company .headquarter-tabs .heading {
+        margin-bottom: 35px;
+    }
+
+    #company .headquarter-tabs .tabs-show .tab-action{
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0px;
+    }
+
+    #company .headquarter-tabs .tabs-show .tab-action{
+        padding: 10.5px 0px;
+    }
+
+    #company .headquarter-tabs .tabs-show .item-tab{
+        border: 1px solid #172a59;
+    }
+
+    #company .headquarter-tabs .headquarter-content{
+        padding: 0px 20px;
+    }
+
+    #company .headquarter-content .item-company .ttl{
+        width: 100%;
+        padding: 5px 0px 0px;
+    }
+
+    #company .headquarter-content .item-company .text{
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    #company .headquarter-tabs .tabs-show{
+        max-width: 400px;
+        margin: 0px auto 20px;
+    }
+
+    #company .headquarter-tabs .item-company .text .txt-link {
+        width: 65px;
+        height: 24px;
+        border: 1.5px solid #172a59;
+        font-size: 13px;
+    }
+
+    #company .headquarter-tabs .item-company .text .txt-link .icon-arrow{
+        width: 7px;
+    }
+
+    /*message-representative*/
+    /*==================================*/
+    #company .message-representative{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url("../images/company/company_bg_01_sp.jpg");
+    }
+
+    #company .message-representative .inner{
+        padding: 0px 20px;
+    }
+
+    #company .message-representative-content{
+        padding: 35px 25px 25px;
+    }
+
+    #company .message-representative .heading {
+        margin-bottom: 30px;
+    }
+
+    #company .message-representative .message-text {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 22px;
+        letter-spacing: 0px;
+    }
+
+    #company .message-representative .message-text .sub-t1 {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0px 10px;
+        margin-top: 14px;
+    }
+
+    #company .message-representative .text {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+    }
+
+    #company .message-representative .text.bold{
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+
+    #company .message-representative .important-thing-list{
+        padding: 20px 20px 20px 40px;
+        margin-bottom: 20px;
+    }
+
+    #company .message-representative .text.border-bottom{
+        padding-bottom: 25px;
+    }
+
+    /*enterprise-introduction*/
+    /*===========================================*/
+    #company #enterprise-introduction{
+        padding-top: 60px;
+        padding-bottom: 25px;
+    }
+
+    #company #enterprise-introduction:after{
+        height: 60%;
+    }
+
+    #company .content-mid .inner{
+        padding: 0px 20px;
+    }
+
+    #company #enterprise-introduction .heading {
+        margin-bottom: 32px;
+    }
+
+    #company .content-mid .overview .ttl {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    #company .content-mid .overview .txt {
+        font-size: 13px;
+        line-height: 24px;
+        padding: 0px 25px;
+    }
+
+    #company #enterprise-introduction .overview{
+        background-image: url("../images/company/company_pic02_sp.jpg");
+        margin-bottom: 20px;
+        padding: 65px 0px 62px;
+    }
+
+    #company .content-mid .text {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #company .content-mid .wanted_jobs {
+        margin-top: 18px;
+    }
+
+    #company #enterprise-introduction .heading-h3 {
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 12px;
+    }
+
+    #company .content-mid .item-wanted-jobs {
+        width: 50%;
+        font-size: 13px;
+        line-height: 18px;
+        height: auto;
+        padding: 7px 0px;
+    }
+
+    #company .content-mid .item-wanted-jobs:nth-child(2n){
+        border-right: 1px solid #00a3d9;
+    }
+
+    #company .content-mid .item-wanted-jobs:nth-child(n+3){
+        border-top: 0px
+    }
+
+    #company .content-mid .link-contact .txt-link{
+        max-width: 235px;
+        font-size: 13px;
+        line-height: 15px;
+        padding: 19px 0px;
+    }
+
+    #company .content-mid .link-contact .icon-link{
+        width: 8px;
+    }
+
+    #company .content-mid .wanted_jobs_list {
+        margin-bottom: 25px;
+    }
+
+    /*supermarket-department*/
+    /*=========================================*/
+    #company #supermarket-department{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #company #supermarket-department .overview {
+        background-image: url("../images/company/company_pic03_sp.jpg");
+        padding: 55px 0px 48px;
+        margin-bottom: 20px;
+    }
+
+    #company #supermarket-department.content-mid .text{
+        letter-spacing: -0.2px;
+    }
+
+    #company #supermarket-department.content-mid .item-wanted-jobs:nth-child(n+3) {
+        border-top: 0px;
+    }
+
+    #company #supermarket-department.content-mid .item-wanted-jobs{
+        height: auto;
+    }
+
+    #company #supermarket-department:after{
+        height: 79.3%;
+    }
+
+    /*company-overview*/
+    /*========================================*/
+    #company .company-overview.bottom{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #company .company-overview.bottom .heading {
+        margin-bottom: 30px;
+    }
+
+    #company .company-overview.bottom .item-company .text{
+        padding-left: 6px !important;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,6 +10,18 @@ body {
 input, textarea {
   font-family: Futura,"Century Gothic",游ゴシック体,YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN",游ゴシック,"Yu Gothic",メイリオ,Meiryo,sans-serif;
 }
+.yu{
+  font-family: "Yu Gothic",sans-serif;
+}
+.me{
+  font-family: "Meiryo",sans-serif;
+}
+.ms{
+  font-family: "MS PGothic",sans-serif;
+}
+.cg{
+  font-family: "Century Gothic",sans-serif;
+}
 a {
   color:#0978c5;
   text-decoration:none;

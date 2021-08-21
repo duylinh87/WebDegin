@@ -1,0 +1,1050 @@
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        /*opacity: 1;*/
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        /*opacity: 1;*/
+    }
+}
+
+#person img {
+    max-width: 100%;
+}
+
+#person .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#person .animatedFadeInUp {
+    /*opacity: 0;*/
+}
+
+#person .fadeInUp {
+    /*opacity: 0;*/
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#person {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#person .pc_br{
+    display: none;
+}
+
+
+/*main-banner*/
+/*===============================================*/
+
+#person .main-banner {
+    position: relative;
+}
+
+#person .main-banner .pic-inner .main-img {
+    width: 100% !important;
+    display: block;
+}
+
+#person .main-banner .heading{
+    position: absolute;
+    top: 45.5%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 4.5%;
+}
+
+
+/*tabs-content*/
+/*==============================*/
+#person .tabs-content{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+#person .tabs-content .inner{
+    max-width: 470px;
+    padding: 0px 10px;
+    margin: auto;
+}
+
+#person .tabs-content .item-tab-person{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#person .tabs-content .item-tab-person .scroll{
+    text-decoration: none;
+    display: block;
+    transition: .4s;
+}
+
+#person .tabs-content .item-tab-person .scroll:hover{
+    opacity: .6;
+}
+
+#person .tabs-content .item-tab-person .pic-inner{
+    width: 50%;
+    padding-right: 10px;
+}
+
+#person .tabs-content .item-tab-person .pic-inner .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#person .tabs-content .item-tab-person .tab-info{
+    background: #fff;
+    border: 1px solid #eff2f3;
+    position: relative;
+    max-width: 71%;
+    width: 100%;
+    float: right;
+    margin-top: -37px;
+    padding: 10px 10px 6px;
+}
+
+#person .tabs-content .item-tab-person .text-info .sub-ttl{
+    background: #f07b4c;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    padding: 3px 10px;
+    font-weight: 700;
+}
+
+#person .tabs-content .item-tab-person .text-info .t1{
+    font-size: 15px;
+    line-height: 20px;
+    color: #0d0d0d;
+    font-weight: 500;
+    padding-left: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+#person .tabs-content .item-tab-person .text-info .sub-t1{
+    font-size: 12px;
+    padding-left: 14px;
+}
+
+#person .tabs-content .item-tab-person .name-img{
+    position: relative;
+    margin-top: -8px;
+    padding-left: 4px;
+}
+
+#person .tabs-content .item-tab-person .name-img .switch-img{
+    display: block;
+}
+
+#person .tabs-content .item-tab-person .icon-arrow{
+    position: absolute;
+    right: 15px;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#person .tabs-content .item-tab-person .ttl{
+    margin-bottom: 8px;
+}
+
+
+/*person-block*/
+/*================================*/
+
+#person .person-block{
+    padding-top: 88px;
+    background: #eff2f3;
+}
+
+#person .person-block .top-person .image-content .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#person .person-block .top-person .text-content{
+    background: #fff;
+    padding-top: 30px;
+}
+
+#person .person-block .top-person .inner-text-content{
+    max-width: 470px;
+    margin: 0px auto;
+    padding: 0px 10px 25px;
+}
+
+#person .person-block .text-content .text-info-block{
+    padding: 0px 15px;
+    margin-bottom: 25px;
+}
+
+#person .person-block .text-content .text-info-block .ttl-01{
+    margin-bottom: 20px;
+}
+
+#person .person-block .text-content .text-info-block .sub-ttl01{
+    background: #f07b4c;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    padding: 3px 10px;
+    font-weight: 700;
+}
+
+#person .person-block .text-content .text-info-block .t1{
+    font-size: 18px;
+    line-height: 20px;
+    color: #0d0d0d;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    padding-left: 13px;
+}
+
+#person .person-block .text-content .text-info-block .sub-t1{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#person .person-block .text-content .text-info-block .name-img{
+    position: relative;
+    margin-top: -8px;
+    padding-left: 6px;
+}
+
+#person .person-block .text-content .text-info-block .name-img .switch-img{
+    display: block;
+}
+
+#person .person-block .text-content .item-info-person .sub-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid #f2f4f4;
+    min-height: 44px;
+}
+
+#person .person-block .text-content .item-info-person:first-child .sub-item:first-child{
+    border-top: 2px solid #f2f4f4;
+}
+
+#person .person-block .text-content .item-info-person .ttl{
+    font-size: 12px;
+    line-height: 13px;
+    color: #0d0d0d;
+    font-weight: 700;
+    width: 130px;
+    padding-left: 35px;
+}
+
+#person .person-block .text-content .item-info-person .text{
+    font-size: 12px;
+    line-height: 17px;
+    color: #3c3c3c;
+    font-weight: 500;
+    width: calc(100% - 130px);
+    padding: 6px 10px 6px 15px;
+}
+
+#person .person-block .text-content .list-info-person{
+    margin-bottom: 20px;
+}
+
+#person .person-block .text-content .inner-content{
+    padding: 0px 30px 15px 16px;
+    border-bottom: 2px solid #f2f4f4;
+}
+
+#person .person-block .text-content .inner-content .title{
+    font-size: 15px;
+    line-height: 25px;
+    color: #0d0d0d;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 28px;
+}
+
+#person .person-block .text-content .inner-content .title:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/person/person_ico_dots_sp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 25px;
+    height: 5px;
+    bottom: 10px;
+    left:   0px;
+}
+
+#person .person-block .text-content .inner-content .text{
+    font-size: 12px;
+    line-height: 20px;
+    color: #3c3c3c;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+}
+
+#person .person-block .text-content .inner-content .text .text-link{
+    font-size: 12px;
+    line-height: 20px;
+    color: #3c3c3c;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    border-bottom: 1px solid #7e7e7e;
+}
+
+#person .person-block .bx-wrapper{
+    margin: 0px;
+    border: 0px;
+    box-shadow: unset;
+}
+
+#person #person-block04.person-block{
+    padding-bottom: 85px;
+}
+
+#person .person-block .slider-person .item-image-person .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+
+@media (max-width: 767px) and (-webkit-device-pixel-ratio:2) {
+
+    #person .person-block .slider-person .item-image-person{
+        width: 33.33% !important;
+    }
+
+    #person .person-block .slider-person .list-image-person{
+        transform: unset !important;
+        width: 100% !important;
+        display: block;
+        overflow: hidden;
+        transition-duration: 0s !important;
+    }
+
+    #person .person-block .slider-person .item-image-person.bx-clone{
+        display: none !important;
+    }
+
+    #person .person-block .slider-person .bx-viewport{
+        overflow: visible !important;
+        height: auto !important;
+    }
+
+    #person .person-block{
+        overflow: hidden;
+    }
+
+
+    #person .person-block .top-person .image-content{
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #person #person-block01 .top-person .image-content .bg{
+        background-image: url("../images/person/person_block01_avt_sp.jpg");
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        transform: translateZ(0);
+        will-change: transform;
+    }
+
+    #person .person-block .top-person .image-content .bg-wrap{
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #person .person-block .top-person .image-content{
+        position: relative;
+        width: 100%;
+        padding-bottom: 144%;
+        z-index: 2;
+    }
+
+    #person #person-block02 .top-person .image-content .bg{
+        background: url("../images/person/person_block02_avt_sp.jpg");
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        transform: translateZ(0);
+        will-change: transform;
+    }
+
+    #person #person-block03 .top-person .image-content .bg{
+        background: url("../images/person/person_block03_avt_sp.jpg");
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        transform: translateZ(0);
+        will-change: transform;
+    }
+
+    #person #person-block04 .top-person .image-content .bg{
+        background: url("../images/person/person_block04_avt_sp.jpg");
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        transform: translateZ(0);
+        will-change: transform;
+    }
+
+    #person .person-block .top-person .image-content .pic-inner{
+        display: none !important;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    #person .person-block .slider-person .item-image-person{
+        width: 200px !important;
+
+    }
+
+    #person .pc_br{
+        display: block;
+    }
+
+    #person .sp_br{
+        display: none;
+    }
+
+    #person .main-banner .heading {
+        top: 61.4%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        width: auto;
+    }
+
+    #person .main-banner .heading .t1{
+        display: inline-block;
+    }
+
+    #person .main-banner .heading .t1 .switch-img{
+        max-width: 55%;
+    }
+
+    /*tabs-content*/
+    /*===================================*/
+
+    #person .tabs-content {
+        padding-top: 62px;
+        padding-bottom: 100px;
+    }
+
+    #person .tabs-content .inner {
+        max-width: 800px;
+        padding: 0px 20px;
+    }
+
+    #person .tabs-content .list-tabs-person{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #person .tabs-content .item-tab-person{
+        width: 50%;
+        padding: 0px 40px;
+        margin-bottom: 30px;
+    }
+
+    #person .tabs-content .item-tab-person .pic-inner {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    #person .tabs-content .item-tab-person .text-info .sub-ttl {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0px 15px;
+    }
+
+    #person .tabs-content .item-tab-person .tab-info{
+        max-width: 83%;
+        margin: -41px auto 0px;
+        float: unset;
+        padding: 10px 5px 2px 10px;
+    }
+
+    #person .tabs-content .item-tab-person .text-info .t1 {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 1.75px;
+        padding-left: 15px;
+    }
+
+    #person .tabs-content .item-tab-person .text-info .sub-t1 {
+        font-size: 13px;
+        padding-left: 15px;
+    }
+
+    #person .tabs-content .item-tab-person .ttl {
+        margin-bottom: 11px;
+    }
+
+    #person .tabs-content .item-tab-person .name-img {
+        position: relative;
+        margin-top: -10px;
+        padding-left: 8px;
+    }
+
+    #person .tabs-content .item-tab-person .icon-arrow{
+        position: relative;
+        text-align: center;
+        margin-top: -2px;
+        right: unset;
+        transform: unset;
+        top: unset;
+    }
+
+    #person .tabs-content .item-tab-person .ttl .text-l{
+        position: relative;
+        margin-left: -6px;
+        letter-spacing: -1px;
+    }
+
+    #person .tabs-content .item-tab-person:nth-child(3) .text-info .sub-ttl{
+        padding: 0px 8px 0px 15px;
+    }
+
+
+    /*person-block*/
+    /*====================================*/
+
+    #person .person-block{
+        padding-top: 100px;
+    }
+
+    #person #person-block01.person-block{
+        padding-top: 0px;
+    }
+
+    #person .person-block .top-person{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #person .person-block .top-person .image-content{
+        width: 50%;
+    }
+
+    #person .person-block .top-person .image-content .pic-inner{
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 480px;
+    }
+
+    #person .person-block .top-person .text-content{
+        width: 50%;
+        margin-top: 25px;
+        padding-top: 20px;
+    }
+
+    #person #person-block01.person-block .top-person .text-content{
+        padding-top: 45px;
+        margin-top: 0px;
+    }
+
+    #person .person-block .top-person .inner-text-content {
+        max-width: 100%;
+        padding: 0px 15px 25px 15px;
+    }
+
+    #person .person-block .text-content .text-info-block {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
+    #person .person-block .text-content .text-info-block .sub-ttl01 {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 6px 20px;
+        min-width: 140px;
+    }
+
+    #person .person-block .text-content .text-info-block .t1 {
+        font-size: 20px;
+        line-height: 28px;
+        padding-left: 5px;
+    }
+
+    #person .person-block .text-content .text-info-block .ttl-01 {
+        margin-bottom: 12px;
+    }
+
+    #person .person-block .text-content .text-info-block .sub-t1 {
+        font-size: 12px;
+        padding-left: 20px;
+    }
+
+    #person .person-block .text-content .text-info-block .name-img {
+        position: relative;
+        margin-top: -20px;
+        padding-left: 5px;
+        display: inline-block;
+    }
+
+    #person .person-block .text-content .item-info-person{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+
+    #person .person-block .text-content .item-info-person:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #f2f4f4;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    #person .person-block .text-content .item-info-person:first-child:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #f2f4f4;
+        top: 0px;
+        left: 0px;
+    }
+
+    #person .person-block .text-content .item-info-person .sub-item{
+        width: 50%;
+        border: 0px;
+        min-height: 40px;
+    }
+
+    #person .person-block .text-content .list-info-person {
+        margin-bottom: 20px;
+    }
+
+    #person .person-block .text-content .item-info-person:first-child .sub-item:first-child{
+        border: 0px;
+    }
+
+    #person .person-block .text-content .item-info-person .ttl {
+        font-size: 10px;
+        line-height: 14px;
+        width: 28%;
+        padding-left: 0px;
+    }
+
+    #person .person-block .text-content .item-info-person .text {
+        font-size: 10px;
+        line-height: 16px;
+        width: 72%;
+        padding: 5px 5px 5px 6px;
+    }
+
+    #person .person-block .text-content .item-info-person .sub-item:nth-child(2) .text{
+        padding: 5px 0px 5px 10px;
+    }
+
+    #person .person-block .text-content .item-info-person .sub-item:nth-child(2) .ttl{
+        padding-left: 0px;
+    }
+
+    #person .person-block .text-content .inner-content .text {
+        font-size: 12px;
+        line-height: 16px;
+        color: #3c3c3c;
+        font-weight: 400;
+        letter-spacing: 0;
+        padding-right: 0px;
+        max-width: 780px;
+    }
+
+    #person .person-block .text-content .inner-content .title {
+        font-size: 16px;
+        line-height: 24px;
+        color: #0d0d0d;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    #person .person-block .text-content .inner-content .title:after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/person/person_ico_dots_pc.png");
+        width: 46px;
+        height: 6px;
+        bottom: 15px;
+        left: 9px;
+    }
+
+    #person .person-block .text-content .inner-content {
+        padding: 0px 0px 10px 0px;
+        border: 0px;
+        position: relative;
+    }
+
+    #person .person-block .text-content .inner-content:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #f2f4f4;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    /*#person-block02*/
+    /*===================================*/
+    #person #person-block02.person-block .text-content .text-info-block .name-img{
+        margin-top: -18px;
+        padding-left: 1px;
+    }
+
+
+
+    #person #person-block02.person-block .text-content .inner-content .title{
+        padding-bottom: 30px;
+    }
+
+    #person #person-block02.person-block .text-content .inner-content .text{
+        font-size: 12px;
+        line-height: 16px;
+        padding-right: 0px;
+    }
+
+    #person #person-block02.person-block .text-content .inner-content .title:after {
+        bottom: 15px;
+    }
+
+    #person #person-block02.person-block .text-content .inner-content .text .text-link {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0px;
+    }
+
+
+    /*person-block03*/
+    /*======================================*/
+
+    #person #person-block03.person-block .text-content .text-info-block .sub-ttl01{
+        padding: 8px 0px 8px 28px;
+    }
+
+    #person #person-block03.person-block .text-content .text-info-block .name-img{
+        margin-top: -12px;
+    }
+
+
+    /*person-block03*/
+    /*===================================*/
+    #person #person-block04.person-block {
+        padding-bottom: 150px;
+    }
+
+    #person #person-block04.person-block .text-content .text-info-block .name-img{
+        margin-top: -10px;
+        padding-left: 1px;
+    }
+
+    #person #person-block04.person-block .text-content .inner-content .text{
+        padding-right: 30px;
+    }
+
+    #person .person-block .text-content .text-info-block .name-img .switch-img{
+        max-width: 85%;
+    }
+
+    #person .person-block .top-person .image-content .switch-img {
+        display: block;
+        width: 100% !important;
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media (min-width: 1280px) {
+
+    #person .person-block .slider-person .item-image-person{
+        width: auto !important;
+    }
+
+    #person .main-banner .heading .t1 .switch-img{
+        max-width: 100%;
+    }
+
+    #person .main-banner .heading {
+        top: 61.4%;
+        left: 34.7%;
+        transform: translate(-50%, -50%);
+        width: auto;
+    }
+
+    #person .person-block {
+        padding-top: 180px;
+    }
+
+    #person .person-block .top-person .inner-text-content {
+        max-width: 100%;
+        padding: 0px 3.5% 58px 8%;
+    }
+
+    #person .person-block .top-person .text-content {
+        width: 50%;
+        margin-top: 50px;
+        padding-top: 59px;
+    }
+
+    #person .person-block .text-content .text-info-block .sub-ttl01 {
+        font-size: 22px;
+        line-height: 24px;
+        padding: 8px 38px 8px 28px;
+        min-width: 200px;
+    }
+
+    #person .person-block .text-content .text-info-block .t1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-left: 5px;
+    }
+
+    #person .person-block .text-content .text-info-block .sub-t1 {
+        font-size: 16px;
+    }
+
+    #person #person-block02.person-block .text-content .text-info-block .sub-t1{
+        padding-left: 52px;
+    }
+
+    #person .person-block .text-content .text-info-block .name-img .switch-img{
+        max-width: 100%;
+    }
+
+    #person .person-block .text-content .text-info-block .ttl-01 {
+        margin-bottom: 48px;
+    }
+
+    #person .person-block .text-content .item-info-person .ttl {
+        padding-left: 35px;
+        font-size: 14px;
+        line-height: 18px;
+        width: 28%;
+    }
+
+    #person .person-block .text-content .item-info-person .text {
+        font-size: 14px;
+        line-height: 24px;
+        width: 72%;
+        padding: 5px 0px 5px 6px;
+    }
+
+    #person .person-block .text-content .item-info-person .sub-item{
+        min-height: 61px;
+    }
+
+    #person .person-block .text-content .item-info-person .sub-item:nth-child(2) .ttl {
+        padding-left: 10px;
+    }
+
+    #person .person-block .text-content .item-info-person .sub-item:nth-child(2) .text {
+        padding: 5px 0px 5px 20px;
+    }
+
+    #person .person-block .text-content .text-info-block {
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+
+    #person .person-block .text-content .inner-content .text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #3c3c3c;
+        font-weight: 400;
+        letter-spacing: 0;
+        padding-right: 0px;
+        max-width: 780px;
+    }
+
+    #person #person-block02.person-block .text-content .inner-content .text {
+        font-size: 15px;
+        line-height: 28px;
+        padding-right: 20px;
+    }
+
+    #person #person-block02.person-block .text-content .inner-content .text .text-link {
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+
+    #person .person-block .text-content .inner-content .title {
+        font-size: 24px;
+        line-height: 40px;
+        color: #0d0d0d;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 54px;
+    }
+
+    #person .person-block .text-content .inner-content {
+        padding: 0px 0px 10px 32px;
+        border: 0px;
+        position: relative;
+    }
+
+    #person #person-block02.person-block .text-content .inner-content{
+        padding: 0px 0px 42px 32px;
+    }
+
+    #person #person-block03.person-block .text-content .inner-content{
+        padding: 0px 0px 58px 32px;
+    }
+
+    #person #person-block04.person-block .text-content .inner-content{
+        padding: 0px 0px 49px 32px;
+    }
+
+    #person .person-block .text-content .list-info-person {
+        margin-bottom: 38px;
+    }
+
+    #person .person-block .top-person .image-content .pic-inner{
+        margin-bottom: 50px;
+        position: relative;
+        padding-bottom: 0px;
+    }
+
+    #person .person-block .top-person .image-content .switch-img {
+        position: static;
+        height: auto;
+    }
+
+    #person .person-block .text-content .item-info-person:after {
+        width: calc(100% - 45px);
+    }
+
+    #person .person-block .text-content .item-info-person:first-child:before {
+        width: calc(100% - 45px);
+    }
+
+    #person #person-block01.person-block .top-person .text-content {
+        padding-top: 109px;
+        margin-top: 0px;
+    }
+
+    #person .person-block .text-content .inner-content .title:after {
+        width: 46px;
+        height: 6px;
+        bottom: 37px;
+        left: 9px;
+    }
+
+    #person #person-block02.person-block .text-content .inner-content .title {
+        padding-bottom: 41px;
+    }
+
+    #person #person-block02.person-block .text-content .inner-content .title:after {
+        bottom: 25px;
+    }
+
+    #person .person-block .text-content .inner-content:after {
+        width: calc(100% - 34px);
+    }
+
+    #person .tabs-content {
+        padding-top: 62px;
+        padding-bottom: 150px;
+    }
+
+    #person #person-block04.person-block {
+        padding-bottom: 200px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

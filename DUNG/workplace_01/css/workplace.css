@@ -1,0 +1,799 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+}
+
+img.js-fadein{
+    opacity: 0;
+}
+
+img.scroll-in{
+    opacity: 1;
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+
+/*css fadeIn*/
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*Header*/
+/*===========================================*/
+
+#header{
+    max-width: 1920px;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 999;
+    padding: 0px 50px;
+    display: flex;
+}
+
+#header .wp-image{
+    width: 100% !important;
+}
+
+/*workPlace page*/
+/*============================================*/
+
+#workplace .page-title{
+    position: relative;
+}
+
+#workplace .page-title .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 8px solid #faff6d;
+}
+
+#workplace .page-title .image_wrap .wp-image{
+    width: 100% !important;
+}
+
+#workplace .page-title .page-title-text{
+    position: absolute;
+    top: 56.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37.2%;
+}
+
+#workplace .page-title .page-title-text .wp-image{
+    width: 100% !important;
+}
+
+/*header team*/
+/*===============================================*/
+
+#workplace .header-team{
+    padding-bottom: 50px;
+    background: #fff;
+}
+
+#workplace .header-team .heading-block{
+    padding-top: 37px;
+    margin-bottom: 92px;
+}
+
+#workplace .header-team .heading-block .title-text{
+    font-size: 20px;
+    line-height: 45px;
+    color: #000;
+    font-family: 'Yu Gothic', sans-serif;
+    font-weight: 400;
+    max-width: 890px;
+    margin: auto;
+    text-align: center;
+}
+
+#workplace .header-team .heading-block .title-text br{
+    display: none;
+}
+
+#workplace .header-team .list-team{
+    position: relative;
+}
+
+#workplace .header-team .list-team:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 66.5%;
+    background: #004fa2;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#workplace .header-team .list-team .container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 920px;
+    margin: auto;
+    padding-bottom: 24px;
+    position: relative;
+    z-index: 9;
+}
+
+#workplace .header-team .list-item-team{
+    width: 50%;
+    padding: 0px 25px;
+    margin-bottom: 20px;
+}
+
+#workplace .header-team .list-item-team .image_wrap:hover .wp-image{
+    opacity: .6;
+    transition: .3s;
+}
+
+#workplace .header-team .list-item-team .link-person{
+    text-decoration: none;
+}
+
+#workplace .header-team .list-item-team.item-01 .image_wrap{
+    padding-right: 10px;
+}
+
+#workplace .header-team .list-item-team .image_wrap{
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#workplace .header-team .list-item-team.item-01 .image_wrap:after{
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 49%;
+    top: -1px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#workplace .header-team .list-item-team.item-02 .image_wrap:after{
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: -1px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#workplace .header-team .list-item-team.item-01 .infor{
+    padding-right: 12px;
+}
+
+#workplace .header-team .list-item-team.item-02 .infor{
+    padding-left: 8px;
+}
+
+#workplace .header-team .list-item-team .infor{
+    text-align: center;
+    padding-top: 4px;
+}
+
+#workplace .header-team .list-item-team .infor .company{
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 700;
+    font-family: 'Yu Gothic', sans-serif;
+}
+
+#workplace .header-team .list-item-team .infor .name{
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'Yu Gothic', sans-serif;
+}
+
+/*person01*/
+/*===========================================*/
+
+#workplace .person-block .col-list-person{
+    background: #f5f5f5;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+#workplace .person-block .person-content{
+    max-width: 1128px;
+    margin: auto;
+    padding: 100px 24px 0px;
+}
+
+#workplace .person-block .person-image{
+    position: relative;
+}
+
+#workplace .person-block .person-image .image_wrap{
+    display: flex;
+}
+
+#workplace .person-block .person-image .wp-image{
+    width: 100% !important;
+    max-width: 800px;
+}
+
+#workplace .person-block .person-image .infor{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    background: #004fa2;
+    padding: 21px 25px 23px 36px;
+}
+
+#workplace .person-block .person-image .company{
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Yu Gothic', sans-serif;
+    margin-bottom: 17px;
+}
+
+#workplace .person-block .person-image .name{
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Yu Gothic', sans-serif;
+}
+
+#workplace .person-block .person-content .person-text{
+    position: relative;
+    background: #fff;
+    width: 60%;
+    float: right;
+    padding: 39px 74px 42px 74px;
+    margin-top: -100px;
+    z-index: 9;
+
+}
+
+#workplace .person-block .person-content .person-text .text_inner{
+    margin-bottom: 33px;
+}
+
+#workplace .person-block .person-content .person-text .text_inner:last-child{
+    margin-bottom: 0px;
+}
+
+#workplace .person-block .person-content .person-text .wp_title{
+    font-size: 30px;
+    line-height: 45px;
+    color: #004fa2;
+    font-weight: bold;
+    font-family: 'Yu Gothic', sans-serif;
+    margin-bottom: 8px;
+}
+
+#workplace .person-block .person-content .person-text .wp_text{
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Yu Gothic', sans-serif;
+    padding-left: 1px;
+    letter-spacing: 0.75px;
+}
+
+#workplace .person-block .person-content .person-text .wp_text.text_mobile{
+    display: none;
+}
+
+#workplace .person-block .introducing-buses{
+    padding-bottom: 100px;
+    background: #fff;
+}
+
+#workplace .person-block .introducingBuses-content{
+    max-width: 1128px;
+    margin: auto;
+    padding: 50px 24px 0px;
+}
+
+#workplace .person-block .introducingBuses-content .introducingBuses-image .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#workplace .person-block .introducingBuses-content .introducingBuses-image .image_wrap .wp-image{
+    width: 100% !important;
+}
+
+#workplace .person-block .introducingBuses-content .introducingBuses-text{
+    position: relative;
+    background: #004fa2;
+    width: 74%;
+    margin: -50px auto 0px;
+    padding: 47px 80px 52px 80px;
+}
+
+#workplace .person-block .introducingBuses-content .introducingBuses-text .wp_title{
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Yu Gothic', sans-serif;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#workplace .person-block .introducingBuses-content .introducingBuses-text .wp_text{
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Yu Gothic', sans-serif;
+    padding-left: 1px;
+    letter-spacing: 0.75px;
+}
+
+#workplace #person01.person-block .introducingBuses-content .introducingBuses-text .wp_text br{
+    display: none;
+}
+
+/*person02*/
+/*=======================================*/
+
+#workplace #person02.person-block .person-image .image_wrap{
+    justify-content: flex-end;
+}
+
+#workplace #person02.person-block .person-image .infor{
+    right: 0px;
+    left: unset;
+    padding: 21px 25px 26px 45px;
+}
+
+#workplace #person02.person-block .person-image .name{
+    padding-left: 5px;
+    position: relative;
+    margin-top: -2px;
+}
+
+#workplace #person02.person-block .person-content .person-text{
+    float: left;
+    margin-top: -155px;
+    padding: 55px 65px 48px 88px;
+}
+
+#workplace #person02.person-block .person-content .person-text .text_inner{
+    margin-bottom: 25px;
+}
+
+#workplace #person02.person-block .person-content .person-text .text_inner:last-child{
+    margin-bottom: 0px;
+}
+
+#workplace #person02.person-block .introducingBuses-content .introducingBuses-text{
+    padding: 38px 80px 45px 80px;
+}
+
+#workplace #person02.person-block .introducingBuses-content .introducingBuses-text .wp_text{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 45px;
+}
+
+/*Footer*/
+/*==========================================*/
+
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-footer .wp-image{
+    width: 100% !important;
+}
+
+#srcoll-top{
+    position: fixed;
+    bottom: 0px;
+    right: 7%;
+    transform: translateX(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+#srcoll-top.is-open{
+    display: block;
+}
+
+#srcoll-top .btn-scroll{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+#srcoll-top .btn-scroll .wp-image{
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+    #srcoll-top .btn-scroll{
+        position: relative;
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    body{
+        min-width: 1120px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #srcoll-top{
+        display: none !important;
+    }
+
+    body{
+        min-width: 640px;
+    }
+
+    /*Header*/
+    /*=========================================*/
+
+    #header{
+        position: relative;
+        padding: 0px;
+    }
+
+    #workplace .page-title .page-title-text{
+        top: 42%;
+        left: 50.2%;
+        width: 83.5%;
+    }
+
+    #workplace .page-title .image_wrap{
+        border-bottom: 10px solid #faff6d;
+    }
+
+    /*header team*/
+    /*===========================================*/
+
+    #workplace .header-team .heading-block{
+        padding-top: 17px;
+        margin-bottom: 54px;
+    }
+
+    #workplace .header-team{
+        padding-bottom: 0px;
+    }
+
+    #workplace .header-team .list-team{
+        padding: 0px 25px;
+    }
+
+    #workplace .header-team .list-team:after{
+        height: 68%;
+    }
+
+    #workplace .header-team .heading-block .title-text{
+        font-size: 26px;
+        line-height: 50px;
+        padding: 0px 60px;
+    }
+
+    #workplace .header-team .heading-block .title-text br{
+        display: block;
+    }
+
+    #workplace .header-team .list-item-team .infor{
+        padding: 24px 40px 0px 38px!important;
+    }
+
+    #workplace .header-team .list-item-team .infor .company{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 6px;
+    }
+
+    #workplace .header-team .list-item-team .infor .name{
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    #workplace .header-team .list-item-team.item-02 .infor .name{
+        padding-left: 15px;
+    }
+
+    #workplace .header-team .list-item-team .image_wrap .wp-image{
+        margin: auto;
+        width: 100% !important;
+        max-width: 280px;
+    }
+
+    #workplace .header-team .list-item-team.item-01 .image_wrap{
+        padding-right: 0px;
+    }
+
+    #workplace .header-team .list-item-team .infor .company span{
+        display: none;
+    }
+
+    #workplace .header-team .list-team .container{
+        padding-bottom: 23px;
+    }
+
+    /*person*/
+    /*===================================*/
+
+    #workplace .person-block .person-content{
+        padding-top: 50px;
+    }
+
+    #workplace .person-block .person-image .infor{
+        width: 280px;
+        padding: 15px 25px 20px 32px;
+    }
+
+    #workplace .person-block .person-image .company{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 9px;
+    }
+
+    #workplace .person-block .person-image .name{
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    #workplace .person-block .person-content .person-text .wp_title{
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 0px;
+    }
+
+    #workplace .person-block .person-content .person-text .text_inner:nth-child(2) .wp_title{
+        margin-bottom: 9px;
+    }
+
+    #workplace .person-block .person-content .person-text .text_inner{
+        margin-bottom: 40px;
+    }
+
+    #workplace .person-block .person-content .person-text .wp_text{
+        font-size: 24px;
+        line-height: 45px;
+        letter-spacing: 1.2px;
+    }
+
+    #workplace .person-block .person-content .person-text .wp_text.text_mobile{
+        display: block;
+    }
+
+    #workplace .person-block .person-content .person-text .wp_text.text_desktop{
+        display: none;
+    }
+
+    #workplace .person-block .person-content .person-text{
+        float: none;
+        margin: -40px auto;
+        width: 90%;
+        padding: 45px 45px 42px 45px;
+    }
+
+    #workplace .person-block .col-list-person{
+        padding-bottom: 80px;
+    }
+
+    #workplace .person-block .introducing-buses{
+        padding-bottom: 50px;
+    }
+
+    #workplace .person-block .introducingBuses-content{
+        padding-top: 40px;
+    }
+
+    #workplace .person-block .introducingBuses-content .introducingBuses-text{
+        width: 90%;
+        margin-top: -40px;
+        padding: 44px 45px 52px 46px;
+    }
+
+    #workplace .person-block .introducingBuses-content .introducingBuses-text .wp_title{
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 9px;
+    }
+
+    #workplace .person-block .introducingBuses-content .introducingBuses-text .wp_text{
+        font-size: 24px !important;
+        line-height: 45px !important;
+        letter-spacing: 1.2px;
+    }
+
+    #workplace .person-block .introducingBuses-content .introducingBuses-text .wp_text br{
+        display: block;
+    }
+
+    /*person2*/
+    /*=======================================*/
+
+    #workplace #person02.person-block .person-image .company{
+        margin-bottom: 9px;
+        padding-left: 4px;
+    }
+
+    #workplace #person02.person-block .person-image .name{
+        margin-top: 0px;
+    }
+
+    #workplace #person02.person-block .person-image .infor{
+        padding: 16px 30px 19px 28px;
+    }
+
+    #workplace #person02.person-block .col-list-person{
+        padding-bottom: 90px;
+    }
+
+    #workplace #person02.person-block .person-content .person-text{
+        float: none;
+        margin-top: -40px;
+        padding: 47px 40px 52px 45px;
+    }
+
+    #workplace #person02.person-block .person-content .person-text .wp_text br{
+        display: none;
+    }
+
+    #workplace #person01.person-block .introducingBuses-content .introducingBuses-text .wp_text br{
+        display: block;
+    }
+
+    #workplace #person02.person-block .introducingBuses-content .introducingBuses-text .wp_text br{
+        display: none;
+    }
+
+    #workplace #person02.person-block .person-content .person-text .text_inner{
+        margin-bottom: 31px;
+    }
+
+    #workplace #person02.person-block .introducingBuses-content{
+        padding-top: 50px;
+    }
+
+    #workplace #person02.person-block .introducingBuses-content .introducingBuses-text{
+        padding: 44px 45px 58px 46px;
+    }
+
+
+    #workplace .header-team .list-item-team.item-01 .image_wrap:after{
+        content: "";
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 0px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    #workplace .header-team .list-item-team.item-02 .image_wrap:after{
+        content: "";
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 0px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    #workplace .header-team .list-item-team .image_wrap{
+        width: fit-content;
+        width: -moz-fit-content;
+    }
+}
+
+@media (max-width: 640px) {
+    #workplace .header-team .heading-block .title-text{
+        font-size: 24px;
+        line-height: 48px;
+        padding: 0px 30px;
+    }
+
+    #workplace .header-team .list-item-team .infor{
+        padding: 20px 12px 0px !important;
+    }
+
+    #workplace .header-team .list-item-team.item-02 .infor .name{
+        padding-left: 0px;
+    }
+
+    #workplace .person-block .person-image .infor{
+        width: 250px;
+        padding: 15px;
+    }
+
+    #workplace .person-block .introducingBuses-content .introducingBuses-text,
+    #workplace #person02.person-block .person-content .person-text,
+    #workplace .person-block .person-content .person-text,
+    #workplace #person02.person-block .introducingBuses-content .introducingBuses-text{
+        padding: 40px;
+    }
+
+    #workplace #person02.person-block .person-image .infor{
+        padding: 15px;
+    }
+
+}

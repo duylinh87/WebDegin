@@ -1,0 +1,795 @@
+#page-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-mobile{
+    display: none;
+}
+
+/*Header*/
+/*=============================================*/
+
+.main-header{
+    width: 198px;
+}
+
+.main-header .od-image{
+    width: 100%;
+}
+
+#main_wrap{
+    width: calc(100% - 198px);
+    border-left: 2px solid #e6e6e6;
+}
+
+/*page title*/
+/*===================================================*/
+
+#oneday .page-title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    background-color: #ff9e01;
+    margin-bottom: 129px;
+}
+
+#oneday .page-title .heading-page{
+    width: 29%;
+    text-align: center;
+    padding: 9px 20px 0px;
+}
+
+#oneday .page-title .heading-page .sub-heading01{
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Kozuka Gothic Pr6N R";
+    line-height: 36px;
+    margin-bottom: 22px;
+    padding-left: 4px;
+}
+
+#oneday .page-title .heading-page .sub-heading02{
+    font-size: 55px;
+    color: #fff;
+    letter-spacing: 9.75px;
+    font-family: "Century Gothic";
+    padding-left: 14px;
+}
+
+#oneday .page-title .image-banner-title{
+    width: 71%;
+    display: flex;
+}
+
+#oneday .page-title .image-banner-title .od-image{
+    width: 100%;
+}
+
+/*people information*/
+/*===============================================*/
+
+#oneday .people-information{
+    position: relative;
+    margin-bottom: 280px;
+}
+
+#oneday .people-information .banner-people{
+    display: flex;
+}
+
+#oneday .people-information .od-image{
+    width: 100%;
+}
+
+#oneday .people-information .content-information{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 81.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 45px 104px 41px;
+    background: #ff9e00;
+    color: #fff;
+    bottom: -150px;
+}
+
+#oneday .people-information .content-information .title-left{
+    width: 21.1%;
+    border-right: 1px solid #fff;
+}
+
+#oneday .people-information .content-information .title-left .infor-1,
+#oneday .people-information .content-information .title-left .infor-2{
+    font-size: 18px;
+    font-family: "Meiryo Bold";
+}
+
+#oneday .people-information .content-information .title-left .infor-fullname{
+    font-size: 25px;
+    font-family: "Meiryo Bold";
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+#oneday .people-information .content-information .title-left .infor-name-mobile{
+    display: none;
+}
+
+#oneday .people-information .content-information .title-left .infor-year-mobile{
+    display: none;
+}
+
+#oneday .people-information .content-information .title-left .infor-name{
+    font-size: 19px;
+    font-family: "Century Gothic";
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+#oneday .people-information .content-information .title-left .infor-year{
+    font-size: 14px;
+    font-family: "Meiryo Regular";
+}
+
+#oneday .people-information .content-information .content-right{
+    width: 78.9%;
+    padding-left: 105px;
+}
+
+#oneday .people-information .content-information .content-right .od-content{
+    padding-top: 47px;
+}
+
+#oneday .people-information .content-information .content-right .od-text{
+    font-size: 18px;
+    font-family: "Meiryo Regular";
+    padding-right: 50px;
+    line-height: 32px;
+}
+
+/*oneday people*/
+/*=============================================*/
+
+#oneday .oneday-people{
+    padding: 160px 55px 0px;
+    overflow: hidden;
+    margin-bottom: 74px;
+    position: relative;
+}
+
+#oneday .oneday-people:before{
+    content: "One Day";
+    position: absolute;
+    font-size: 100px;
+    color: #ff9e00;
+    font-family: "Mistral";
+    top: -9px;
+    transform: rotate(-13deg);
+    left: 51px;
+}
+
+#oneday .oneday-people .container{
+    padding: 0px 10px 0px 55px;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox01{
+    padding-right: 47px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 157px;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox01:before{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: calc(100% - 120px);
+    background-color: #ffcc99;
+    right: 21px;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox01:after{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 6px;
+    background-color: #ffcc99;
+    right: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people{
+    width: 21.99%;
+    margin-right: 4.011%;
+    background: #fff;
+    position: relative;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people{
+    width: 21.9%;
+    margin-right: 3.95%;
+    background: #fff;
+    position: relative;
+}
+
+#oneday .oneday-people .content-BoxTime{
+    border: 2px solid #ff9e00;
+    box-shadow: 10px 10px #ff9e00;
+    min-height: 308px;
+    padding: 26px 40px 20px 30px;
+}
+
+#oneday .oneday-people .col-itemBox .boxTime-people:last-child{
+    margin-right: 0px !important;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people:last-child:after{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 6px;
+    background-color: #ffcc99;
+    right: -47px;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox02{
+    padding-left: 37px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 158px;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox02:before{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: calc(100% - 120px);
+    background-color: #ffcc99;
+    left: 21px;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox02:after{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 6px;
+    background-color: #ffcc99;
+    left: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people:first-child:before{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 6px;
+    background-color: #ffcc99;
+    left: -37px;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+#oneday .oneday-people .col-itemBox .boxTime-people .text-time{
+    font-size: 20px;
+    color: #ff9e00;
+    font-family: "Meiryo Bold";
+    margin-bottom: 4px;
+    display: block;
+    padding-left: 5px;
+}
+
+#oneday .oneday-people .col-itemBox .boxTime-people .img-time{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -118px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#oneday .oneday-people .col-itemBox .boxTime-people .img-time:after{
+    content: "";
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    background: #ff9e00;
+    border-radius: 50%;
+    z-index: -1;
+    left: 5px;
+    top: 2px;
+}
+
+#oneday .oneday-people .col-itemBox .boxTime-people.itemBox05 .img-time{
+    left: 51%;
+}
+
+#oneday .oneday-people .col-itemBox .boxTime-people.itemBox06 .img-time{
+    left: 46%;
+}
+
+#oneday .oneday-people .col-itemBox .boxTime-people .title{
+    font-size: 30px;
+    font-family: "Meiryo Regular";
+    margin-bottom: 25px;
+}
+
+#oneday .oneday-people .col-itemBox .boxTime-people .time-text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    font-family: "Meiryo Regular";
+    font-weight: 600;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people .time-text{
+    padding-right: 10px;
+}
+
+#oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people .time-text br{
+    display: none;
+}
+
+/*Footer*/
+/*============================================*/
+
+.main-footer{
+    width: 100%;
+}
+
+.main-footer .od-image{
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .main-header{
+        width: 150px;
+    }
+
+    #main_wrap{
+        width: calc(100% - 150px);
+    }
+
+    /*page title*/
+    /*===========================================*/
+
+    #oneday .page-title .heading-page{
+        padding: 0px 15px;
+    }
+
+    #oneday .page-title .heading-page .sub-heading01{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #oneday .page-title .heading-page .sub-heading02{
+        font-size: 32px;
+    }
+
+    /*people information*/
+    /*==========================================*/
+
+    #oneday .people-information .content-information .title-left{
+        width: 25%;
+    }
+
+    #oneday .people-information .content-information .content-right{
+        width: 75%;
+    }
+
+    #oneday .people-information .content-information{
+        padding: 45px 50px 41px;
+        align-items: center;
+    }
+
+    #oneday .people-information .content-information .content-right{
+        padding-left: 50px;
+    }
+
+    #oneday .people-information .content-information .content-right .od-text{
+        padding-right: 0px;
+    }
+
+    #oneday .people-information .content-information .content-right .od-content{
+        padding-top: 0px;
+    }
+
+    /*oneday people*/
+    /*============================================*/
+
+    #oneday .oneday-people{
+        padding: 160px 40px 0px;
+    }
+
+    #oneday .oneday-people .container{
+        padding: 0px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .title{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .time-text{
+        font-size: 14px;
+    }
+
+    #oneday .oneday-people .content-BoxTime{
+        padding: 20px 25px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people .time-text{
+        padding-right: 0px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .img-time{
+        width: 150px;
+        height: 150px;
+        bottom: -100px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .img-time .od-image{
+        width: 100%;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .img-time:after{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-header{
+        width: 115px;
+    }
+
+    #main_wrap{
+        width: calc(100% - 115px);
+    }
+
+    #oneday .page-title{
+        margin-bottom: 100px;
+    }
+
+    #oneday .people-information{
+        margin-bottom:  200px;
+    }
+
+    #oneday .people-information .content-information{
+        width: 90%;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people{
+        margin-right: 3%;
+    }
+
+    #oneday .oneday-people{
+        padding: 140px 20px 0px;
+    }
+
+    #oneday .oneday-people:before{
+        font-size: 80px;
+        top: 0px;
+        left: 20px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people,
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people{
+        width: 22.75%;
+        margin-right: 3%;
+    }
+
+    #oneday .oneday-people .content-BoxTime{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .main-header{
+        width: 100%;
+    }
+
+    #main_wrap{
+        width: 100%;
+        border: 0px;
+    }
+
+    /*page title*/
+    /*==============================================*/
+
+    #oneday .page-title .heading-page{
+        width: 37.5%;
+    }
+
+    #oneday .page-title .image-banner-title{
+        width: 62.5%;
+    }
+
+    #oneday .page-title .heading-page .sub-heading01{
+        font-size: 18px;
+        letter-spacing: -0.5px;
+        padding-left: 0px;
+    }
+
+    #oneday .page-title .heading-page .sub-heading02{
+        font-size: 34px;
+        letter-spacing: 7px;
+        padding-left: 4px;
+    }
+
+    /*people information*/
+    /*===================================================*/
+
+    #oneday .people-information{
+        margin-bottom: 300px;
+    }
+
+    #oneday .people-information .content-information{
+        width: 94.6%;
+        padding: 48px 38px 75px;
+        bottom: -251px;
+    }
+
+    #oneday .people-information .content-information .title-left{
+        width: 100%;
+        border: 0px;
+        margin-bottom: 19px;
+    }
+
+    #oneday .people-information .content-information .content-right{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #oneday .people-information .content-information .title-left .title{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #oneday .people-information .content-information .title-left .infor-name-mobile{
+        display: inline-block;
+        font-size: 14px;
+        font-family: "Meiryo Regular";
+        padding-left: 9px;
+        letter-spacing: -0.65px;
+    }
+
+    #oneday .people-information .content-information .title-left .infor-year-mobile{
+        display: inline-block;
+        font-size: 16px;
+        font-family: "Meiryo Regular";
+    }
+
+    #oneday .people-information .content-information .title-left .infor-name,
+    #oneday .people-information .content-information .title-left .infor-year{
+        display: none;
+    }
+
+    #oneday .people-information .content-information .title-left .infor-1{
+        font-size: 16px;
+        order: 1;
+        width: 100%;
+        margin-bottom: 17px;
+    }
+
+    #oneday .people-information .content-information .title-left .infor-fullname{
+        order: 2;
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+
+    #oneday .people-information .content-information .title-left .infor-2{
+        order: 3;
+        width: 100%;
+        font-size: 16px;
+        padding-left: 2px;
+    }
+
+    #oneday .people-information .content-information .content-right .od-text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    /*oneday people*/
+    /*==============================================*/
+
+    #oneday .oneday-people{
+        padding: 149px 89px 0px 82px;
+        margin-bottom: 0px;
+    }
+
+    #oneday .oneday-people .container{
+        position: relative;
+    }
+
+    #oneday .oneday-people .container:before{
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: calc(100% - 200px);
+        background: #ffcc99;
+        left: 50.8%;
+        top: 100px;
+        z-index: 9;
+        transform: translateX(-50%);
+    }
+
+    #oneday .oneday-people:before{
+        font-size: 100px;
+        top: -3px;
+        left: 24px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people,
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01,
+    #oneday .oneday-people .col-itemBox.itemBox02{
+        padding: 0px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01{
+        margin-bottom: -2px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02{
+        margin-bottom: 67px;
+    }
+
+    #oneday .oneday-people .content-BoxTime{
+        min-height: 255px;
+        margin-bottom: 35px;
+        padding: 32px 40px 0px 46px;
+        position: relative;
+        z-index: 10;
+        background-color: #fff;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01:before,
+    #oneday .oneday-people .col-itemBox.itemBox01:after,
+    #oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people:last-child:after,
+    #oneday .oneday-people .col-itemBox.itemBox02:before,
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people:first-child:before,
+    #oneday .oneday-people .col-itemBox.itemBox02:after{
+        display: none;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .text-time{
+        font-size: 24px;
+        padding-left: 0px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .title{
+        font-size: 30px;
+        margin-bottom: 13px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .time-text{
+        font-size: 24px;
+        line-height: 36px;
+        padding-left: 2px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people.itemBox02{
+        margin-bottom: 148px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people.itemBox03 .content-BoxTime{
+        min-height: 227px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox01 .boxTime-people.itemBox02 .content-BoxTime{
+        min-height: 350px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .img-time{
+        width: auto;
+        height: auto;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .img-time:after{
+        width: 100%;
+        height: 100%;
+        left: 9px;
+        top: 6px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .img-time{
+        bottom: -151px;
+        left: 49.8%;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people.itemBox05 .content-BoxTime{
+        min-height: 404px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people.itemBox05{
+        margin-bottom: 153px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people.itemBox05 .img-time{
+        bottom: -156px;
+        left: 49.8%;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people.itemBox06{
+        margin-bottom: 152px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people.itemBox06 .content-BoxTime{
+        min-height: 371px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people.itemBox06 .img-time{
+        bottom: -156px;
+        left: 49.8%;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people.itemBox07 .content-BoxTime{
+        min-height: 301px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people .time-text br{
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    body{
+        min-width: 640px;
+    }
+
+    #oneday .page-title{
+        margin-bottom: 60px;
+    }
+
+    #oneday .oneday-people{
+        padding: 149px 39px 0px 32px;
+    }
+
+    #oneday .oneday-people .col-itemBox .boxTime-people .img-time{
+        bottom: -150px !important;
+    }
+
+    #oneday .oneday-people .content-BoxTime{
+        padding: 32px 35px 0px 40px;
+    }
+
+    #oneday .oneday-people .col-itemBox.itemBox02 .boxTime-people .time-text br{
+        display: none;
+    }
+}

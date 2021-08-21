@@ -1,0 +1,646 @@
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#oneday .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#oneday .animatedFadeInUp {
+    opacity: 0;
+}
+
+#oneday .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#oneday{
+    position: relative;
+    background-image: url("../images/oneday/oneday_bg_main.png");
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+/*main banner - oneDay tabs*/
+
+#oneday .main-banner .main-img{
+    width: 100% !important;
+    display: block;
+}
+
+#oneday .oneday-tabs{
+    margin-top: 100px;
+}
+
+#oneday .oneday-tabs .inner{
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#oneday .oneday-tabs .list-tabs-secom{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 97px;
+}
+
+#oneday .oneday-tabs .list-tabs-secom .item-tab-secom{
+    width: 29.16%;
+    margin-right: 6.25%;
+}
+
+#oneday .oneday-tabs .list-tabs-secom .item-tab-secom:last-child{
+    margin-right: 0px;
+}
+
+#oneday .oneday-tabs .list-tabs-secom .item-tab-secom .item-action{
+    display: block;
+}
+
+#oneday .oneday-tabs .list-tabs-secom .item-tab-secom .item-action .tab-img{
+    display: block;
+    transition: .4s;
+    width: 100% !important;
+}
+
+#oneday .oneday-tabs .list-tabs-secom .item-tab-secom .item-action:hover .tab-img{
+    opacity: .6;
+    transition: .4s;
+}
+
+#oneday .oneday-tabs .description .title{
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    background: #004a95;
+    height: 46px;
+    line-height: 46px;
+    letter-spacing: -1px;
+    margin-bottom: 27px;
+}
+
+#oneday .oneday-tabs .description .text{
+    font-size: 18px;
+    line-height: 38px;
+    color: #201f1f;
+    font-weight: 400;
+    padding: 0px 38px;
+}
+
+
+/*secom-block*/
+/*===================================*/
+#oneday .secom-block{
+    padding-top: 108px;
+}
+
+#oneday .secom-block .content-top{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 59px;
+}
+
+#oneday .secom-block .content-top .left-content{
+    width: 100%;
+    position: relative;
+    max-width: 980px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#oneday .secom-block .content-top .left-content dl{
+    position: relative;
+    z-index: 9;
+    display: block;
+    padding-top: 76px;
+    padding-bottom: 35px;
+}
+
+#oneday .secom-block .content-top .left-content .title{
+    margin-bottom: 16px;
+}
+
+#oneday .secom-block .content-top .left-content .t1{
+    margin-bottom: 108px;
+}
+
+#oneday .secom-block .content-top:before{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 62.5%;
+    top: 0px;
+    left: 0px;
+}
+
+#oneday #secom-block01.secom-block .content-top:before{
+    background-image: url("../images/oneday/oneday_bg_secom01_pc.jpg");
+}
+
+#oneday #secom-block02.secom-block .content-top:before{
+    background-image: url("../images/oneday/oneday_bg_secom02_pc.jpg");
+}
+
+#oneday #secom-block03.secom-block .content-top:before{
+    background-image: url("../images/oneday/oneday_bg_secom03_pc.jpg");
+}
+
+#oneday .secom-block .content-top:after{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+#oneday #secom-block01.secom-block .content-top:after{
+    background-image: url("../images/oneday/oneday_pic01_pc.jpg");
+}
+
+#oneday #secom-block02.secom-block .content-top:after{
+    background-image: url("../images/oneday/oneday_pic03_pc.jpg");
+}
+
+#oneday #secom-block03.secom-block .content-top:after{
+    background-image: url("../images/oneday/oneday_pic05_pc.jpg");
+}
+
+#oneday .secom-block .content-top .right-content .od-pic .img-banner{
+    width: 100% !important;
+    display: block;
+}
+
+#oneday .secom-block .inner{
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#oneday .secom-block .secom-time{
+    position: relative;
+    margin-bottom: 81px;
+}
+
+#oneday .secom-block .secom-time .od-pic img{
+    display: block;
+    width: 100% !important;
+}
+
+#oneday .secom-block .secom-time .time-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    background: rgba(0,74,149,.6);
+    color: #fff;
+    padding: 24px 30px 0px;
+    z-index: 9;
+}
+
+#oneday .secom-block .secom-time .time-content .item-time{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 23px;
+}
+
+#oneday .secom-block .secom-time .time-content .item-time .time{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    width: 26%;
+}
+
+#oneday .secom-block .secom-time .time-content .item-time .txt-time{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    width: 74%;
+}
+
+#oneday .secom-block .boxText-content{
+    margin-bottom: 12px;
+}
+
+#oneday .secom-block .boxText-content .list-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#oneday .secom-block .boxText-content .item-box{
+    position: relative;
+    width: calc(46.8% - 10px);
+    margin-right: 6.4%;
+    margin-bottom: 60px;
+    border: 1px solid #004a95;
+    margin-left: 10px;
+}
+
+#oneday .secom-block .boxText-content .item-box:nth-child(2n){
+    margin-right: 0px;
+}
+
+#oneday .secom-block .boxText-content .item-box:nth-child(n+3){
+    margin-bottom: 0px;
+}
+
+#oneday .secom-block .boxText-content .info-box{
+    position: relative;
+    padding: 39px 10px 20px 20px;
+}
+
+#oneday #secom-block01.secom-block .boxText-content .item-box.item03 .info-box{
+    padding-top: 72px;
+}
+
+#oneday #secom-block01.secom-block .boxText-content .item-box.item04 .info-box,
+#oneday #secom-block02.secom-block .boxText-content .item-box.item04 .info-box{
+    padding-top: 70px;
+}
+
+#oneday #secom-block02.secom-block .boxText-content .item-box.item03 .info-box{
+    padding-top: 72px;
+    padding-bottom: 45px;
+}
+
+#oneday .secom-block .boxText-content .info-box .ttl{
+    position: absolute;
+    top: -20px;
+    left: -11px;
+    z-index: 9;
+}
+
+#oneday .secom-block .boxText-content .info-box .txt-img{
+    display: block;
+    max-width: 100%;
+}
+
+#oneday #secom-block02.secom-block .content-top .left-content .t1{
+    margin-bottom: 110px;
+}
+
+#oneday #secom-block02.secom-block .content-top .left-content .t1{
+    padding-left: 8px;
+}
+
+#oneday #secom-block02.secom-block .secom-time .time-content{
+    background: rgba(0,158,170,.6);
+}
+
+#oneday #secom-block02.secom-block .secom-time .time-content .item-time .txt-time{
+    letter-spacing: 0.2px;
+}
+
+#oneday #secom-block02.secom-block .secom-time .time-content .item-time.item05 .txt-time{
+    letter-spacing: 0px;
+}
+
+#oneday #secom-block02.secom-block .secom-time .time-content .item-time.item01 .txt-time {
+    letter-spacing: 0.5px;
+}
+
+#oneday #secom-block02.secom-block .secom-time{
+    margin-bottom: 85px;
+}
+
+#oneday #secom-block02.secom-block .boxText-content{
+    margin-bottom: 15px;
+}
+
+#oneday #secom-block03.secom-block .secom-time .time-content{
+    background: rgba(53,53,53,0.6);
+    padding-right: 25px;
+    padding-top: 72px;
+}
+
+#oneday #secom-block03.secom-block .secom-time{
+    margin-bottom: 79px;
+}
+
+#oneday #secom-block03.secom-block .boxText-content .item-box.item03{
+    width: 100%;
+    margin-right: 0px;
+}
+
+#oneday #secom-block03.secom-block{
+    margin-bottom: 120px;
+}
+
+
+@media (min-width: 768px) {
+
+    #oneday .secom-block .content-top .left-content .sp_pic{
+        display: none;
+    }
+
+    #oneday .secom-block .content-top .right-content{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+    #oneday .secom-block .content-top .left-content dl{
+        padding-top: 50px;
+    }
+
+    #oneday .secom-block .content-top .left-content .t1 {
+        margin-bottom: 80px !important;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    #oneday .secom-block .content-top .left-content .title .title-img{
+        height: 32px;
+    }
+
+    #oneday .secom-block .content-top .left-content .t1 .t1-img{
+        height: 20px;
+    }
+
+    #oneday .secom-block .content-top .left-content .title {
+        margin-bottom: 10px;
+    }
+
+    #oneday .secom-block .content-top .left-content .text .text-img{
+        height: 54px;
+    }
+
+    #oneday .secom-block .content-top .left-content .t1 {
+        margin-bottom: 60px !important;
+    }
+
+    #oneday .secom-block .content-top .left-content dl {
+        padding-top: 40px;
+    }
+
+    #oneday .oneday-tabs .description .text {
+        font-size: 16px;
+        line-height: 34px;
+    }
+
+    #oneday .oneday-tabs .description .title {
+        font-size: 22px;
+    }
+
+
+}
+
+@media (max-width: 1023px) {
+
+    #oneday .secom-block .secom-time .time-content .item-time .txt-time {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    #oneday .secom-block .secom-time .time-content .item-time .time {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    #oneday .secom-block .secom-time .time-content .item-time{
+        margin-bottom: 18px;
+    }
+
+    #oneday .secom-block .secom-time .time-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 10px !important;
+    }
+
+    #oneday .secom-block .boxText-content .info-box .ttl .title-img{
+        max-width: 80%;
+    }
+
+    #oneday .secom-block .content-top .left-content .title .title-img {
+        height: 24px;
+    }
+
+    #oneday .secom-block .content-top .left-content .t1 .t1-img {
+        height: 15px;
+    }
+
+    #oneday .secom-block .content-top .left-content .title {
+        margin-bottom: 5px;
+    }
+
+    #oneday .secom-block .content-top .left-content dl {
+        padding-top: 25px;
+    }
+
+    #oneday .secom-block .content-top .left-content .text .text-img {
+        height: 44px;
+    }
+
+    #oneday .secom-block .content-top .left-content .t1 {
+        margin-bottom: 35px !important;
+    }
+
+    #oneday .oneday-tabs .description .text {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    #oneday .oneday-tabs {
+        margin-top: 60px;
+    }
+
+    #oneday .oneday-tabs .list-tabs-secom .item-tab-secom {
+        width: 30.66%;
+        margin-right: 4%;
+    }
+
+    #oneday .oneday-tabs .list-tabs-secom{
+        margin-bottom: 30px;
+    }
+
+    #oneday .oneday-tabs .description .title {
+        font-size: 16px;
+        height: 28px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    #oneday .oneday-tabs .description .text {
+        font-size: 13px;
+        line-height: 22px;
+        padding: 0px;
+    }
+
+    #oneday .oneday-tabs .description .text br{
+        display: none;
+    }
+
+    #oneday .secom-block {
+        padding-top: 60px;
+    }
+
+    #oneday .secom-block .content-top:before,
+    #oneday .secom-block .content-top:after{
+        display: none;
+    }
+
+    #oneday .secom-block .content-top .left-content{
+        padding: 0px;
+        order: 2;
+    }
+
+    #oneday .secom-block .content-top .left-content .sp_img{
+        width: 100%;
+        display: block;
+    }
+
+    #oneday .secom-block .content-top .right-content{
+        width: 100%;
+        order: 1;
+    }
+
+    #oneday .secom-block .content-top .left-content .text{
+        display: none;
+    }
+
+    #oneday .secom-block .content-top .left-content .t1 {
+        margin-bottom: 0px !important;
+    }
+
+    #oneday .secom-block .content-top .left-content dl{
+        position: absolute;
+        padding: 0px;
+        top: 55%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+
+    #oneday .secom-block .secom-time .time-content{
+        position: static;
+        width: 100%;
+    }
+
+    #oneday .secom-block .secom-time .content-img{
+        margin-bottom: 20px;
+    }
+
+    #oneday .secom-block .content-top{
+        margin-bottom: 40px;
+    }
+
+    #oneday .secom-block .secom-time .time-content{
+        padding: 18px 20px 0px !important;
+    }
+
+    #oneday .secom-block .secom-time .time-content .item-time .time{
+        width: 22%;
+    }
+
+    #oneday .secom-block .secom-time .time-content .item-time .txt-time{
+        width: 78%;
+    }
+
+    #oneday .secom-block .boxText-content .item-box{
+        width: calc(100% - 5px);
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+
+    #oneday .secom-block .boxText-content .info-box .ttl{
+        left: -5px;
+    }
+
+    #oneday .secom-block .boxText-content .info-box .ttl .title-img {
+        max-width: 100%;
+    }
+
+    #oneday .secom-block .boxText-content .info-box .txt-img{
+        width: 100% !important;
+    }
+
+    #oneday .secom-block .boxText-content .info-box {
+        position: relative;
+        padding: 28px 15px 12px 15px !important;
+    }
+
+    #oneday .secom-block .boxText-content .item-box{
+        margin-bottom: 40px !important;
+    }
+
+    #oneday .secom-block .boxText-content .item-box:last-child{
+        margin-bottom: 0px !important;
+    }
+
+    #oneday #secom-block01.secom-block .boxText-content .item-box.item03 .info-box ,
+    #oneday #secom-block02.secom-block .boxText-content .item-box.item03 .info-box,
+    #oneday #secom-block03.secom-block .boxText-content .info-box:last-child{
+        padding-top: 50px !important;
+    }
+
+    #oneday #secom-block01.secom-block .boxText-content .item-box.item04 .info-box, #oneday #secom-block02.secom-block .boxText-content .item-box.item04 .info-box {
+        padding-top: 50px !important;
+    }
+
+    #oneday #secom-block03.secom-block {
+        margin-bottom: 80px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,837 @@
+/*
+
+【CSS記述ルール】
+
+① font-sizeはpxで指定してください
+　（rem、%等の指定はしないようお願いいたします）
+
+② xxxxxx はディレクトリ名に変更してください
+
+③ 必ずディレクトリ名が付いたidセレクタを先頭に記述した後に、要素を記述してください
+　（例：#oneday .inner、#oneday .page-title 等）
+
+④ CSS内の画像指定パスは、CSSファイルから見た相対パスで指定してください
+　（例：../images/ディレクトリ名/画像名.拡張子）
+
+*/
+
+/*
+@font-face {
+    font-family: "Meiryo";
+    src: url("./fonts/meiryo.ttf");
+}
+*/
+
+@font-face {
+    font-family: "Deja Vu Sans Mono";
+    src: url("./fonts/DejaVu-Sans-Mono_13348.ttf");
+}
+
+@font-face {
+    font-family: "Century Gothic";;
+    src: url("./fonts/GOTHIC.TTF");
+}
+
+@font-face {
+	font-family: "Koz Go Pro";
+    src: url("./fonts/KozGoPro-Regular.otf");
+}
+
+#careerSupport {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+#careerSupport * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#careerSupport img {
+  line-height: 1;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+#careerSupport p {
+  text-align: left;
+}
+
+#footer .img-banner-footer{
+	width: 100%;
+}
+
+#main-content{
+	background-color: #f7f9f8;
+}
+
+
+/*Header*/
+
+#header .content-header {
+    padding: 19px 37px 17px 34px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#header .content-header .logo{
+    width: 50%;
+}
+
+#header .content-header .logo .title-logo{
+    max-width: 400px;
+    height: 70px;
+    background-color: #999999;
+    line-height: 70px;
+    text-align: center;
+}
+
+#header .content-header .logo .link-home{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Meiryo;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+	line-height: 78px;
+}
+
+#header .content-header  .nav-menu{
+    width: 50%;
+}
+
+#header .content-header .menu-bar-toggle{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+#header .content-header .menu-bar-toggle:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+    transform: translateY(-50%);
+}
+
+#header .content-header .menu-bar-toggle .icon-bar-toggle:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+}
+
+#header .content-header .menu-bar-toggle .icon-bar-toggle:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+}
+
+/*Breadcrumb*/
+
+#careerSupport .breadcrumb{
+    max-width: 1470px;
+    padding:5px 15px 11px;
+    margin: auto;
+}
+
+#careerSupport .breadcrumb .breadcrumb-info, #careerSupport .breadcrumb .sub-breadcrumb{
+    color: #999999;
+    font-family: "MS - P Gothic";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 12px;
+}
+
+#careerSupport .breadcrumb .breadcrumb-info:before{
+    content: "";
+    position: absolute;
+    border: solid #999;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2.5px;
+    transform: rotate(-45deg);
+    right: 2px;
+    bottom: 6px;
+}
+
+/*Banner*/
+
+#careerSupport .banner-home .content{
+    position: relative;
+}
+
+#careerSupport .banner-home .content .img-mobile{
+    display: none;
+}
+
+#careerSupport .banner-home .content .img-banner{
+	width: 100%;
+}
+
+#careerSupport .banner-home .title-banner{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#careerSupport .banner-home .title-banner .heading{
+    font-family: "Deja Vu Sans Mono";
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    color: #fff;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+#careerSupport .banner-home .title-banner .heading .sub-heading{
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2.4px;
+	font-family: "Koz Go Pro";
+}
+
+#careerSupport .banner-home .content:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.2;
+}
+
+/*----    entry-content    ----*/
+
+#careerSupport .entry-content{
+	max-width: 1220px;
+    margin: 106px auto 103px;
+    padding: 0px 20px;	
+}
+
+#careerSupport .entry-content .content-section{
+	overflow: hidden;
+}
+
+#careerSupport .entry-content .title-content{
+	max-width: 894px;
+    margin: auto;
+	margin-bottom: 90px;
+}
+
+#careerSupport .title-content .text_inner .text-content{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#careerSupport .content-section .title_inner .title{
+	color: #e20002;
+    font-family: Meiryo;
+    font-size: 20px;
+    padding-left: 16px;
+    position: relative;
+    line-height: 28px;
+	margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#careerSupport .content-section .title_inner .title:before{
+	content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 6px;
+    height: 18px;
+    background: #e20002;
+}
+
+/*---    educate-short    ---*/
+
+#careerSupport .work-block .content_inner{
+	margin-bottom: 60px;
+}
+
+#careerSupport .content_inner .title{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 24px;
+    line-height: 32px;
+	margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#careerSupport .content_inner .item_box_work{
+	display: flex;
+    flex-wrap: wrap;
+	margin-bottom: 4px;
+}
+
+#careerSupport .content_inner .item_box_work .left-content{
+	width: 250px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#careerSupport .content_inner .item_box_work .left-content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/career-support/career_support_bg_01.png);
+    top: 0px;
+    left: 0px;
+}
+
+#careerSupport .content_inner.educate-year-plan .item_box_work:nth-child(2) .left-content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/career-support/career_support_bg_02.png);
+    top: 0px;
+    left: 0px;
+}
+
+#careerSupport .content_inner.educate-year-plan .item_box_work:nth-child(2) .left-content:after{
+	content: "";
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    background-image: url(../images/career-support/career_support_icon_down.png);
+    left: 50%;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    bottom: -16px;
+    z-index: 10;
+}
+
+#careerSupport .content_inner.educate-year-plan .item_box_work:nth-child(3) .left-content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/career-support/career_support_bg_03.png);
+    top: 0px;
+    left: 0px;
+}
+
+#careerSupport .content_inner.educate-year-plan .item_box_work:nth-child(3) .left-content:after{
+	content: "";
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    background-image: url(../images/career-support/career_support_icon_down.png);
+    left: 50%;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    bottom: -16px;
+    z-index: 10;
+}
+
+#careerSupport .content_inner.educate-year-plan .item_box_work:nth-child(4) .left-content:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/career-support/career_support_bg_04.png);
+    top: 0px;
+    left: 0px;
+}
+
+#careerSupport .content_inner .item_box_work .left-content .text-title{
+	color: #000000;
+	font-family: Meiryo;
+	font-size: 16px;
+	font-weight: 700;
+	position: relative;
+    z-index: 9;
+}
+
+#careerSupport .content_inner .item_box_work .right-content{
+	width: calc(100% - 250px);
+   	padding: 19px 52px;
+}
+
+#careerSupport .content_inner .item_box_work .right-content .text-t1{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 400;
+	max-width: 790px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#careerSupport .content_inner .item_box_work .right-content .t-1{
+	width: 155px;
+	position: relative;
+}
+
+#careerSupport .content_inner .item_box_work .right-content .t-1:after{
+	content: ":";
+    position: absolute;
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    font-weight: 600;
+    right: 0px;
+}
+
+#careerSupport .content_inner .item_box_work .right-content .t-2	{
+	width: calc(100% - 155px);
+	padding-left: 24px;
+}
+
+#careerSupport .content_inner.educate-year .item_box_work:nth-child(2) .right-content .text-t1{
+	letter-spacing: -0.69px;
+}
+
+#careerSupport .content_inner.educate-year .item_box_work:last-child .right-content .text-t1{
+	letter-spacing: -2px;
+}
+
+#careerSupport .content_inner.educate-year-plan .title{
+	margin-bottom: 4px;
+}
+
+#careerSupport .content_inner.educate-year{
+	margin-bottom: 57px;
+}
+
+
+/*----   career-advice   ----*/
+
+#careerSupport .entry-content .career-advice{
+	margin-top: 23px;
+}
+
+#careerSupport .career-advice .content_inner .title{
+	color: #e20002;
+    font-family: Meiryo;
+    font-size: 20px;
+	padding-left: 16px;
+	line-height: 28px;
+	position: relative;
+	margin-bottom: 13px;
+}
+
+#careerSupport .career-advice .content_inner .title:before{
+	content: "";
+    position: absolute;
+    width: 6px;
+    height: 18px;
+    background-color: #e20002;
+    top: 4px;
+    left: 0px;
+}
+
+/*---   information-contact   ---*/
+
+#careerSupport .information-contact{
+	background: #fff;
+	padding: 62px 0px 80px;
+}
+
+#careerSupport .information-contact .content{
+	max-width: 1220px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#careerSupport .information-contact .infor-phone{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#careerSupport .information-contact .infor-phone .icon-phone{
+	margin-bottom: 10px;
+	width: 48px;
+}
+
+#careerSupport .information-contact .infor-phone .registration-link{
+	display: block;
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 30px;
+    font-weight: 600;
+	line-height: 34px;
+}
+
+#careerSupport .information-contact .infor-company{
+	text-align: center;
+}
+
+#careerSupport .information-contact .infor-company .name-company{
+	display: block;
+    color: #000000;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 600;
+	margin-bottom: 10px;
+}
+
+#careerSupport .information-contact .infor-company .phone{
+	display: block;
+    color: #e40001;
+    font-family: Meiryo;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 40px;
+	text-decoration: none;
+	margin-bottom: 5px;	
+	width: fit-content;
+	margin: auto;
+	width: -moz-fit-content;
+	margin-bottom: 4px;
+}
+
+#careerSupport .information-contact .infor-company .time{
+	color: #e40001;
+    font-family: Meiryo;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+	margin-bottom: 38px;
+}
+
+#careerSupport .information-contact .infor-company .text-contact{
+	color: #000000;
+    font-family: Meiryo;
+    font-size: 16px;
+    display: block;
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 767px) {/* ---------- スマホ以下 ---------- */
+	
+	body{
+		min-width: 640px;
+	}
+	
+	#main_wrap{
+		overflow: hidden;
+	}
+	
+	#footer .img-banner-footer, #careerSupport .breadcrumb{
+		display: none;
+	}
+	
+/*	Header*/
+	
+	#header .content-header{
+        padding: 10px 20px;
+    }
+
+    #header .content-header .logo .title-logo{
+        max-width: 260px;
+    }
+	
+/*	Banner*/
+
+    #careerSupport .banner-home .content:before{
+		z-index: 9
+	}
+
+    #careerSupport .banner-home .content .img-mobile{
+		display: block;
+	}
+
+    #careerSupport .banner-home .content .img-desktop{
+		display: none;
+	}
+
+    #careerSupport .banner-home .title-banner{
+        top: 57%;
+		z-index: 10;
+    }
+
+    #careerSupport .banner-home .title-banner .heading{
+        line-height: 48px;
+    }
+
+    #careerSupport .banner-home .title-banner .heading .sub-heading{
+        width: 100%;
+        display: block;
+	}
+	
+/*	entry-content*/
+
+    #careerSupport .entry-content{
+		margin-top: 39px;
+		margin-bottom: 56px;
+	}
+
+    #careerSupport .entry-content .title-content{
+		margin-bottom: 34px;
+	}
+
+    #careerSupport .title-content .text_inner .text-content{
+		font-size: 24px;
+    	line-height: 34px;
+	}
+
+    #careerSupport .title-content .text_inner .text-content br{
+		display: none;
+	}
+
+    #careerSupport .content-section .title_inner .title{
+		font-size: 28px;
+		margin-bottom: 14px;
+	}
+
+    #careerSupport .content-section .title_inner .title:before{
+		top: -1px;
+		width: 8px;
+		height: 26px;
+	}
+
+    #careerSupport .content_inner .title{
+		font-size: 36px;
+    	line-height: 46px;
+		margin-bottom: 9px;
+	}
+
+    #careerSupport .content_inner .item_box_work{
+		margin-bottom: 20px;
+	}
+
+    #careerSupport .content_inner .item_box_work .left-content{
+		width: 154px;
+	}
+
+    #careerSupport .content_inner .item_box_work .left-content .text-title{
+		font-size: 28px;
+	}
+
+    #careerSupport .content_inner .item_box_work .right-content{
+		width: calc(100% - 154px);
+		padding: 0px 10px 0px 18px;
+		min-height: 56px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+    #careerSupport .content_inner .item_box_work .right-content .text-t1{
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+    #careerSupport .work-block .content_inner{
+		margin-bottom: 52px;
+	}
+
+    #careerSupport .work-block .content_inner.educate-short .item_box_work:nth-child(3) .left-content{
+		min-height: 61px;
+	}
+
+    #careerSupport .work-block .content_inner.educate-short .item_box_work:nth-child(4) .left-content{
+		max-height: 80px;
+	}
+
+    #careerSupport .content_inner.educate-year .item_box_work:nth-child(2) .left-content,
+    #careerSupport .content_inner.educate-year .item_box_work:nth-child(3) .left-content{
+		min-height: 68px;
+	}
+
+    #careerSupport .content_inner.educate-year .item_box_work:nth-child(4) .left-content{
+		max-height: 230px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan{
+		margin-bottom: 0px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work:nth-child(2){
+		margin-bottom: 3px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work{
+		margin-bottom: 10px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work .left-content:after{
+		display: none;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work .left-content{
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work .left-content .text-title{
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 60px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work .right-content{
+		width: 100%;
+		padding: 0px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work .right-content .text-t1{
+		margin-bottom: 21px;
+	}
+
+    #careerSupport .content_inner .item_box_work .right-content .t-1{
+		font-size: 28px;
+		font-weight: 700;
+		width: 100%;
+    	margin-bottom: 5px;
+	}
+
+    #careerSupport .content_inner .item_box_work .right-content .t-1:after{
+		display: none;
+	}
+
+    #careerSupport .content_inner .item_box_work .right-content .t-2{
+		padding: 0px;
+		width: 100%;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work .left-content:before{
+		width: 992px !important;
+		left: 50% !important;
+    	transform: translateX(-50%);
+	}
+
+    #careerSupport .entry-content .content-section{
+		overflow: visible;
+	}
+
+    #careerSupport .content_inner.educate-short{
+		margin-bottom: 44px;
+	}
+
+    #careerSupport .content_inner.educate-year{
+		margin-bottom: 50px;
+	}
+
+    #careerSupport .content_inner.educate-year .title{
+		margin-bottom: 11px;
+	}
+
+    #careerSupport .content_inner.educate-year .item_box_work:nth-child(2) .right-content .text-t1{
+		letter-spacing: 0px;
+	}
+
+    #careerSupport .content_inner.educate-year .item_box_work:last-child .right-content .text-t1{
+		letter-spacing: 0px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .title{
+		margin-bottom: 10px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work:nth-child(3){
+		margin-bottom: 13px;
+	}
+
+    #careerSupport .content_inner.educate-year-plan .item_box_work:nth-child(4) .left-content{
+		margin-bottom: 25px;
+	}
+	
+/*	career-advice*/
+
+    #careerSupport .career-advice .content_inner .title{
+		font-size: 28px;
+    	line-height: 34px;
+	}
+
+    #careerSupport .career-advice .content_inner .title:before{
+		width: 8px;
+    	height: 26px;
+		top: 0px;
+	}
+
+    #careerSupport .career-advice .item_box_work:nth-child(2) .left-content{
+		min-height: 68px;
+	}
+
+    #careerSupport .career-advice .item_box_work:nth-child(3) .left-content{
+		max-height: 170px;
+	}
+
+    #careerSupport .career-advice .content_inner .item_box_work:nth-child(2) .right-content{
+		align-items: end;
+	}
+
+    #careerSupport .career-advice .content_inner .item_box_work:nth-child(2) .right-content .text-t1{
+		padding-top: 6px;
+	}
+	
+/*	information-contact*/
+
+    #careerSupport .information-contact{
+		padding: 60px 0px 118px;
+	}
+
+    #careerSupport .information-contact .infor-phone .icon-phone{
+		width: 80px;
+		margin-bottom: 28px;
+	}
+
+    #careerSupport .information-contact .infor-phone{
+		margin-bottom: 28px;
+	}
+
+    #careerSupport .information-contact .infor-phone .registration-link{
+		font-size: 40px;
+    	line-height: 46px;
+	}
+
+    #careerSupport .information-contact .infor-company .name-company{
+		font-size: 30px;
+    	line-height: 36px;
+	}
+
+    #careerSupport .information-contact .infor-company .time{
+		font-size: 24px;
+		margin-bottom: 26px;
+		margin-top: 5px;
+	}
+
+    #careerSupport .information-contact .infor-company .text-contact{
+		font-size: 24px;
+	}
+}
+
+
+
+@media print, screen and (min-width: 768px) {/* ---------- タブレット・PC以上 ---------- */
+  #careerSupport {
+    font-size: 15px;
+  }
+}

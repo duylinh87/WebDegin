@@ -1,0 +1,559 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#oneday .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#oneday .animatedFadeInUp {
+    opacity: 0;
+}
+
+#oneday .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#oneday{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+/*main-banner*/
+/*================================================*/
+#oneday .main-banner .container-block{
+    position: relative;
+}
+
+#oneday .main-banner .image_wrap .od-image{
+    width: 100% !important;
+    height: 100%;
+}
+
+#oneday .main-banner .heading{
+    position: absolute;
+    top: 51%;
+    left: 48.9%;
+    transform: translate(-50%, -50%);
+}
+
+/*schedule-of-theDay*/
+/*====================================================*/
+#oneday .schedule-of-theDay{
+    margin-top: 84px;
+    margin-bottom: 88px;
+}
+
+#oneday .schedule-of-theDay .container-block{
+    width: 100%;
+    max-width: 1060px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#oneday .schedule-of-theDay .heading-block{
+    position: relative;
+    padding-left: 58px;
+    padding-bottom: 4px;
+    border-bottom: 5px solid #fbc8e5;
+    margin-bottom: 26px
+}
+
+#oneday .schedule-of-theDay .heading-block:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/oneday_icon_block_01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90px;
+    height: 49px;
+    left: 0px;
+    top: -38px;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 23px;
+    position: relative;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .position-top{
+    width: 122px;
+    padding-top: 6px;
+    position: relative;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .position-top:after{
+    content: "";
+    background-image: url("../images/oneday_icon_drop_02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 51px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule:last-child .position-top:after{
+    display: none;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n-1) .position-top:after{
+    content: "";
+    background-image: url("../images/oneday_icon_drop_01.png");
+    position: absolute;
+    width: 30px;
+    height: 51px;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule.item01 .position-top:after{
+    background-image: url("../images/oneday_icon_drop_02.png");
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .position-top .t1{
+    width: 122px;
+    height: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #f7a0c6;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .content-schedule{
+    width: 55.6%;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .content-image{
+    width: calc(100% - 55.6% - 122px);
+    padding-top: 6px;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .content-image .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .content-image .image_wrap .od-image{
+    width: 100% !important;
+    height: 100%;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n-1) .info .sub-title{
+    font-size: 20px;
+    line-height: 30px;
+    color: #0ea6f9;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n) .info .sub-title{
+    font-size: 20px;
+    line-height: 30px;
+    color: #f1226b;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule.item01 .info .sub-title{
+    color: #f1226b;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n-1) .position-top .t1{
+    background: #7dcdf9;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule.item01 .position-top .t1{
+    background: #f7a0c6;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .info .text{
+    font-size: 14px;
+    line-height: 25px;
+    color: #010101;
+    font-weight: 500;
+    text-align: justify;
+    padding-right: 13px;
+}
+
+#oneday .schedule-of-theDay .list-schedule .item-schedule .info{
+    height: 100%;
+    margin: 0px 28px 0px 31px;
+    border-bottom: 2px solid #fbc8e5;
+}
+
+
+/*business-one-point*/
+/*===============================================*/
+
+#oneday .business-one-point{
+    background: #f8f3cd;
+    padding-top: 30px;
+    padding-bottom: 66px;
+}
+
+#oneday .business-one-point .container-block{
+    width: 100%;
+    max-width: 908px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#oneday .business-one-point .heading-block{
+    margin-bottom: 4px;
+}
+
+#oneday .business-one-point .heading-block .img-title{
+    position: relative;
+    top: -6px;
+    margin-left: 11px;
+}
+
+#oneday .business-one-point .content-business-one-point{
+    background: #fff;
+    overflow: hidden;
+}
+
+#oneday .business-one-point .content-business-one-point .info-content{
+    border: 2px solid #d3b949;
+    margin: 11px 19px 10px 17px;
+    padding: 19px 80px 66px 78px;
+}
+
+#oneday .business-one-point .content-business-one-point .sub-title{
+    font-size: 22px;
+    line-height: 30px;
+    color: #d3b949;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 4px;
+    margin-bottom: 13px;
+}
+
+#oneday .business-one-point .content-business-one-point .text{
+    font-size: 16px;
+    line-height: 22px;
+    color: #010101;
+    font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .info .text{
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n-1) .info .sub-title,
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n) .info .sub-title{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .position-top .t1{
+        font-size: 16px ;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #oneday .main-banner .heading .img-title{
+        height: 40px;
+    }
+
+    /*schedule-of-theDay*/
+    /*====================================================*/
+    #oneday .schedule-of-theDay .heading-block .img-title{
+        height: 18px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .position-top{
+        width: 90px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .position-top .t1{
+        width: 90px;
+        height: 90px;
+        font-size: 13px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .info{
+        margin: 0px 25px 0px 25px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .content-image{
+        width: calc(100% - 55.6% - 90px);
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .position-top:after,
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n-1) .position-top:after{
+        width: 20px;
+        height: 34px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n-1) .info .sub-title,
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n) .info .sub-title{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 6px;
+    }
+
+    /*business-one-point*/
+    /*===============================================*/
+    #oneday .business-one-point .heading-block .img-info{
+        width: 35px;
+    }
+
+    #oneday .business-one-point .heading-block .img-title{
+        height: 18px;
+    }
+
+    #oneday .business-one-point .content-business-one-point .sub-title{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    #oneday .business-one-point .content-business-one-point .info-content{
+        padding: 20px 50px 60px 50px;
+    }
+
+    #oneday .business-one-point .content-business-one-point .text{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #oneday .main-banner .heading{
+        left: 24%;
+    }
+
+    #oneday .main-banner .heading .img-title{
+        height: 30px;
+    }
+
+    /*schedule-of-theDay*/
+    /*====================================================*/
+    #oneday .schedule-of-theDay{
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+
+    #oneday .schedule-of-theDay .container-block{
+        padding: 0px 35px;
+        max-width: 500px;
+    }
+
+    #oneday .schedule-of-theDay .heading-block:after{
+        width: 50px;
+        height: 30px;
+        top: -20px;
+    }
+
+    #oneday .schedule-of-theDay .heading-block .img-title{
+        height: 14px;
+    }
+
+    #oneday .schedule-of-theDay .heading-block{
+        border-bottom: 2px solid #fbc8e5;
+        padding-left: 32px;
+        margin-bottom: 32px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .position-top{
+        display: none;
+        order: 3;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule{
+        padding: 0px 15px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .content-schedule{
+        width: 100%;
+        order: 2;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .content-image{
+        width: 100%;
+        order: 1;
+        margin-bottom: 8px;
+        padding-top: 0px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .info{
+        margin: 0px 5px;
+        border-bottom: 0px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n-1) .info .sub-title,
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n) .info .sub-title{
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule .info .text{
+        line-height: 20px;
+        padding-right: 0px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule{
+        margin-bottom: 0px;
+        padding-bottom: 80px;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n):after{
+        content: "";
+        position: absolute;
+        background-image: url("../images/oneday_icon_drop_02.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 26px;
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:nth-child(2n-1):after{
+        content: "";
+        position: absolute;
+        background-image: url("../images/oneday_icon_drop_01.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 26px;
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule.item01:after{
+        background-image: url("../images/oneday_icon_drop_02.png");
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:last-child:after{
+        display: none;
+    }
+
+    #oneday .schedule-of-theDay .list-schedule .item-schedule:last-child{
+        padding-bottom: 0px;
+    }
+
+    /*business-one-point*/
+    /*===============================================*/
+    #oneday .business-one-point{
+        padding: 20px 0px;
+    }
+
+    #oneday .business-one-point .container-block{
+        max-width: 500px;
+    }
+
+    #oneday .business-one-point .heading-block .img-info{
+        width: 22px;
+    }
+
+    #oneday .business-one-point .heading-block .img-title{
+        height: 14px;
+        top: -3px;
+        margin-left: 6px;
+    }
+
+    #oneday .business-one-point .content-business-one-point .info-content{
+        margin: 8px;
+        border: 1px solid #d3b949;
+    }
+
+    #oneday .business-one-point .content-business-one-point .info-content{
+        padding: 12px;
+    }
+
+    #oneday .business-one-point .heading-block{
+        margin-bottom: 12px ;
+    }
+
+    #oneday .business-one-point .content-business-one-point .sub-title{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #oneday .business-one-point .content-business-one-point .text{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

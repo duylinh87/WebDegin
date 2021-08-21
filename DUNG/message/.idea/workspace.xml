@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f3c81185-4a93-4063-90f1-803d1101c476" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="appeal" />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectId" id="1Ydu70wZrlTm2wB2f5zrvESN3lx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lifesupport" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3c81185-4a93-4063-90f1-803d1101c476" name="Default Changelist" comment="" />
+      <created>1583284620778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583284620778</updated>
+      <workItem from="1583284622123" duration="16600000" />
+      <workItem from="1583376080211" duration="6610000" />
+      <workItem from="1583395759806" duration="5962000" />
+      <workItem from="1583456837653" duration="10396000" />
+      <workItem from="1583475815960" duration="12423000" />
+      <workItem from="1583541019120" duration="21681000" />
+      <workItem from="1583716830705" duration="1198000" />
+      <workItem from="1583727109408" duration="3886000" />
+      <workItem from="1583736600064" duration="11434000" />
+      <workItem from="1583805150817" duration="12339000" />
+      <workItem from="1583892821068" duration="265000" />
+      <workItem from="1584065219950" duration="23742000" />
+      <workItem from="1584320874680" duration="5117000" />
+      <workItem from="1584347907675" duration="599000" />
+      <workItem from="1584408230770" duration="28153000" />
+      <workItem from="1584520450762" duration="4810000" />
+      <workItem from="1584580587816" duration="20637000" />
+      <workItem from="1584933274271" duration="3946000" />
+      <workItem from="1584941707219" duration="777000" />
+      <workItem from="1585012996158" duration="1273000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="755" y="304" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583727285233">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="755" y="304" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1583727285233" />
+    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1585015172253">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1585015172253" />
+    <state x="93" y="93" width="1862" height="926" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584600737313">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="93" y="93" width="1862" height="926" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1584600737313" />
+    <state x="681" y="259" key="run.anything.popup" timestamp="1583737980274">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1583737980274" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1584586502919">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1584586502919" />
+  </component>
+</project>

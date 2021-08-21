@@ -1,0 +1,730 @@
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#training img {
+    max-width: 100%;
+}
+
+#training .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#training .animatedFadeInUp {
+    opacity: 0;
+}
+
+#training .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#training {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#training .pc_br{
+    display: none;
+}
+
+
+/*main-banner*/
+/*===============================================*/
+
+#training .main-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#training .main-banner .pic-inner .main-img {
+    display: block;
+    width: 100% !important;
+}
+
+#training .main-banner .heading{
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#training .main-banner .heading .t1{
+    display: inline-block;
+    padding: 25px 0px 25px 8px;
+    position: relative;
+}
+
+#training .main-banner .heading .t1:before{
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 1px;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+}
+
+#training .main-banner .heading .t1:after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 1px;
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+}
+
+#training .main-banner .heading .t1 .switch-img{
+    display: block;
+}
+
+
+/*training-block*/
+/*=====================================*/
+
+#training .training-block{
+    margin-bottom: 55px;
+    position: relative;
+}
+
+#training .training-block .list-step-training{
+    position: relative;
+    z-index: 1;
+}
+
+#training .training-block:before{
+    content: "";
+    position: absolute;
+    background-image: url("../images/training/training_ico_bg01_sp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 248px;
+    height: 275px;
+    top: -80px;
+    left: 32%;
+    transform: translateX(-50%);
+}
+
+#training .training-block .item-step-training{
+    padding-top: 42px;
+    position: relative;
+}
+
+#training .training-block .item-step-training .inner{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#training .training-block .heading-block{
+    margin-bottom: 10px;
+}
+
+#training .training-block .heading-block .sub-t1{
+    font-size: 14px;
+    line-height: 25px;
+    color: #1d3c61;
+    padding-left: 12px;
+    font-weight: 700;
+}
+
+#training .training-block .item-step-training .content{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#training .training-block .item-step-training .text-content{
+    order: 1;
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+#training .training-block .item-step-training .image-content{
+    order: 2;
+    width: 100%;
+}
+
+#training .training-block .item-step-training .image-content .pic-inner .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#training .training-block .item-step-training.item01 .box-text{
+    background: #5594ce;
+    color: #fff;
+    max-width: 250px;
+    margin: 0px auto 15px;
+    position: relative;
+    box-shadow: -10px -10px #fff;
+    padding: 10px 10px 8px 22px;
+}
+
+#training .training-block .item-step-training.item01 .box-text .ttl{
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 6px;
+}
+
+#training .training-block .item-step-training.item01 .box-text .text-box{
+    font-size: 13px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+
+#training .training-block .item-step-training .text-content .text{
+    font-size: 13px;
+    line-height: 20px;
+    color: #333333;
+    font-weight: 400;
+}
+
+#training .training-block .item-step-training:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background: #eff3f6;
+    top: 78px;
+    left: 0px;
+}
+
+#training .training-block .item-step-training.item01:after{
+    display: none;
+}
+
+#training .training-block .item-step-training .text-content .title{
+    font-size: 14px;
+    line-height: 22px;
+    color: #1d3c61;
+    font-weight: 500;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+#training .training-block .item-step-training .text-content .title:before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: #1d3c61;
+    top: 5px;
+    left: 0px;
+}
+
+
+/*messages-trainees*/
+/*==============================================*/
+
+#training .messages-trainees{
+    margin-bottom: 60px;
+}
+
+#training .messages-trainees .pic-inner .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#training .messages-trainees .box-messages{
+    position: relative;
+    margin-top: -82px;
+    width: calc(100% - 20px);
+    margin-left: 15px;
+}
+
+#training .messages-trainees .box-messages:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(239, 243, 246);
+    left: -10px;
+    top: -10px;
+    border: 2px solid #fff;
+    pointer-events: none;
+}
+
+#training .messages-trainees .box-messages .info{
+    position: relative;
+    z-index: 1;
+    background: rgba(43,121,194, .80);
+    color: #fff;
+    padding: 10px 18px 16px 12px;
+}
+
+#training .messages-trainees .box-messages:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    left: -10px;
+    top: -10px;
+    border: 2px solid rgba(255,255,255,.80);
+    z-index: 1;
+    pointer-events: none;
+}
+
+#training .messages-trainees .box-messages .info .ttl{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 12px;
+}
+
+#training .messages-trainees .box-messages .info .ttl:before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: #fff;
+    top: 5px;
+    left: 0px;
+}
+
+#training .messages-trainees .box-messages .info .t1{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 5px;
+}
+
+#training .messages-trainees .box-messages .info .text{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#training .messages-trainees .box-messages .info .note{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: right;
+}
+
+
+
+@media (min-width: 768px) {
+
+    #training .training-block:before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/training/training_ico_bg01_pc.png");
+        background-size: 100%;
+        width: 80%;
+        height: 989px;
+        top: -285px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #training .main-banner .heading .t1 {
+        display: inline-block;
+        padding: 35px 0px 35px 7px;
+    }
+
+    #training .main-banner .heading {
+        position: absolute;
+        top: 53.4%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 31%;
+    }
+
+    #training .main-banner .heading .t1:before,
+    #training .main-banner .heading .t1:after{
+        width: 75%;
+    }
+
+    #training .training-block .item-step-training .inner {
+        max-width: 1530px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    /*training-block*/
+    /*========================================*/
+    #training .training-block .item-step-training.item01 .image-content{
+        order: 1;
+        width: 44.3%;
+        margin: 0px;
+        padding-top: 24px;
+    }
+
+    #training .training-block .item-step-training {
+        padding-top: 111px;
+        padding-bottom: 69px;
+    }
+
+    #training .training-block .item-step-training.item04{
+        padding-bottom: 52px;
+    }
+
+    #training .training-block .item-step-training.item01{
+        padding-bottom: 0px;
+    }
+
+    #training .training-block .item-step-training.item01 .text-content{
+        order: 2;
+        width: 55.7%;
+        padding-left: 30px;
+        max-width: 605px;
+        margin-bottom: 0px;
+    }
+
+    #training .training-block .heading-block .sub-t1 {
+        font-size: 16px;
+        line-height: 16px;
+        padding-left: 24px;
+    }
+
+    #training .training-block .heading-block {
+        margin-bottom: 25px;
+    }
+
+    #training .training-block .item-step-training.item01 .heading-block {
+        margin-bottom: 38px;
+    }
+
+    #training .training-block .item-step-training.item01 .box-text {
+        background: #5594ce;
+        color: #fff;
+        max-width: 404px;
+        margin: 0px 0px 25px 20px;
+        position: relative;
+        box-shadow: -20px -20px #fff;
+        padding: 26px 28px 25px 28px;
+    }
+
+    #training .training-block .item-step-training .text-content .text {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    #training .training-block .item-step-training.item01 .box-text .text-box {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #training .training-block .item-step-training.item01 .box-text .ttl {
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+
+    #training .training-block .item-step-training .text-content{
+        width: 44.3%;
+        padding-right: 20px;
+    }
+
+    #training .training-block .item-step-training .image-content{
+        width: 55.7%;
+        position: relative;
+        margin-top: -55px;
+    }
+
+    #training .training-block .item-step-training.item02{
+        padding-top: 116px;
+    }
+
+    #training .training-block .item-step-training .text-content .title:before {
+        width: 5px;
+        height: 18px;
+        top: 2px;
+        left: 2px;
+    }
+
+    #training .training-block .item-step-training .text-content .title {
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    #training .training-block .item-step-training:after {
+        height: 66%;
+        bottom: 0px;
+        top: 165px;
+    }
+
+    #training .training-block .item-step-training.item04:after{
+        height: 66%;
+    }
+
+    #training .training-block {
+        margin-bottom: 100px;
+    }
+
+    /*messages-trainees-block*/
+    /*===========================================*/
+
+    #training .messages-trainees{
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    #training .messages-trainees .box-messages:before {
+        width: calc(100% - 9px);
+        height: 100%;
+        background: rgba(239, 243, 246,.80);
+        left: -20px;
+        top: -20px;
+        border: 4px solid #fff;
+        pointer-events: none;
+    }
+
+    #training .messages-trainees .box-messages:after {
+        width: calc(100% - 9px);
+        left: -20px;
+        top: -20px;
+        border: 4px solid rgba(255,255,255,.80);
+    }
+
+    #training .messages-trainees .box-messages{
+        position: absolute;
+        width: 100%;
+        left: 66%;
+        margin: 0px;
+        bottom: 6%;
+        max-width: 50%;
+        transform: translateX(-50%);
+    }
+
+    #training .messages-trainees .box-messages .info .ttl:before {
+        width: 5px;
+        height: 16px;
+        top: 0px;
+    }
+
+    #training .messages-trainees .box-messages .info .ttl {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 16px;
+        letter-spacing: 1px;
+    }
+
+    #training .messages-trainees .box-messages .info .t1 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 0px;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+
+    #training .messages-trainees .box-messages .info .text {
+        font-size: 13px;
+        line-height: 20px;
+        display: inline;
+    }
+
+    #training .messages-trainees .box-messages .info{
+        padding: 20px 38px 45px 20px;
+    }
+
+    #training .messages-trainees .box-messages .info .note {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: right;
+        display: inline;
+        float: right;
+    }
+
+    #training .training-block .heading-block .switch-img{
+        height: 24px;
+    }
+    
+    
+}
+
+
+@media (min-width: 1280px) {
+
+    #training .training-block .item-step-training .inner {
+        max-width: 1530px;
+        margin: auto;
+        padding: 0px 20px 0px 9%;
+    }
+
+    #training .training-block .heading-block .sub-t1 {
+        font-size: 24px;
+        line-height: 24px;
+        padding-left: 34px;
+    }
+
+    #training .training-block .heading-block .switch-img{
+        height: auto;
+    }
+
+    #training .training-block .heading-block {
+        margin-bottom: 114px;
+    }
+
+    #training .training-block .item-step-training .image-content{
+        width: 55.7%;
+        position: relative;
+        margin-top: -152px;
+    }
+
+    #training .training-block .item-step-training .text-content .title {
+        font-size: 26px;
+        line-height: 44px;
+        padding-left: 24px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    #training .training-block .item-step-training .text-content .title:before {
+        width: 6px;
+        height: 24px;
+        top: 8px;
+        left: 2px;
+    }
+
+    #training .training-block .item-step-training .text-content .text {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    #training .training-block .item-step-training .text-content{
+        padding-right: 20px;
+    }
+
+    #training .training-block .item-step-training:after,
+    #training .training-block .item-step-training.item04:after{
+        height: 64%;
+        top: unset;
+        bottom: -12px;
+    }
+
+    #training .training-block .item-step-training.item01 .box-text .ttl {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+
+    #training .training-block .item-step-training.item01 .box-text .text-box {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #training .training-block .item-step-training.item01 .box-text {
+        margin: 0px 0px 45px 20px;
+    }
+
+    #training .training-block:before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/training/training_ico_bg01_pc.png");
+        background-size: 100%;
+        width: 875px;
+        height: 989px;
+        top: -270px;
+        left: 53.8%;
+        transform: translateX(-50%);
+    }
+
+    #training .messages-trainees .box-messages .info .t1 {
+        font-size: 26px;
+        line-height: 44px;
+        padding-left: 0px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    #training .messages-trainees .box-messages .info .text {
+        font-size: 16px;
+        line-height: 36px;
+        display: inline;
+    }
+
+    #training .messages-trainees .box-messages .info {
+        padding: 53px 70px 43px 45px;
+    }
+
+    #training .messages-trainees .box-messages .info .note {
+        font-size: 16px;
+        line-height: 36px;
+        font-weight: 400;
+        text-align: right;
+        display: inline;
+        float: right;
+    }
+
+    #training .messages-trainees .box-messages .info .ttl:before {
+        width: 6px;
+        height: 24px;
+        top: 0px;
+    }
+
+    #training .messages-trainees .box-messages{
+        left: 62.3%;
+        max-width: 709px;
+    }
+
+    #training .training-block {
+        margin-bottom: 160px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+

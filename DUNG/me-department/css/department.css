@@ -1,0 +1,933 @@
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#department .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#department .animatedFadeInUp {
+    opacity: 0;
+}
+
+#department .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#department{
+    position: relative;
+    background: #fdfdfd;
+    overflow: hidden;
+    padding-bottom: 173px;
+}
+
+/*main banner*/
+/*=============================================*/
+#department .main-banner{
+    position: relative;
+}
+
+#department .main-banner .image_wrap .dt-image{
+    width: 100% !important;
+    height: 100%;
+    display: block;
+}
+
+#department .main-banner .heading{
+    text-align: center;
+    position: absolute;
+    top: 57.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#department .main-banner .heading .t1{
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+#department .main-banner .heading .t2{
+    font-size: 26px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#department .main-banner .icon-left{
+    position: absolute;
+    bottom: -66px;
+    left: 0px;
+    z-index: 9;
+}
+
+#department .main-banner .icon-right{
+    position: absolute;
+    bottom: -51px;
+    right: 0px;
+    z-index: 9;
+}
+
+
+/*tabs-list-department*/
+/*=========================================*/
+
+#department .tabs-list-department{
+    padding-top: 100px;
+    padding-bottom: 46px;
+}
+
+#department .tabs-list-department .inner{
+    width: 100%;
+    max-width: 1128px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#department .tabs-list-department .list-link-tabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#department .tabs-list-department .list-link-tabs .item-link-tab{
+    width: 18.287%;
+    margin-right: 2.141%;
+    border: 1px solid #9b9b9b;
+    transition: .4s;
+}
+
+#department .tabs-list-department .list-link-tabs .item-link-tab:hover{
+    opacity: .6;
+}
+
+#department .tabs-list-department .list-link-tabs .item-link-tab:last-child{
+    margin-right: 0px;
+}
+
+#department .tabs-list-department .list-link-tabs .item-link-tab .item-action{
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    height: 100%;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#department .tabs-list-department .list-link-tabs .item-link-tab .item-action .sp_br{
+    display: none;
+}
+
+#department .tabs-list-department .list-link-tabs .item-link-tab .icon-button{
+    display: inline-block;
+    margin-right: 13px;
+}
+
+#department .tabs-list-department .list-link-tabs .item-link-tab .icon-arrow{
+    position: absolute;
+    font-size: 14px;
+    color: #0062a2;
+    font-weight: 700;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*department-content*/
+/*====================================*/
+
+#department .department-content .inner{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#department .department-content .list-department-block .department-block{
+    padding-top: 70px;
+    position: relative;
+}
+
+#department .department-content .list-department-block .department-block .icon-left{
+    position: absolute;
+    left: -82px;
+    top: 42px;
+}
+
+#department .department-content .list-department-block .department-block .icon-right{
+    position: absolute;
+    right: -38px;
+    top: 62px;
+}
+
+#department .department-content .list-department-block .department-block .inner-content{
+    background: linear-gradient(180deg, rgba(154,179,196,1) 0%, rgba(240,249,255,1) 100%);
+    padding-top: 16px;
+    padding-left: 48px;
+    padding-right: 46px;
+    padding-bottom: 126px;
+}
+
+#department .department-content .department-block .heading{
+    text-align: center;
+    font-size: 26px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+#department .department-content .department-block .description-block{
+    background: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 57px;
+    padding-left: 72px;
+    margin-bottom: 61px;
+    position: relative;
+    z-index: 9;
+}
+
+#department .department-content .department-block .description-block .text{
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+    font-weight: 400;
+    width: 63%;
+    float: left;
+}
+
+#department .department-content .department-block .description-block .img-content{
+    width: 37%;
+    text-align: center;
+    padding-top: 20px;
+    float: right;
+}
+
+#department .department-content #department-block01.department-block .description-block{
+    padding-bottom: 9.5%;
+}
+
+#department .department-content .department-block .text-info{
+    padding: 0px 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#department .department-content .department-block .text-info .title{
+    text-align:  center;
+    margin-bottom: 68px;
+    width: 100%;
+}
+
+#department .department-content .department-block .text-info .img-avatar{
+    width: 24%;
+    padding-left: 7px;
+}
+
+#department .department-content .department-block .text-info .text{
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+    font-weight: 400;
+    width: 76%;
+    padding-left: 6px;
+}
+
+#department .department-content .department-block .text-info .subText-info{
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: -1.8px;
+}
+
+#department .department-content .department-block .text-info .subText-info .t1{
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 3px;
+    letter-spacing: 0px;
+}
+
+#department .department-content .department-block .text-info .subText-info .t2{
+    font-size: 18px;
+    line-height: 28px;
+    display: block;
+    letter-spacing: 0px;
+}
+
+#department .department-content .department-block .text-info .img-avatar .image_wrap{
+    margin-bottom: 11px;
+}
+
+#department .department-content #department-block01.department-block .text-info .text{
+    width: 100%;
+}
+
+/*#department-block02*/
+/*=========================================*/
+#department .department-content .list-department-block #department-block02.department-block .inner-content{
+    padding-bottom: 54px;
+}
+
+#department .department-content .list-department-block #department-block02.department-block .icon-left{
+    left: -39px;
+    top: 80px;
+}
+
+#department .department-content .list-department-block #department-block02.department-block .icon-right{
+    right: -88px;
+    top: 110px;
+}
+
+#department .department-content .department-block .description-block .sp_text,
+#department .department-content .department-block .description-block .img-content.img-02{
+    opacity: 0;
+}
+
+#department .department-content .department-block .description-block .img-content:nth-child(1){
+    order: 2;
+}
+
+#department .department-content .department-block .description-block .text:nth-child(2){
+    order: 1;
+}
+
+#department .department-content #department-block02.department-block .description-block{
+    padding-bottom: 5.2%;
+    margin-bottom: 71px;
+}
+
+#department .department-content .department-block .description-block .img-content.img-02{
+    order: 3;
+}
+
+#department .department-content .department-block .description-block .sp_text{
+    order: 4;
+}
+
+
+/*#department-block03*/
+/*=========================================*/
+#department .department-content .list-department-block #department-block03.department-block .inner-content{
+    padding-bottom: 54px;
+}
+
+#department .department-content #department-block03.department-block .description-block{
+    padding-bottom: 4%;
+}
+
+#department .department-content .list-department-block #department-block03.department-block .icon-left{
+    left: -280px;
+    top: 56px;
+}
+
+#department .department-content .list-department-block #department-block03.department-block .icon-right{
+    right: -115px;
+    top: 100px;
+}
+
+#department .department-content #department-block03.department-block .text-info .title{
+    margin-bottom: 78px;
+}
+
+/*#department-block04*/
+/*=========================================*/
+
+#department .department-content .list-department-block #department-block04.department-block .inner-content{
+    padding-bottom: 27px;
+}
+
+#department .department-content .list-department-block #department-block04.department-block .icon-left{
+    left: -132px;
+    top: 53px;
+}
+
+#department .department-content .list-department-block #department-block04.department-block .icon-right{
+    right: -111px;
+    top: 99px;
+}
+
+#department .department-content #department-block04.department-block .description-block .img-content{
+    padding-top: 78px;
+}
+
+#department .department-content #department-block04.department-block .description-block .text{
+    position: relative;
+    margin-bottom: -36px;
+}
+
+/*#department-block05*/
+/*=========================================*/
+#department .department-content .list-department-block #department-block05.department-block .icon-left{
+    left: -117px;
+    top: 88px;
+}
+
+#department .department-content .list-department-block #department-block05.department-block .icon-right{
+    right: -80px;
+    top: 52px;
+}
+
+#department .department-content #department-block05.department-block .description-block .text:nth-child(1){
+    margin-bottom: 32px;
+}
+
+#department .department-content #department-block05.department-block .description-block{
+    display: block;
+    overflow: hidden;
+    padding-bottom: 3.5%;
+}
+
+#department .department-content #department-block05.department-block .description-block .img-content{
+    padding-left: 18px;
+}
+
+#department .department-content .list-department-block #department-block05.department-block .inner-content{
+    padding-bottom: 54px;
+}
+
+
+
+
+@media(max-width: 1440px){
+
+    #department .main-banner .icon-left{
+        width: 180px;
+    }
+
+    #department .main-banner .icon-right{
+        width: 120px;
+    }
+
+    #department .department-content .list-department-block #department-block01.department-block .icon-left{
+        width: 100px;
+        left: -50px;
+    }
+
+    #department .department-content .list-department-block #department-block01.department-block .icon-right{
+        width: 100px;
+    }
+
+    #department .department-content .list-department-block #department-block02.department-block .icon-left{
+        width: 80px;
+    }
+
+    #department .department-content .list-department-block #department-block02.department-block .icon-right {
+        right: -50px;
+        top: 90px;
+        width: 120px;
+    }
+
+    #department .department-content .list-department-block #department-block03.department-block .icon-left {
+        left: -100px;
+        width: 200px;
+    }
+
+    #department .department-content .list-department-block #department-block03.department-block .icon-right {
+        right: -60px;
+        width: 120px;
+    }
+
+    #department .department-content .list-department-block #department-block04.department-block .icon-left {
+        left: -90px;
+        width: 180px;
+    }
+
+    #department .department-content .list-department-block #department-block04.department-block .icon-right {
+        right: -90px;
+        top: 80px;
+        width: 200px;
+    }
+
+    #department .department-content .list-department-block #department-block05.department-block .icon-left {
+        left: -60px;
+        top: 88px;
+        width: 150px;
+    }
+
+    #department .department-content .list-department-block #department-block05.department-block .icon-right {
+        right: -50px;
+        width: 100px;
+    }
+
+    #department .department-content .department-block .heading{
+        font-size: 24px;
+    }
+
+    #department .department-content .department-block .description-block .text,
+    #department .department-content .department-block .text-info .text{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    #department .department-content .department-block .text-info .title .dt-image{
+        height: 24px;
+    }
+
+    #department .department-content #department-block03.department-block .text-info .title .dt-image{
+        height: 80px;
+    }
+
+}
+
+@media(max-width: 1280px){
+
+    #department .department-content .department-block .description-block .text,
+    #department .department-content .department-block .text-info .text {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    #department .department-content .department-block .description-block{
+        padding-left: 50px;
+        padding-right: 40px;
+    }
+
+    #department .department-content .department-block .description-block .text{
+        padding-right: 30px;
+        width: 70%;
+    }
+
+    #department .department-content .department-block .description-block .img-content{
+        width: 30%;
+    }
+
+    #department .department-content .department-block .description-block .img-content .dt-image{
+        width: 100%;
+    }
+
+    #department .department-content #department-block04.department-block .description-block .text{
+        margin-bottom: 0px;
+    }
+
+    #department .department-content #department-block04.department-block .description-block{
+        padding-bottom: 50px;
+    }
+
+    #department .department-content .department-block .description-block .sp_text,
+    #department .department-content .department-block .description-block .img-content.img-02{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+
+    #department .main-banner .icon-left {
+        width: 100px;
+    }
+
+    #department .main-banner .icon-right {
+        width: 80px;
+    }
+
+    #department .main-banner .heading .t1 .dt-image{
+        height: 26px;
+    }
+
+    #department .main-banner .heading .t2{
+        font-size: 20px;
+    }
+
+    #department .main-banner .heading .t1 {
+        margin-bottom: 12px;
+    }
+
+    #department .department-content .department-block .description-block .text,
+    #department .department-content .department-block .text-info .text {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    #department .department-content .department-block .text-info .title .dt-image {
+        height: 20px;
+    }
+
+    #department .department-content #department-block03.department-block .text-info .title .dt-image {
+        height: 68px;
+    }
+
+    #department .department-content .department-block .text-info .img-avatar .image_wrap{
+        padding-left: 0px;
+    }
+
+    #department .department-content .department-block .text-info .img-avatar .image_wrap img{
+        width: 100%;
+    }
+
+    #department .department-content .department-block .text-info{
+        padding: 0px;
+    }
+
+    #department .department-content .department-block .text-info .text{
+        padding-left: 30px;
+    }
+
+    #department .department-content .department-block .text-info .subText-info {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    #department .department-content .department-block .text-info .subText-info .t1 {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    #department .department-content .department-block .text-info .subText-info .t2 {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    #department .department-content #department-block05.department-block .description-block .img-content{
+        padding-left: 0px;
+    }
+
+    #department .tabs-list-department .list-link-tabs .item-link-tab .item-action{
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px 0px 0px;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    #department .tabs-list-department .list-link-tabs .item-link-tab .icon-button{
+        display: block;
+        margin-right: 0px;
+    }
+
+    #department .tabs-list-department .list-link-tabs .item-link-tab .icon-arrow{
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #department{
+        padding-bottom: 50px;
+    }
+
+    #department .tabs-list-department {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    #department .main-banner .heading .t1 .dt-image {
+        height: 20px;
+    }
+
+    #department .main-banner .heading .t1 {
+        margin-bottom: 10px;
+    }
+
+    #department .main-banner .heading .t2 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    #department .main-banner .heading{
+        top: 63%;
+    }
+
+    #department .main-banner .icon-left{
+        bottom: -24px;
+    }
+
+    #department .main-banner .icon-right{
+        bottom: -18px;
+    }
+
+    #department .tabs-list-department .list-link-tabs .item-link-tab .item-action .sp_br {
+        display: block;
+    }
+
+    #department .tabs-list-department .list-link-tabs .item-link-tab .item-action{
+        text-align: center;
+        font-size: 8px;
+        line-height: 10px;
+        justify-content: end;
+        padding-top: 2px;
+    }
+
+    #department .tabs-list-department .list-link-tabs .item-link-tab{
+        width: 18.4%;
+        margin-right: 2%;
+    }
+
+    #department .department-content .list-department-block #department-block01.department-block .icon-left {
+        width: 60px;
+        left: -23px;
+        top: 10px;
+    }
+
+    #department .department-content .list-department-block #department-block01.department-block .icon-right {
+        width: 50px;
+        right: -15px;
+        top: 22px;
+    }
+
+    #department .department-content .list-department-block #department-block02.department-block .icon-left {
+        width: 40px;
+        left: -10px;
+        top: 30px;
+    }
+
+    #department .department-content .list-department-block #department-block02.department-block .icon-right {
+        right: -38px;
+        top: 45px;
+        width: 70px;
+    }
+
+    #department .department-content .list-department-block #department-block03.department-block .icon-left {
+        left: -72px;
+        width: 130px;
+        top: 28px;
+    }
+
+    #department .department-content .list-department-block #department-block03.department-block .icon-right {
+        right: -23px;
+        width: 60px;
+        top: 30px;
+    }
+
+    #department .department-content .list-department-block #department-block04.department-block .icon-left {
+        left: -27px;
+        width: 90px;
+        top: 20px;
+    }
+
+    #department .department-content .list-department-block #department-block04.department-block .icon-right {
+        right: -40px;
+        top: 35px;
+        width: 90px;
+    }
+
+    #department .department-content .list-department-block #department-block05.department-block .icon-left {
+        left: -13px;
+        top: 34px;
+        width: 75px;
+    }
+
+    #department .department-content .list-department-block #department-block05.department-block .icon-right {
+        right: -25px;
+        width: 56px;
+        top: 18px;
+    }
+
+    #department .tabs-list-department .list-link-tabs .item-link-tab .icon-button{
+        margin-bottom: 6px;
+    }
+
+    #department .tabs-list-department .list-link-tabs .item-link-tab:nth-child(4) .icon-button,
+    #department .tabs-list-department .list-link-tabs .item-link-tab:nth-child(5) .icon-button{
+        margin-bottom: 0px;
+    }
+
+
+
+
+
+
+    #department .tabs-list-department .inner{
+        padding: 0px 10px;
+    }
+
+    #department .department-content .inner{
+        padding: 0px 10px;
+    }
+
+    #department .department-content .department-block .description-block .sp_text,
+    #department .department-content .department-block .description-block .img-content.img-02 {
+        opacity: 1;
+        display: block;
+    }
+
+    #department .department-content .department-block .description-block .img-content.img-02{
+        float: left;
+        padding-left: 0px;
+        padding-right: 10px;
+        padding-top: 38px;
+        min-height: 180px;
+    }
+
+    #department .department-content .department-block .description-block .text,
+    #department .department-content .department-block .text-info .text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #department .department-content .list-department-block .department-block .inner-content{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+    }
+
+    #department .department-content .department-block .description-block{
+        display: block;
+        overflow: hidden;
+        padding: 25px 20px 25px 25px !important;
+        margin-bottom: 30px;
+    }
+
+    #department .department-content .department-block .heading {
+        font-size: 15px;
+        line-height: 28px;
+        margin: 0px;
+        padding: 12px 0px;
+    }
+
+    #department .department-content .department-block .text-info .subText-info .t2 {
+        font-size: 12px;
+        line-height: 22px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #department .department-content .department-block .description-block .text{
+        padding-right: 0px;
+        width: auto;
+        float: unset;
+    }
+
+    #department .department-content .department-block .description-block .img-content{
+        width: auto;
+        padding-left: 10px;
+        padding-top: 0px;
+        min-height: 130px;
+        float: right;
+        clear: both;
+    }
+
+    #department .department-content #department-block05.department-block .description-block .img-content{
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+
+    #department .department-content .department-block .description-block .img-content .dt-image{
+        width: 80px;
+    }
+
+    #department .department-content .department-block .text-info .title .dt-image{
+        height: 40px !important;
+        width: auto !important;
+        display: block;
+        margin: auto;
+    }
+
+    #department .department-content .department-block .text-info .title{
+        margin-bottom: 20px !important;
+        order: 1;
+    }
+
+    #department .department-content .department-block .text-info .text{
+        padding: 0px 20px;
+    }
+
+    #department .department-content .list-department-block .department-block .inner-content{
+        padding-bottom: 30px !important;
+    }
+
+    #department .department-content .list-department-block .department-block{
+        padding-top: 25px;
+    }
+
+    #department .department-content .department-block .text-info .img-avatar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        order: 3;
+        padding: 0px 20px;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    #department .department-content .department-block .text-info .text{
+        width: 100%;
+        order: 2;
+    }
+
+    #department .department-content .department-block .text-info .img-avatar .image_wrap {
+        width: 85px;
+        margin: 0px;
+    }
+
+    #department .department-content .department-block .text-info .subText-info {
+        font-size: 13px;
+        line-height: 20px;
+        width: calc(100% - 85px);
+        padding-left: 20px;
+    }
+
+    #department .department-content .department-block .text-info .subText-info .t1 {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+
+    #department .department-content .department-block .text-info .img-avatar .image_wrap img{
+        display: block;
+    }
+
+    #department .department-content #department-block04.department-block .description-block .img-content {
+        padding-top: 50px;
+    }
+
+    #department .department-content #department-block04.department-block .text-info .title .dt-image,
+    #department .department-content #department-block05.department-block .text-info .title .dt-image{
+        height: 14px !important;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

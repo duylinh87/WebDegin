@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="064dc0ec-04b9-4cda-8e68-c25bf730a22d" name="fascination" url="http://esavvy.net">
+        <fileTransfer host="esavvy.net" port="22" privateKey="C:\xampp7.1\htdocs\dtrungeco1201" rootFolder="/home/grocrew/domains/esavvy.net/public_html/" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

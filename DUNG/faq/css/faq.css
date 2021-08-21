@@ -1,0 +1,332 @@
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#faq img {
+    max-width: 100%;
+}
+
+#faq .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#faq .animatedFadeInUp {
+    opacity: 0;
+}
+
+#faq .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#faq {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#faq .pc_br{
+    display: none;
+}
+
+
+/*main-banner*/
+/*===============================================*/
+
+#faq .main-banner {
+    position: relative;
+}
+
+#faq .main-banner .pic-inner .main-img {
+    width: 100% !important;
+    display: block;
+}
+
+#faq .main-banner .heading{
+    position: absolute;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    left: 50%;
+    text-align: center;
+}
+
+#faq .main-banner .heading .t1{
+    display: inline-block;
+}
+
+#faq .main-banner .heading .t2{
+    font-size: 15px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    text-shadow: #747474 5px 0 10px;
+}
+
+
+/*faq-content*/
+/*====================================*/
+#faq .faq-content{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#faq .faq-content .inner{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#faq .faq-content .ttl-block{
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2b2b2b;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#faq .faq-content .item-faq{
+    margin-bottom: 20px;
+}
+
+#faq .faq-content .item-faq .ttl{
+    background: #ff6600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 11.5px 30px 11.5px 8px;
+    position: relative;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#faq .faq-content .item-faq .ttl:hover{
+    opacity: .6;
+}
+
+#faq .faq-content .item-faq .ttl .img-number{
+    width: 45px;
+}
+
+#faq .faq-content .item-faq .ttl .sub-ttl{
+    width: calc(100% - 45px);
+}
+
+#faq .faq-content .item-faq .ttl .close {
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    transition: .4s;
+    opacity: 0;
+}
+
+#faq .faq-content .item-faq .ttl .close.is-close{
+    opacity: 1;
+}
+
+#faq .faq-content .item-faq .ttl .open{
+    position: absolute;
+    top: 11.5px;
+    right: 8px;
+    transition: .4s;
+}
+
+#faq .faq-content .item-faq .ttl .open.is-open{
+    opacity: 0;
+}
+
+#faq .faq-content .item-faq .sub-content{
+    border: 2px solid #ff6600;
+    border-top: 0px;
+    padding: 8px 3px 10px 8px;
+    display: none;
+    overflow: hidden;
+}
+
+#faq .faq-content .item-faq .sub-content .pic-inner{
+    width: 45px;
+    float: left;
+}
+
+#faq .faq-content .item-faq .sub-content .text-content{
+    width: calc(100% - 45px);
+    float: left;
+}
+
+#faq .faq-content .item-faq .text-content .text{
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    font-weight: 500;
+}
+
+
+@media (min-width: 768px) {
+
+    #faq .sp_br{
+        display: none;
+    }
+
+    #faq .pc_br{
+        display: block;
+    }
+
+    #faq .main-banner .heading {
+        top: 60%;
+    }
+
+    #faq .main-banner .heading .t1 .switch-img{
+        max-width: 70%;
+    }
+
+    #faq .main-banner .heading .t2{
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 700;
+        text-shadow: unset;
+        margin-top: 0px;
+    }
+
+    #faq .faq-content {
+        padding-top: 65px;
+        padding-bottom: 50px;
+    }
+
+    #faq .faq-content .inner {
+        max-width: 1020px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    #faq .faq-content .ttl-block {
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 10px;
+        margin-bottom: 76px;
+    }
+
+    #faq .faq-content .item-faq .ttl {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 25.5px 90px 17.5px 29px;
+    }
+
+    #faq .faq-content .item-faq .ttl .img-number {
+        width: 80px;
+    }
+
+    #faq .faq-content .item-faq .ttl .sub-ttl {
+        width: calc(100% - 80px);
+    }
+
+    #faq .faq-content .item-faq .sub-content{
+        padding: 22px 40px 16px 27px;
+    }
+
+    #faq .faq-content .item-faq .sub-content .pic-inner {
+        width: 80px;
+        float: left;
+    }
+
+    #faq .faq-content .item-faq .sub-content .text-content {
+        width: calc(100% - 80px);
+        float: left;
+    }
+
+    #faq .faq-content .item-faq .text-content .text {
+        font-size: 16px;
+        line-height: 28px;
+        position: relative;
+        top: -6px;
+    }
+
+    #faq .faq-content .item-faq {
+        margin-bottom: 54px;
+    }
+
+    #faq .faq-content .item-faq .ttl .close  {
+        top: 40px;
+        right: 50px;
+    }
+
+    #faq .faq-content .item-faq .ttl .open{
+        top: 21.5px;
+        right: 50px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+
+    #faq .faq-content .item-faq .text-content .text {
+        font-size: 20px;
+        line-height: 32px;
+        position: relative;
+        top: -6px;
+    }
+
+    #faq .faq-content .item-faq .ttl {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #faq .main-banner .heading .t1 .switch-img{
+        max-width: 100%;
+    }
+
+    #faq .main-banner .heading .t2 {
+        font-size: 26px;
+        line-height: 26px;
+        font-weight: 700;
+        text-shadow: unset;
+        margin-top: 6px;
+    }
+
+    #faq .main-banner .heading {
+        top: 57%;
+    }
+
+    #faq .faq-content .ttl-block {
+        font-size: 18px;
+        line-height: 30px;
+
+    }
+
+}

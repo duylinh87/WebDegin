@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Device</title>
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="./css/style.css" />
+    <link rel="stylesheet" media="all" href="css/message.css"/>
+
+<!--script-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="js/message.js"></script>
+
+</head>
+
+<body>
+
+<main id="main_wrap"><!--Main-->
+
+    <div id="message" class="messagePage"><!-- message page -->
+
+        <div class="type-page">
+            <div class="message-banner">
+                <figure class="image_wrap">
+                    <img class="message_image retina-img switch-img" data-img="./images/message_mainimg_banner_sp.jpg" src="./images/message_mainimg_banner_pc.jpg" alt="代表メッセージ">
+                    <h1 class="title-page">
+                        <img class="message_image retina-img switch-img" data-img="./images/message_bg_title_page_sp.png"  src="./images/message_bg_title_page_pc.png" alt="">
+                    </h1>
+                </figure>
+                <dl class="content-title">
+                    <dt class="message_text">「感動」と「リスク」を共有する、ビルメンテナンス会社で、<br/>
+                        あなたの可能性を切り拓いてみませんか？</dt>
+                    <dd class="director">代表取締役<span class="name-director">伏木　進</span></dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="slogan-block animatedFadeInUp animated"><!-- slogan block -->
+            <div class="content-text">
+                <p class="title-block">スローガン</p>
+                <dl class="list-content item01">
+                    <dt class="sub-title">～「ありがとう」のこころがわたしたちの原点～</dt>
+                    <dd class="sub_text">１．わたしたちは常に多くの人にささえられていることに感謝し、誠実な気持ちを持ち続けます。</dd>
+                </dl>
+                <dl class="list-content item02">
+                    <dt class="sub-title">～プロ意識をもってお客様の期待に応える～</dt>
+                    <dd class="sub_text">２．わたしたちは「プロ」としての自覚と誇りをもち、お客様の期待に応えられるよう、知識・技術の研鑽に努めます。</dd>
+                </dl>
+                <dl class="list-content item03">
+                    <dt class="sub-title">～何事も自分のこととして捉え、逃げずに正面から向き合う～</dt>
+                    <dd class="sub_text">３．わたしたちは如何なる課題に対しても「チャレンジ精神」と「クリエイティブな発想」で自らの責任を果たします。</dd>
+                </dl>
+            </div>
+            <div class="content-image">
+                <figure class="image_wrap">
+                    <img class="message_image retina-img switch-img" data-img="./images/message_img_person01_sp.jpg" src="./images/message_img_person01_pc.jpg" alt="スローガン">
+                </figure>
+            </div>
+        </div> <!-- end slogan block -->
+
+        <div class="message-block animatedFadeInUp animated">
+            <figure class="image_wrap">
+                <img class="message_image retina-img switch-img" data-img="./images/message_img_person02_sp.jpg" src="./images/message_img_person02_pc.jpg" alt="レクチャーの風景">
+            </figure>
+            <div class="description">
+                <dl>
+                    <dt class="title">人は必ず輝くことのできる「ダイヤモンド」をもっている</dt>
+                    <dd class="message_text">あなたの可能性を見出し、「華」を咲かせるのが、社長である私の一番の仕事です。<br class="br_desktop"/>私どもの事業パートナーであるビルや施設所有者（運営者）に対し、必ずやお役に立てる企業・人になる。<br class="br_desktop"/>そのための自己研鑽、教育、キャリア形成を最大限、サポートしていきます。</dd>
+                    <dd class="message_text">あなたの成長が明日のキタデンを、明日のビルメンテナンス業界を、明日の「まち」や「ヒト」をつくるのです。<br/>だから、是非、自分自身の無限の可能性を信じて挑戦し続けてください。　</dd>
+                    <dd class="message_text">ビルメンテナンスは発注者に対して受身であってはなりません。自ら主体者となって、施設の利用者やテナントさんの満足最大化のために一緒に汗をかく。省エネルギーや建物の長寿命化、管理コストの削減、テナント満足度の向上、ビル収益の最大化、新たな顧客サービスの創造に向けて一緒に悩み、一緒に創り上げる・・・。<br/>ここまでやるか！！キタデンは・・・その延長にはきっと感動があるはず・・・。<br/>そのためにはオーナー様とともに「リスク」を負う心意気がなければなりません。そんな専門家集団をつくること・・・<br/>これが私の目指しているゴールです。</dd>
+                    <dd class="message_text">道内随一の電気設備工事会社出身のビルメンテナンス会社。<br class="br_desktop"/>その強みを最大限に活かし、設備管理分野におけるリーダー的なポジションを強固なものとしていきたい。</dd>
+                    <dd class="message_text">あなたもキタデンで技術を磨き、一緒に成長していきませんか？<br/>チャレンジ精神旺盛なあなたのエントリーをお待ちしています。</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="job-details"><!-- job details -->
+            <div class="heading-top">
+                 <p class="message_text">わが社の仕事内容をご紹介します。<br/>「自分だったらここで働きたいな」と働く姿をイメージしてみてください。</p>
+            </div>
+            <div class="content-job-details">
+                <div class="list-boxJob-details list-item01 animatedFadeInUp animated">
+                    <figure class="image_wrap">
+                        <img class="message_image retina-img switch-img" data-img="./images/message_img_person03_sp.jpg" src="./images/message_img_person03_pc.jpg" alt="設備の作業員">
+                    </figure>
+                    <div class="infor-content">
+                        <dl>
+                            <dt class="device">設備</dt>
+                            <dd class="title">異業種から転職している人も活躍中！</dd>
+                            <dd class="message_text">現場⇒市役所／地下歩行／道庁／青少年科学館など<br/>
+                                ・勤務先が安定している⇒いきなり現場が変わることが少ない<br/>
+                                ・全体で8割を超えるほど、定着率がいい</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="list-boxJob-details list-item02 animatedFadeInUp animated">
+                    <figure class="image_wrap">
+                        <img class="message_image retina-img switch-img" data-img="./images/message_img_person04_sp.jpg" src="./images/message_img_person04_pc.jpg" alt="警備の男性">
+                    </figure>
+                    <div class="infor-content">
+                        <dl>
+                            <dt class="device">警備</dt>
+                            <dd class="title">60名活躍中！施設警備メイン</dd>
+                            <dd class="message_text">・現場によるが、管理室でカメラを見ながら何か異常があった際に出動するので、立ったまま警　備しなくて良い</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="list-boxJob-details list-item03 animatedFadeInUp animated">
+                    <figure class="image_wrap">
+                        <img class="message_image retina-img switch-img" data-img="./images/message_img_person05_sp.jpg" src="./images/message_img_person05_pc.jpg" alt="電気工事の男性">
+                    </figure>
+                    <div class="infor-content">
+                        <dl>
+                            <dt class="device">電気工事</dt>
+                            <dd class="title">安全をお届けするため、厳しいチェックを行います</dd>
+                            <dd class="message_text">・改修工事が多い<br/>
+                                ・稼げる<br/>
+                                ・安定感<br/>
+                                ・地元思考の人が多い<br/>
+                                ・作業に使うものは会社で用意！</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="list-boxJob-details list-item04 animatedFadeInUp animated">
+                    <figure class="image_wrap">
+                        <img class="message_image retina-img switch-img" data-img="./images/message_img_person06_sp.jpg" src="./images/message_img_person06_pc.jpg" alt="清掃の女性">
+                    </figure>
+                    <div class="infor-content">
+                        <dl>
+                            <dt class="device">清掃</dt>
+                            <dd class="title">株式会社キタデンと芙蓉株式会社で清掃業務の募集をしています</dd>
+                            <dd class="message_text">・事業所一覧に拠点概要あり<br/>
+                                ・グループで様々なエリアに対応しているため応募がしやすい（仕事が決まりやすい）<br/>
+                                ・幅広い年齢が活躍している<br/>
+                                ・清掃員だけでなく駐車場管理などもおこなっている</dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- job details -->
+
+    </div><!-- end message page -->
+
+</main><!--End main-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,1291 @@
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#top img {
+    max-width: 100%;
+}
+
+#top .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#top .animatedFadeInUp {
+    opacity: 0;
+}
+
+#top .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#top {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#top .pc_br{
+    display: none;
+}
+
+
+/*main-banner*/
+/*===============================================*/
+
+#top .main-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+#top .main-banner .heading .main-img {
+    display: block;
+    width: 100% !important;
+}
+
+
+
+/*top-support*/
+/*=============================================*/
+
+#top .top-support{
+    background-image: url("../images/top/top_bg01_block_sp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+#top .top-support .inner{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+
+}
+
+#top .top-support .heading-block{
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+    font-weight: 700;
+    border-left: 3px solid #47bf16;
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+#top .top-support .list-box-support{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: -11px;
+}
+
+#top .top-support .item-box{
+    width: calc(33.33% - 11px);
+    margin-right: 11px;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+
+#top .top-support .item-box .title{
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+#top .top-support .item-box .title.small{
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding: 2px;
+}
+
+#top .top-support .item-box:nth-child(1){
+    background: rgba(45,116,17,.86);
+}
+
+#top .top-support .item-box:nth-child(2){
+    background: rgba(77,175,39,.9);
+}
+
+#top .top-support .item-box:nth-child(3){
+    background: #2b9029;
+}
+
+#top .top-support .item-box:nth-child(4){
+    background: rgba(34,145,73,.9);
+}
+
+#top .top-support .item-box:nth-child(5){
+    background: rgba(35,144,112,.9);
+}
+
+#top .top-support .item-box:nth-child(6){
+    background: rgba(113,177,44,.9);
+}
+
+/*business-activities*/
+/*=========================================*/
+
+#top .business-activities{
+    background: #fbf4d6;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+#top .business-activities .inner{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#top .business-activities .heading-block{
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+    font-weight: 700;
+    border-left: 3px solid #086c08;
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+#top .business-activities .item-business-activities{
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+#top .business-activities .item-business-activities .ttl{
+    font-size: 20px;
+    line-height: 20px;
+    color: #4dac27;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+#top .business-activities .item-business-activities .text{
+    font-size: 13px;
+    line-height: 15px;
+    color: #333333;
+    font-weight: 400;
+}
+
+#top .business-activities .item-business-activities .pic-inner{
+    margin: 8px 0px;
+}
+
+#top .business-activities .item-business-activities .pic-inner .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+/*job-information*/
+/*========================================*/
+
+#top .job-information{
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+#top .job-information .inner{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#top .job-information .heading-block{
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+    font-weight: 700;
+    border-left: 3px solid #086c08;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+#top .job-information .item-job-information{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed #bdbdbd;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+#top .job-information .item-job-information .time{
+    width: 50px;
+    font-size: 9px;
+    line-height: 12px;
+    color: #666666;
+    font-weight: 400;
+    padding-top: 2px;
+}
+
+#top .job-information .item-job-information .info-text{
+    width: calc(100% - 50px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#top .job-information .item-job-information .info-text .ttl{
+    font-size: 10px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: 400;
+}
+
+#top .job-information .item-job-information .info-text .content-info{
+    width: calc(100% - 15px);
+    padding-right: 8px;
+}
+
+#top .job-information .item-job-information .info-text .icon-new{
+    width: 15px;
+    padding-top: 18px;
+}
+
+#top .job-information .item-job-information .info-text .text{
+    font-size: 13px;
+    line-height: 18px;
+    color: #4dac27;
+    font-weight: 400;
+    letter-spacing: -1.75px;
+}
+
+
+/*find-job*/
+/*============================================*/
+
+#top .find-job{
+    background-image: url("../images/top/top_bg02_block_pc.jpg");
+    background-repeat: repeat;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#top .find-job .inner{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#top .find-job .heading-block{
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+    font-weight: 700;
+    border-left: 3px solid #086c08;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+#top .find-job .item-find-job{
+    background: #fff;
+    border: 1px solid #4dac27;
+    margin-bottom: 10px;
+}
+
+#top .find-job .item-find-job .ttl-item{
+    font-size: 13px;
+    line-height: 13px;
+    color: #fff;
+    background: #4dac27;
+    font-weight: 600;
+    padding: 3px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+#top .find-job .item-find-job .ttl-item .switch-img{
+    margin-right: 5px;
+}
+
+#top .find-job .item-find-job .item-action{
+    font-size: 13px;
+    line-height: 26px;
+    background: #bf8264;
+    display: block;
+    text-align: center;
+    max-width: 165px;
+    margin: auto;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#top .find-job .item-find-job .item-action:hover{
+    opacity: .6;
+}
+
+#top .find-job .item-find-job .item-search-office{
+    margin-bottom: 8px;
+}
+
+#top .find-job .item-find-job .title{
+    display: none;
+}
+
+#top .find-job .item-find-job .traffic-management-office .item-action{
+    background: #669966;
+}
+
+#top .find-job .item-find-job.search-office{
+    padding-bottom: 17px;
+}
+
+#top .find-job .form-search-area{
+    padding: 10px 16px 8px;
+}
+
+#top .find-job .item-find-job.search-area .ttl-item{
+    margin-bottom: 0px;
+}
+
+#top .find-job .form-search-area .select-search-area{
+    border: 1px solid #adadad;
+    height: 18px;
+    width: 100%;
+    font-size: 12px;
+    color: #414141;
+    padding-left: 5px;
+    display: block;
+}
+
+#top .find-job .form-search-area .select-search-area:focus{
+    outline: none;
+}
+
+#top .find-job .form-search-area .field-select{
+    position: relative;
+    margin-bottom: 8px;
+}
+
+#top .find-job .form-search-area .field-select:before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background: #999999;
+    pointer-events: none;
+}
+
+#top .find-job .form-search-area .field-select:after{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-left:3px solid transparent;
+    border-right:3px solid transparent;
+    border-top:4px solid #fff;
+    top: 7px;
+    right: 4px;
+    pointer-events: none;
+}
+
+
+
+#top .find-job .form-search-area .form-input{
+    border: 1px solid #adadad;
+    height: 18px;
+    width: 100%;
+    font-size: 13px;
+    color: #414141;
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+#top .find-job .form-search-area .form-input:focus,
+#top .find-job .form-search-area .form-submit:focus{
+    outline: none;
+}
+
+#top .find-job .form-search-area .form-submit{
+    border: 0px;
+    background: #ff3000;
+    color: #fff;
+    font-size: 12px;
+    width: 75px;
+    height: 18px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#top .find-job .form-search-area .form-submit:hover{
+    opacity: .6;
+}
+
+#top .find-job .item-find-job.search-employment .text-link{
+    font-size: 13px;
+    line-height: 18px;
+    color: #333333;
+    font-weight: 400;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#top .find-job .item-find-job.search-employment .text-link:hover{
+    opacity: .6;
+}
+
+#top .find-job .item-find-job.search-employment .content{
+    padding: 10px 16px;
+}
+
+#top .find-job .item-find-job.search-employment .ttl-item{
+    margin-bottom: 0px;
+}
+
+/*recommended-job-information*/
+/*==================================================*/
+#top .recommended-job-information{
+    background: #eef3eb;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#top .recommended-job-information .inner{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#top .recommended-job-information .heading-block {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+    font-weight: 700;
+    border-left: 3px solid #086c08;
+    padding-left: 5px;
+    margin-bottom: 25px;
+}
+
+#top .recommended-job-information .item-recommended-job .sub-ttlImg{
+    font-size: 10px;
+    line-height: 12px;
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#top .recommended-job-information .item-recommended-job{
+    margin-right: 15px;
+}
+
+#top .recommended-job-information .item-recommended-job .title{
+    font-size: 13px;
+    line-height: 16px;
+    color: #3f3f3f;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+#top .recommended-job-information .item-recommended-job .text{
+    font-size: 12px;
+    line-height: 12px;
+    color: #666666;
+    font-weight: 400;
+    letter-spacing: -1.75px;
+    margin-bottom: 12px;
+}
+
+#top .recommended-job-information .item-recommended-job .note{
+    font-size: 13px;
+    line-height: 13px;
+    color: #e81d43;
+    font-weight: 700;
+}
+
+#top .recommended-job-information .item-recommended-job .pic-inner{
+    margin-bottom: 18px;
+}
+
+#top .recommended-job-information .item-recommended-job .pic-inner .switch-img{
+    display: block;
+    width: 100% !important;
+}
+
+#top .recommended-job-information .bx-wrapper{
+    margin: auto;
+    box-shadow: unset;
+    border: 0px;
+    background: transparent;
+}
+
+#top .recommended-job-information .bx-viewport{
+    max-width: 80%;
+    margin: auto;
+}
+
+#top .recommended-job-information .bx-controls-direction a{
+    background: unset;
+}
+
+#top .recommended-job-information .bx-controls-direction .bx-prev{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    top: 42%;
+    left: 0px;
+}
+
+#top .recommended-job-information .bx-controls-direction .bx-next{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0px;
+    top: 42%;
+    right: 0px;
+}
+
+
+
+/*organizational-structure*/
+/*==========================================*/
+#top .organizational-structure{
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#top .organizational-structure .inner{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#top .organizational-structure .heading-block {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+    font-weight: 700;
+    border-left: 3px solid #086c08;
+    padding-left: 5px;
+    margin-bottom: 25px;
+}
+
+#top .organizational-structure .item-organizational{
+    margin-bottom: 10px;
+}
+
+#top .organizational-structure .item-organizational .title{
+    font-size: 15px;
+    line-height: 15px;
+    color: #086c08;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+#top .organizational-structure .item-organizational .link-search{
+    font-size: 13px;
+    line-height: 18px;
+    color: #333333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .4s;
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+
+#top .organizational-structure .item-organizational .link-search:last-child{
+    margin-right: 0px;
+}
+
+#top .organizational-structure .item-organizational .link-search:last-child:after{
+    display: none;
+}
+
+#top .organizational-structure .item-organizational .link-search:after {
+    content: "/";
+    position: absolute;
+    right: -11px;
+    top: 0px;
+}
+
+#top .organizational-structure .item-organizational .link-search:hover{
+    opacity: .6;
+}
+
+#top .organizational-structure .item-organizational .sub-ttl{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 23px;
+    color: #333333;
+    padding: 0px 5px;
+    background: #bfe2b0;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+#top .organizational-structure .item-organizational .sub-itemOrganizational{
+    margin-bottom: 5px;
+}
+
+#top .organizational-structure .item-organizational.control-office .content-link{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#top .organizational-structure .item-organizational.control-office .link-search{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 23px;
+    color: #333333;
+    padding: 0px 5px;
+    background: #bfe2b0;
+    margin-top: 6px;
+    margin-right: 5px;
+    transition: .4s;
+}
+
+#top .organizational-structure .item-organizational.control-office .link-search:hover{
+    opacity: .6;
+}
+
+
+
+#top .organizational-structure .item-organizational.control-office .link-search:after{
+    display: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    /*top-support*/
+    /*==========================================*/
+    #top .top-support {
+        background-image: url("../images/top/top_bg01_block_pc.jpg");
+        padding-top: 72px;
+        padding-bottom: 28px;
+    }
+
+    #top .top-support .inner {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    #top .top-support .heading-block {
+        font-size: 20px;
+        line-height: 26px;
+        border-left: 4px solid #47bf16;
+        padding-left: 10px;
+        margin-bottom: 31px;
+    }
+
+    #top .top-support .list-box-support {
+        margin-right: -28px;
+    }
+
+    #top .top-support .item-box {
+        width: calc(33.33% - 28px);
+        margin-right: 28px;
+        padding-top: 28px;
+        padding-bottom: 19px;
+        margin-bottom: 30px;
+    }
+
+    #top .top-support .item-box .title ,
+    #top .top-support .item-box .title.small{
+        font-size: 20px;
+        line-height: 34px;
+        margin-top: 5px;
+    }
+
+    /*business-activities*/
+    /*=======================================*/
+    #top .business-activities {
+        padding-top: 70px;
+        padding-bottom: 57px;
+    }
+
+    #top .business-activities .inner {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    #top .business-activities .heading-block {
+        font-size: 24px;
+        line-height: 30px;
+        border-left: 4px solid #086c08;
+        padding-left: 10px;
+        margin-bottom: 22px;
+    }
+
+    #top .business-activities .list-business-activities{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #top .business-activities .item-business-activities{
+        width: 48%;
+        margin-right: 4%;
+        padding: 25px 29px 26px 29px;
+        margin-bottom: 0px;
+    }
+
+    #top .business-activities .item-business-activities:nth-child(2n){
+        margin-right: 0px;
+    }
+
+    #top .business-activities .item-business-activities .ttl {
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    #top .business-activities .item-business-activities .text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    #top .business-activities .item-business-activities:nth-child(1) .pic-inner{
+        margin: 38px 0px 25px;
+    }
+
+    #top .business-activities .item-business-activities:nth-child(2) .pic-inner{
+        margin: 14px 0px 25px;
+    }
+
+    /*job-information*/
+    /*========================================*/
+    #top .job-information {
+        padding-top: 53px;
+        padding-bottom: 65px;
+    }
+
+    #top .job-information .inner {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    #top .job-information .heading-block {
+        font-size: 24px;
+        line-height: 30px;
+        border-left: 4px solid #086c08;
+        padding-left: 10px;
+        margin-bottom: 32px;
+    }
+
+    #top .job-information .item-job-information .time {
+        width: 70px;
+        font-size: 12px;
+        line-height: 12px;
+        padding-top: 2px;
+        padding-left: 3px;
+    }
+
+    #top .job-information .item-job-information .info-text {
+        width: calc(100% - 70px);
+    }
+
+    #top .job-information .item-job-information .info-text .icon-new{
+        display: none;
+    }
+
+    #top .job-information .item-job-information {
+        border-bottom: 2px dashed #bdbdbd;
+        padding-top: 0px;
+        padding-bottom: 8.5px;
+        margin-bottom: 16.5px;
+    }
+
+    #top .job-information .item-job-information .info-text .ttl {
+        font-size: 12px;
+        line-height: 18px;
+        display: inline-block;
+        letter-spacing: 1px;
+        width: 60px;
+    }
+
+    #top .job-information .item-job-information .info-text .text {
+        font-size: 14px;
+        line-height: 18px;
+        color: #4dac27;
+        font-weight: 400;
+        letter-spacing: -2.1px;
+        display: inline-block;
+        width: calc(100% - 60px);
+    }
+
+    #top .job-information .item-job-information .info-text .content-info{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /*find-job*/
+    /*=======================================*/
+    #top .find-job {
+        padding-top: 69px;
+        padding-bottom: 72px;
+    }
+
+    #top .find-job .inner {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    #top .find-job .heading-block {
+        font-size: 24px;
+        line-height: 30px;
+        border-left: 4px solid #086c08;
+        padding-left: 10px;
+        margin-bottom: 26px;
+    }
+
+    #top .find-job .item-find-job .ttl-item {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 6px 17px 7px 17px;
+        width: 100%;
+    }
+
+    #top .find-job .item-find-job .ttl-item .switch-img {
+        margin-right: 14px;
+    }
+
+    #top .find-job .item-find-job .title{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        line-height: 12px;
+        color: #333333;
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 8px;
+        margin-bottom: 17px;
+    }
+
+    #top .find-job .item-find-job .title:after{
+        content: "";
+        position: absolute;
+        width: 153px;
+        height: 2px;
+        background: #bf8264;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0px;
+    }
+
+    #top .find-job .item-find-job .traffic-management-office .title:after{
+        background: #669966;
+    }
+
+    #top .find-job .list-search-office{
+        width: 50%;
+        padding: 0px 25px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #top .find-job .item-find-job.search-office .content-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 25px;
+    }
+
+    #top .find-job .item-find-job {
+        background: #fff;
+        border: 2px solid #4dac27;
+        margin-bottom: 27px;
+    }
+
+    #top .find-job .item-find-job.search-office{
+        padding-bottom: 21px;
+    }
+
+    #top .find-job .item-find-job .item-search-office{
+        width: 47.354%;
+        margin-right: 5.292%;
+        margin-bottom: 17px;
+    }
+
+    #top .find-job .item-find-job .item-search-office:nth-child(3),
+    #top .find-job .item-find-job .item-search-office:nth-child(5),
+    #top .find-job .item-find-job .item-search-office:nth-child(7),
+    #top .find-job .item-find-job .item-search-office:nth-child(9){
+        margin-right: 0px;
+    }
+
+    #top .find-job .item-find-job .item-action {
+        font-size: 12px;
+        line-height: 23px;
+        height: 23px;
+    }
+
+    #top .find-job .form-search-area {
+        padding: 25px 22px 15px;
+    }
+
+    #top .find-job .form-field{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #top .find-job .form-search-area .field-select{
+        width: 32.4%;
+        margin-right: 2.2%;
+    }
+
+    #top .find-job .form-search-area .select-search-area {
+        border: 1px solid #adadad;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    #top .find-job .form-search-area .field-select:before {
+        width: 24px;
+    }
+
+    #top .find-job .form-search-area .field-select:after {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 6px solid #fff;
+        top: 12px;
+        right: 8px;
+    }
+
+    #top .find-job .form-search-area .form-input {
+        height: 30px;
+        width: 42.4%;
+        margin-right: 10px;
+    }
+
+    #top .find-job .form-search-area .form-submit {
+        font-size: 15px;
+        width: 60px;
+        height: 30px;
+    }
+
+    #top .find-job .item-find-job.search-employment .text-link {
+        font-size: 14px;
+        line-height: 24px;
+        margin-right: 12px;
+    }
+
+    #top .find-job .item-find-job.search-employment .content {
+        padding: 28px 30px 25px;
+    }
+
+
+    /*recommended-job-information*/
+    /*================================================*/
+    #top .recommended-job-information {
+        padding-top: 58px;
+        padding-bottom: 70px;
+    }
+
+    #top .recommended-job-information .inner {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    #top .recommended-job-information .heading-block {
+        font-size: 24px;
+        line-height: 30px;
+        border-left: 4px solid #086c08;
+        padding-left: 10px;
+        margin-bottom: 35px;
+    }
+
+    #top .recommended-job-information .slider-recommended-job{
+        transform: translate3d(0px, 0px, 0px) !important;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+
+    #top .recommended-job-information .bx-viewport{
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    #top .recommended-job-information .bx-controls{
+        display: none !important;
+    }
+
+    #top .recommended-job-information .item-recommended-job.bx-clone{
+        display: none;
+    }
+
+    #top .recommended-job-information .item-recommended-job{
+        width: 31.18% !important;
+        margin-right: 3.23%;
+    }
+
+    #top .recommended-job-information .item-recommended-job:nth-child(4){
+        margin-right: 0px !important;
+    }
+
+    #top .recommended-job-information .item-recommended-job .sub-ttlImg {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 11px;
+    }
+
+    #top .recommended-job-information .item-recommended-job .title {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.05px;
+    }
+
+    #top .recommended-job-information .item-recommended-job .text {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -1.5px;
+        margin-bottom: 12px;
+    }
+
+
+    /*organizational-structure*/
+    /*===============================================*/
+    #top .organizational-structure {
+        padding-top: 77px;
+        padding-bottom: 60px;
+    }
+
+    #top .organizational-structure .inner {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    #top .organizational-structure .heading-block {
+        font-size: 24px;
+        line-height: 30px;
+        border-left: 4px solid #086c08;
+        padding-left: 10px;
+        margin-bottom: 17px;
+    }
+
+    #top .organizational-structure .item-organizational .title {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #top .organizational-structure .item-organizational .link-search {
+        font-size: 13px;
+        line-height: 22px;
+        margin-right: 22.5px;
+        letter-spacing: -0.25px;
+        position: relative;
+    }
+
+    #top .organizational-structure .item-organizational .link-search:last-child{
+        margin-right: 0px;
+    }
+
+    #top .organizational-structure .item-organizational .link-search:after {
+        content: "/";
+        position: absolute;
+        right: -15px;
+        top: 0px;
+    }
+
+    #top .organizational-structure .item-organizational .sub-ttl {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 26px;
+        padding: 0px 12px 0px 5px;
+        margin-bottom: 5px;
+    }
+
+    #top .organizational-structure .item-organizational.control-office .link-search {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 26px;
+        padding: 0px 11px 0px 7px;
+        background: #bfe2b0;
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    #top .organizational-structure .item-organizational {
+        margin-bottom: 30px;
+    }
+
+    #top .organizational-structure .item-organizational .sub-itemOrganizational {
+        margin-bottom: 11px;
+    }
+
+    #top .organizational-structure .item-organizational .sub-itemOrganizational:last-child{
+        letter-spacing: -0.5px;
+    }
+
+    #top .organizational-structure .item-organizational .sub-itemOrganizational:nth-child(6){
+        padding-right: 10%;
+    }
+
+    #top .organizational-structure .item-organizational .sub-itemOrganizational:nth-child(8){
+        padding-right: 6%;
+    }
+
+    #top .organizational-structure .item-organizational.tariff-division{
+        margin-bottom: 81px;
+    }
+
+    #top .organizational-structure .item-organizational.control-office .title{
+        margin-bottom: 12px;
+    }
+
+    #top .heading-block {
+        font-size: 20px !important;
+        line-height: 26px !important;
+    }
+
+    #top .recommended-job-information .item-recommended-job .note {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+
+}
+
+
+
+@media (min-width: 960px) {
+
+    #top .heading-block {
+        font-size: 24px !important;
+        line-height: 30px !important;
+        border-left: 4px solid #47bf16;
+        padding-left: 10px;
+        margin-bottom: 31px;
+    }
+
+    #top .top-support .item-box .title, #top .top-support .item-box .title.small {
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 5px;
+    }
+
+    #top .business-activities .item-business-activities .ttl {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    #top .business-activities .item-business-activities .text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #top .find-job .list-search-office {
+        padding: 0px 50px;
+    }
+
+    #top .find-job .item-find-job.search-office .content-list {
+        padding: 0px 53px;
+    }
+
+    #top .recommended-job-information .item-recommended-job .text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    #top .recommended-job-information .item-recommended-job .title {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    #top .recommended-job-information .item-recommended-job .note {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    #top .organizational-structure .item-organizational .title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #top .organizational-structure .item-organizational .link-search {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.25px;
+    }
+
+    #top .organizational-structure .item-organizational .sub-ttl {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0px 12px 0px 5px;
+        margin-bottom: 5px;
+    }
+
+    #top .organizational-structure .item-organizational.control-office .link-search {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #top .organizational-structure .item-organizational .link-search:after {
+        content: "/";
+        position: absolute;
+        right: -15px;
+        top: -1px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

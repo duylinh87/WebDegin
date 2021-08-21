@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <meta name="description"  content="" />
+    <meta name="keywords"  content="" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="./css/style.css" />
+    <link rel="stylesheet" media="all" href="./css/animations.css" />
+    <link rel="stylesheet" media="all" href="./css/top.css"/>
+
+<!--script-->
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/base16-dark.css">
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/top.js"></script>
+
+</head>
+
+<body>
+
+<header id="header" class="main-header">
+
+</header>
+
+<main id="main_wrap"><!--Main-->
+
+    <div id="top"><!-- top page -->
+        <div class="type-page"><!-- type page -->
+
+            <div class="main-banner">
+                <div class="heading-banner">
+                    <h1 class="heading-top animatedParent">
+                        <span class="text-heading animated bounceInLeft">JavaScript</span>
+                        <span class="text-heading animated bounceInRight">Animation</span>
+                        <span class="text-heading block animated bounceInUp">Libraries</span>
+                    </h1>
+                </div>
+                <div class="bg-banner">
+                    <video id="video-banner" loop="true" autoplay="true">
+                        <source src="./videos/banner01.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="mark"></div>
+                <div class="scroll-down"><a class="action-scroll" href="#tabs-animation"></a></div>
+            </div>
+
+            <div id="tabs-animation">
+                <ul class="list-animation animatedParent" >
+                    <li class="animation-item animated bounceInLeft" data-id="2">
+                        <a href="#block-main-visual" class="item-action">Main Visual</a>
+                    </li>
+                    <li class="animation-item animated bounceInLeft" data-id="1">
+                        <a href="" class="item-action">Button</a>
+                    </li>
+                    <li class="animation-item animated bounceInRight" data-id="1">
+                        <a href="" class="item-action">Page Scroll</a>
+                    </li>
+                    <li class="animation-item animated bounceInRight" data-id="2">
+                        <a href="" class="item-action">Mouse hover</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="block-main-visual">
+                <div class="list-animation item-01 animatedParent">
+                    <h2 class="heading-top animated bounceInLeft">neon text</h2>
+                    <div class="content-output item-content">
+                        <iframe frameborder="0" id="iframeResult-01" class="iframeResult" name="iframeResult" allowfullscreen="true"></iframe>
+                    </div>
+                    <div class="content-code item-content">
+                        <ul class="list-title-box">
+                            <li class="item-title-box">
+                                <a class="item-action active" href="#box-html">HTML</a>
+                            </li>
+<!--                            <li class="item-title-box">-->
+<!--                                <a class="item-action" href="#box-style">CSS</a>-->
+<!--                            </li>-->
+<!--                            <li class="item-title-box">-->
+<!--                                <a class="item-action" href="#box-js">JS</a>-->
+<!--                            </li>-->
+                            <li class="item-title-box">
+                                <button class="submit">Run</button>
+                            </li>
+                        </ul>
+                        <div id="box-html-01" class="box-editor"></div>
+<!--                        <div id="box-style" class="box-editor"></div>-->
+<!--                        <div id="box-js"></div>-->
+                    </div>
+                </div>
+
+                <div class="list-animation item-02 animatedParent">
+                    <h2 class="heading-top animated bounceInLeft">jump text</h2>
+                    <div class="content-output item-content">
+                        <iframe frameborder="0" id="iframeResult-02" class="iframeResult" name="iframeResult" allowfullscreen="true"></iframe>
+                    </div>
+                    <div class="content-code item-content">
+                        <ul class="list-title-box">
+                            <li class="item-title-box">
+                                <a class="item-action active" href="#box-html">HTML</a>
+                            </li>
+                            <li class="item-title-box">
+                                <button class="submit">Run</button>
+                            </li>
+                        </ul>
+                        <div id="box-html-02" class="box-editor"></div>
+                    </div>
+                </div>
+
+                <div class="list-animation item-03 animatedParent">
+                    <h2 class="heading-top animated bounceInLeft">Color svg</h2>
+                    <div class="content-output item-content">
+                        <iframe frameborder="0" id="iframeResult-03" class="iframeResult" name="iframeResult" allowfullscreen="true"></iframe>
+                    </div>
+                    <div class="content-code item-content">
+                        <ul class="list-title-box">
+                            <li class="item-title-box">
+                                <a class="item-action active" href="#box-html">HTML</a>
+                            </li>
+                            <li class="item-title-box">
+                                <button class="submit">Run</button>
+                            </li>
+                        </ul>
+                        <div id="box-html-03" class="box-editor"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!-- end type page -->
+    </div><!-- end top page -->
+
+</main><!--End main-->
+
+<footer id="footer" class="main-footer">
+    <div class="container-footer">
+        <div class="copyright">
+            <p class="text-copyright">Developed by Sougo Career Vietnam CRC</p>
+        </div>
+    </div>
+</footer>
+
+<script src='./js/css3-animate-it.js'></script>
+
+</body>
+</html>

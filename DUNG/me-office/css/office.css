@@ -1,0 +1,921 @@
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#office .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#office .animatedFadeInUp {
+    opacity: 0;
+}
+
+#office .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#office{
+    position: relative;
+    background: #fdfdfd;
+    overflow: hidden;
+    padding-bottom: 55px;
+}
+
+#office:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 43.45%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background: #f0f9ff;
+    z-index: 1;
+}
+
+#office .type-page{
+    position: relative;
+    z-index: 9;
+}
+
+/*main banner*/
+/*=============================================*/
+#office .main-banner{
+    position: relative;
+}
+
+#office .main-banner .image_wrap .office-img{
+    width: 100% !important;
+    height: 100%;
+    display: block;
+}
+
+#office .main-banner .heading{
+    text-align: center;
+    position: absolute;
+    top: 57.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#office .main-banner .heading .t1{
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+#office .main-banner .heading .t2{
+    font-size: 26px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#office .main-banner .icon-left{
+    position: absolute;
+    bottom: -66px;
+    left: 0px;
+    z-index: 9;
+}
+
+#office .main-banner .icon-right{
+    position: absolute;
+    bottom: -51px;
+    right: 0px;
+    z-index: 9;
+}
+
+
+/*tabs-list-office*/
+/*============================================*/
+#office .tabs-list-office{
+    margin-top: 100px;
+    margin-bottom: 7px;
+}
+
+#office .tabs-list-office .inner{
+    width: 100%;
+    max-width: 910px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#office .tabs-list-office .list-link-tabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#office .tabs-list-office .item-link-tab{
+    width: 22.036%;
+    margin-right: 3.952%;
+    border: 1px solid #9b9b9b;
+}
+
+#office .tabs-list-office .item-link-tab:last-child{
+    margin-right: 0px;
+}
+
+#office .tabs-list-office .item-link-tab .item-action{
+    font-size: 14px;
+    color: #000;
+    display: block;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 3px 0px 1px 17px;
+    position: relative;
+}
+
+#office .tabs-list-office .item-link-tab .icon-arrow{
+    font-size: 14px;
+    color: #0062a2;
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*office-block*/
+/*=========================================*/
+#office .office-block{
+    padding-top: 92px;
+}
+
+#office .office-block .heading{
+    font-size: 26px;
+    color: #3e9fe0;
+    font-weight: 700;
+    line-height: 42px;
+    width: 100%;
+    max-width: 1285px;
+    margin: 0px auto 11px;
+    padding: 0px 50px;
+}
+
+#office .office-block .gallery-block{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 67px;
+}
+
+#office .office-block .gallery-block .left-content{
+    width: 56.55%;
+}
+
+#office .office-block .gallery-block .right-content{
+    width: 43.45%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #cdebff;
+}
+
+#office .office-block .gallery-block .left-content .image_wrap .office-img{
+    display: block;
+    width: 100% !important;
+}
+
+#office .office-block .gallery-block .left-content .image_wrap{
+    position: relative;
+}
+
+#office .office-block .gallery-block .left-content .button-link{
+    position: absolute;
+    right: 41px;
+    bottom: 25px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#office .office-block .gallery-block .left-content .button-link:hover{
+    opacity: .6;
+}
+
+#office .office-block .gallery-block .right-content .text-info{
+    width: 46.5%;
+    padding-right: 20px;
+    padding-top: 48px;
+}
+
+#office .office-block .gallery-block .right-content .img-info{
+    width: 53.5%;
+}
+
+#office .office-block .gallery-block .right-content .img-info .office-img{
+    width: 100% !important;
+    display: block;
+}
+
+#office .office-block .gallery-block .right-content .text-info .info{
+    margin-bottom: 48px;
+}
+
+#office .office-block .gallery-block .right-content .text-info .info:last-child{
+    margin-bottom: 0px;
+}
+
+#office .office-block .gallery-block .right-content .text-info .info .title{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+    padding-left: 48px;
+    padding-bottom: 8px;
+    margin-bottom: 23px;
+}
+
+#office .office-block .gallery-block .right-content .text-info .info .title:after{
+    content: "";
+    position: absolute;
+    width: 71px;
+    height: 2px;
+    background: #3e9fe0;
+    bottom: 0px;
+    left: 0px;
+}
+
+#office .office-block .gallery-block .right-content .text-info .info .number-text{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    padding-left: 48px;
+    margin-bottom: 12px;
+}
+
+#office .office-block .gallery-block .right-content .text-info .info .text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 500;
+    padding-left: 48px;
+}
+
+#office .office-block .description-block .container-block{
+    max-width: 1040px;
+    margin: auto;
+    padding: 0px 4px 0px 26px;
+}
+
+#office .office-block .description-block .title{
+    font-size: 26px;
+    line-height: 32px;
+    color: #3e9fe0;
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-indent: -6px;
+}
+
+#office .office-block .description-block .title .sp_br{
+    display: none;
+}
+
+#office .office-block .description-block .text{
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+    font-weight: 400;
+}
+
+#office .office-block .map{
+    margin-top: 52px;
+}
+
+#office .office-block .map .sub-inner{
+    max-width: 900px;
+    margin-left: 44px;
+    border: 1px solid #c4c4c4;
+    padding: 15px;
+}
+
+#office .office-block .map .content-map{
+    /*display: none;*/
+    background: #cdcdcd;
+    position: relative;
+    padding-bottom: 246px;
+}
+
+#office .office-block .map .content-map p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: #000000;
+    font-weight: 500;
+}
+
+
+
+#office .office-block .map .list-maps{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+}
+
+#office .office-block .map .item-map{
+    margin-right: 40px;
+}
+
+#office .office-block .map .item-map:last-child{
+    margin-right: 0px;
+}
+
+#office .office-block .map .item-map .action-map{
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+#office .office-block .map .item-map .action-map.active{
+    color: #3e9fe0;
+}
+
+#office #office-block02.office-block .map{
+    margin-top: 95px;
+}
+
+#office #office-block03.office-block .map{
+    margin-top: 56px;
+}
+
+#office #office-block04.office-block .gallery-block .right-content .text-info{
+    padding-top: 24px;
+}
+
+#office #office-block04.office-block .gallery-block .right-content .text-info .info .title{
+    margin-bottom: 12px;
+}
+
+#office #office-block04.office-block .gallery-block .right-content .text-info .info .number-text{
+    margin-bottom: 1px;
+}
+
+#office #office-block04.office-block .gallery-block .right-content .text-info .info{
+    margin-bottom: 54px;
+}
+
+#office #office-block04.office-block .gallery-block .right-content .text-info .info:last-child{
+    margin-bottom: 0px;
+}
+
+#office .slider-gallery{
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top: 0px;
+}
+
+#office .slider-gallery.active{
+    display: block;
+}
+
+#office .slider-gallery .content-list-gallery{
+    width: 100%;
+    max-width: 1065px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#office .slider-gallery .bx-wrapper{
+    max-width: 800px !important;
+    border: 2px solid #fff;
+    box-shadow: unset;
+    margin: auto;
+    position: static;
+}
+
+#office .slider-gallery .content-list-gallery .item-gallery{
+    margin-right: 50px;
+}
+
+#office .slider-gallery .close{
+    position: absolute;
+    top: 28px;
+    right: 43px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#office .office-block .map .bx-wrapper{
+    margin-bottom: 0px;
+    border: 0px;
+    box-shadow: unset;
+}
+
+@media (min-width: 768px) {
+
+    #office .office-block .map .content-map{
+        display: none;
+    }
+
+    #office .office-block .map .content-map.active{
+        display: block;
+    }
+
+    #office .office-block .map .box-map{
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
+
+    #office .office-block .map .bx-pager{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1860px) {
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info .info {
+        margin-bottom: 30px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info{
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 1600px) {
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info {
+        padding-top: 15px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .title{
+        font-size: 18px;
+        padding-left: 35px;
+        margin-bottom: 15px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .number-text{
+        font-size: 16px;
+        padding-left: 35px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .text {
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 35px;
+    }
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info .info {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 1440px) {
+
+    #office .office-block .heading{
+        font-size: 22px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info{
+        padding-top: 20px;
+    }
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info .info .title{
+        padding-bottom: 3px;
+        margin-bottom: 8px;
+    }
+
+    #office .office-block .description-block .text {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    #office .office-block .description-block .title {
+        font-size: 22px;
+        line-height: 28px;
+        text-indent: -2px;
+    }
+
+    #office .office-block .map .item-map .action-map {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    #office .slider-gallery .close .icon-close{
+        width: 35px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .title {
+        font-size: 16px;
+        margin-bottom: 8px;
+        padding-bottom: 3px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .number-text{
+        font-size: 14px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info {
+        margin-bottom: 20px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .number-text{
+        margin-bottom: 8px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    #office .office-block .gallery-block .right-content .text-info .info .title{
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 6px !important;
+        padding-left: 25px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .number-text {
+        font-size: 12px;
+        padding-left: 25px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .text {
+        font-size: 10px;
+        line-height: 16px;
+        padding-left: 25px;
+    }
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info .info {
+        margin-bottom: 12px;
+    }
+
+    #office .office-block .description-block .title {
+        font-size: 18px;
+        line-height: 26px;
+        text-indent: -2px;
+    }
+
+    #office .office-block .description-block .text {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    #office .office-block .gallery-block .left-content .button-link .img-link{
+        max-width: 180px;
+    }
+
+    #office .office-block .heading {
+        font-size: 20px;
+    }
+
+    #office .office-block .map .item-map .action-map {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    #office .slider-gallery .content-list-gallery{
+        max-width: 90%;
+    }
+
+    #office .slider-gallery .bx-wrapper{
+        max-width: 75% !important;
+    }
+
+    #office .office-block .description-block .container-block{
+        padding: 0px 50px;
+    }
+
+    #office .office-block .map .sub-inner{
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+    #office .office-block .gallery-block .left-content{
+        width: 100%;
+    }
+
+    #office .office-block .gallery-block .right-content{
+        width: 100%;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info{
+        width: 53.4%;
+        padding-right: 10px;
+        padding-top: 50px;
+    }
+
+    #office .office-block .gallery-block .right-content .img-info {
+        width: 46.6%;
+    }
+
+    #office:after{
+        max-width: 46.6%;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .title {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 12px !important;
+        padding-left: 50px;
+        padding-bottom: 5px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .number-text {
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .text {
+        font-size: 13px;
+        line-height: 22px;
+        padding-left: 50px;
+    }
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info {
+        padding-top: 50px;
+    }
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info .info {
+        margin-bottom: 20px;
+    }
+
+    #office .main-banner .heading .t1{
+        margin-bottom: 12px;
+    }
+
+    #office .main-banner .heading .t1 .office-img{
+        height: 28px;
+    }
+
+    #office .main-banner .heading .t2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #office .tabs-list-office .inner{
+        padding: 0px 25px;
+    }
+
+    #office .tabs-list-office .item-link-tab {
+        width: 23.5%;
+        margin-right: 2%;
+    }
+
+    #office .tabs-list-office .item-link-tab .item-action{
+        font-size: 11px;
+        padding: 4px 0px 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    #office .tabs-list-office .item-link-tab .icon-arrow{
+        position: absolute;
+        transform: rotate(90deg);
+        font-size: 12px;
+        line-height: 12px;
+        color: #000000;
+        font-weight: 700;
+        left: calc(50% - 18px);
+        top: 24px;
+    }
+
+    #office .main-banner .heading .t1 .office-img {
+        height: 20px;
+    }
+
+    #office .main-banner .heading .t2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #office .main-banner .heading{
+        top: 64%;
+    }
+
+    #office .main-banner .heading .t1 {
+        margin-bottom: 8px;
+    }
+
+    #office .tabs-list-office {
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
+
+    #office .office-block {
+        padding-top: 50px;
+    }
+
+    #office #office-block01.office-block{
+        padding-top: 35px;
+    }
+
+    #office .office-block .heading {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0px 10px;
+        margin-bottom: 2px;
+    }
+
+    #office .office-block .gallery-block .left-content .button-link{
+        right: 10px;
+        bottom: 8px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info{
+        padding-top: 15px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .title {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 8px !important;
+        padding-left: 20px;
+        padding-bottom: 2px !important;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .number-text {
+        font-size: 10px;
+        line-height: 16px;
+        padding-left: 20px;
+        margin-bottom: 2px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .text {
+        font-size: 10px;
+        line-height: 14px;
+        padding-left: 20px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info .title:after{
+        width: 35px;
+        height: 1px;
+    }
+
+    #office .office-block .gallery-block .right-content .text-info .info {
+        margin-bottom: 15px;
+    }
+
+    #office .office-block .description-block .container-block{
+        padding: 0px 20px;
+    }
+
+    #office .office-block .description-block .title {
+        font-size: 14px;
+        line-height: 20px;
+        text-indent: -2px;
+        margin-bottom: 10px;
+    }
+
+    #office .office-block .description-block .text {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    #office .office-block .gallery-block{
+        margin-bottom: 25px;
+    }
+
+    #office .office-block .map {
+        margin-top: 20px !important;
+        padding: 0px 8px;
+    }
+
+    #office .office-block .map .sub-inner{
+        padding: 6px 8px 8px;
+    }
+
+    #office .office-block .map .content-map{
+        padding-bottom: 140px;
+    }
+
+    #office .office-block .map .item-map .action-map {
+        font-size: 13px;
+        line-height: 13px;
+        display: none;
+    }
+
+    #office .office-block .map .item-map .action-map.active{
+        display: block;
+    }
+
+    #office .office-block .description-block .title .sp_br{
+        display: block;
+    }
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info {
+        padding-top: 15px;
+    }
+
+    #office #office-block04.office-block .gallery-block .right-content .text-info .info {
+        margin-bottom: 12px;
+    }
+
+    #office .office-block .map .content-map p{
+        font-size: 14px;
+    }
+
+    #office .office-block .map .list-maps{
+        margin-bottom: 7px;
+    }
+
+    #office .office-block .map .item-map {
+        margin-right: 15px;
+    }
+
+    #office .slider-gallery .content-list-gallery {
+        max-width: 95%;
+    }
+
+    #office .bx-wrapper .bx-controls-direction .bx-prev .img-icon{
+        width: 12px;
+    }
+
+    #office .bx-wrapper .bx-controls-direction .bx-next .img-icon{
+        width: 12px;
+        float: right;
+    }
+
+    #office .slider-gallery .bx-wrapper {
+        max-width: 80% !important;
+    }
+
+    #office .slider-gallery .close .icon-close {
+        width: 20px;
+    }
+
+    #office .slider-gallery .close {
+        top: 15px;
+        right: 15px;
+    }
+
+    #office .slider-gallery .content-list-gallery .item-gallery {
+        margin-right: 20px;
+    }
+
+    #office .office-block .map .bx-wrapper .bx-pager-link{
+        width: 34px;
+        border-radius: 0px;
+        height: 6px;
+        background: #e3e3e3;
+    }
+
+    #office .office-block .map .bx-wrapper .bx-pager-link.active{
+        background: #3e9fe0;
+    }
+
+    #office .office-block .map .bx-wrapper .content-map{
+        margin-right: 15px;
+    }
+
+    #office #office-block03.office-block .bx-controls{
+        display: none !important;
+    }
+
+    #office #office-block03.office-block .box-map{
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
+
+}
+
+
+
+
+
+

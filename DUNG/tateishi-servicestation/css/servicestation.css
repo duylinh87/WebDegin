@@ -1,0 +1,451 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#servicestation .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#servicestation .animatedFadeInUp {
+    opacity: 0;
+}
+
+#servicestation .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#servicestation{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#servicestation .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*entry-header*/
+/*=============================================*/
+#servicestation .entry-header{
+    padding-top: 68px;
+    padding-bottom: 60px;
+    background: #fff;
+}
+
+#servicestation .entry-header .container-block{
+    width: 100%;
+    margin: auto;
+}
+
+#servicestation .entry-header .container-block .heading-page{
+    text-align: center;
+}
+
+/*servicestation-block*/
+/*===================================================*/
+#servicestation .servicestation-block{
+    background-image: url("../images/servicestation_bg_block.png");
+    padding-top: 31px;
+    padding-bottom: 182px;
+    position: relative;
+}
+
+#servicestation .servicestation-block:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/servicestation_bg_02_block.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 74%;
+    height: 100%;
+    top: 21.3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#servicestation .servicestation-block .shop-list-block{
+    margin-bottom: 62px;
+}
+
+#servicestation .servicestation-block .container-block{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 50px;
+    position: relative;
+    z-index: 9;
+}
+
+#servicestation .servicestation-block .heading{
+    position: relative;
+    margin-left: 50px;
+    padding-left: 26px;
+    margin-bottom: 18px;
+}
+
+#servicestation .servicestation-block .heading:after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 58px;
+    background: #c7000d;
+    left: 0px;
+    top: -3px;
+}
+
+#servicestation .servicestation-block .content-map-show{
+    background: #fafafa;
+    box-shadow: 3px 4px 5px 0px rgba(227, 227, 227, 0.75);
+    margin-bottom: 57px;
+}
+
+#servicestation .servicestation-block .content-map-show .image-map{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 7px;
+}
+
+#servicestation .servicestation-block .content-map-show .image-map .map-image{
+    width: 100% !important;
+    height: 100%;
+}
+
+#servicestation .servicestation-block .content-map-show .image_wrap .st-image{
+    width: 100% !important;
+    height: 100%;
+}
+
+#servicestation .servicestation-block .content-map-show .link-share{
+    text-align: right;
+    padding: 5px 7px 7px 0px;
+}
+
+#servicestation .servicestation-block .content-map-show .link-share .text-link{
+    font-size: 15px;
+    color: #656565;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#servicestation .servicestation-block .content-map-show .link-share .icon-share{
+    margin-left: 10px;
+}
+
+#servicestation .servicestation-block .shop-list-content .title-list{
+    padding-left: 3px;
+    margin-bottom: 4px;
+}
+
+#servicestation .servicestation-block .shop-list-content .list-map-popup{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    position: relative;
+    margin-right: -38px;
+}
+
+#servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map{
+    margin-bottom: 41px;
+}
+
+#servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .text-info{
+    padding-left: 10px;
+}
+
+#servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .image_wrap{
+    margin-bottom: 11px;
+}
+
+#servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .image_wrap .img-map{
+    width: 100% !important;
+    height: 100%;
+}
+
+#servicestation .servicestation-block .locations-block .map-location .image_wrap .img-map{
+    width: 100% !important;
+    height: 100%;
+}
+
+@media (min-width: 1281px) {
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map{
+        width: calc(33.33% - 38px) !important;
+        margin-right: 38px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map{
+        width: calc(33.33% - 20px) !important;
+        margin-right: 20px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .slick-track{
+        width: 100% !important;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .slick-dots{
+        display: none !important;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    #servicestation .entry-header .container-block .heading-page .img-title{
+        height: 60px;
+    }
+
+    #servicestation .servicestation-block .heading .img-title{
+        height: 42px;
+    }
+
+    #servicestation .servicestation-block .heading:after{
+        width: 12px;
+        height: 48px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .text-info .text-title{
+        height: 38px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup{
+        margin-right: -20px;
+    }
+}
+
+@media (max-width: 992px) {
+    #servicestation .entry-header .container-block .heading-page .img-title {
+        height: 54px;
+    }
+
+    #servicestation .servicestation-block .heading{
+        margin-left: 30px;
+    }
+
+    #servicestation .servicestation-block .heading .img-title {
+        height: 36px;
+    }
+
+    #servicestation .servicestation-block .heading:after{
+        width: 12px;
+        height: 44px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .title-list .img-title{
+        height: 14px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .text-info .text-title {
+        height: 32px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .text-info {
+        padding-left: 5px;
+    }
+
+    #servicestation .servicestation-block .content-map-show .image-map{
+        padding: 0px 4px;
+    }
+
+    #servicestation .servicestation-block .content-map-show .link-share .text-link{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #servicestation .entry-header {
+        padding-top: 25px;
+        padding-bottom: 18px;
+    }
+
+    #servicestation .entry-header .container-block .heading-page .img-title{
+        width: 83% !important;
+        max-width: 320px;
+        height: auto;
+    }
+
+    /*servicestation-block*/
+    /*==============================================*/
+    #servicestation .servicestation-block{
+        padding-bottom: 100px;
+    }
+
+    #servicestation .servicestation-block:after{
+        width: 100%;
+        top: 41.8%;
+    }
+
+    #servicestation .servicestation-block .container-block{
+        max-width: 550px;
+        padding: 0px 15px;
+    }
+
+    #servicestation .servicestation-block .heading{
+        margin-left: 0px;
+        padding-left: 18px;
+        margin-bottom: 10px;
+    }
+
+    #servicestation .servicestation-block .heading .img-title {
+        height: 30px;
+    }
+
+    #servicestation .servicestation-block .heading:after{
+        width: 8px;
+        height: 34px;
+    }
+
+    #servicestation .servicestation-block .content-map-show .link-share .icon-share {
+        margin-left: 5px;
+    }
+
+    #servicestation .servicestation-block .content-map-show .link-share {
+        padding: 0px 4px 0px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup{
+        margin-right: 0px;
+        position: relative;
+        padding: 0px 25px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map{
+        background: #fff;
+        padding-bottom: 10px;
+        margin: 0px 7.5px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .image_wrap{
+        padding-right: 4%;
+        padding-top: 4%;
+        margin-bottom: 8px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .text-info {
+        padding-left: 4%;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .list-map-popup .item-list-map .text-info .text-title {
+        height: 35px;
+    }
+
+    #servicestation .servicestation-block .content-map-show{
+        margin-bottom: 40px ;
+    }
+
+    #servicestation .servicestation-block .slick-dots{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        padding: 15px 0px 10px;
+    }
+
+    #servicestation .servicestation-block .slick-dots li{
+        list-style: none;
+        width: 2px;
+        height: 2px;
+        background: #a1a1a1;
+        margin: 0px 5px;
+        border-radius: 50%;
+        padding: 4px;
+    }
+
+    #servicestation .servicestation-block .slick-dots li.slick-active{
+        background: #cc0000;
+    }
+
+    #servicestation .servicestation-block .slick-dots li button{
+        font-size: 0px;
+        border: 0px;
+    }
+
+    #servicestation .servicestation-block .slick-arrow .img-icon{
+        width: 12px;
+    }
+
+    #servicestation .servicestation-block .slick-next{
+        position: absolute;
+        top: 44%;
+        right: 0px;
+        transform: translateY(-50%);
+    }
+
+    #servicestation .servicestation-block .slick-prev{
+        position: absolute;
+        top: 44%;
+        left: 0px;
+        transform: translateY(-50%);
+    }
+
+    #servicestation .servicestation-block .shop-list-content .title-list{
+        text-align: center;
+        padding: 0px;
+    }
+
+    #servicestation .servicestation-block .shop-list-content .title-list .img-title {
+        height: 11px;
+    }
+
+    #servicestation .servicestation-block .shop-list-block {
+        margin-bottom: 50px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

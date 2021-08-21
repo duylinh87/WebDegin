@@ -1,0 +1,1998 @@
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 150px, 0);
+        -webkit-transform: translate3d(0, 150px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 150px, 0);
+        -webkit-transform: translate3d(0, 150px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#department img {
+    max-width: 100%;
+}
+
+#department .animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both
+}
+
+#department .animatedFadeInUp {
+    opacity: 0;
+}
+
+#department .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#department {
+    position: relative;
+    background: #fff100;
+    overflow: hidden;
+}
+
+#department .inner{
+    margin: auto;
+    max-width: 500px;
+    padding: 0px 12px;
+}
+
+#department .pc_br{
+    display: none;
+}
+
+#department.nato-jp{
+    font-family: 'Noto Sans JP', sans-serif !important;
+}
+
+.marker-animation{
+    padding-bottom: 0px;
+    background: -webkit-linear-gradient(left, #ffe653 50%, transparent 50%) 100% bottom / 200% 50% no-repeat;
+    background: linear-gradient(to right, #ffe653 50%, transparent 50%) 100% bottom / 200% 50% no-repeat;
+    -webkit-transition: background-position 2s ease-out;
+    transition: background-position 2s ease-out;
+}
+.marker-animation.active{
+    background-position: 0% bottom;
+}
+
+
+
+
+/*main-banner*/
+/*===============================================*/
+
+#department .main-banner {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 23px;
+}
+
+#department .main-banner .inner{
+    position: relative;
+}
+
+/*#department .main-banner .inner:after{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    background-image: url("../images/department/department_icon01_sp.png");*/
+/*    background-size: 100%;*/
+/*    background-repeat: no-repeat;*/
+/*    width: 63px;*/
+/*    height: 74px;*/
+/*    right: 0px;*/
+/*    top: -13px;*/
+/*    pointer-events: none;*/
+/*}*/
+
+#department .main-banner .title-page{
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 2;
+    padding-right: 23px;
+    padding-bottom: 50px;
+}
+
+#department .main-banner .title-page:before{
+    content: "";
+    position: absolute;
+    background-image: url("../images/department/department_subttl_page_sp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: calc(429px / 2);
+    height: calc(124px / 2);
+    bottom: 0px;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+#department .main-banner .title-page img{
+    display: block;
+    margin: auto;
+}
+
+#department .main-banner .description .text{
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+
+
+/*tabs-block*/
+/*===================================*/
+#department .tabs-block .item-tabsDepartment a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    padding: 7px 0px;
+    height: 100%;
+    text-decoration: none;
+    border: 2px dotted #000;
+    border-radius: 7px;
+    position: relative;
+}
+
+#department .tabs-block .item-tabsDepartment a.active{
+    background: #a95af3;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+#department .tabs-block .item-tabsDepartment{
+    width: calc(20% - 6px);
+}
+
+#department .tabs-block .list-tabsDepartment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+
+/*department-content*/
+/*===============================*/
+
+#department .department-content .description-top{
+    /*background: #fff;*/
+    border-radius: 10px;
+    /*padding: 20px;*/
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#department .department-content .description-top:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/department/department_bg01_sp.png");
+    background-repeat: repeat;
+    background-position: right bottom;
+    width: 100%;
+    height: 100%;
+    right: -6px;
+    bottom: -6px;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+#department .department-content .content{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#department .department-content .content .text-content{
+    order: 2;
+    width: 100%;
+}
+
+#department .department-content .content .image-content{
+    order: 1;
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+#department .department-content .content .image-content img{
+    display: block;
+    margin: auto;
+}
+
+#department .department-content .content .title{
+    font-size: 16px;
+    line-height: 23px;
+    color: #a95af3;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+#department .department-content .content .text{
+    font-size: 12px;
+    line-height: 21px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+}
+
+
+#department .tabs-department .list-departmentInfo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+
+#department .tabs-department .item-departmentInfo{
+    width: 50%;
+}
+
+#department .tabs-department .item-departmentInfo .show-tabs{
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px 10px 0px 0px;
+    padding: 9px 0px;
+    text-decoration: none;
+}
+
+#department .departmentInfo-content.bg-color01 .content-info{
+    background: #faffe8;
+    border-radius: 10px;
+}
+
+#department .departmentInfo-content .banner .image_wrap img{
+    width: 100% !important;
+    display: block;
+}
+
+#department .departmentInfo-content .banner{
+    padding: 20px 10px;
+    margin-bottom: 22px;
+}
+
+#department .departmentInfo-content .box-text{
+    padding: 0px 18px;
+    position: relative;
+    margin-top: -46px;
+    display: inline-block;
+    z-index: 1;
+}
+
+#department .departmentInfo-content .banner .t1{
+    font-size: 13px;
+    line-height: 14px;
+    display: inline-block;
+    color: #fff;
+    padding: 3.2px 10px;
+    margin-bottom: 4px;
+}
+
+#department .departmentInfo-content .banner .t2{
+    font-size: 15px;
+    line-height: 35px;
+    display: initial;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+#department .departmentInfo-content.bg-color01 .banner .t1{
+    background: #96bf01;
+}
+
+#department .departmentInfo-content.bg-color01 .banner .t2{
+    background: #b7d744;
+}
+
+
+#department .departmentInfo-content .description-info{
+    padding: 0px 10px;
+    margin-bottom: 26px;
+}
+
+#department .departmentInfo-content .description-info .inner-content{
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 23px 0px 12px;
+    border: 4px dotted #000;
+}
+
+#department .departmentInfo-content .description-info .ttl{
+    font-size: 17px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 17px;
+}
+
+#department .departmentInfo-content .description-info .text{
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
+
+#department .departmentInfo-content .description-info .note-top{
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #fff;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 0px 12px;
+    border-radius: 10px;
+}
+
+#department .departmentInfo-content .description-info .note-top{
+    background: #96bf01;
+}
+
+#department .departmentInfo-content .list-info{
+    padding: 0px 10px 20px;
+}
+
+#department .departmentInfo-content .item-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+#department .departmentInfo-content .item-info:last-child{
+    margin-bottom: 0px;
+}
+
+#department .departmentInfo-content .item-info .text-content{
+    order: 1;
+}
+
+#department .departmentInfo-content .item-info .text-content .ttl{
+    font-size: 14px;
+    line-height: 18px;
+    color: #96bf01;
+    font-weight: 500;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    letter-spacing: -0.2px;
+}
+
+#department .departmentInfo-content .item-info .text-content .text{
+    font-size: 13px;
+    line-height: 23.5px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    padding: 0px 8px;
+    z-index: 2;
+}
+
+#department .departmentInfo-content .item-info:nth-child(1) .image-content{
+    display: none;
+}
+
+#department .departmentInfo-content .item-info .image-content{
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+    margin-top: 18px;
+    margin-bottom: -15px;
+    position: relative;
+}
+
+#department .departmentInfo-content .item-info .image-content .image_wrap img{
+    display: block;
+    width: 100% !important;
+}
+
+#department .departmentInfo-content .item-info .icon-img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#department .departmentInfo-content .item-info .image-content .image_wrap{
+    position: relative;
+    z-index: 2;
+}
+
+#department .departmentInfo-content .item-info .image-content .image_wrap:nth-child(1){
+    width: 49%;
+}
+
+#department .departmentInfo-content .item-info .image-content .image_wrap:nth-child(2){
+    width: 51%;
+    padding-top: 38px;
+}
+
+#department .departmentInfo-content .item-info .text-content .ttl:before{
+    content: "";
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 9px;
+    top: 5px;
+    left: 11px;
+}
+
+#department .departmentInfo-content.bg-color01 .item-info .text-content .ttl:before{
+    background-image: url("../images/department/department_block01_icon03_pc.png");
+}
+
+#department .department-content .item-text{
+    background: #ebf8ff;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+#department .department-content .item-text .image_wrap{
+    width: 70px;
+}
+
+#department .department-content .item-text .image_wrap img{
+    display: block;
+}
+
+#department .department-content .content .item-text .text{
+    width: calc(100% - 70px);
+    padding-right: 10px;
+}
+
+#department .department-content .content .item-text .text{
+    font-size: 11px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 500;
+    padding: 15px 10px 15px;
+}
+
+#department .department-content .content .item-text .text-top{
+    font-size: 12px;
+    line-height: 22px;
+    display: inline-block;
+    background: #00a2ff;
+    color: #fff;
+    padding: 0px 12px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+#department .department-content .list-text{
+    margin-top: 30px;
+}
+
+#department .department-content .item-text:last-child{
+    margin-bottom: 0px;
+}
+
+
+#department .department-content .text-bottom{
+    background: #ebf8ff;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 15px 10px 15px;
+}
+
+#department .department-content .text-bottom .ttl-note{
+    font-size: 12px;
+    line-height: 22px;
+    display: inline-block;
+    background: #00a2ff;
+    color: #fff;
+    padding: 0px 12px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+#department .department-content .text-bottom .text{
+    font-size: 11px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 500;
+    padding: 15px 10px 15px;
+}
+
+#department .department-content,
+#department .departmentInfo-content{
+    display: none;
+    margin-bottom: 40px;
+}
+
+#department .department-content.active,
+#department .departmentInfo-content.active{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#department .departmentInfo-content.bg-color02 .content-info {
+    background: #e8fff0;
+    border-radius: 10px;
+}
+
+#department .departmentInfo-content.bg-color03 .content-info {
+    background: #fff7e8;
+    border-radius: 10px;
+}
+
+#department .departmentInfo-content.bg-color04 .content-info {
+    background: #ffe8ee;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+#department .departmentInfo-content.bg-color02 .banner .t1{
+    background: #02cd48;
+}
+
+#department .departmentInfo-content.bg-color02 .banner .t2{
+    background: #52da82;
+}
+
+#department .departmentInfo-content.bg-color02 .description-info .note-top{
+    background: #02cd48;
+}
+
+#department .departmentInfo-content.bg-color02 .item-info .text-content .ttl{
+    color: #02cd48;
+}
+
+#department .departmentInfo-content.bg-color02 .item-info .text-content .ttl:before{
+    background-image: url("../images/department/department_block01_icon05_pc.png");
+}
+
+
+
+#department #department-block02.department-content .content .image-content{
+    order: 2;
+    margin-top: 20px;
+}
+
+#department #department-block02.department-content .content .text-content {
+    order: 1;
+}
+
+#department #department-block02.department-content .content .text-bottom{
+    order: 3;
+}
+
+
+
+
+#department .departmentInfo-content.bg-color03 .banner .t1{
+    background: #e59d18;
+}
+
+#department .departmentInfo-content.bg-color03 .banner .t2{
+    background: #ffc65c;
+    margin-bottom: 2px;
+}
+
+#department .departmentInfo-content.bg-color03 .item-info .text-content .ttl{
+    color: #e59d18;
+}
+
+#department .departmentInfo-content.bg-color03 .item-info .text-content .ttl:before{
+    background-image: url("../images/department/department_block02_icon03_pc.png");
+}
+
+#department .departmentInfo-content.bg-color03 .description-info .note-top {
+    background: #e59d18;
+}
+
+
+
+
+
+
+#department .departmentInfo-content.bg-color04 .banner .t1{
+    background: #ff3369;
+}
+
+#department .departmentInfo-content.bg-color04 .banner .t2{
+    background: #ff7096;
+}
+
+#department .departmentInfo-content.bg-color04 .item-info .text-content .ttl{
+    color: #ff3369;
+}
+
+#department .departmentInfo-content.bg-color04 .item-info .text-content .ttl:before{
+    background-image: url("../images/department/department_block03_icon04_pc.png");
+}
+
+#department .departmentInfo-content.bg-color04 .description-info .note-top {
+    background: #ff3369;
+}
+
+
+
+
+
+
+#department .departmentInfo-content.bg-color05 .banner .t1{
+    background: #ff3434;
+}
+
+#department .departmentInfo-content.bg-color05 .banner .t2{
+    background: #ff6b6b;
+}
+
+#department .departmentInfo-content.bg-color05 .content-info{
+    background: #ffe8e8;
+}
+
+#department .departmentInfo-content.bg-color05 .item-info .text-content .ttl{
+    color: #ff3434;
+}
+
+#department .departmentInfo-content.bg-color05 .item-info .text-content .ttl:before{
+    background-image: url("../images/department/department_block03_icon04_pc.png");
+}
+
+#department .departmentInfo-content.bg-color05 .description-info .note-top {
+    background: #ff3434;
+}
+
+
+
+
+
+
+
+#department .tabs-department .item-departmentInfo .show-tabs.bg-color01.active{
+    background: #faffe8;
+}
+
+#department .tabs-department .item-departmentInfo .show-tabs.bg-color02.active{
+    background: #e8fff0;
+}
+
+#department .tabs-department .item-departmentInfo .show-tabs.bg-color03.active{
+    background: #fff7e8;
+}
+
+#department .tabs-department .item-departmentInfo .show-tabs.bg-color04.active{
+    background: #ffe8ee;
+}
+
+#department .tabs-department .item-departmentInfo .show-tabs.bg-color05.active{
+    background: #ffe8e8;
+}
+
+
+
+#department .departmentInfo-content{
+    position: relative;
+}
+
+#department .departmentInfo-content .content-info{
+    position: relative;
+    z-index: 2;
+}
+
+#department .departmentInfo-content:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/department/department_bg01_sp.png");
+    background-repeat: repeat;
+    background-position: right bottom;
+    width: 100%;
+    height: 100%;
+    right: -8px;
+    bottom: -6px;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+#department .tabs-block .item-tabsDepartment a:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/department/department_icon03_sp.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 8px;
+    bottom: -8px;
+    left: 51%;
+    transform: translateX(-50%);
+    background-color: #fff100;
+}
+
+#department .tabs-block .item-tabsDepartment a.active:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/department/department_icon03hover_sp.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 8px;
+    bottom: -7.5px;
+    left: 51%;
+    transform: translateX(-50%);
+    background-color: #fff100;
+}
+
+
+#department .icon-bottom-block {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    pointer-events: none;
+}
+
+
+#department .icon-bottom-block .inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1520px;
+    padding: 0px;
+}
+
+
+
+#department #department01-info01 .box-text .icon-subTxt{
+    position: absolute;
+    right: -8px;
+    bottom: -20px;
+}
+
+#department #department01-info02 .box-text .icon-subTxt{
+    position: absolute;
+    right: -8px;
+    bottom: -22px;
+}
+
+#department #department02-info01 .box-text .icon-subTxt{
+    position: absolute;
+    right: -12px;
+    bottom: 2px;
+}
+
+#department #department02-info02 .box-text .icon-subTxt{
+    position: absolute;
+    right: -10px;
+    bottom: -28px;
+}
+
+#department #department03-info01 .box-text .icon-subTxt{
+    position: absolute;
+    right: -5px;
+    bottom: 20px;
+}
+
+#department #department03-info02 .box-text .icon-subTxt{
+    position: absolute;
+    right: -16px;
+    bottom: -20px;
+}
+
+#department #department04-info01 .box-text .icon-subTxt{
+    position: absolute;
+    right: -24px;
+    bottom: -15px;
+}
+
+#department #department04-info02 .box-text .icon-subTxt{
+    position: absolute;
+    right: -18px;
+    bottom: -18px;
+}
+
+#department #department05-info01 .box-text .icon-subTxt{
+    position: absolute;
+    right: -10px;
+    bottom: 6px;
+}
+
+#department #department05-info02 .box-text .icon-subTxt{
+    position: absolute;
+    bottom: -22px;
+    right: -15px;
+}
+
+#department #department05-info02.departmentInfo-content .box-text{
+    padding: 0px 10px;
+}
+
+#department #department02-info02.departmentInfo-content .box-text,
+#department #department03-info02.departmentInfo-content .box-text,
+#department #department04-info01.departmentInfo-content .box-text,
+#department #department04-info02.departmentInfo-content .box-text,
+#department #department05-info01.departmentInfo-content .box-text{
+    float: right;
+    margin-right: 15px;
+}
+
+#department #department04-info01.departmentInfo-content .box-text,
+#department #department05-info01.departmentInfo-content .box-text{
+    margin-top: -80px;
+}
+
+
+#department .box-text .icon-subTxt .icon02{
+    width: 32px !important;
+    z-index: -1;
+    position: absolute;
+}
+
+#department #department01-info01 .box-text .icon-subTxt .icon02{
+    left: 8px;
+    top: 6px;
+}
+
+#department #department01-info02 .box-text .icon-subTxt .icon02{
+    left: 12px;
+    top: -8px;
+}
+
+#department #department02-info01 .box-text .icon-subTxt .icon02{
+    left: 12px;
+    top: 60px;
+}
+
+#department #department03-info01 .box-text .icon-subTxt .icon02{
+    left: 38px;
+    top: 28px;
+}
+
+#department #department04-info01 .box-text .icon-subTxt .icon02{
+    left: 26px;
+    top: 23px;
+}
+
+#department #department04-info01 .box-text .icon-subTxt .icon02{
+    left: 26px;
+    top: 23px;
+}
+
+#department #department05-info01 .box-text .icon-subTxt .icon02{
+    left: 22px;
+    top: 0px;
+}
+
+#department #department05-info02 .box-text .icon-subTxt .icon02{
+    left: 3px;
+    top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+
+    #department .departmentInfo-content .box-text,
+    #department #department05-info02.departmentInfo-content .box-text{
+        padding: 0px 10px 0px 0px;
+    }
+
+    #department #department04-info01.departmentInfo-content .box-text,
+    #department #department05-info01.departmentInfo-content .box-text{
+        margin-top: -80px;
+    }
+
+    #department .departmentInfo-content .banner .t2 {
+        font-size: 12px;
+        line-height: 35px;
+        display: initial;
+        color: #fff;
+        padding: 7px 10px;
+    }
+
+    #department #department02-info02.departmentInfo-content .box-text,
+    #department #department03-info02.departmentInfo-content .box-text,
+    #department #department04-info01.departmentInfo-content .box-text,
+    #department #department04-info02.departmentInfo-content .box-text,
+    #department #department05-info01.departmentInfo-content .box-text{
+        float: right;
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+
+    #department .departmentInfo-content .banner .t1{
+        font-size: 11px;
+    }
+
+    #department .departmentInfo-content .description-info .text {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    #department .main-banner .title-page:before{
+        width: calc(360px / 2);
+        height: calc(118px / 2);
+    }
+
+    #department .department-content .content{
+        padding: 15px 12px;
+    }
+
+    #department .departmentInfo-content .list-info {
+        padding: 0px 5px 20px;
+    }
+
+    #department .departmentInfo-content .item-info .image-content{
+        padding: 0px 5px;
+    }
+
+    #department .departmentInfo-content .description-info .ttl {
+        font-size: 16px;
+    }
+
+    #department .tabs-department .item-departmentInfo .show-tabs{
+        font-size: 11px;
+        padding: 9px 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    #department .inner{
+        max-width: 800px;
+        padding: 0px 20px;
+    }
+
+    #department .sp_br{
+        display: none;
+    }
+
+    #department .pc_br{
+        display: block;
+    }
+
+
+    /*===========================================*/
+
+    #department .main-banner {
+        position: relative;
+        padding-top: 67px;
+        padding-bottom: 45px;
+    }
+
+    #department .main-banner .title-page {
+        padding-bottom: 100px;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    #department .main-banner .title-page:before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/department/department_subttl_page_pc.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 300px;
+        height: 115px;
+        bottom: 3px;
+        left: 61%;
+        transform: translateX(-50%);
+    }
+
+    #department .main-banner .title-page .image_wrap{
+        display: inline-block;
+    }
+
+    #department .main-banner .description .text {
+        font-size: 14px;
+        line-height: 28px;
+        color: #000;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.2px;
+        padding-left: 26px;
+    }
+
+    /*#department .main-banner .inner:after{*/
+    /*    content: "";*/
+    /*    position: absolute;*/
+    /*    background-image: url("../images/department/department_icon01_pc.png");*/
+    /*    background-size: 100%;*/
+    /*    background-repeat: no-repeat;*/
+    /*    width: 211px;*/
+    /*    height: 184px;*/
+    /*    right: -42px;*/
+    /*    top: unset;*/
+    /*    bottom: -26px;*/
+    /*}*/
+
+
+
+    #department .tabs-block .item-tabsDepartment a {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 0px;
+        border: 4px dotted #000;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    #department .tabs-block .item-tabsDepartment a:after{
+        content: "";
+        position: absolute;
+        background-image: url("../images/department/department_icon03_pc.png");
+        width: 31px;
+        height: 18px;
+        bottom: -18px;
+        left: 51%;
+        transform: translateX(-50%);
+        background-color: #fff100;
+    }
+
+    #department .tabs-block .item-tabsDepartment a.active:after{
+        content: "";
+        position: absolute;
+        background-image: url("../images/department/department_icon03hover_pc.png");
+        width: 29px;
+        height: 19px;
+        bottom: -18px;
+        left: 51%;
+        transform: translateX(-50%);
+        background-color: #fff100;
+    }
+
+    #department .tabs-block .item-tabsDepartment {
+        width: 16.544%;
+        margin-right: 4.32%;
+    }
+
+    #department .tabs-block .item-tabsDepartment:last-child{
+        margin-right: 0px;
+    }
+
+    #department .tabs-block .item-tabsDepartment a.active {
+        border: 4px solid #000;
+    }
+
+    #department .tabs-block .list-tabsDepartment {
+        padding-bottom: 45px;
+    }
+
+    #department .department-content .description-top {
+        /*background: #fff;*/
+        margin-bottom: 62px;
+    }
+
+    #department .department-content .content{
+        border-radius: 20px;
+        padding: 25px 20px;
+    }
+
+    #department .department-content .description-top:after {
+        background-image: url("../images/department/department_bg01_pc.png");
+        background-repeat: repeat;
+        background-position: right bottom;
+        width: 100%;
+        height: 100%;
+        right: -10px;
+        bottom: -10px;
+    }
+
+    #department .department-content .content .text-content {
+        order: 1;
+        width: 48%;
+        padding-top: 16px;
+        padding-right: 25px;
+    }
+
+    #department .department-content .content .image-content {
+        order: 2;
+        width: 52%;
+        margin-bottom: 0px;
+    }
+
+    #department .department-content .content .title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+
+    #department .department-content .content .text {
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0px;
+    }
+
+    #department .tabs-department .item-departmentInfo .show-tabs {
+        font-size: 14px;
+        line-height: 28px;
+        border-radius: 20px 20px 0px 0px;
+        padding: 6px 0px;
+    }
+
+    #department .tabs-department .list-departmentInfo {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 20px;
+        max-width: 1080px;
+        margin: auto;
+    }
+
+
+    #department .departmentInfo-content .banner {
+        padding: 40px 25px 80px 25px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    #department .departmentInfo-content .banner .image_wrap{
+        max-width: 906px;
+        margin: auto;
+    }
+
+    #department .departmentInfo-content .banner .t1 {
+        font-size: 16px;
+        line-height: 20px;
+        display: inline-block;
+        color: #fff;
+        padding: 5.2px 10px;
+        margin-bottom: 8px;
+    }
+
+    #department .departmentInfo-content .banner .t2 {
+        font-size: 20px;
+        line-height: 48px;
+        display: initial;
+        color: #fff;
+        padding: 8px 25px
+    }
+
+    #department .departmentInfo-content .box-text {
+        padding: 0px !important;
+        width: 100%;
+        max-width: 430px;
+        margin: -165px 50px 0px auto;
+        display: block;
+    }
+
+    #department #department02-info01.departmentInfo-content .box-text{
+        max-width: 455px;
+    }
+
+    #department #department02-info01.departmentInfo-content .box-text{
+        margin-top: -200px;
+    }
+
+    #department #department02-info02.departmentInfo-content .box-text,
+    #department #department03-info02.departmentInfo-content .box-text,
+    #department #department04-info01.departmentInfo-content .box-text{
+        max-width: 380px;
+    }
+
+    #department #department04-info02.departmentInfo-content .box-text{
+        max-width: 410px;
+    }
+
+    #department #department04-info01.departmentInfo-content .box-text{
+        margin-top: -200px;
+    }
+
+    #department #department05-info01.departmentInfo-content .box-text{
+        max-width: 505px;
+    }
+
+    #department #department05-info02.departmentInfo-content .box-text{
+        max-width: 450px;
+    }
+
+    #department .departmentInfo-content .description-info {
+        padding: 0px 25px;
+        margin-bottom: 33px;
+    }
+
+    #department .departmentInfo-content .description-info .inner-content {
+        background: #fff;
+        border-radius: 20px;
+        position: relative;
+        padding: 30px 0px 39px;
+        border: 5px dotted #000;
+    }
+
+    #department .departmentInfo-content .description-info .note-top {
+        font-size: 13px;
+        line-height: 28px;
+        top: -17px;
+        padding: 0px 25px;
+        border-radius: 20px;
+    }
+
+    #department .departmentInfo-content .description-info .ttl {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+
+    #department .departmentInfo-content .description-info .text {
+        font-size: 13px;
+        line-height: 23px;
+        /*letter-spacing: 0.5px;*/
+        /*max-width: 815px;*/
+        margin: auto;
+    }
+
+    #department .departmentInfo-content .item-info .text-content .ttl {
+        font-size: 16px;
+        line-height: 24px;
+        color: #96bf01;
+        font-weight: 500;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    #department .departmentInfo-content .item-info .text-content .text {
+        font-size: 13px;
+        line-height: 24px;
+        color: #000;
+        font-weight: 500;
+        position: relative;
+        padding: 0px 10px 0px 0px;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(1) .image-content {
+        display: block;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(2) .image-content .image_wrap:nth-child(1) {
+        display: none;
+    }
+
+    #department .departmentInfo-content .item-info .image-content .image_wrap:nth-child(2) {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    #department .departmentInfo-content .list-info {
+        padding: 0px 25px 36px;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(2n-1) .text-content{
+        order: 2;
+        width: 56%;
+        padding-top: 25px;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(2n-1) .image-content{
+        order: 1;
+        width: 44%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #department .departmentInfo-content .item-info .image-content .image_wrap:nth-child(1) {
+        width: auto;
+    }
+
+    #department .departmentInfo-content .item-info .image-content img {
+        display: block;
+        width: auto !important;
+    }
+
+    #department .departmentInfo-content .item-info .text-content .ttl:before {
+        width: 14px;
+        height: 14px;
+        top: 7px;
+        left: 2px;
+    }
+
+    #department .departmentInfo-content .item-info {
+        margin-bottom: 0px;
+    }
+
+    #department .departmentInfo-content .item-info .text-content {
+        order: 1;
+        width: 52%;
+    }
+
+    #department .departmentInfo-content .item-info .image-content{
+        width: 48%;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(2) .image-content{
+        padding-left: 35px;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(2) .text-content{
+        padding-top: 70px;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(2) .image-content img{
+        margin: 0px 14px 0px auto;
+    }
+
+    #department .departmentInfo-content .item-info.full .text-content{
+        width: 100%;
+    }
+
+    #department #department-block02.department-content .content .text-content{
+        width: 74%;
+    }
+
+    #department #department-block02.department-content .content .image-content{
+        width: 26%;
+        padding-top: 104px;
+        padding-left: 18px;
+    }
+
+    #department #department-block02.department-content .content .title {
+        margin-bottom: 32px;
+        width: 100vw;
+        max-width: 1060px;
+    }
+
+    #department #department-block02.department-content .content .text-bottom {
+        order: 3;
+        width: 73%;
+    }
+
+    #department .department-content .text-bottom {
+        background: #ebf8ff;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        padding: 23px 18px 20px;
+    }
+
+    #department .department-content .text-bottom .sub-text{
+        font-size: 12px;
+        line-height: 21px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    #department .department-content .text-bottom .ttl-note {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0px 20px;
+        border-radius: 20px;
+        position: absolute;
+        top: -15px;
+        left: 20px;
+    }
+
+    #department .department-content .content .item-text .text {
+        font-size: 14px;
+        line-height: 24px;
+        color: #000;
+        font-weight: 500;
+        width: calc(100% - 130px);
+        padding: 20px 20px 20px;
+    }
+
+    #department .department-content .content .item-text .text-top {
+        font-size: 14px;
+        line-height: 24px;
+        display: inline-block;
+        background: #00a2ff;
+        color: #fff;
+        padding: 0px 20px;
+        border-radius: 20px;
+        position: absolute;
+        top: -15px;
+        left: 15px;
+    }
+
+    #department .department-content .item-text .image_wrap {
+        width: 130px;
+    }
+
+    #department .department-content .item-text {
+        margin-bottom: 34px;
+    }
+
+    #department #department-block05.department-content .content .text-content{
+        width: 66%;
+    }
+
+    #department #department-block05.department-content .content .image-content{
+        width: 34%;
+        padding-right: 15px;
+        padding-top: 40px;
+    }
+
+    #department .departmentInfo-content .item-info .icon-img{
+        position: absolute;
+        top: -68px;
+        right: -18px;
+        pointer-events: none;
+        display: inline-block;
+    }
+
+    #department .departmentInfo-content .item-info .icon-img img{
+        margin: 0px !important;
+    }
+
+    #department #department02-info01.departmentInfo-content .item-info:nth-child(2) .text-content{
+        width: 62%;
+    }
+
+    #department #department02-info01.departmentInfo-content .item-info:nth-child(2) .text-content .text{
+        max-width: 567px;
+    }
+
+    #department #department02-info01.departmentInfo-content .item-info:nth-child(2) .image-content{
+        width: 38%;
+        margin-top: 90px;
+    }
+
+    #department .departmentInfo-content .content-info{
+        border-radius: 20px !important;
+    }
+
+
+
+    #department .departmentInfo-content:after{
+        content: "";
+        position: absolute;
+        background-image: url("../images/department/department_bg01_pc.png");
+        background-repeat: repeat;
+        background-position: right bottom;
+        width: 100%;
+        height: 100%;
+        right: -10px;
+        bottom: -10px;
+        z-index: 0;
+        border-radius: 10px;
+    }
+
+    #department #department01-info01 .box-text .icon-subTxt{
+        position: absolute;
+        right: -46px;
+        bottom: -60px;
+    }
+
+    #department #department01-info02 .box-text .icon-subTxt{
+        position: absolute;
+        right: -50px;
+        bottom: -68px;
+    }
+
+    #department #department02-info01 .box-text .icon-subTxt{
+        position: absolute;
+        bottom: -20px;
+        right: -44px;
+    }
+
+    #department #department02-info02 .box-text .icon-subTxt{
+        position: absolute;
+        right: 0px;
+        bottom: -55px;
+    }
+
+    #department #department03-info01 .box-text .icon-subTxt{
+        position: absolute;
+        bottom: -54px;
+        right: -50px;
+    }
+
+    #department #department03-info02 .box-text .icon-subTxt{
+        position: absolute;
+        right: -22px;
+        bottom: -40px;
+    }
+
+    #department #department04-info01 .box-text .icon-subTxt{
+        position: absolute;
+        bottom: -50px;
+        right: -20px;
+    }
+
+    #department #department04-info02 .box-text .icon-subTxt{
+        position: absolute;
+        right: -25px;
+        bottom: -54px;
+    }
+
+    #department #department05-info01 .box-text .icon-subTxt{
+        position: absolute;
+        right: -48px;
+        bottom: -45px;
+    }
+
+    #department #department05-info02 .box-text .icon-subTxt{
+        position: absolute;
+        right: -45px;
+        bottom: -68px;
+    }
+
+    #department .main-banner .title-page img{
+        max-width: 80%;
+    }
+
+    #department #department02-info02.departmentInfo-content .box-text,
+    #department #department03-info02.departmentInfo-content .box-text,
+    #department #department04-info01.departmentInfo-content .box-text,
+    #department #department04-info02.departmentInfo-content .box-text,
+    #department #department05-info01.departmentInfo-content .box-text{
+        float: none;
+    }
+
+
+    #department .box-text .icon-subTxt .icon02{
+        width: auto !important;
+    }
+
+    #department #department01-info01 .box-text .icon-subTxt .icon02 {
+        left: 36px;
+        top: 0px;
+    }
+
+    #department #department01-info02 .box-text .icon-subTxt .icon02 {
+        left: 52px;
+        top: -32px;
+    }
+
+    #department #department02-info01 .box-text .icon-subTxt .icon02 {
+        left: 20px;
+        top: 77px;
+    }
+
+    #department #department03-info01 .box-text .icon-subTxt .icon02 {
+        left: 132px;
+        top: -27px;
+    }
+
+    #department #department04-info01 .box-text .icon-subTxt .icon02 {
+        left: 40px;
+        top: 70px;
+    }
+
+    #department #department05-info01 .box-text .icon-subTxt .icon02 {
+        left: 22px;
+        top: -20px;
+    }
+
+    #department #department05-info02 .box-text .icon-subTxt .icon02 {
+        left: -10px;
+        top: -28px;
+    }
+
+    #department #department05-info01.departmentInfo-content .box-text{
+        margin-top: -165px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+@media (min-width: 960px) {
+
+    #department .inner{
+        max-width: 1200px;
+        padding: 0px 20px;
+    }
+
+    #department .departmentInfo-content .item-info .text-content .text {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #department .departmentInfo-content .item-info .text-content .ttl {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    #department .departmentInfo-content .description-info .text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #department .departmentInfo-content .description-info .ttl {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+    }
+
+    #department .departmentInfo-content .description-info .note-top {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #department .department-content .content .title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 35px;
+        letter-spacing: 2px;
+    }
+
+    #department .department-content .content .text {
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+
+    #department .department-content .text-bottom .sub-text {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    #department .department-content .text-bottom .ttl-note {
+        font-size: 16px;
+        line-height: 32px;
+        padding: 0px 20px;
+        border-radius: 20px;
+        position: absolute;
+        top: -15px;
+        left: 20px;
+    }
+
+    #department .tabs-department .item-departmentInfo .show-tabs {
+        font-size: 16px;
+        line-height: 28px;
+        border-radius: 20px 20px 0px 0px;
+        padding: 6px 0px;
+    }
+
+    #department .department-content .content .item-text .text {
+        font-size: 16px;
+        line-height: 32px;
+        color: #000;
+        font-weight: 500;
+        width: calc(100% - 130px);
+        padding: 30px 26px 20px;
+    }
+
+    #department .department-content .content .item-text .text-top {
+        font-size: 16px;
+        line-height: 30px;
+        display: inline-block;
+        background: #00a2ff;
+        color: #fff;
+        padding: 0px 20px;
+        border-radius: 20px;
+        position: absolute;
+        top: -15px;
+        left: 15px;
+    }
+
+    #department .tabs-block .item-tabsDepartment a {
+        font-size: 20px;
+    }
+
+    #department .main-banner .title-page img{
+        max-width: 100%;
+    }
+
+
+    #department .department-content .content {
+        border-radius: 20px;
+        padding: 39px 39px 40px 56px;
+    }
+
+    #department .departmentInfo-content .list-info {
+        padding: 0px 55px 36px;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(2n-1) .image-content {
+        order: 1;
+        width: 44%;
+        padding-left: 39px;
+        padding-right: 25px;
+    }
+
+    #department .departmentInfo-content .item-info .text-content .ttl:before {
+        width: 18px;
+        height: 18px;
+        top: 9px;
+        left: 2px;
+    }
+
+    #department .departmentInfo-content .description-info {
+        padding: 0px 45px;
+        margin-bottom: 33px;
+    }
+
+    #department .departmentInfo-content .banner {
+        padding: 63px 45px 80px 45px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    #department .departmentInfo-content .item-info:nth-child(2) .image-content {
+        padding-left: 25px;
+    }
+
+    #department .main-banner .title-page:before {
+        width: 429px;
+        height: 124px;
+        bottom: 3px;
+        left: 61%;
+        transform: translateX(-50%);
+    }
+
+    #department .departmentInfo-content .banner .t1 {
+        font-size: 22px;
+        line-height: 28px;
+        display: inline-block;
+        color: #fff;
+        padding: 5.2px 10px;
+        margin-bottom: 8px;
+    }
+
+    #department .departmentInfo-content .banner .t2 {
+        font-size: 28px;
+        line-height: 62px;
+        display: initial;
+        color: #fff;
+        padding: 8px 25px;
+    }
+
+    #department .departmentInfo-content .box-text {
+        padding: 0px;
+        width: 100%;
+        max-width: 570px;
+        margin: -165px 50px 0px auto;
+    }
+
+    #department #department02-info01.departmentInfo-content .box-text{
+        max-width: 640px;
+    }
+
+    #department #department02-info01.departmentInfo-content .box-text{
+        margin-top: -200px;
+    }
+
+    #department #department02-info02.departmentInfo-content .box-text,
+    #department #department03-info02.departmentInfo-content .box-text,
+    #department #department04-info01.departmentInfo-content .box-text{
+        max-width: 486px;
+    }
+
+    #department #department04-info02.departmentInfo-content .box-text{
+        max-width: 530px;
+    }
+
+    #department #department04-info01.departmentInfo-content .box-text,
+    #department #department03-info01.departmentInfo-content .box-text{
+        margin-top: -200px;
+    }
+
+    #department #department05-info01.departmentInfo-content .box-text{
+        max-width: 680px;
+    }
+
+    #department #department05-info02.departmentInfo-content .box-text{
+        max-width: 600px;
+    }
+
+
+
+
+}
+
+
+
+
+
+@media (min-width: 1280px) {
+
+    #department .departmentInfo-content .item-info .text-content .text {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    #department .departmentInfo-content .item-info .text-content .ttl {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    #department .departmentInfo-content .description-info .text {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    #department .departmentInfo-content .description-info .ttl {
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+    }
+
+    #department .departmentInfo-content .description-info .note-top {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #department .department-content .content .title {
+        font-size: 26px;
+        line-height: 46px;
+        margin-bottom: 35px;
+        letter-spacing: 2px;
+    }
+
+    #department .department-content .content .text {
+        font-size: 19px;
+        line-height: 36px;
+        letter-spacing: 0px;
+    }
+
+    #department .department-content .text-bottom .sub-text {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    #department .department-content .text-bottom .ttl-note {
+        font-size: 20px;
+        line-height: 32px;
+        padding: 0px 20px;
+        border-radius: 20px;
+        position: absolute;
+        top: -15px;
+        left: 20px;
+    }
+
+    #department .tabs-department .item-departmentInfo .show-tabs {
+        font-size: 20px;
+        line-height: 28px;
+        border-radius: 20px 20px 0px 0px;
+        padding: 6px 0px;
+    }
+
+    #department .department-content .content .item-text .text {
+        font-size: 20px;
+        line-height: 36px;
+        color: #000;
+        font-weight: 500;
+        width: calc(100% - 130px);
+        padding: 30px 26px 20px;
+    }
+
+    #department .department-content .content .item-text .text-top {
+        font-size: 20px;
+        line-height: 30px;
+        display: inline-block;
+        background: #00a2ff;
+        color: #fff;
+        padding: 0px 20px;
+        border-radius: 20px;
+        position: absolute;
+        top: -15px;
+        left: 15px;
+    }
+
+    #department .tabs-block .item-tabsDepartment a {
+        font-size: 24px;
+        line-height: 36px;
+        padding: 15px 0px;
+        border: 4px dotted #000;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    #department .icon-bottom-block {
+        position: relative;
+        margin-top: -180px;
+        margin-bottom: 50px;
+        pointer-events: none;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+

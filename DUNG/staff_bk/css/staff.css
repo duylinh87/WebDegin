@@ -1,0 +1,1085 @@
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#staff .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#staff .animatedFadeInUp {
+    opacity: 0;
+}
+
+#staff .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#staff{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#staff .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*main-banner*/
+/*==================================================*/
+#staff .main-banner{
+    margin-bottom: 97px;
+}
+
+#staff .main-banner .container-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#staff .main-banner .content-title{
+    width: 26.093%;
+    background-image: url("../images/staff_bg_mainimg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+#staff .main-banner .content-title .heading{
+    text-align: center;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#staff .main-banner .content-title .heading .t1{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#staff .main-banner .content-title .heading .t2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+#staff .main-banner .content-image{
+    width: 73.907%;
+    position: relative;
+}
+
+#staff .main-banner .content-image .image_wrap{
+    display: flex;
+}
+
+#staff .main-banner .content-image .image_wrap .staff-img{
+    width: 100% !important;
+}
+
+#staff .main-banner .content-image .title-image{
+    position: absolute;
+    top: 6.5%;
+    left: 50.5%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+/*block-tabs*/
+/*=======================================================*/
+#staff .block-tabs{
+    margin-bottom: 87px;
+}
+
+#staff .block-tabs .container-block{
+    max-width: 1264px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#staff .block-tabs .tabs-list-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item {
+    width: 27.5%;
+    margin-right: 8.75%;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item:last-child{
+    margin-right: 0px;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item .image_wrap{
+    display: flex;
+    padding: 6px;
+    border: 2px solid #c40000;
+    box-shadow: 10px 10px #c40000;
+    margin-bottom: 40px;
+    margin-right: 10px;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item .image_wrap .staff-img{
+    width: 100%;
+    transition: .4s;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item.is-active .image_wrap .staff-img{
+    opacity: .6;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item .info{
+    padding-left: 10px;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item .info .title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    background: #c40000;
+    line-height: 34px;
+    padding: 0px 20px;
+    margin-right: 40px;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item .info .year{
+    font-size: 19px;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 34px;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item .item-action{
+    text-align: center;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding-right: 7px;
+    margin-top: 20px;
+}
+
+#staff .block-tabs .tabs-list-content .tab-item .item-action .icon-arrow{
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-right: 8px;
+}
+
+/*block-staff-content*/
+/*===================================================*/
+#staff .block-staff-content{
+    background: #f9f8f6;
+    padding: 80px 50px 192px;
+}
+
+#staff .block-staff-content .container-block{
+    max-width: 1720px;
+    margin: auto;
+}
+
+#staff .block-staff-content .staff-list-item{
+    margin-bottom: 160px;
+}
+
+#staff .block-staff-content .staff-list-item:last-child{
+    margin-bottom: 0px;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-image{
+    width: 50%;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-image .staff-img{
+    width: 100% !important;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-text{
+    width: 50%;
+    background: #c40000;
+    padding: 36px 75px 20px;
+    position: relative;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .description{
+    padding: 0px 70px 0px 60px;
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .text-note{
+    position: relative;
+    display: flex;
+    margin-bottom: 32px;
+    margin-top: 45px;
+    padding-left: 11px;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .position{
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .year{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 18px;
+    border-left: 6px solid #fff;
+    padding-left: 10px;
+    margin-left: 2px;
+    margin-bottom: 14px;
+}
+
+#staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .text{
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#staff .block-staff-content #staff-block01.staff-list-item .staff-content .block-title .content-text .bg_icon_01{
+    position: absolute;
+    display: inline-block;
+    background-image: url("../images/staff_ico_content_block_01_pc.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26%;
+    height: 30%;
+    top: 41%;
+    right: -4%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#staff .block-staff-content #staff-block01.staff-list-item .staff-content .block-title .content-text .bg_icon_02{
+    position: absolute;
+    display: inline-block;
+    background-image: url("../images/staff_ico_content_block_02_pc.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7.5%;
+    height: 11%;
+    top: 29%;
+    right: 6.5%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#staff .block-staff-content #staff-block01.staff-list-item .staff-content .block-title .content-text .bg_icon_03{
+    position: absolute;
+    display: inline-block;
+    background-image: url("../images/staff_ico_content_block_03_pc.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6%;
+    height: 17%;
+    top: 50%;
+    left: 60.5%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/*block-list*/
+/*====================================================*/
+#staff .block-staff-content .block-list{
+    margin-bottom: 30px;
+}
+
+#staff .block-staff-content .block-list .staff-content-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-text{
+    width: 50%;
+    background: #fff;
+    padding: 0px 130px 0px 152px;
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-image{
+    width: 50%;
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-image .staff-img{
+    width: 100% !important;
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-text .description{
+    margin-bottom: 40px;
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-text .description:last-child{
+    margin-bottom: 0px;
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-text .title{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #333333;
+    padding-left: 16px;
+    /*border-left: 6px solid #c40000;*/
+    margin-bottom: 26px;
+    position: relative;
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-text .title:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 18px;
+    background: #c40000;
+    top: 3px;
+    left: 0px;
+
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-text .sub-title{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+#staff .block-staff-content .block-list .staff-content-list .content-text .text{
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+}
+
+#staff .block-staff-content .message-description{
+    background: #fff;
+    padding-top: 72px;
+}
+
+#staff .block-staff-content .message-description .list-description{
+    width: 100%;
+    max-width: 1505px;
+    margin: auto;
+    padding: 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 108px;
+}
+
+#staff .block-staff-content .message-description .list-description .item-description{
+    width: 27.73%;
+    margin-right: 8.4%;
+}
+
+#staff .block-staff-content .message-description .list-description .item-description:last-child{
+    margin-right: 0px;
+}
+
+#staff .block-staff-content .message-description .list-description .item-description .icon-item{
+    min-height: 88px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#staff .block-staff-content .message-description .list-description .item-description .t1{
+    font-size: 23px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 62px;
+}
+
+#staff .block-staff-content .message-description .list-description .item-description .title{
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+#staff .block-staff-content .message-description .list-description .item-description .text{
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 400;
+    padding-left: 3px;
+}
+
+#staff .block-staff-content .message-description .content-image{
+    position: relative;
+    background: #f9f8f6;
+}
+
+#staff .block-staff-content .message-description .content-image .image_wrap .staff-img{
+    width: 100% !important;
+}
+
+#staff .block-staff-content .message-description .content-message{
+    background: #fff;
+    border: 2px solid #c40000;
+    box-shadow: 7px 7px #c40000;
+    position: absolute;
+    top: 14.2%;
+    width: 100%;
+    left: 6.6%;
+    max-width: 53%;
+    padding: 42px 60px 3% 65px;
+    min-height: 312px;
+}
+
+#staff .block-staff-content .message-description .content-message .text-note{
+    position: relative;
+    left: -17px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+#staff .block-staff-content .message-description .content-message .message-info .title{
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+#staff .block-staff-content .message-description .content-message .message-info .text{
+    font-size: 15px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 400;
+}
+
+/*staff-block02*/
+/*===========================================*/
+
+#staff .block-staff-content .block-list .staff-content-list:nth-child(2n) .content-text{
+    order: 2;
+    padding: 26px 147px 0px 135px;
+}
+
+#staff .block-staff-content .block-list .staff-content-list:nth-child(2n) .content-image{
+    order: 1;
+}
+
+#staff .block-staff-content #staff-block02 .message-description .list-description{
+    margin-bottom: 64px;
+}
+
+#staff .block-staff-content #staff-block02 .message-description .content-message{
+    left: unset;
+    right: 6.6%;
+}
+
+#staff .block-staff-content #staff-block02.staff-list-item .staff-content .block-title .content-text .bg_icon_01{
+    position: absolute;
+    display: inline-block;
+    background-image: url(../images/staff_ico_content_block_04_pc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18%;
+    height: 30%;
+    top: 25.5%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#staff .block-staff-content #staff-block02.staff-list-item .staff-content .block-title .content-text .bg_icon_02{
+    position: absolute;
+    display: inline-block;
+    background-image: url(../images/staff_ico_content_block_05_pc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 38%;
+    height: 13%;
+    top: 44%;
+    right: -9.5%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/*staff-block03*/
+/*==================================================*/
+
+#staff .block-staff-content #staff-block03 .message-description .list-description{
+    margin-bottom: 132px;
+}
+
+#staff .block-staff-content #staff-block03.staff-list-item .staff-content .block-title .content-text .bg_icon_01{
+    position: absolute;
+    display: inline-block;
+    background-image: url(../images/staff_ico_content_block_06_pc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13.5%;
+    height: 9%;
+    top: 53%;
+    right: 17.5%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#staff .block-staff-content #staff-block03.staff-list-item .staff-content .block-title .content-text .bg_icon_02{
+    position: absolute;
+    display: inline-block;
+    background-image: url(../images/staff_ico_content_block_07_pc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16.8%;
+    height: 20%;
+    top: 47%;
+    right: -3.4%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1600px) {
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text{
+        padding: 30px 50px 20px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .description{
+        padding: 0px 50px 0px 50px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text,
+    #staff .block-staff-content .block-list .staff-content-list:nth-child(2n) .content-text{
+        padding: 0px 100px 0px 100px;
+    }
+}
+
+
+@media (max-width: 1440px) {
+
+    /*main-banner*/
+    /*========================================*/
+    #staff .main-banner .content-title .heading .t1 .staff-img{
+        width: 45%;
+    }
+
+    #staff .main-banner .content-image .title-image .staff-img{
+        width: 80%;
+    }
+
+    #staff .main-banner .content-title .heading .t2{
+        font-size: 24px;
+    }
+
+    /*block-tabs*/
+    /*==========================================*/
+    #staff .block-tabs .tabs-list-content .tab-item .info .title{
+        font-size: 18px;
+        margin-right: 36px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .info .year{
+        font-size: 16px;
+    }
+
+    /*block-staff-content*/
+    /*=========================================*/
+    #staff .block-staff-content .staff-list-item{
+        margin-bottom: 100px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text{
+        padding: 10px 35px 20px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .text{
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .description{
+        padding: 0px 35px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text,
+    #staff .block-staff-content .block-list .staff-content-list:nth-child(2n) .content-text{
+        padding: 10px 70px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text .title{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text .sub-title{
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text .text{
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text .description{
+        margin-bottom: 30px;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .t1{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .title{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .text{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #staff .block-staff-content .message-description .content-message .message-info .text{
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #staff .block-staff-content .message-description .content-message .message-info .title{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    #staff .block-staff-content .message-description .content-message{
+        min-height: auto;
+    }
+
+    #staff .block-staff-content .message-description .list-description{
+        margin-bottom: 80px !important;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .position{
+        font-size: 20px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .year{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .text-note{
+        display: inline-block;
+        padding-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .text-note .staff-img{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    #staff .block-tabs .tabs-list-content .tab-item .info .year{
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /*main-banner*/
+    /*===============================================*/
+    #staff .main-banner{
+        margin-bottom: 70px;
+    }
+
+    #staff .main-banner .content-title .heading .t1{
+        margin-bottom: 0px;
+    }
+
+    #staff .main-banner .content-title .heading .t2{
+        font-size: 18px;
+    }
+
+    #staff .main-banner .content-image .title-image{
+        top: 15px;
+        text-align: center;
+    }
+
+    #staff .main-banner .content-image .title-image .staff-img{
+        width: 60%;
+    }
+
+    #staff .block-tabs{
+        margin-bottom: 70px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item{
+        width: 30.66%;
+        margin-right: 4%;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .item-action .staff-img{
+        width: 100%;
+        max-width: 60px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .item-action .icon-arrow{
+        padding: 0px;
+        width: 18px;
+    }
+
+    /*block-staff-content*/
+    /*==================================================*/
+    #staff .block-staff-content{
+        padding: 80px 50px 100px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-image{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .text-note{
+       margin-bottom: 20px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text{
+        padding: 10px 35px 40px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text{
+        width: 100%;
+        padding: 40px 70px !important;
+        order: 2;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-image{
+        width: 100%;
+        order: 1;
+    }
+
+    #staff .block-staff-content .message-description .content-image{
+        padding-top: 40px;
+    }
+
+    #staff .block-staff-content .message-description .list-description{
+        padding: 0px 25px;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description{
+        width: 30.66%;
+        margin-right: 4%;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .t1{
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .title{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #staff .block-staff-content .message-description .content-message{
+        position: relative;
+        max-width: 90%;
+        left: unset !important;
+        right: unset !important;
+        margin: -40px auto 0px;
+        padding: 40px 50px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list{
+        margin-bottom: 40px;
+    }
+
+    #staff .block-staff-content .message-description .content-message .text-note .staff-img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /*main-banner*/
+    /*============================================*/
+    #staff .main-banner{
+        margin-bottom: 50px;
+    }
+
+    #staff .main-banner .container-block{
+        position: relative;
+    }
+
+    #staff .main-banner .content-image{
+        width: 100%;
+    }
+
+    #staff .main-banner .content-title{
+        width: 100%;
+        position: static;
+        background: unset;
+    }
+
+    #staff .main-banner .content-title .heading{
+        z-index: 10;
+        top: 55%;
+    }
+
+    #staff .main-banner .content-title .heading .t1 .staff-img{
+        width: 30%;
+    }
+
+
+    /*block-tabs*/
+    /*============================================*/
+    #staff .block-tabs{
+        margin-bottom: 40px;
+    }
+
+    #staff .block-tabs .container-block{
+        padding: 0px 15px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .image_wrap{
+        padding: 2px;
+        box-shadow: 5px 5px #c40000;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .info{
+        padding-left: 0px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .info .title{
+        font-size: 12px;
+        width: 100%;
+        display: block;
+        max-width: 120px;
+        text-align: center;
+        padding: 0px;
+        line-height: 28px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .info .year{
+        font-size: 12px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .item-action{
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .item-action .icon-arrow{
+        width: 25px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .item-action .staff-img{
+        max-width: 45px;
+    }
+
+    #staff .block-tabs .tabs-list-content .tab-item .item-action .icon-arrow{
+        width: 18px;
+    }
+
+    /*block-staff-content*/
+    /*======================================================*/
+    #staff .block-staff-content{
+        padding: 50px 15px;
+    }
+
+    #staff .block-staff-content .staff-list-item{
+        margin-bottom: 80px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .bg_icon{
+        display: none !important;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text{
+        padding: 20px 15px 30px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .text-note .staff-img{
+        width: 75%;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .description{
+        padding: 0px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text{
+        padding: 40px 15px !important;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text .sub-title{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text .text{
+        text-align: justify;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 60px;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description:last-child{
+        margin-bottom: 0px;
+    }
+
+    #staff .block-staff-content .message-description .list-description{
+        padding: 0px 15px;
+        margin-bottom: 50px !important;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .title{
+        text-align: center;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .text{
+        text-align: justify;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .icon-item{
+        margin-bottom: 15px;
+    }
+
+    #staff .block-staff-content .message-description .list-description .item-description .t1{
+        margin-bottom: 28px;
+    }
+
+    #staff .block-staff-content .message-description{
+        padding-top: 60px;
+    }
+
+    #staff .block-staff-content .message-description .content-message .message-info .text{
+        font-size: 14px;
+        line-height: 26px;
+        text-align: justify;
+    }
+
+    #staff .block-staff-content .message-description .content-message{
+        margin: -30px auto 0px;
+        padding: 30px 15px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .position{
+        font-size: 18px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text .year{
+        font-size: 14px;
+    }
+
+    #staff .block-staff-content .message-description .content-message .text-note{
+        left: calc(50% - 50px);
+        margin-bottom: 0px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-image{
+        margin-bottom: 0px;
+    }
+
+    #staff .block-staff-content .staff-list-item .staff-content .block-title .content-text,
+    #staff .block-staff-content .block-list,
+    #staff .block-staff-content .block-list .staff-content-list{
+        margin-bottom: 20px;
+    }
+
+    #staff .block-staff-content .message-description .content-image{
+        padding-top: 20px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text .title:before{
+        height: 16px;
+    }
+
+    #staff .block-staff-content .block-list .staff-content-list .content-text .title{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

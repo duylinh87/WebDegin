@@ -1,0 +1,1007 @@
+
+
+/*css fadeIn Up*/
+/*=================================================*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0);
+        -webkit-transform: translate3d(0,100px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+#crosstalk .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+#crosstalk .animatedFadeInUp {
+    opacity: 0;
+}
+
+#crosstalk .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#crosstalk{
+    position: relative;
+    background: #f4f4f4;
+    overflow: hidden;
+}
+
+/*main-banner*/
+/*============================================*/
+#crosstalk .main-banner .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#crosstalk .main-banner .image_wrap .crosstalk-img{
+    width: 100% !important;
+    height: 100%;
+}
+
+/*description-block*/
+/*=============================================*/
+
+#crosstalk .description-block{
+    background: #ff0000;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    margin-bottom: 126px;
+}
+
+#crosstalk .description-block .container-block{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 50px;
+
+}
+
+#crosstalk .description-block .text{
+    font-size: 26px;
+    line-height: 52px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+/*person-box-block*/
+/*=================================================*/
+#crosstalk .person-box-block{
+    margin-bottom: 124px;
+}
+
+#crosstalk .person-box-block .container-block{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#crosstalk .person-box-block .list-box-person{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+}
+
+#crosstalk .person-box-block .list-box-person:last-child{
+    margin-bottom: 0px;
+}
+
+#crosstalk .person-box-block .list-box-person .item-box-person{
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#crosstalk .person-box-block .list-box-person .item-box-person .item-image{
+    width: 120px;
+}
+
+#crosstalk .person-box-block .list-box-person .item-box-person .item-image .crosstalk-img{
+    width: 100% !important;
+}
+
+#crosstalk .person-box-block .list-box-person .item-box-person .text-info{
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 11px;
+}
+
+#crosstalk .person-box-block .list-box-person .item-box-person .text-info .retina-img{
+    width: auto !important;
+}
+
+/*crosstalk-block*/
+/*===========================================*/
+#crosstalk .crosstalk-block .heading-block{
+    background: #fff;
+    padding-top: 68.5px;
+    padding-bottom: 62px;
+}
+
+#crosstalk .crosstalk-block .heading-block .container{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+#crosstalk .crosstalk-block .heading-block .heading .t1{
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    max-width: 154px;
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 12px;
+    letter-spacing: 1.75px;
+    position: relative;
+    z-index: 9;
+}
+
+#crosstalk .crosstalk-block .heading-block .heading .t1:after{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 61px;
+    height: 37px;
+    bottom: -14px;
+    right: -42px;
+    z-index: -1;
+}
+
+#crosstalk .crosstalk-block.block01 .heading-block .heading .t1:after{
+    background-image: url("../images/crosstalk_ico_number01.png");
+    width: 51px;
+    right: -34px;
+}
+
+#crosstalk .crosstalk-block.block02 .heading-block .heading .t1:after{
+    background-image: url("../images/crosstalk_ico_number02.png");
+}
+
+#crosstalk .crosstalk-block.block03 .heading-block .heading .t1:after{
+    background-image: url("../images/crosstalk_ico_number03.png");
+}
+
+#crosstalk .crosstalk-block.block04 .heading-block .heading .t1:after{
+    background-image: url("../images/crosstalk_ico_number04.png");
+}
+
+#crosstalk .crosstalk-block .heading-block .heading .t2{
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -2.5px;
+    padding-left: 20px;
+}
+
+#crosstalk .crosstalk-block .heading-block .heading .t2 .br-mobile{
+    display: none;
+}
+
+#crosstalk .crosstalk-block .heading-block .heading .sub-t1{
+    display: block;
+    position: relative;
+    z-index: 9;
+    border: 1px solid #ff0000;
+}
+
+#crosstalk .crosstalk-block .message-block{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 62px;
+    padding-bottom: 54px;
+    position: relative;
+}
+
+#crosstalk .crosstalk-block .message-block .left-content{
+    width: 22.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#crosstalk .crosstalk-block .message-block .mid-content{
+    width: 55%;
+    margin: auto;
+    padding: 0px 38px;
+    position: relative;
+    z-index: 9;
+}
+
+#crosstalk .crosstalk-block .message-block .right-content{
+    width: 22.5%;
+}
+
+#crosstalk .crosstalk-block .message-block .image-content{
+    display: none;
+    position: relative;
+    z-index: 9;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 39px;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat .title-box{
+    width: 70px;
+    padding-top: 5px;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat .title-box .icon-name{
+    width: 100%;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat .content-text{
+    width: calc(100% - 158px);
+    position: relative;
+    display: inherit;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat .content-text .text{
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #333333;
+    background: #fff;
+    border-radius: 40px;
+    /*margin-right: 88px;*/
+    margin-left: 24px;
+    padding: 8px 45px 14px 30px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat.left-box .content-text .text:after{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 12px solid #fff;
+    left: -10px;
+    top: 35px;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat.right-box{
+    justify-content: flex-end;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat.right-box .content-text .text:after{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0px;
+    width:0px;
+    height:0px;
+    border-bottom:5px solid transparent;
+    border-top:5px solid transparent;
+    border-left:12px solid #fff;
+    right: -10px;
+    top: 35px;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat.right-box .content-text .text{
+    margin-left: 0px;
+    margin-right: 24px;
+    padding-left: 36px;
+    padding-right: 30px;
+}
+
+#crosstalk .crosstalk-block.block01 .message-block .item-box-chat:nth-child(3),
+#crosstalk .crosstalk-block.block01 .message-block .item-box-chat:nth-child(6){
+    margin-bottom: 56px;
+}
+
+#crosstalk .crosstalk-block.block01 .message-block .item-box-chat:nth-child(5) .content-text .text{
+    padding: 19px 45px 30px 30px;
+}
+
+#crosstalk .crosstalk-block .message-block .item-box-chat:last-child{
+    margin-bottom: 0px;
+}
+
+#crosstalk .crosstalk-block.block02 .heading-block{
+    padding-top: 75px;
+    padding-bottom: 56px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block{
+    padding-top: 68px;
+    padding-bottom: 62px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block .item-box-chat:nth-child(1){
+    margin-bottom: 44px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block .item-box-chat:nth-child(2){
+    margin-bottom: 28px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block .item-box-chat:nth-child(3) .content-text .text{
+    padding: 14px 45px 22px 30px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block .item-box-chat:nth-child(3){
+    margin-bottom: 30px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block .item-box-chat:nth-child(4) .content-text .text{
+    padding: 25px 45px 23px 38px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block .item-box-chat:nth-child(5) .content-text .text{
+    padding: 23px 38px 14px 36px;
+}
+
+#crosstalk .crosstalk-block.block03 .heading-block .heading .t2{
+    padding-left: 0px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block{
+    padding-top: 84px;
+    padding-bottom: 60px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block .item-box-chat:nth-child(1),
+#crosstalk .crosstalk-block.block03 .message-block .item-box-chat:nth-child(2){
+    margin-bottom: 42px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block .item-box-chat:nth-child(3){
+    margin-bottom: 24px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block .item-box-chat:nth-child(4){
+    margin-bottom: 20px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block .item-box-chat:nth-child(5) .content-text .text{
+    padding: 16px 45px 14px 30px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block .item-box-chat:nth-child(5){
+    margin-bottom: 16px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block .item-box-chat:nth-child(6) .content-text .text{
+    padding: 21px 45px 26px 30px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block .item-box-chat:nth-child(1) .content-text .text{
+    padding: 12px 45px 14px 30px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block .item-box-chat:nth-child(1){
+    margin-bottom: 35px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block .item-box-chat:nth-child(3){
+    margin-bottom: 26px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block .item-box-chat:nth-child(4) .content-text .text{
+    padding: 17px 45px 11px 30px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block .item-box-chat:nth-child(4){
+    margin-bottom: 44px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block .item-box-chat:nth-child(5) .content-text .text{
+    padding: 20px 45px 18px 30px;
+}
+
+/*crosstalk-block05*/
+/*==========================================*/
+#crosstalk .crosstalk-block05{
+    padding-top: 124px;
+}
+
+#crosstalk .crosstalk-block05 .box-message{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 50px;
+    position: relative;
+    margin-bottom: -310px;
+    z-index: 9;
+}
+
+#crosstalk .crosstalk-block05 .box-message .text-info{
+    background: #fff;
+    padding: 0px 67px 53px 60px;
+}
+
+#crosstalk .crosstalk-block05 .box-message .text-info .title{
+    font-size: 36px;
+    line-height: 30px;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+    padding-bottom: 35px;
+    left: -58px;
+    letter-spacing: 0.2px;
+    display: inline-block;
+}
+
+#crosstalk .crosstalk-block05 .box-message .text-info .title:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/crosstalk_sub_title_block_bottom.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 105px;
+    height: 32px;
+    bottom: 8px;
+    right: -48px;
+}
+
+#crosstalk .crosstalk-block05 .box-message .text-info .text{
+    font-size: 16px;
+    line-height: 39px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: -2px;
+}
+
+#crosstalk .crosstalk-block05 .image-content .image_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#crosstalk .crosstalk-block05 .image-content .image_wrap .crosstalk-img {
+    width: 100% !important;
+    height: 100%;
+}
+
+#crosstalk .crosstalk-block.block01 .message-block .left-content .image_wrap{
+    position: relative;
+    margin-bottom: -59px;
+}
+
+#crosstalk .crosstalk-block.block01 .message-block .right-content .image_wrap{
+    position: relative;
+    margin-top: -62px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block .right-content .image_wrap{
+    position: relative;
+    margin-top: -68px;
+}
+
+#crosstalk .crosstalk-block.block02 .message-block .left-content .image_wrap{
+    position: relative;
+    margin-bottom: -66px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block .right-content .image_wrap{
+    position: relative;
+    margin-top: -84px;
+}
+
+#crosstalk .crosstalk-block.block03 .message-block .left-content .image_wrap{
+    position: relative;
+    margin-bottom: -64px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block .right-content .image_wrap{
+    position: relative;
+    margin-top: -100px;
+}
+
+#crosstalk .crosstalk-block.block04 .message-block .left-content .image_wrap{
+    position: relative;
+    margin-bottom: -96px;
+}
+
+#crosstalk .crosstalk-block .message-block .left-content .image_wrap .crosstalk-img,
+#crosstalk .crosstalk-block .message-block .right-content .image_wrap .crosstalk-img{
+    width: 100% !important;
+    height: 100%;
+}
+
+@media (max-width: 1440px) {
+
+    #crosstalk .description-block .text{
+        font-size: 22px;
+        line-height: 48px;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .heading .t2{
+        font-size: 42px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .left-content{
+        width: 20%;
+    }
+
+    #crosstalk .crosstalk-block .message-block .right-content{
+        width: 20%;
+    }
+
+    #crosstalk .crosstalk-block .message-block .mid-content{
+        width: 60%;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text .text{
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .mid-content{
+        padding: 0px 20px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .title-box{
+        width: 60px;
+    }
+
+    /*#crosstalk .crosstalk-block .message-block .item-box-chat .title-box .icon-name{*/
+    /*    width: 60px;*/
+    /*}*/
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text{
+        width: calc(100% - 138px);
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .text{
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .title{
+        font-size: 32px;
+        line-height: 28px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat{
+        margin-bottom: 40px !important;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat:last-child{
+        margin-bottom: 0px !important;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    #crosstalk .description-block .text {
+        font-size: 20px;
+        line-height: 44px;
+    }
+
+    #crosstalk .person-box-block .list-box-person.top .item-box-person .text-info .t1 .title-img{
+        height: 34px;
+    }
+
+    #crosstalk .person-box-block .list-box-person.bottom .item-box-person .text-info .t1 .title-img{
+        height: 12px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .text-info .t2 .subTitle-img{
+        height: 16px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .item-image{
+        width: 100px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .text-info{
+        width: calc(100% - 100px);
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text .text {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .heading .t1{
+        font-size: 14px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .heading .t2{
+        font-size: 36px;
+        padding: 0px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .text {
+        font-size: 13px;
+        line-height: 33px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .title {
+        font-size: 28px;
+        line-height: 26px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message{
+        margin-bottom: -150px;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+
+    #crosstalk .description-block{
+        margin-bottom: 90px;
+    }
+
+    #crosstalk .description-block .text {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    #crosstalk .person-box-block{
+        margin-bottom: 90px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .item-image {
+        width: 90px;
+    }
+
+    #crosstalk .person-box-block .list-box-person{
+        margin-bottom: 60px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .text-info {
+        width: calc(100% - 90px);
+    }
+
+    #crosstalk .person-box-block .list-box-person.top .item-box-person .text-info .t1 .title-img {
+        height: 30px;
+    }
+
+    #crosstalk .person-box-block .list-box-person.bottom .item-box-person .text-info .t1 .title-img {
+        height: 11px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .text-info .t2 .subTitle-img {
+        height: 14px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .mid-content{
+        padding: 0px 15px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .title-box {
+        width: 50px;
+    }
+
+    /*#crosstalk .crosstalk-block .message-block .item-box-chat .title-box .icon-name {*/
+    /*    width: 50px;*/
+    /*}*/
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text {
+        width: calc(100% - 118px);
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text .text{
+        margin-left: 18px;
+        padding: 15px 20px !important;
+        border-radius: 30px;
+        min-height: auto;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat.right-box .content-text .text{
+        margin-right: 18px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat.left-box .content-text .text:after,
+    #crosstalk .crosstalk-block .message-block .item-box-chat.right-box .content-text .text:after{
+        top: 25px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat {
+        margin-bottom: 25px !important;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .heading .t2{
+        font-size: 32px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info{
+        padding: 0px 45px 50px 45px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .title {
+        font-size: 26px;
+        line-height: 26px;
+        left: -40px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .title:after{
+        width: 90px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message {
+        margin-bottom: -100px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #crosstalk .description-block .container-block{
+        padding: 0px 15px;
+    }
+
+    #crosstalk .description-block .text {
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+    }
+
+    #crosstalk .description-block{
+        padding: 26px 0px;
+        margin-bottom: 35px;
+    }
+
+    /*person-box-block*/
+    /*============================================*/
+    #crosstalk .person-box-block {
+        margin-bottom: 10px;
+    }
+
+    #crosstalk .person-box-block .container-block{
+        padding: 0px 10px;
+        max-width: 500px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person{
+        width: 50%;
+        margin-bottom: 18px;
+    }
+
+    #crosstalk .person-box-block .list-box-person {
+        margin-bottom: 0px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .item-image {
+        width: 70px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .text-info {
+        width: calc(100% - 70px);
+        padding-left: 8px;
+    }
+
+
+    #crosstalk .person-box-block .list-box-person.top .item-box-person .text-info .t1 .title-img {
+        height: 22px;
+    }
+
+    #crosstalk .person-box-block .list-box-person.top .item-box-person.item03 .text-info .t1 .title-img{
+        height: 36px;
+    }
+
+    #crosstalk .person-box-block .list-box-person .item-box-person .text-info .t2 .subTitle-img {
+        height: 12px;
+    }
+
+    #crosstalk .person-box-block .list-box-person.bottom .item-box-person .text-info .t1 .title-img {
+        height: 10px;
+    }
+
+    #crosstalk .person-box-block .list-box-person.bottom .item-box-person.item02 .text-info .t1 .title-img{
+        height: 22px;
+    }
+
+    /*#crosstalk .crosstalk-block .heading-block .heading .t2 {*/
+    /*    font-size: 22px;*/
+    /*    line-height: 28px;*/
+    /*    text-align: left;*/
+    /*    max-width: 220px;*/
+    /*    margin: auto;*/
+    /*}*/
+
+
+    #crosstalk .crosstalk-block .message-block{
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+    }
+
+    #crosstalk .crosstalk-block .message-block .left-content{
+        display: none;
+    }
+
+    #crosstalk .crosstalk-block .message-block .mid-content{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .right-content{
+        width: 100%;
+    }
+
+    #crosstalk .crosstalk-block .message-block .right-content .image_wrap{
+        margin-top: 0px !important;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .title-box {
+        width: 40px;
+        padding-top: 0px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text {
+        width: calc(100% - 98px);
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat.left-box .content-text .text:after{
+        left: -8px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat.right-box .content-text .text:after{
+        right: -8px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text .text{
+        margin-left: 15px;
+        padding: 10px 8px !important;
+        border-radius: 20px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat.right-box .content-text .text {
+        margin-right: 15px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text{
+        display: block;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat.left-box .content-text .text:after,
+    #crosstalk .crosstalk-block .message-block .item-box-chat.right-box .content-text .text:after {
+        top: 15px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .content-text .text {
+        line-height: 18px;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat .title-box .image_wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #crosstalk .crosstalk-block .message-block .item-box-chat {
+        margin-bottom: 12px !important;
+    }
+
+    #crosstalk .crosstalk-block .message-block .right-content .image_wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #crosstalk .crosstalk-block .heading-block {
+        padding-top: 28px !important;
+        padding-bottom: 30px !important;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .heading .t2 .br-mobile{
+        display: block;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .container{
+        padding: 0px 15px;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .heading .t1 {
+        font-size: 13px;
+        height: 36px;
+        line-height: 36px;
+        max-width: 120px;
+        margin-bottom: 20px;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .heading .t2 {
+        font-size: 22px;
+        text-align: center;
+        margin: auto;
+    }
+
+    #crosstalk .crosstalk-block.block01 .heading-block .heading .t2{
+        text-align: left;
+        max-width: 220px;
+        line-height: 28px;
+    }
+
+    #crosstalk .crosstalk-block .heading-block .heading .t1:after{
+        width: 40px;
+        height: 24px;
+        bottom: -10px;
+        right: -28px;
+    }
+
+    #crosstalk .crosstalk-block.block01 .heading-block .heading .t1:after{
+        width: 30px;
+        right: -20px;
+    }
+
+    /*crosstalk-block05*/
+    /*===========================================*/
+    #crosstalk .crosstalk-block05 {
+        padding-top: 80px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message{
+        padding: 0px 15px;
+        margin-bottom: -20px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info {
+        padding: 0px 20px 20px 20px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .text {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .title {
+        font-size: 20px;
+        line-height: 26px;
+        left: -20px;
+        top: -12px;
+        padding-bottom: 15px;
+    }
+
+    #crosstalk .crosstalk-block05 .box-message .text-info .title:after {
+        width: 50px;
+        bottom: -14px;
+        right: -15px;
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url("./reset.css");
+@import url("./default.css");
+@import url("./tab.css");
+@font-face {
+    font-family: "Yu Gothic Bold";
+    src: url("../fonts/yugothib.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: url("../fonts/yugothim.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Yu Gothic Light";
+    src: url("../fonts/yugothil.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Kozuka Gothic Pr6N";
+    src: url("../fonts/KozGoPr6NRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "MidashiGoPr6N";
+    src: url("../fonts/MidashiGoPro.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Meiryo";
+    src: url("../fonts/Meiryo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Meiryo Bold";
+    src: url("../fonts/Meiryo-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Toppan";
+    src: url("../fonts/MSMINCHO.ttf");
+    font-weight: 700
+}

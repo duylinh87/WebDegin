@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca02a786-6f92-4aa8-93ee-47a9f028257f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1c6czKKzjQ0SN0davW1urk3omwu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;Angular2Html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hr" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp7.1\htdocs\me-office\images\office" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca02a786-6f92-4aa8-93ee-47a9f028257f" name="Default Changelist" comment="" />
+      <created>1589852745027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589852745027</updated>
+      <workItem from="1589852747205" duration="10427000" />
+      <workItem from="1590382128710" duration="14959000" />
+      <workItem from="1590457364491" duration="611000" />
+      <workItem from="1590475716533" duration="1141000" />
+      <workItem from="1590480193545" duration="330000" />
+      <workItem from="1590553825085" duration="15031000" />
+      <workItem from="1590628950279" duration="6586000" />
+      <workItem from="1590647661179" duration="1329000" />
+      <workItem from="1591150855847" duration="15197000" />
+      <workItem from="1591234423918" duration="43000" />
+      <workItem from="1591843657389" duration="18881000" />
+      <workItem from="1591925061499" duration="8537000" />
+      <workItem from="1591950127457" duration="4659000" />
+      <workItem from="1592183357012" duration="2229000" />
+      <workItem from="1592205070376" duration="2375000" />
+      <workItem from="1592209225763" duration="4379000" />
+      <workItem from="1592269748447" duration="22772000" />
+      <workItem from="1592368044520" duration="7742000" />
+      <workItem from="1592443842197" duration="3108000" />
+      <workItem from="1592462269301" duration="2164000" />
+      <workItem from="1592529394132" duration="7300000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1592555677323">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1592555677323" />
+    <state x="681" y="259" key="run.anything.popup" timestamp="1590387911010">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1590387911010" />
+    <state x="687" y="243" key="search.everywhere.popup" timestamp="1592448630756">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1592448630756" />
+  </component>
+</project>

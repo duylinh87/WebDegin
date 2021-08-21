@@ -1,0 +1,868 @@
+/*
+
+【CSS記述ルール】
+
+① font-sizeはpxで指定してください
+　（rem、%等の指定はしないようお願いいたします）
+
+② xxxxxx はディレクトリ名に変更してください
+
+③ 必ずディレクトリ名が付いたidセレクタを先頭に記述した後に、要素を記述してください
+　（例：#oneday .inner、#oneday .page-title 等）
+
+④ CSS内の画像指定パスは、CSSファイルから見た相対パスで指定してください
+　（例：../images/ディレクトリ名/画像名.拡張子）
+
+*/
+
+/*@import url(//db.onlinewebfonts.com/c/a9aca7e1ecdbdf39d9a97fe080562d20?family=Meiryo);*/
+
+@font-face {
+    font-family: "Deja Vu Sans Mono";
+    src: url("./fonts/DejaVu-Sans-Mono_13348.ttf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("./fonts/GOTHIC.TTF");
+}
+
+@font-face {
+	font-family: "Koz Go Pro";
+    src: url("./fonts/KozGoPro-Regular.otf");
+}
+
+#oneday {
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+#oneday * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#oneday img {
+  line-height: 1;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+#oneday p {
+  text-align: left;
+}
+
+#main-content{
+	background-color: #f7f9f8;
+	padding-bottom: 157px;
+	overflow: hidden;
+}
+
+/*Header*/
+
+#header .content-header {
+    padding: 19px 37px 17px 34px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#header .content-header .logo{
+    width: 50%;
+}
+
+#header .content-header .logo h1{
+    max-width: 400px;
+    height: 70px;
+    background-color: #999999;
+    line-height: 70px;
+    text-align: center;
+}
+
+#header .content-header .logo a{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Meiryo;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+#header .content-header  .nav-menu{
+    width: 50%;
+}
+
+#header .content-header .menu-bar-toggle{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+#header .content-header .menu-bar-toggle:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+    transform: translateY(-50%);
+}
+
+#header .content-header .menu-bar-toggle span:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+}
+
+#header .content-header .menu-bar-toggle span:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #f18180;
+}
+
+/*Breadcrumb*/
+
+.breadcrumb{
+    max-width: 1470px;
+    padding:5px 15px 10px;
+    margin: auto;
+}
+
+.breadcrumb .breadcrumb-info, .breadcrumb span{
+    color: #999999;
+    font-family: "MS - P Gothic";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 12px;
+}
+
+.breadcrumb .breadcrumb-info:before{
+    content: "";
+    position: absolute;
+    border: solid #999;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    right: 2px;
+    bottom: 6px;
+}
+
+/*Banner*/
+
+.banner-home .content{
+    position: relative;
+}
+
+.banner-home .content .img-mobile{
+    display: none;
+}
+
+.banner-home .content img{
+	width: 100%;
+}
+
+.banner-home .content .img-mobile{
+    display: none;
+}
+
+.banner-home .title-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.banner-home .title-banner h2{
+    font-family: "Deja Vu Sans Mono";
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    color: #fff;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+.banner-home .title-banner h2 span{
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2.4px;
+	font-family: "Koz Go Pro";
+}
+
+.banner-home .content:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.2;
+}
+
+/*container*/
+
+.container{
+	max-width: 1220px;
+	padding: 0px 20px;
+	margin: auto;
+}
+
+.people-details{
+	padding-top: 113px;
+	padding-bottom: 206px;
+}
+
+.people-details .content{
+	position: relative;
+}
+
+.people-details .information .t1{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 18px;
+    font-weight: 700;
+	margin-bottom: 25px;
+    display: block;
+}
+
+.people-details .information h4{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.people-details .information h3{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 24px;
+    font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.people-details .information h3 .name{
+	color: #ffffff;
+    font-family: "Deja Vu Sans Mono";
+    font-size: 14px;
+    font-weight: 400;
+	font-style: italic;
+}
+
+.people-details .information h5{
+	color: #ffffff;
+    font-family: Meiryo;
+    font-size: 14px;
+    font-weight: 400;
+	margin-bottom: 17px;
+}
+
+.people-details .information p{
+	color: #ffffff;
+	font-family: Meiryo;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.people-details .information{
+	position: absolute;
+    width: calc(100% - 20%);
+    bottom: 0px;
+    left: 20%;
+	z-index: 9;
+}
+
+.people-details .content .mark{
+	content: "";
+    position: absolute;
+    width: 41%;
+    height: 75%;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    background-color: #e20002;
+    bottom: -80px;
+    left: 10%;
+}
+
+.people-details .content-information{
+	max-width: 250px;
+}
+
+.people-details .img-people .img-mobile{
+	display: none;
+}
+
+
+/*one day work*/
+
+.one-day-work .banner-title{
+	background-color: #e40001;
+	padding: 17px 0px;
+	margin-bottom: 55px;
+}
+
+.one-day-work .banner-title h2{
+	font-family: Meiryo;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+.one-day-work .banner-title h2 span{
+	font-family: Meiryo;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 80px;
+	margin-left: 25px;
+}
+
+.one-day-work .banner-title h2 span:before{
+	content: "";
+    position: absolute;
+    width: 68px;
+    height: 1px;
+    background-color: #ffffff;
+    top: 15px;
+    left: 0px;
+}
+
+.one-day-work .banner-title h2 span:after{
+	content: "";
+    position: absolute;
+    width: 68px;
+    height: 1px;
+    background-color: #ffffff;
+    top: 15px;
+    right: -80px;
+}
+
+.time-one-day-work{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.time-one-day-work .col-item-work{
+	width: 100%;
+	position: relative;
+}
+
+.time-one-day-work:before{
+	content: "START";
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    background-color: #e40001;
+    top: 0px;
+    left: 50%;
+	transform: translateX(-50%);
+    text-align: center;
+    color: #ffffff;
+    font-family: Meiryo;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+    z-index: 10;
+}
+
+.time-one-day-work:after{
+	content: "";
+    position: absolute;
+    width: 3px;
+    height: calc(100% - 90px);
+    background-color: #e40001;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.time-one-day-work .col-item-work.right-content .time-content{
+	order: 1;
+}
+
+.time-one-day-work .col-item-work.right-content	.left-content .text-content{
+	order: 2;
+}
+
+.time-one-day-work .title{
+	width: 100%
+}
+
+.time-one-day-work .work-item{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	float: left;
+	position: relative;
+	z-index: 9;
+}
+
+.time-one-day-work .work-item:nth-child(2n) .left-content .text-content{
+	order: 2;
+}
+
+.time-one-day-work .work-item:nth-child(2n) .left-content .time-content{
+	order: 1;
+}
+
+.time-one-day-work .work-item .left-content{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.time-one-day-work .work-item .text-content{
+	background-color: #ffffff;
+	padding: 30px 33px 36px 44px;
+	position: relative;
+	width: 67.8%;
+}
+
+.time-one-day-work .col-item-work .text-content:after{
+	content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 16px solid #fff;
+    top: calc(50% - 9px);
+    right: -16px;
+    transform: rotate(90deg);
+}
+
+.time-one-day-work .work-item:nth-child(2n) .text-content:after{
+	content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 16px solid #fff;
+    top: calc(50% - 9px);
+    left: -16px;
+    transform: rotate(-90deg);
+}
+
+.time-one-day-work .work-item .text-content .heading{
+	color: #e40001;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.time-one-day-work .work-item .text-content p{
+	color: #010101;
+	font-family: Meiryo;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.time-one-day-work .work-item .time-content{
+	width: 32.2%;
+	position: relative;
+}
+
+.time-one-day-work .work-item .time-content span{
+	color: #e40001;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 700;
+	align-items: center;
+    display: flex;
+    height: 100%;
+    padding-left: 33px;
+}
+
+.time-one-day-work .work-item:nth-child(2n) .time-content span{
+	color: #e40001;
+    font-family: Meiryo;
+    font-size: 20px;
+    font-weight: 700;
+	align-items: center;
+    display: flex;
+    height: 100%;
+    padding-left: 0px;
+	padding-right: 33px;
+	justify-content: flex-end;
+}
+
+.time-one-day-work .work-item:nth-child(2n) .img-details{
+	width: 100%;
+}
+
+.time-one-day-work .work-item .img-details{
+	margin-top: 20px;
+	width: 100%;
+}
+
+.time-one-day-work .work-item .img-details img{
+	width: 67.8%;
+}
+
+.time-one-day-work .work-item:nth-child(2n) .img-details img{
+	float: right;
+}
+
+
+.time-one-day-work .col-item-work.right-content .work-item .time-content span{
+	justify-content: flex-end;
+	padding-right: 33px;
+	padding-left: 0px;
+}
+
+.time-one-day-work .col-item-work.right-content .img-details img{
+	width: auto;
+}
+
+.time-one-day-work .work-item .time-content:before{
+	content: "";
+    background-image: url(../images/oneday/img-time.png);
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: calc(-42px / 2);
+    top: 50%;
+    background-repeat: no-repeat;
+    z-index: 9;
+    transform: translateY(-50%);
+}
+
+.time-one-day-work .work-item:nth-child(2n) .time-content:before{
+	content: "";
+    background-image: url(../images/oneday/img-time.png);
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: calc(-42px / 2);
+    top: 50%;
+    background-repeat: no-repeat;
+    z-index: 9;
+    transform: translateY(-50%);
+}
+
+.time-one-day-work .work-item .time-content:after{
+	content: "";
+    position: absolute;
+    width: 77px;
+    height: 3px;
+    background-color: #e40001;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.time-one-day-work .work-item:nth-child(2n) .time-content:after{
+	content: "";
+    position: absolute;
+    width: 77px;
+    height: 3px;
+    background-color: #e40001;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.time-one-day-work .right-content .work-item .time-content:before{
+	content: "";
+    background-image: url(../images/oneday/img-time.png);
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: calc(-42px / 2);
+    top: 50%;
+    background-repeat: no-repeat;
+    z-index: 9;
+    transform: translateY(-50%);
+}
+
+.time-one-day-work .right-content .work-item .time-content:after{
+	content: "";
+    position: absolute;
+    width: 77px;
+    height: 3px;
+    background-color: #e40001;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.time-one-day-work .work-item:nth-child(2){
+	margin-top: 72px;
+	margin-bottom: 40px;
+}
+
+.time-one-day-work .work-item:nth-child(3){
+	top: -320px;
+}
+
+.time-one-day-work .work-item:nth-child(4){
+	margin-bottom: 40px;
+}
+
+.time-one-day-work .work-item:nth-child(5){
+	top: -136px;
+}
+
+.time-one-day-work .work-item:nth-child(6){
+	margin-bottom: 146px;
+}
+
+.time-one-day-work .work-item:nth-child(7){
+	top: -240px;
+}
+
+.one-day-work .banner-title h2{
+	justify-content: end;
+    padding-left: 20px;
+}
+
+.one-day-work .banner-title h2 span{
+	margin-left: 22px;
+}
+
+#footer img{
+	width: 100%;
+}
+
+
+
+@media screen and (max-width: 992px) {
+	.time-one-day-work .work-item:nth-child(2n) .time-content span{
+		padding-right: 15px;
+	}
+	
+	.time-one-day-work .work-item .time-content span{
+		padding-left: 15px;
+	}
+}
+
+@media screen and (max-width: 767px) {/* ---------- スマホ以下 ---------- */
+	
+	body{
+		min-width: 640px;
+	}
+	
+	.container{
+		padding: 0px;
+	}
+	
+	#main-content{
+		padding-bottom: 80px;
+	}
+	
+	#footer img, .breadcrumb, .banner-home .content .img-desktop, .people-details .content .mark{
+		display: none;
+	}
+	
+	.banner-home .content .img-mobile{
+		display: block;
+	}
+	
+	#header .content-header{
+        padding: 10px 20px;
+    }
+
+    #header .content-header .logo h1{
+        max-width: 260px;
+    }
+	
+	.banner-home .title-banner{
+        top: 55%;
+    }
+
+    .banner-home .title-banner h2{
+        line-height: 46px;
+    }
+
+    .banner-home .title-banner h2 span{
+        width: 100%;
+        display: block;
+	}
+	
+	.people-details{
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+	
+	.people-details .information{
+		background-color: #e20100;
+		position: static;
+		width: 100%;
+		padding: 20px 20px 27px;
+	}
+	
+	.people-details .content-information{
+		max-width: 100%;
+	}
+	
+	.people-details .information h3{
+		display: inline-block;
+	}
+	
+	.people-details .information h5{
+		display: inline-block;
+		padding-left: 5px;
+		font-size: 16px;
+	}
+	
+	.people-details .information p{
+		font-family: Meiryo;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 26px;
+	}
+	
+	.people-details .information h3 .name{
+		font-weight: 700;
+	}
+	
+	.people-details .information .t1{
+		 width: 68px;
+    	float: left;
+		margin-bottom: 0px;
+	}
+	
+	.people-details .information h4{
+		width: calc(100% - 68px);
+    	float: left;
+	}
+	
+	.people-details .img-people .img-mobile{
+		display: block;
+	}
+
+	.people-details .img-people .img-desktop{
+		display: none;
+	}
+	
+	.one-day-work{
+		padding: 0px 20px;
+	}
+	
+	.one-day-work .banner-title{
+		padding: 20px 0px;	
+		margin-bottom: 48px;
+	}
+	
+	.time-one-day-work{
+		padding: 56px 20px 0px;
+	}
+	
+	.time-one-day-work .work-item{
+		width: 100%;
+		top: 0px !important;
+		margin-bottom: 26px !important;
+    	margin-top: 0px !important;
+	}
+	
+	.time-one-day-work .col-item-work .text-content:after,
+	.time-one-day-work .work-item .time-content:before,
+	.time-one-day-work .work-item .time-content:after{
+		display: none;
+	}
+	
+	.time-one-day-work .work-item .left-content{
+		width: 100%
+	}
+	
+	.time-one-day-work .work-item .text-content{
+		width: 100%;
+		order: 2;
+		border: 3px solid #e40001;
+		padding: 18px 25px 36px 43px;
+	}
+	
+	.time-one-day-work .work-item.item-img .text-content{
+		border-bottom: 0px;
+	}
+	
+	.time-one-day-work .work-item .time-content{
+		width: 100%;
+		order: 1;
+	}
+	
+	.time-one-day-work .work-item .img-details img{
+		position: absolute;
+		height: 100% !important;
+		width: 100%;
+		object-fit: cover;
+	}
+	
+	.time-one-day-work .work-item .time-content span{
+		padding: 0px;
+		justify-content: flex-start !important;
+	}
+	
+	.time-one-day-work .work-item .img-details{
+		margin-top: 0px;
+		border: 3px solid #e40001;
+    	border-top: 0px;
+		padding-bottom: 312px;
+   		position: relative;
+	}
+	
+	.time-one-day-work .work-item .text-content p{
+		color: #010101;
+		font-family: Meiryo;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 33.97px;
+	}
+	
+	.time-one-day-work .work-item .text-content .heading{
+		font-size: 30px;
+		line-height: 38px;
+	}
+	
+	.time-one-day-work .work-item:nth-child(6) .left-content .text-content,
+	.time-one-day-work .work-item:nth-child(2) .left-content .text-content{
+		padding-bottom: 55px;
+	}
+	
+	.time-one-day-work .work-item:nth-child(1) .left-content .text-content,
+	.time-one-day-work .work-item:nth-child(3) .left-content .text-content,
+	.time-one-day-work .work-item:nth-child(4) .left-content .text-content,
+	.time-one-day-work .work-item:nth-child(5) .left-content .text-content,
+	.time-one-day-work .work-item:nth-child(7) .left-content .text-content{
+		padding-bottom: 20px;
+	}
+	
+	.time-one-day-work .work-item:nth-child(7) .left-content .text-content{
+		padding-bottom: 48px;
+	}
+	
+}
+
+@media print, screen and (min-width: 768px) {/* ---------- タブレット・PC以上 ---------- */
+  #oneday {
+    font-size: 15px;
+  }
+}
+
